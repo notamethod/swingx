@@ -1,3 +1,32 @@
-/target/
+
 /bin/
 dependency-reduced-pom.xml
+
+# Lines that start with '#' are comments.
+
+# Ignore class files
+*.class
+# Ignore vim swp files
+.*.swp
+
+# Everyone want's their own Eclipse setup
+.project
+.classpath
+
+# Skip the build directories
+/target/
+/core/target/
+/tika/target/
+/tools/target/
+/log
+
+# Skip where we put test files not cleared for inclusion
+/DO_NOT_COMMIT/
+
+# Skip the eclipse static includes
+/lib/
+
+# Intellij
+.idea/
+*.iml
+*.iws

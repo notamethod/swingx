@@ -1,0 +1,50 @@
+swingx-plaf-1.6.6-SNAPSHOT.jar -> java.base
+swingx-plaf-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-plaf-1.6.6-SNAPSHOT.jar -> java.logging
+swingx-plaf-1.6.6-SNAPSHOT.jar -> not found
+   org.jdesktop.swingx.plaf                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf                           -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.plaf                           -> java.beans                                         java.desktop
+   org.jdesktop.swingx.plaf                           -> java.io                                            java.base
+   org.jdesktop.swingx.plaf                           -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf                           -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.plaf                           -> java.security                                      java.base
+   org.jdesktop.swingx.plaf                           -> java.util                                          java.base
+   org.jdesktop.swingx.plaf                           -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.plaf                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf                           swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.linux                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.macosx                    swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.metal                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.motif                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.nimbus                    swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.windows                   swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.plaf.basic                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.plaf                           swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.linux                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.linux                     -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.linux                     -> org.jdesktop.swingx.plaf.basic                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.linux                     -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.plaf.macosx                    -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.macosx                    -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx.plaf.basic                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.plaf.metal                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.metal                     -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.metal                     -> javax.swing.plaf.metal                             java.desktop
+   org.jdesktop.swingx.plaf.metal                     -> org.jdesktop.swingx.plaf.basic                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.motif                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.motif                     -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.motif                     -> org.jdesktop.swingx.plaf.basic                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.nimbus                    -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.nimbus                    -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.nimbus                    -> org.jdesktop.swingx.plaf.basic                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.windows                   -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.windows                   -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx.plaf.basic                     swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx.plaf.windows                   swingx-plaf-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx.util                           not found

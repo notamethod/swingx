@@ -1,0 +1,479 @@
+swingx-core-1.6.6-SNAPSHOT.jar -> java.base
+swingx-core-1.6.6-SNAPSHOT.jar -> java.datatransfer
+swingx-core-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-core-1.6.6-SNAPSHOT.jar -> java.logging
+swingx-core-1.6.6-SNAPSHOT.jar -> java.naming
+swingx-core-1.6.6-SNAPSHOT.jar -> java.prefs
+swingx-core-1.6.6-SNAPSHOT.jar -> java.sql
+swingx-core-1.6.6-SNAPSHOT.jar -> not found
+   org.jdesktop.swingx                                -> java.applet                                        java.desktop
+   org.jdesktop.swingx                                -> java.awt                                           java.desktop
+   org.jdesktop.swingx                                -> java.awt.datatransfer                              java.datatransfer
+   org.jdesktop.swingx                                -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx                                -> java.awt.font                                      java.desktop
+   org.jdesktop.swingx                                -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx                                -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx                                -> java.awt.print                                     java.desktop
+   org.jdesktop.swingx                                -> java.beans                                         java.desktop
+   org.jdesktop.swingx                                -> java.io                                            java.base
+   org.jdesktop.swingx                                -> java.lang                                          java.base
+   org.jdesktop.swingx                                -> java.lang.annotation                               java.base
+   org.jdesktop.swingx                                -> java.lang.ref                                      java.base
+   org.jdesktop.swingx                                -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx                                -> java.net                                           java.base
+   org.jdesktop.swingx                                -> java.text                                          java.base
+   org.jdesktop.swingx                                -> java.util                                          java.base
+   org.jdesktop.swingx                                -> java.util.concurrent                               java.base
+   org.jdesktop.swingx                                -> java.util.logging                                  java.logging
+   org.jdesktop.swingx                                -> java.util.prefs                                    java.prefs
+   org.jdesktop.swingx                                -> java.util.regex                                    java.base
+   org.jdesktop.swingx                                -> javax.accessibility                                java.desktop
+   org.jdesktop.swingx                                -> javax.imageio                                      java.desktop
+   org.jdesktop.swingx                                -> javax.swing                                        java.desktop
+   org.jdesktop.swingx                                -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx                                -> javax.swing.colorchooser                           java.desktop
+   org.jdesktop.swingx                                -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx                                -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx                                -> javax.swing.plaf.basic                             java.desktop
+   org.jdesktop.swingx                                -> javax.swing.plaf.synth                             java.desktop
+   org.jdesktop.swingx                                -> javax.swing.table                                  java.desktop
+   org.jdesktop.swingx                                -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx                                -> javax.swing.text.html                              java.desktop
+   org.jdesktop.swingx                                -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx                                -> javax.swing.undo                                   java.desktop
+   org.jdesktop.swingx                                -> org.jdesktop.beans                                 not found
+   org.jdesktop.swingx                                -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.action                         not found
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.auth                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.autocomplete                   not found
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.calendar                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.color                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.decorator                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.error                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.event                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.graphics                       not found
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.hyperlink                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.icon                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.multislider                    swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.plaf                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.plaf.basic.core                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.prompt                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.renderer                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.rollover                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.search                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.sort                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.table                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.tips                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.tree                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.treetable                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx                                -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.auth                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.auth                           -> java.beans                                         java.desktop
+   org.jdesktop.swingx.auth                           -> java.io                                            java.base
+   org.jdesktop.swingx.auth                           -> java.lang                                          java.base
+   org.jdesktop.swingx.auth                           -> java.security                                      java.base
+   org.jdesktop.swingx.auth                           -> java.security.cert                                 java.base
+   org.jdesktop.swingx.auth                           -> java.sql                                           java.sql
+   org.jdesktop.swingx.auth                           -> java.util                                          java.base
+   org.jdesktop.swingx.auth                           -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.auth                           -> java.util.prefs                                    java.prefs
+   org.jdesktop.swingx.auth                           -> javax.crypto                                       java.base
+   org.jdesktop.swingx.auth                           -> javax.crypto.spec                                  java.base
+   org.jdesktop.swingx.auth                           -> javax.naming                                       java.naming
+   org.jdesktop.swingx.auth                           -> javax.security.auth                                java.base
+   org.jdesktop.swingx.auth                           -> javax.security.auth.callback                       java.base
+   org.jdesktop.swingx.auth                           -> javax.security.auth.login                          java.base
+   org.jdesktop.swingx.auth                           -> javax.sql                                          java.sql
+   org.jdesktop.swingx.auth                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.auth                           -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.auth                           -> org.jdesktop.beans                                 not found
+   org.jdesktop.swingx.auth                           -> org.jdesktop.swingx.auth                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.border                         -> java.awt                                           java.desktop
+   org.jdesktop.swingx.border                         -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.border                         -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.border                         -> java.io                                            java.base
+   org.jdesktop.swingx.border                         -> java.lang                                          java.base
+   org.jdesktop.swingx.border                         -> java.util                                          java.base
+   org.jdesktop.swingx.border                         -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.border                         -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.border                         -> org.jdesktop.swingx.border                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.border                         -> org.jdesktop.swingx.icon                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.border                         -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.calendar                       -> java.lang                                          java.base
+   org.jdesktop.swingx.calendar                       -> java.text                                          java.base
+   org.jdesktop.swingx.calendar                       -> java.util                                          java.base
+   org.jdesktop.swingx.calendar                       -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.calendar                       -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.calendar                       -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.calendar                       -> org.jdesktop.swingx.calendar                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.calendar                       -> org.jdesktop.swingx.event                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.calendar                       -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.calendar                       -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.color                          -> java.awt                                           java.desktop
+   org.jdesktop.swingx.color                          -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.color                          -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.color                          -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.color                          -> java.beans                                         java.desktop
+   org.jdesktop.swingx.color                          -> java.io                                            java.base
+   org.jdesktop.swingx.color                          -> java.lang                                          java.base
+   org.jdesktop.swingx.color                          -> java.net                                           java.base
+   org.jdesktop.swingx.color                          -> java.util                                          java.base
+   org.jdesktop.swingx.color                          -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.color                          -> javax.imageio                                      java.desktop
+   org.jdesktop.swingx.color                          -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.color                          -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.color                          -> javax.swing.colorchooser                           java.desktop
+   org.jdesktop.swingx.color                          -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.color                          -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.color                          -> org.jdesktop.swingx.color                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.color                          -> org.jdesktop.swingx.multislider                    swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.color                          -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.combobox                       -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.combobox                       -> java.lang                                          java.base
+   org.jdesktop.swingx.combobox                       -> java.util                                          java.base
+   org.jdesktop.swingx.combobox                       -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.combobox                       -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.combobox                       -> org.jdesktop.swingx.combobox                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.decorator                      -> java.awt                                           java.desktop
+   org.jdesktop.swingx.decorator                      -> java.beans                                         java.desktop
+   org.jdesktop.swingx.decorator                      -> java.lang                                          java.base
+   org.jdesktop.swingx.decorator                      -> java.math                                          java.base
+   org.jdesktop.swingx.decorator                      -> java.util                                          java.base
+   org.jdesktop.swingx.decorator                      -> java.util.regex                                    java.base
+   org.jdesktop.swingx.decorator                      -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.decorator                      -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.decorator                      -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.decorator                      -> javax.swing.table                                  java.desktop
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.decorator                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.event                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.plaf                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.renderer                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.rollover                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.decorator                      -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.error                          -> java.lang                                          java.base
+   org.jdesktop.swingx.error                          -> java.util                                          java.base
+   org.jdesktop.swingx.error                          -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.error                          -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.error                          -> org.jdesktop.swingx.error                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.event                          -> java.awt                                           java.desktop
+   org.jdesktop.swingx.event                          -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.event                          -> java.beans                                         java.desktop
+   org.jdesktop.swingx.event                          -> java.io                                            java.base
+   org.jdesktop.swingx.event                          -> java.lang                                          java.base
+   org.jdesktop.swingx.event                          -> java.lang.ref                                      java.base
+   org.jdesktop.swingx.event                          -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.event                          -> java.util                                          java.base
+   org.jdesktop.swingx.event                          -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.event                          -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.event                          -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx.event                          -> org.jdesktop.beans                                 not found
+   org.jdesktop.swingx.event                          -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.event                          -> org.jdesktop.swingx.calendar                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.event                          -> org.jdesktop.swingx.event                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.event                          -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.hyperlink                      -> java.awt                                           java.desktop
+   org.jdesktop.swingx.hyperlink                      -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.hyperlink                      -> java.beans                                         java.desktop
+   org.jdesktop.swingx.hyperlink                      -> java.io                                            java.base
+   org.jdesktop.swingx.hyperlink                      -> java.lang                                          java.base
+   org.jdesktop.swingx.hyperlink                      -> java.net                                           java.base
+   org.jdesktop.swingx.hyperlink                      -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.hyperlink                      -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.hyperlink                      -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.hyperlink                      -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.hyperlink                      -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.hyperlink                      -> org.jdesktop.swingx.action                         not found
+   org.jdesktop.swingx.hyperlink                      -> org.jdesktop.swingx.hyperlink                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.icon                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.icon                           -> java.io                                            java.base
+   org.jdesktop.swingx.icon                           -> java.lang                                          java.base
+   org.jdesktop.swingx.icon                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.icon                           -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.icon                           -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.multislider                    -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.multislider                    -> java.lang                                          java.base
+   org.jdesktop.swingx.multislider                    -> java.util                                          java.base
+   org.jdesktop.swingx.multislider                    -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.multislider                    -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.multislider                    -> org.jdesktop.swingx.multislider                    swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.multisplitpane                 -> java.lang                                          java.base
+   org.jdesktop.swingx.multisplitpane                 -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf                           -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.plaf                           -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.plaf                           -> java.beans                                         java.desktop
+   org.jdesktop.swingx.plaf                           -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf                           -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.plaf                           -> java.net                                           java.base
+   org.jdesktop.swingx.plaf                           -> java.util                                          java.base
+   org.jdesktop.swingx.plaf                           -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.plaf                           -> javax.accessibility                                java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.plaf.metal                             java.desktop
+   org.jdesktop.swingx.plaf                           -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.icon                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.windows                   not found
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.plaf.windows                   swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.prompt                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.search                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf                           -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.plaf.basic                     -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> java.awt.datatransfer                              java.datatransfer
+   org.jdesktop.swingx.plaf.basic                     -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> java.awt.font                                      java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> java.beans                                         java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> java.io                                            java.base
+   org.jdesktop.swingx.plaf.basic                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.basic                     -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.plaf.basic                     -> java.net                                           java.base
+   org.jdesktop.swingx.plaf.basic                     -> java.text                                          java.base
+   org.jdesktop.swingx.plaf.basic                     -> java.util                                          java.base
+   org.jdesktop.swingx.plaf.basic                     -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing.plaf.basic                             java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> javax.swing.text.html                              java.desktop
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.beans                                 not found
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.action                         not found
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.border                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.calendar                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.decorator                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.error                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.event                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.hyperlink                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.icon                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.multislider                    swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.plaf                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.renderer                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.tips                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic                     -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.plaf.basic.core                -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> java.awt.datatransfer                              java.datatransfer
+   org.jdesktop.swingx.plaf.basic.core                -> java.awt.dnd                                       java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> java.beans                                         java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> java.io                                            java.base
+   org.jdesktop.swingx.plaf.basic.core                -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.basic.core                -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.plaf.basic.core                -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> javax.swing.plaf.basic                             java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.plaf.basic.core                -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic.core                -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.plaf.basic.core                -> org.jdesktop.swingx.plaf.basic.core                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.basic.core                -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.plaf.macosx                    -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.macosx                    -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.macosx                    -> java.util                                          java.base
+   org.jdesktop.swingx.plaf.macosx                    -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.plaf.macosx                    -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.macosx                    -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.macosx                    -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx.action                         not found
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx.error                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.plaf.macosx                    -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.metal                     -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.metal                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.metal                     -> java.util                                          java.base
+   org.jdesktop.swingx.plaf.metal                     -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.metal                     -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.metal                     -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.metal                     -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.metal                     -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.metal                     -> org.jdesktop.swingx.plaf.metal                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.misc                      -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.misc                      -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.misc                      -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.misc                      -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.misc                      -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.misc                      -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.misc                      -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.misc                      -> org.jdesktop.swingx.plaf.misc                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.nimbus                    -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.nimbus                    -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.nimbus                    -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.nimbus                    -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.nimbus                    -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.nimbus                    -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.nimbus                    -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.nimbus                    -> org.jdesktop.swingx.plaf.nimbus                    swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.synth                     -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.synth                     -> java.beans                                         java.desktop
+   org.jdesktop.swingx.plaf.synth                     -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.synth                     -> java.util                                          java.base
+   org.jdesktop.swingx.plaf.synth                     -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.synth                     -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.synth                     -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.synth                     -> javax.swing.plaf.synth                             java.desktop
+   org.jdesktop.swingx.plaf.synth                     -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.synth                     -> org.jdesktop.swingx.plaf.basic.core                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.synth                     -> org.jdesktop.swingx.plaf.synth                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.windows                   -> java.awt                                           java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> java.lang                                          java.base
+   org.jdesktop.swingx.plaf.windows                   -> java.net                                           java.base
+   org.jdesktop.swingx.plaf.windows                   -> java.util                                          java.base
+   org.jdesktop.swingx.plaf.windows                   -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.plaf.windows                   -> javax.imageio                                      java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx.plaf.basic                     swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.plaf.windows                   -> org.jdesktop.swingx.plaf.windows                   swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.prompt                         -> java.awt                                           java.desktop
+   org.jdesktop.swingx.prompt                         -> java.lang                                          java.base
+   org.jdesktop.swingx.prompt                         -> java.util                                          java.base
+   org.jdesktop.swingx.prompt                         -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.prompt                         -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.prompt                         -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.prompt                         -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.prompt                         -> org.jdesktop.swingx.plaf                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.prompt                         -> org.jdesktop.swingx.prompt                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> java.awt                                           java.desktop
+   org.jdesktop.swingx.renderer                       -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.renderer                       -> java.io                                            java.base
+   org.jdesktop.swingx.renderer                       -> java.lang                                          java.base
+   org.jdesktop.swingx.renderer                       -> java.text                                          java.base
+   org.jdesktop.swingx.renderer                       -> java.util                                          java.base
+   org.jdesktop.swingx.renderer                       -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.renderer                       -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.renderer                       -> javax.swing.filechooser                            java.desktop
+   org.jdesktop.swingx.renderer                       -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.renderer                       -> javax.swing.plaf.basic                             java.desktop
+   org.jdesktop.swingx.renderer                       -> javax.swing.table                                  java.desktop
+   org.jdesktop.swingx.renderer                       -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.hyperlink                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.icon                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.painter                        not found
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.renderer                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.rollover                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.treetable                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.renderer                       -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.rollover                       -> java.awt                                           java.desktop
+   org.jdesktop.swingx.rollover                       -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.rollover                       -> java.beans                                         java.desktop
+   org.jdesktop.swingx.rollover                       -> java.lang                                          java.base
+   org.jdesktop.swingx.rollover                       -> java.security                                      java.base
+   org.jdesktop.swingx.rollover                       -> java.util                                          java.base
+   org.jdesktop.swingx.rollover                       -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.rollover                       -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.rollover                       -> javax.swing.table                                  java.desktop
+   org.jdesktop.swingx.rollover                       -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx.rollover                       -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.rollover                       -> org.jdesktop.swingx.rollover                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.search                         -> java.awt                                           java.desktop
+   org.jdesktop.swingx.search                         -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.search                         -> java.beans                                         java.desktop
+   org.jdesktop.swingx.search                         -> java.lang                                          java.base
+   org.jdesktop.swingx.search                         -> java.lang.ref                                      java.base
+   org.jdesktop.swingx.search                         -> java.security                                      java.base
+   org.jdesktop.swingx.search                         -> java.util                                          java.base
+   org.jdesktop.swingx.search                         -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.search                         -> java.util.prefs                                    java.prefs
+   org.jdesktop.swingx.search                         -> java.util.regex                                    java.base
+   org.jdesktop.swingx.search                         -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.search                         -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.search                         -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.search                         -> org.jdesktop.swingx.decorator                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.search                         -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.search                         -> org.jdesktop.swingx.search                         swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.search                         -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.sort                           -> java.lang                                          java.base
+   org.jdesktop.swingx.sort                           -> java.text                                          java.base
+   org.jdesktop.swingx.sort                           -> java.util                                          java.base
+   org.jdesktop.swingx.sort                           -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.sort                           -> java.util.regex                                    java.base
+   org.jdesktop.swingx.sort                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.sort                           -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.sort                           -> javax.swing.table                                  java.desktop
+   org.jdesktop.swingx.sort                           -> org.jdesktop.swingx.renderer                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.sort                           -> org.jdesktop.swingx.sort                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.sort                           -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.table                          -> java.awt                                           java.desktop
+   org.jdesktop.swingx.table                          -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.table                          -> java.beans                                         java.desktop
+   org.jdesktop.swingx.table                          -> java.io                                            java.base
+   org.jdesktop.swingx.table                          -> java.lang                                          java.base
+   org.jdesktop.swingx.table                          -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.table                          -> java.math                                          java.base
+   org.jdesktop.swingx.table                          -> java.text                                          java.base
+   org.jdesktop.swingx.table                          -> java.util                                          java.base
+   org.jdesktop.swingx.table                          -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.table                          -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.table                          -> javax.swing.border                                 java.desktop
+   org.jdesktop.swingx.table                          -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.table                          -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.table                          -> javax.swing.table                                  java.desktop
+   org.jdesktop.swingx.table                          -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.table                          -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.action                         not found
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.decorator                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.event                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.plaf                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.renderer                       swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.table                          swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.text                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.table                          -> org.jdesktop.swingx.treetable                      swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.text                           -> java.lang                                          java.base
+   org.jdesktop.swingx.text                           -> java.math                                          java.base
+   org.jdesktop.swingx.text                           -> java.text                                          java.base
+   org.jdesktop.swingx.text                           -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.tips                           -> java.lang                                          java.base
+   org.jdesktop.swingx.tips                           -> java.util                                          java.base
+   org.jdesktop.swingx.tips                           -> org.jdesktop.swingx.tips                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.tree                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.tree                           -> java.lang                                          java.base
+   org.jdesktop.swingx.tree                           -> java.util                                          java.base
+   org.jdesktop.swingx.tree                           -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.tree                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.tree                           -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.tree                           -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx.tree                           -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.tree                           -> org.jdesktop.swingx.plaf                           not found
+   org.jdesktop.swingx.tree                           -> org.jdesktop.swingx.tree                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.tree                           -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.treetable                      -> java.awt                                           java.desktop
+   org.jdesktop.swingx.treetable                      -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.treetable                      -> java.io                                            java.base
+   org.jdesktop.swingx.treetable                      -> java.lang                                          java.base
+   org.jdesktop.swingx.treetable                      -> java.util                                          java.base
+   org.jdesktop.swingx.treetable                      -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.treetable                      -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.treetable                      -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.treetable                      -> javax.swing.tree                                   java.desktop
+   org.jdesktop.swingx.treetable                      -> org.jdesktop.swingx                                swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.treetable                      -> org.jdesktop.swingx.tree                           swingx-core-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.treetable                      -> org.jdesktop.swingx.treetable                      swingx-core-1.6.6-SNAPSHOT.jar

@@ -13,6 +13,7 @@ import java.awt.image.BufferedImage;
 import java.awt.image.ColorModel;
 import java.util.logging.Logger;
 
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -24,6 +25,7 @@ public class JXFrameTest extends InteractiveTestCase {
             .getName());
     
     @Test
+    @Ignore("JDK8 on linux (Ubuntu)/Mint: java.lang.ClassCastException: org.jdesktop.swingx.JXFrameTest$DummyGraphicsConfiguration cannot be cast to sun.awt.X11GraphicsConfig")
     public void testGraphicsConfig() {
         // This test will not work in a headless configuration.
         if (GraphicsEnvironment.isHeadless()) {

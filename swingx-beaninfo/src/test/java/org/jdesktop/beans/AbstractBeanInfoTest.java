@@ -58,7 +58,8 @@ public abstract class AbstractBeanInfoTest<T> {
     protected abstract T createInstance();
     
     @Test
-    public final void testBoundProperties() throws Exception {
+    // Migration JKD8: no more final
+    public void testBoundProperties() throws Exception {
         for (PropertyDescriptor descriptor : beanInfo.getPropertyDescriptors()) {
             if (descriptor.isBound()) {
                 if (descriptor.isHidden()) {
@@ -83,7 +84,9 @@ public abstract class AbstractBeanInfoTest<T> {
                 
                 Object defaultValue = descriptor.getReadMethod().invoke(instance);
                 Object newValue = getNewValue(propertyType, defaultValue);
-                
+                System.out.println("**DEBUG**"+propertyType);
+                System.out.println("**DEBUG**"+defaultValue);
+                System.out.println("**DEBUG** instance: "+instance.toString());
                 descriptor.getWriteMethod().invoke(instance, newValue);
                 
                 PropertyChangeListener pcl = (PropertyChangeListener) listeners.get(PropertyChangeListener.class);

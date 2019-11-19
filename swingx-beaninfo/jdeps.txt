@@ -1,0 +1,1 @@
+Warning: Path does not exist: ../swingx-beaninfo/target/swingx*.jar

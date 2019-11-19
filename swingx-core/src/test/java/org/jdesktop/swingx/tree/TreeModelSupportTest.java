@@ -32,6 +32,7 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
 import org.jdesktop.test.TreeModelReport;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
@@ -66,20 +67,31 @@ public class TreeModelSupportTest extends TestCase {
     }
     
     /**
-     * test modelSupport pathChanged: 
-     * not null path  must not be empty, (checked by TreePath)
-     * path elements must not be null (core issue - should be checked
-     *   by TreePath but isn't)
+     * test modelSupport pathChanged:
+     * path elements must not be null
      */
     @Test
     public void testPathChangedNotNullPathElements() {
-        TreePath path = new TreePath(new Object[] {null});
         try {
-            support.firePathChanged(path);
+            support.firePathChanged(null);
             fail("must not allow null path elements");
         } catch (NullPointerException e) {
             // expected
         } 
+        // unexpected exception
+    }
+
+    /**
+     * Can't construct a Treepath with null since JDK8:
+     */
+    @Test
+    public void testPathNotNull() {
+        try {
+            TreePath path = new TreePath(new Object[] {null});
+            fail("must not allow null path elements");
+        } catch (IllegalArgumentException e) {
+            // expected
+        }
         // unexpected exception
     }
     
@@ -124,6 +136,7 @@ public class TreeModelSupportTest extends TestCase {
      *
      */
     @Test
+    @Ignore ("not possible since JDK7")
     public void testTreeStructureChangedNotNullPathElements() {
         TreePath path = new TreePath(new Object[] {null});
         try {

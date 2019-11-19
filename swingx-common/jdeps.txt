@@ -1,0 +1,23 @@
+swingx-common-1.6.6-SNAPSHOT.jar -> java.base
+swingx-common-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-common-1.6.6-SNAPSHOT.jar -> java.logging
+   org.jdesktop.beans                                 -> java.beans                                         java.desktop
+   org.jdesktop.beans                                 -> java.io                                            java.base
+   org.jdesktop.beans                                 -> java.lang                                          java.base
+   org.jdesktop.beans                                 -> org.jdesktop.beans                                 swingx-common-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.util                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.util                           -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.util                           -> java.awt.font                                      java.desktop
+   org.jdesktop.swingx.util                           -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.util                           -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.util                           -> java.io                                            java.base
+   org.jdesktop.swingx.util                           -> java.lang                                          java.base
+   org.jdesktop.swingx.util                           -> java.lang.ref                                      java.base
+   org.jdesktop.swingx.util                           -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.util                           -> java.net                                           java.base
+   org.jdesktop.swingx.util                           -> java.text                                          java.base
+   org.jdesktop.swingx.util                           -> java.util                                          java.base
+   org.jdesktop.swingx.util                           -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.util                           -> javax.imageio                                      java.desktop
+   org.jdesktop.swingx.util                           -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.util                           -> org.jdesktop.swingx.util                           swingx-common-1.6.6-SNAPSHOT.jar

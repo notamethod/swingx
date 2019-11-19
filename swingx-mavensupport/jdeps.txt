@@ -1,0 +1,10 @@
+swingx-mavensupport-1.6.6-SNAPSHOT.jar -> java.base
+swingx-mavensupport-1.6.6-SNAPSHOT.jar -> java.compiler
+   org.jdesktop.beans                                 -> java.io                                            java.base
+   org.jdesktop.beans                                 -> java.lang                                          java.base
+   org.jdesktop.beans                                 -> java.lang.annotation                               java.base
+   org.jdesktop.beans                                 -> java.util                                          java.base
+   org.jdesktop.beans                                 -> javax.annotation.processing                        java.compiler
+   org.jdesktop.beans                                 -> javax.lang.model.element                           java.compiler
+   org.jdesktop.beans                                 -> javax.tools                                        java.compiler
+   org.jdesktop.beans                                 -> org.jdesktop.beans                                 swingx-mavensupport-1.6.6-SNAPSHOT.jar

@@ -1,0 +1,25 @@
+swingx-autocomplete-1.6.6-SNAPSHOT.jar -> java.base
+swingx-autocomplete-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-autocomplete-1.6.6-SNAPSHOT.jar -> not found
+   org.jdesktop.swingx.autocomplete                   -> java.awt                                           java.desktop
+   org.jdesktop.swingx.autocomplete                   -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.autocomplete                   -> java.beans                                         java.desktop
+   org.jdesktop.swingx.autocomplete                   -> java.lang                                          java.base
+   org.jdesktop.swingx.autocomplete                   -> java.util                                          java.base
+   org.jdesktop.swingx.autocomplete                   -> javax.accessibility                                java.desktop
+   org.jdesktop.swingx.autocomplete                   -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.autocomplete                   -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.autocomplete                   -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.autocomplete                   -> javax.swing.plaf.basic                             java.desktop
+   org.jdesktop.swingx.autocomplete                   -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.autocomplete                   -> javax.swing.undo                                   java.desktop
+   org.jdesktop.swingx.autocomplete                   -> org.jdesktop.swingx.autocomplete                   swingx-autocomplete-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.autocomplete                   -> org.jdesktop.swingx.autocomplete.workarounds       swingx-autocomplete-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.autocomplete                   -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.autocomplete.workarounds       -> java.awt                                           java.desktop
+   org.jdesktop.swingx.autocomplete.workarounds       -> java.lang                                          java.base
+   org.jdesktop.swingx.autocomplete.workarounds       -> javax.accessibility                                java.desktop
+   org.jdesktop.swingx.autocomplete.workarounds       -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.autocomplete.workarounds       -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.autocomplete.workarounds       -> javax.swing.plaf                                   java.desktop
+   org.jdesktop.swingx.autocomplete.workarounds       -> org.jdesktop.swingx.autocomplete.workarounds       swingx-autocomplete-1.6.6-SNAPSHOT.jar

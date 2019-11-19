@@ -1,0 +1,27 @@
+swingx-graphics-1.6.6-SNAPSHOT.jar -> java.base
+swingx-graphics-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-graphics-1.6.6-SNAPSHOT.jar -> not found
+   org.jdesktop.swingx.geom                           -> java.awt                                           java.desktop
+   org.jdesktop.swingx.geom                           -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.geom                           -> java.lang                                          java.base
+   org.jdesktop.swingx.geom                           -> org.jdesktop.swingx.geom                           swingx-graphics-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.graphics                       -> java.awt                                           java.desktop
+   org.jdesktop.swingx.graphics                       -> java.awt.font                                      java.desktop
+   org.jdesktop.swingx.graphics                       -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.graphics                       -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.graphics                       -> java.awt.image.renderable                          java.desktop
+   org.jdesktop.swingx.graphics                       -> java.beans                                         java.desktop
+   org.jdesktop.swingx.graphics                       -> java.lang                                          java.base
+   org.jdesktop.swingx.graphics                       -> java.text                                          java.base
+   org.jdesktop.swingx.graphics                       -> java.util                                          java.base
+   org.jdesktop.swingx.graphics                       -> org.jdesktop.swingx.graphics                       swingx-graphics-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.graphics                       -> org.jdesktop.swingx.image                          swingx-graphics-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.graphics                       -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.image                          -> java.awt                                           java.desktop
+   org.jdesktop.swingx.image                          -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.image                          -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.image                          -> java.lang                                          java.base
+   org.jdesktop.swingx.image                          -> java.util                                          java.base
+   org.jdesktop.swingx.image                          -> org.jdesktop.beans                                 not found
+   org.jdesktop.swingx.image                          -> org.jdesktop.swingx.image                          swingx-graphics-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.image                          -> org.jdesktop.swingx.util                           not found

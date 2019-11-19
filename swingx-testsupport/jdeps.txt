@@ -1,0 +1,26 @@
+swingx-testsupport-1.6.6-SNAPSHOT.jar -> java.base
+swingx-testsupport-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-testsupport-1.6.6-SNAPSHOT.jar -> java.logging
+swingx-testsupport-1.6.6-SNAPSHOT.jar -> not found
+   org.jdesktop.test                                  -> java.awt                                           java.desktop
+   org.jdesktop.test                                  -> java.beans                                         java.desktop
+   org.jdesktop.test                                  -> java.io                                            java.base
+   org.jdesktop.test                                  -> java.lang                                          java.base
+   org.jdesktop.test                                  -> java.lang.reflect                                  java.base
+   org.jdesktop.test                                  -> java.util                                          java.base
+   org.jdesktop.test                                  -> java.util.logging                                  java.logging
+   org.jdesktop.test                                  -> javax.swing                                        java.desktop
+   org.jdesktop.test                                  -> junit.framework                                    not found
+   org.jdesktop.test                                  -> org.jdesktop.test                                  swingx-testsupport-1.6.6-SNAPSHOT.jar
+   org.jdesktop.test                                  -> org.junit.runner                                   not found
+   org.jdesktop.test                                  -> org.junit.runner.notification                      not found
+   org.jdesktop.test                                  -> org.junit.runners                                  not found
+   org.jdesktop.test                                  -> org.junit.runners.model                            not found
+   org.jdesktop.test.categories                       -> java.lang                                          java.base
+   org.jdesktop.test.categories                       -> java.lang.annotation                               java.base
+   org.jdesktop.test.matchers                         -> java.beans                                         java.desktop
+   org.jdesktop.test.matchers                         -> java.lang                                          java.base
+   org.jdesktop.test.matchers                         -> java.lang.reflect                                  java.base
+   org.jdesktop.test.matchers                         -> org.hamcrest                                       not found
+   org.jdesktop.test.matchers                         -> org.jdesktop.test.matchers                         swingx-testsupport-1.6.6-SNAPSHOT.jar
+   org.jdesktop.test.matchers                         -> org.mockito                                        not found

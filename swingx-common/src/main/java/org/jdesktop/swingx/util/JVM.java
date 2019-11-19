@@ -38,6 +38,7 @@ public class JVM {
   public final static int JDK1_6 = 1600;
   public final static int JDK1_6N = 1610;
   public final static int JDK1_7 = 1700;
+  public final static int JDK1_8 = 1700;
 
   private static JVM current;
   static {
@@ -66,7 +67,15 @@ public class JVM {
    * Constructor for the OS object
    */
   public JVM(String p_JavaVersion) {
-    if (p_JavaVersion.startsWith("1.7.")) {
+    if (p_JavaVersion.startsWith("1.8.")) {
+      jdkVersion = JDK1_8;
+      for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+        if ("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
+          throw new RuntimeException(" JDK 8 NimbusLookAndFeel alert");
+        }
+      }
+    }
+    else if (p_JavaVersion.startsWith("1.7.")) {
       jdkVersion = JDK1_7;
     } else if (p_JavaVersion.startsWith("1.6.")) {
       for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
@@ -90,8 +99,8 @@ public class JVM {
     } else if (p_JavaVersion.startsWith("1.0.")) {
       jdkVersion = JDK1_0;
     } else {
-      // unknown version, assume 1.3
-      jdkVersion = JDK1_3;
+      throw new RuntimeException("JDK > 8 upgrade alert: JDK version unknown, please update JVM.java class");
+
     }
   }
 

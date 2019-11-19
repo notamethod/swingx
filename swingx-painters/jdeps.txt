@@ -1,0 +1,26 @@
+swingx-painters-1.6.6-SNAPSHOT.jar -> java.base
+swingx-painters-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-painters-1.6.6-SNAPSHOT.jar -> java.logging
+swingx-painters-1.6.6-SNAPSHOT.jar -> not found
+   org.jdesktop.swingx.painter                        -> java.awt                                           java.desktop
+   org.jdesktop.swingx.painter                        -> java.awt.font                                      java.desktop
+   org.jdesktop.swingx.painter                        -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.painter                        -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.painter                        -> java.beans                                         java.desktop
+   org.jdesktop.swingx.painter                        -> java.lang                                          java.base
+   org.jdesktop.swingx.painter                        -> java.lang.ref                                      java.base
+   org.jdesktop.swingx.painter                        -> java.util                                          java.base
+   org.jdesktop.swingx.painter                        -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.painter                        -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.painter                        -> javax.swing.text                                   java.desktop
+   org.jdesktop.swingx.painter                        -> org.jdesktop.beans                                 not found
+   org.jdesktop.swingx.painter                        -> org.jdesktop.swingx.painter                        swingx-painters-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.painter                        -> org.jdesktop.swingx.painter.effects                swingx-painters-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.painter                        -> org.jdesktop.swingx.util                           not found
+   org.jdesktop.swingx.painter.effects                -> java.awt                                           java.desktop
+   org.jdesktop.swingx.painter.effects                -> java.awt.geom                                      java.desktop
+   org.jdesktop.swingx.painter.effects                -> java.awt.image                                     java.desktop
+   org.jdesktop.swingx.painter.effects                -> java.beans                                         java.desktop
+   org.jdesktop.swingx.painter.effects                -> java.lang                                          java.base
+   org.jdesktop.swingx.painter.effects                -> org.jdesktop.swingx.painter.effects                swingx-painters-1.6.6-SNAPSHOT.jar
+   org.jdesktop.swingx.painter.effects                -> org.jdesktop.swingx.util                           not found

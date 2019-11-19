@@ -1,0 +1,17 @@
+swingx-action-1.6.6-SNAPSHOT.jar -> java.base
+swingx-action-1.6.6-SNAPSHOT.jar -> java.desktop
+swingx-action-1.6.6-SNAPSHOT.jar -> java.logging
+   org.jdesktop.swingx.action                         -> java.awt                                           java.desktop
+   org.jdesktop.swingx.action                         -> java.awt.event                                     java.desktop
+   org.jdesktop.swingx.action                         -> java.beans                                         java.desktop
+   org.jdesktop.swingx.action                         -> java.io                                            java.base
+   org.jdesktop.swingx.action                         -> java.lang                                          java.base
+   org.jdesktop.swingx.action                         -> java.lang.ref                                      java.base
+   org.jdesktop.swingx.action                         -> java.lang.reflect                                  java.base
+   org.jdesktop.swingx.action                         -> java.net                                           java.base
+   org.jdesktop.swingx.action                         -> java.security                                      java.base
+   org.jdesktop.swingx.action                         -> java.util                                          java.base
+   org.jdesktop.swingx.action                         -> java.util.logging                                  java.logging
+   org.jdesktop.swingx.action                         -> javax.swing                                        java.desktop
+   org.jdesktop.swingx.action                         -> javax.swing.event                                  java.desktop
+   org.jdesktop.swingx.action                         -> org.jdesktop.swingx.action                         swingx-action-1.6.6-SNAPSHOT.jar

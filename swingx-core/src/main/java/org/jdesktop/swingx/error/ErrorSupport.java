@@ -64,6 +64,7 @@ public class ErrorSupport {
     /**
      * Returns an array of all the listeners which were added to the 
      * <CODE>ErrorSupport</CODE> object with <CODE>addErrorListener()</CODE>.
+     * Updated for JDK11
      * @return all of the <CODE>ErrorListener</CODE>s added or an empty array if no listeners have been 
      * added.
      */

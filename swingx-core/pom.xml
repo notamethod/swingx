@@ -118,6 +118,24 @@
             </execution>
         </executions>
       </plugin -->
+
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId>
+			<artifactId>maven-compiler-plugin</artifactId>
+			<version>3.8.1</version>
+
+			<configuration>
+				<target>11</target>
+				<source>11</source>
+				<generatedSourcesDirectory>${project.generatedAnnotations}</generatedSourcesDirectory>
+				<showWarnings>true</showWarnings>
+				<showDeprecation>true</showDeprecation>
+				<compilerArgs>
+					<arg>--add-exports</arg>
+					<arg>java.desktop/com.sun.java.swing.plaf.motif=ALL-UNNAMED</arg>
+				</compilerArgs>
+			</configuration>
+		</plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>

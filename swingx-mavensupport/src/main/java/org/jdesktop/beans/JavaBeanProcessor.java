@@ -26,7 +26,7 @@ import org.kohsuke.MetaInfServices;
  */
 @SuppressWarnings("nls")
 @MetaInfServices(Processor.class)
-@SupportedSourceVersion(SourceVersion.RELEASE_8)
+@SupportedSourceVersion(SourceVersion.RELEASE_11)
 public class JavaBeanProcessor extends AbstractProcessor {
     @Override
     public Set<String> getSupportedAnnotationTypes() {

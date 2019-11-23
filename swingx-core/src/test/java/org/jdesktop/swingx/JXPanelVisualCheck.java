@@ -33,16 +33,7 @@ import java.awt.event.ActionEvent;
 import java.util.logging.Logger;
 
 import javax.imageio.ImageIO;
-import javax.swing.AbstractAction;
-import javax.swing.Action;
-import javax.swing.BorderFactory;
-import javax.swing.JButton;
-import javax.swing.JComponent;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.SwingUtilities;
-import javax.swing.UIDefaults;
-import javax.swing.UIManager;
+import javax.swing.*;
 
 import org.jdesktop.swingx.action.AbstractActionExt;
 import org.jdesktop.swingx.painter.ImagePainter;
@@ -50,7 +41,6 @@ import org.jdesktop.swingx.painter.MattePainter;
 import org.jdesktop.swingx.test.XTestUtils;
 import org.jdesktop.swingx.util.PaintUtils;
 
-import com.sun.java.swing.Painter;
 
 /**
  * Contains methods to visually test JXPanel.

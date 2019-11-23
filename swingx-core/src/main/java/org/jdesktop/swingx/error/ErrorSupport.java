@@ -23,6 +23,7 @@ package org.jdesktop.swingx.error;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.IntFunction;
 
 import javax.swing.SwingUtilities;
 
@@ -69,7 +70,7 @@ public class ErrorSupport {
      * added.
      */
     public ErrorListener[] getErrorListeners() {
-        return listeners.toArray(null);
+        return listeners.toArray((ErrorListener[])null);
     }
 
     /**

@@ -1,17 +1,18 @@
 package org.jdesktop.beans;
 
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.jdesktop.test.SerializableSupport.serialize;
 import static org.jdesktop.test.matchers.Matchers.equivalentTo;
 import static org.jdesktop.test.matchers.Matchers.property;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
-import static org.mockito.Matchers.argThat;
 import static org.mockito.Mockito.RETURNS_MOCKS;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.reset;
 import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.verifyNoMoreInteractions;
+import static org.mockito.hamcrest.MockitoHamcrest.argThat;
 
 import java.awt.Insets;
 import java.beans.BeanInfo;

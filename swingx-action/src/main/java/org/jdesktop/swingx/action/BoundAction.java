@@ -108,7 +108,7 @@ public class BoundAction extends AbstractActionExt {
                 // context.
                 //TODO JKD11: deprecation
                 //(https://docs.oracle.com/javase/9/docs/api/java/lang/Class.html#newInstance--)
-                Object obj = clz.newInstance();
+                Object obj = clz.getDeclaredConstructor().newInstance();
 
                 registerCallback(obj, elems[1]);
             } catch (Exception ex) {

@@ -9,7 +9,7 @@ import java.beans.PropertyDescriptor;
 
 import org.mockito.ArgumentMatcher;
 
-class EquivalentMatcher<T> extends ArgumentMatcher<T> {
+class EquivalentMatcher<T> implements ArgumentMatcher<T> {
     private final T object;
     
     public EquivalentMatcher(T object) {
@@ -33,10 +33,9 @@ class EquivalentMatcher<T> extends ArgumentMatcher<T> {
             }
             
             for (PropertyDescriptor pd : beanInfo.getPropertyDescriptors()) {
-                if (pd.getReadMethod() == null) {
+                if (pd.getReadMethod() == null)
                     continue;
-                }
-                
+
                 Object value1 = null;
                 
                 try {

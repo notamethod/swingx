@@ -611,7 +611,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * @param columnNames Column names, as a Vector of Strings.
      */
     public JXTable(Vector<?> rowData, Vector<?> columnNames) {
-        super(rowData, columnNames);
+        super((Vector<? extends Vector>) rowData, columnNames);
         init();
     }
 
@@ -2494,8 +2494,8 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * 
      * @see #getColumnExt(Point)
      */
-    public TableColumn getColumn(Point p) {
-        int columnIndex = columnAtPoint(p);
+    public TableColumn getColumn(Point point) {
+        int columnIndex = columnAtPoint(point);
         return columnIndex < 0 ? null : getColumn(columnIndex);
     }
     
@@ -2510,8 +2510,8 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * @see #getColumn(Point)
      * @see JXTableHeader#getColumnExt(Point)
      */
-    public TableColumnExt getColumnExt(Point p) {
-        TableColumn column = getColumn(p);
+    public TableColumnExt getColumnExt(Point point) {
+        TableColumn column = getColumn(point);
         return (TableColumnExt) (column instanceof TableColumnExt ? column : null);
     }
     // ---------------------- enhanced TableColumn/Model support: convenience
@@ -2632,7 +2632,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * 
      * @param column the <code>TableColumn</code> which sent the change
      *        notifcation
-     * @param sortable the new value of the column's sortable property
+     * @param comparator the new value of the column's comparator property
      */
     private void updateComparatorAfterColumnChanged(TableColumn column,
             Comparator<?> comparator) {
@@ -3190,7 +3190,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
          * @param modelColumn the column index in model coordinates, must be valid
          * @return the first contained TableColumn with the given model index, or
          *   null if none is found
-         * @throws IllegalArgumentExcetpion if model index invalid  
+         * @throws IllegalArgumentException if model index invalid
          */
         protected TableColumn getColumnByModelIndex(int modelColumn) {
             if ((modelColumn < 0) || (modelColumn >= getColumnCount())) {
@@ -3689,8 +3689,8 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
      * @return the decorated <code>Component</code> used as a stamp to render
      *         the specified cell
      */
-    public Component prepareRenderer(int row, int col) {
-        return prepareRenderer(getCellRenderer(row, col), row, col);
+    public Component prepareRenderer(int row, int column) {
+        return prepareRenderer(getCellRenderer(row, column), row, column);
     }
     
     /**

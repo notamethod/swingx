@@ -103,7 +103,7 @@ public class TreeTableHelper {
     }
     public static class PostorderEnumeration implements Enumeration<TreeNode> {
         protected TreeNode root;
-        protected Enumeration<TreeNode> children;
+        protected Enumeration<? extends TreeNode> children;
         protected Enumeration<TreeNode> subtree;
 
         @SuppressWarnings("unchecked")
@@ -164,11 +164,11 @@ public class TreeTableHelper {
             return new Model(createTreeTableNode(depth));
     }
     
-    static Node createTreeTableNode(int depth) {
+    static DefaultMutableTreeNodeTest createTreeTableNode(int depth) {
         Object[] data = new Object[COLUMNS];
         for (int i = COLUMNS; --i >= 0;)
             data[i] = createCellValue();
-        Node node = new Node(data);
+        DefaultMutableTreeNodeTest node = new DefaultMutableTreeNodeTest(data);
         if (--depth >= 0)
             for (int i = ROWS;
 //                    = random.nextInt((depth / 2 + 1)
@@ -231,62 +231,6 @@ public class TreeTableHelper {
         
 }
 
-    public static class Node extends DefaultMutableTreeNode implements
-            MutableTreeTableNode {
 
-        Node(Object[] d) {
-            super(d);
-            data = d;
-        }
-
-        Object[] data;
-
-        @Override
-        public void insert(MutableTreeTableNode child, int index) {
-            super.insert((MutableTreeNode) child, index);
-        }
-
-        @Override
-        public void remove(MutableTreeTableNode node) {
-            super.remove((MutableTreeNode) node);
-
-        }
-
-        @Override
-        public void setParent(MutableTreeTableNode newParent) {
-            super.setParent((MutableTreeNode) newParent);
-        }
-
-        @Override
-        public int getColumnCount() {
-            return data.length;
-        }
-
-        @Override
-        public Object getValueAt(int column) {
-            return data[column];
-        }
-
-        @Override
-        public boolean isEditable(int column) {
-            return true;
-        }
-
-        @Override
-        public void setValueAt(Object aValue, int column) {
-            data[column] = aValue;
-        }
-
-        @Override
-        public Node getParent() {
-            return (Node) super.getParent();
-        }
-
-        @Override
-        public Node getChildAt(int index) {
-            return (Node) super.getChildAt(index);
-        }
-
-    }
 
 }

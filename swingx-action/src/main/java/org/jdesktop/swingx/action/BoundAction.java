@@ -106,7 +106,6 @@ public class BoundAction extends AbstractActionExt {
 
                 // May throw a security exception in an Applet
                 // context.
-                //TODO JKD11: deprecation
                 //(https://docs.oracle.com/javase/9/docs/api/java/lang/Class.html#newInstance--)
                 Object obj = clz.getDeclaredConstructor().newInstance();
 

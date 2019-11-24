@@ -126,8 +126,8 @@ public class ActionIssues {
         //create test object
         Object testObject = new Object();
         // create queue and weak reference
-        ReferenceQueue<Object> queue = new ReferenceQueue<Object>();
-        WeakReference<Object> ref = new WeakReference<Object>(testObject, queue);
+        ReferenceQueue<Object> queue = new ReferenceQueue<>();
+        WeakReference<Object> ref = new WeakReference<>(testObject, queue);
         // set hard reference to null
         testObject = null;
 //        force garbage collection

@@ -69,7 +69,7 @@ public class DropShadowBorder implements Border, Serializable {
                     BOTTOM, BOTTOM_RIGHT, RIGHT, TOP_RIGHT}
                     
     private static final Map<Double,Map<Position,BufferedImage>> CACHE 
-            = new HashMap<Double,Map<Position,BufferedImage>>();
+            = new HashMap<>();
                         
     private Color shadowColor;
     private int shadowSize;
@@ -251,7 +251,7 @@ public class DropShadowBorder implements Border, Serializable {
         //if so, use the cache. Else, draw and save
         Map<Position,BufferedImage> images = CACHE.get(shadowSize + (shadowColor.hashCode() * .3) + (shadowOpacity * .12));//TODO do a real hash
         if (images == null) {
-            images = new HashMap<Position,BufferedImage>();
+            images = new HashMap<>();
 
             /*
              * To draw a drop shadow, I have to:

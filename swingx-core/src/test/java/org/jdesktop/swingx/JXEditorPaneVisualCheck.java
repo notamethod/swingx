@@ -64,7 +64,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
         editor.setPreferredSize(new Dimension(600, 400));
         Action[] actions = editor.getActions();
         ActionManager manager = ActionManager.getInstance();
-        List<Object> actionNames = new ArrayList<Object>();
+        List<Object> actionNames = new ArrayList<>();
         StringBuffer buffer = new StringBuffer("No. of default actions: " + actions.length);
         ActionMap map = editor.getActionMap();
         Object[] keys = map.keys();
@@ -136,7 +136,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
         editor.setPreferredSize(new Dimension(600, 400));
         Action[] actions = editor.getActions();
         ActionManager manager = ActionManager.getInstance();
-        List<Object> actionNames = new ArrayList<Object>();
+        List<Object> actionNames = new ArrayList<>();
         StringBuffer buffer = new StringBuffer("No. of default actions: " + actions.length);
         ActionMap map = editor.getActionMap();
         Object[] keys = map.keys();
@@ -175,7 +175,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
         editor.setText(testText);
         Action[] actions = editor.getActions();
         ActionManager manager = ActionManager.getInstance();
-        List<Object> actionNames = new ArrayList<Object>();
+        List<Object> actionNames = new ArrayList<>();
         StringBuffer buffer = new StringBuffer("No. of default actions: " + actions.length);
         ActionMap map = editor.getActionMap();
         Object[] keys = map.keys();
@@ -205,7 +205,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
      */
     public void interactiveXEditorActions() {
         //AbstractActionExt[] actions = new AbstractActionExt[14];
-        List<AbstractActionExt> actions = new ArrayList<AbstractActionExt>();
+        List<AbstractActionExt> actions = new ArrayList<>();
         actions.add(ActionFactory.createTargetableAction("cut-to-clipboard", "Cut", "C"));
         actions.add(ActionFactory.createTargetableAction("copy-to-clipboard", "Copy", "P"));
         actions.add(ActionFactory.createTargetableAction("paste-from-clipboard", "Paste", "T"));
@@ -230,7 +230,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
         actions.add(ActionFactory.createTargetableAction("InsertHR", "HR", "H"));
 
         ActionManager manager = ActionManager.getInstance();
-        List<Object> actionNames = new ArrayList<Object>();
+        List<Object> actionNames = new ArrayList<>();
         for (AbstractActionExt ext : actions) {
             manager.addAction(ext);
             actionNames.add(ext.getActionCommand());
@@ -268,7 +268,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
      */
     public void interactiveEditorActions() {
         //AbstractActionExt[] actions = new AbstractActionExt[14];
-        List<AbstractActionExt> actions = new ArrayList<AbstractActionExt>();
+        List<AbstractActionExt> actions = new ArrayList<>();
 //        actions.add(ActionFactory.createTargetableAction("cut-to-clipboard", "Cut", "C"));
 //        actions.add(ActionFactory.createTargetableAction("copy-to-clipboard", "Copy", "P"));
 //        actions.add(ActionFactory.createTargetableAction("paste-from-clipboard", "Paste", "T"));
@@ -296,7 +296,7 @@ public class JXEditorPaneVisualCheck extends JXEditorPaneTest {
         actions.add(ActionFactory.createTargetableAction("InsertHR", "HR", "H"));
 
         ActionManager manager = ActionManager.getInstance();
-        List<Object> actionNames = new ArrayList<Object>();
+        List<Object> actionNames = new ArrayList<>();
         for (AbstractActionExt ext : actions) {
             manager.addAction(ext);
             actionNames.add(ext.getActionCommand());

@@ -85,7 +85,7 @@ public class JXBusyLabelVisualCheck extends InteractiveTestCase {
         JXBusyLabel bl = new JXBusyLabel();
         f.add(bl);
         bl.setBusy(true);
-    	final List<JDialog> l = new ArrayList<JDialog>();
+    	final List<JDialog> l = new ArrayList<>();
     	JPanel control = new JPanel();
         JButton b = new JButton(new AbstractAction("Start") {
             public void actionPerformed(ActionEvent e) {

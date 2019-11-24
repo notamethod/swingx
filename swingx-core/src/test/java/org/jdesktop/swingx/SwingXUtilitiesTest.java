@@ -63,7 +63,6 @@ import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
-import org.mockito.Matchers;
 
 
 /**
@@ -118,7 +117,7 @@ public class SwingXUtilitiesTest extends InteractiveTestCase {
             LOG.info("cannot run test - no safe LFs to toggle");
             return;
         }
-        List<RootPaneContainer> toplevels = new ArrayList<RootPaneContainer>();
+        List<RootPaneContainer> toplevels = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             JXFrame frame = new JXFrame();
             toplevels.add(frame);

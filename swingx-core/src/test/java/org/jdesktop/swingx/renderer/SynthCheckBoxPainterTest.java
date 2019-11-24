@@ -158,13 +158,13 @@ public class SynthCheckBoxPainterTest extends JFrame
     public MyTableModel(int rows)
     {
       this.rows = rows;
-      this.data = new ArrayList<Object[]>();
+      this.data = new ArrayList<>();
       for (int i = 0; i < rows; i++)
       {
         Object[] row = new Object[this.cols];
         this.data.add(row);
         row[0] = "cell " + i + ":" + 0;
-        row[1] = new Boolean(i % 2 == 0);
+        row[1] = i % 2 == 0;
         row[2] = createIcon();
       }
       // for debugging: solid background in row with striping color

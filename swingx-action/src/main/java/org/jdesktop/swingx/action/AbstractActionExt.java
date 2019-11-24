@@ -256,7 +256,7 @@ public abstract class AbstractActionExt extends AbstractAction
      * @see Action#putValue
      */
     public void setMnemonic(int mnemonic) {
-        putValue(Action.MNEMONIC_KEY, Integer.valueOf(mnemonic));
+        putValue(Action.MNEMONIC_KEY, mnemonic);
     }
 
     /**
@@ -267,7 +267,7 @@ public abstract class AbstractActionExt extends AbstractAction
     public int getMnemonic() {
         Integer value = (Integer)getValue(Action.MNEMONIC_KEY);
         if (value != null) {
-            return value.intValue();
+            return value;
         }
         return '\0';
     }
@@ -358,7 +358,7 @@ public abstract class AbstractActionExt extends AbstractAction
     public boolean isStateAction() {
         Boolean state = (Boolean)getValue(IS_STATE);
         if (state != null) {
-            return state.booleanValue();
+            return state;
         }
         return false;
     }
@@ -376,7 +376,7 @@ public abstract class AbstractActionExt extends AbstractAction
      * @param state if true then this action will fire ItemEvents
      */
     public void setStateAction(boolean state) {
-        putValue(IS_STATE, Boolean.valueOf(state));
+        putValue(IS_STATE, state);
     }
 
     /**
@@ -389,7 +389,7 @@ public abstract class AbstractActionExt extends AbstractAction
             return false;
         }
         
-        return selected.booleanValue();
+        return selected;
     }
 
     /**

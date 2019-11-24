@@ -598,7 +598,7 @@ public class RenderingTest extends InteractiveTestCase {
      */
     @Test
     public void testResetPreferredSize() {
-        DefaultVisuals<JComponent> visuals = new DefaultVisuals<JComponent>();
+        DefaultVisuals<JComponent> visuals = new DefaultVisuals<>();
         JComponent label = new  JLabel("somevalue");
         visuals.configureVisuals(label, new TableCellContext());
         Dimension prefSize = label.getPreferredSize();
@@ -1016,7 +1016,7 @@ public class RenderingTest extends InteractiveTestCase {
      */
     @Test
     public void testResetTooltip() {
-        DefaultVisuals<JComponent> visuals = new DefaultVisuals<JComponent>();
+        DefaultVisuals<JComponent> visuals = new DefaultVisuals<>();
         JComponent label = new  JLabel("somevalue");
         label.setToolTipText("tooltip");
         visuals.configureVisuals(label, new TableCellContext());
@@ -1203,7 +1203,7 @@ public class RenderingTest extends InteractiveTestCase {
      */
     @Test
     public void testConfigureVisualsNullContext() {
-        DefaultVisuals<JLabel> controller = new DefaultVisuals<JLabel>();
+        DefaultVisuals<JLabel> controller = new DefaultVisuals<>();
         try {
             controller.configureVisuals(new JLabel(), null);
             fail("renderer controller must throw NPE on null context");
@@ -1220,7 +1220,7 @@ public class RenderingTest extends InteractiveTestCase {
      */
     @Test
     public void testConfigureVisualsNullComponent() {
-        DefaultVisuals<JLabel> controller = new DefaultVisuals<JLabel>();
+        DefaultVisuals<JLabel> controller = new DefaultVisuals<>();
         try {
             controller.configureVisuals(null, new TableCellContext());
             fail("renderer controller must throw NPE on null component");

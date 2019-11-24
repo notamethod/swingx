@@ -376,7 +376,7 @@ public class JXTreeTableVisualCheck extends JXTreeTableUnitTest {
  
         @Override
         public int getIndexOfChild(Object parent, Object child) {
-            return parent == root ? Integer.valueOf((String) child) : -1;
+            return parent == root ? Integer.parseInt((String) child) : -1;
         }
     }
 

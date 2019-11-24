@@ -9,7 +9,7 @@ package org.jdesktop.swingx.table;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.jdesktop.test.matchers.Matchers.property;
-import static org.mockito.Matchers.argThat;
+import static org.mockito.hamcrest.MockitoHamcrest.argThat;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.verify;
 

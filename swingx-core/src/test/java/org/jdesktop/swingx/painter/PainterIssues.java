@@ -78,10 +78,10 @@ public class PainterIssues extends InteractiveTestCase {
         final JXLabel foreground = new JXLabel(
                 "setup: compound - default and overlay ");
         ShapePainter shapePainter = new ShapePainter();
-        AlphaPainter<?> alpha = new AlphaPainter<Object>();
+        AlphaPainter<?> alpha = new AlphaPainter<>();
         alpha.setAlpha(0.2f);
         alpha.setPainters(shapePainter);
-        CompoundPainter<?> compound = new CompoundPainter<Object>(alpha, foreground
+        CompoundPainter<?> compound = new CompoundPainter<>(alpha, foreground
                 .getForegroundPainter());
         foreground.setForegroundPainter(compound);
         box.add(foreground);

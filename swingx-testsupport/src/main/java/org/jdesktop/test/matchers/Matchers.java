@@ -5,6 +5,8 @@ import static org.hamcrest.CoreMatchers.any;
 import java.beans.PropertyChangeEvent;
 
 import org.hamcrest.Matcher;
+import org.mockito.ArgumentMatcher;
+import static org.mockito.Mockito.*;
 
 /**
  * A collection of matchers useful for testing.
@@ -29,9 +31,9 @@ public final class Matchers {
      * @return {@code true} if the property exists and has a name that matches the specified name;
      *         {@code false} otherwise
      */
-/*    public static Matcher<PropertyChangeEvent> propertyWithName(String propertyName) {
+    public static Matcher<PropertyChangeEvent> propertyWithName(String propertyName) {
         return new PropertyChangeEventMatcher(propertyName, null, null);
-    }*/
+    }
 
     /**
      * A matcher for a specified property.
@@ -45,9 +47,9 @@ public final class Matchers {
      * @return {@code true} if the property exists and all parameters match the specified values;
      *         {@code false} otherwise
      */
-/*    public static Matcher<PropertyChangeEvent> property(String propertyName, Object oldValue, Object newValue) {
+    public static Matcher<PropertyChangeEvent> property(String propertyName, Object oldValue, Object newValue) {
         return new PropertyChangeEventMatcher(propertyName, oldValue, newValue);
-    }*/
+    }
 
     /**
      * This matcher returns {@code true} when the arguments are equivalent.
@@ -65,7 +67,7 @@ public final class Matchers {
      *            the object to test
      * @return {@code true} if the object is equivalent; {@code false} otherwise
      */
-/*    public static <T> Matcher<T> equivalentTo(T object) {
+    public static <T> Matcher<T> equivalentTo(T object) {
         return new EquivalentMatcher<T>(object);
-    }*/
+    }
 }

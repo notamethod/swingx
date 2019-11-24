@@ -1247,7 +1247,7 @@ public class JXMonthViewTest extends InteractiveTestCase {
         // guard against accidental startofday
         calendar.set(Calendar.HOUR_OF_DAY, 5);
         Date date = calendar.getTime();
-        SortedSet<Date> unselectables = new TreeSet<Date>();
+        SortedSet<Date> unselectables = new TreeSet<>();
         unselectables.add(date);
         monthView.getSelectionModel().setUnselectableDates(unselectables);
         assertTrue(monthView.getSelectionModel().isUnselectableDate(date));
@@ -2800,7 +2800,7 @@ lastRule=java.util.SimpleTimeZone[id=US/Pacific,offset=-28800000,dstSavings=3600
     public void testFlaggedDateGet() {
         JXMonthView monthView = new JXMonthView();
         Date date = new Date();
-        SortedSet<Date> set = new TreeSet<Date>();
+        SortedSet<Date> set = new TreeSet<>();
         set.add(monthView.getSelectionModel().getNormalizedDate(date));
         monthView.setFlaggedDates(date);
         assertEquals(set, monthView.getFlaggedDates());

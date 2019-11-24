@@ -101,7 +101,7 @@ public class JXTableIssues extends InteractiveTestCase {
             LOG.fine("cannot run test - headless environment");
             return;
         }
-        final List<Integer> set = new ArrayList<Integer>();
+        final List<Integer> set = new ArrayList<>();
         final JXTable table = new JXTable() {
 
             @Override
@@ -468,7 +468,7 @@ public class JXTableIssues extends InteractiveTestCase {
     
      
     private void assertSelection(TableModel tableModel, ListSelectionModel selectionModel, Object[] expected) {
-        List<Object> selected = new ArrayList<Object>();
+        List<Object> selected = new ArrayList<>();
         for(int r = 0; r < tableModel.getRowCount(); r++) {
             if(selectionModel.isSelectedIndex(r)) selected.add(tableModel.getValueAt(r, 0));
         }
@@ -498,7 +498,7 @@ public class JXTableIssues extends InteractiveTestCase {
      * A one column table model where all the data is in an Object[] array.
      */
     static class ReallySimpleTableModel extends AbstractTableModel {
-        private List<Object> contents = new ArrayList<Object>();
+        private List<Object> contents = new ArrayList<>();
         
         public void setContents(List<Object> contents) {
             this.contents.clear();
@@ -547,7 +547,7 @@ public class JXTableIssues extends InteractiveTestCase {
         };
         int filledColumn = fillLast ? columnCount - 1 : 0;
         for (int i = 0; i < model.getRowCount(); i++) {
-            model.setValueAt(new Integer(startRow++), i, filledColumn);
+            model.setValueAt(startRow++, i, filledColumn);
         }
         return model;
     }
@@ -557,7 +557,7 @@ public class JXTableIssues extends InteractiveTestCase {
     private DefaultTableModel createAscendingModel(int startRow, int count) {
         DefaultTableModel model = new DefaultTableModel(count, 5);
         for (int i = 0; i < model.getRowCount(); i++) {
-            model.setValueAt(new Integer(startRow++), i, 0);
+            model.setValueAt(startRow++, i, 0);
         }
         return model;
     }

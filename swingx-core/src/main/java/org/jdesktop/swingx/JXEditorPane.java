@@ -449,7 +449,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
         public ParagraphSelector() {
 
             // The item map is for rendering
-            itemMap = new HashMap<HTML.Tag, String>();
+            itemMap = new HashMap<>();
             itemMap.put(HTML.Tag.P, "Paragraph");
             itemMap.put(HTML.Tag.H1, "Heading 1");
             itemMap.put(HTML.Tag.H2, "Heading 2");
@@ -460,7 +460,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
             itemMap.put(HTML.Tag.PRE, "Preformatted");
 
             // The list of items
-            Vector<HTML.Tag> items = new Vector<HTML.Tag>();
+            Vector<HTML.Tag> items = new Vector<>();
             items.addElement(HTML.Tag.P);
             items.addElement(HTML.Tag.H1);
             items.addElement(HTML.Tag.H2);
@@ -679,7 +679,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
             Matcher matcher = pattern.matcher(segment.toString());
             MatchResult currentResult = getMatchResult(matcher, !backwards);
             if (currentResult != null) {
-                updateStateAfterFound(currentResult, start);
+                updateStateAfterFound(currentResult, start, matcher.pattern().pattern());
             } else {
                 updateStateAfterNotFound();
             }
@@ -721,7 +721,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
                 // better check pattern?
                 if ((currentResult.start() == 0) && 
                    (!lastMatchResult.group().equals(currentResult.group()))) {
-                    updateStateAfterFound(currentResult, start);
+                    updateStateAfterFound(currentResult, start, matcher.pattern().pattern());
                     return true;
                 } 
             }
@@ -742,16 +742,19 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
         /**
          * @param currentResult
          * @param offset
+         * @param pattern
          * @return the start position of the selected text
          */
-        private int updateStateAfterFound(MatchResult currentResult, final int offset) {
+        private int updateStateAfterFound(MatchResult currentResult, final int offset, String pattern) {
             int end = currentResult.end() + offset;
             int found = currentResult.start() + offset; 
             select(found, end);
             getCaret().setSelectionVisible(true);
             lastFoundIndex = found;
             lastMatchResult = currentResult;
-            lastRegEx = ((Matcher) lastMatchResult).pattern().pattern();
+
+            //fixme
+            lastRegEx = pattern;
             return found;
         }
 

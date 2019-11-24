@@ -39,6 +39,7 @@ public class JVM {
   public final static int JDK1_6N = 1610;
   public final static int JDK1_7 = 1700;
   public final static int JDK1_8 = 1700;
+  public final static int JDK11 = 11000;
 
   private static JVM current;
   static {
@@ -67,7 +68,15 @@ public class JVM {
    * Constructor for the OS object
    */
   public JVM(String p_JavaVersion) {
-    if (p_JavaVersion.startsWith("1.8.")) {
+    if (p_JavaVersion.startsWith("11.")) {
+      jdkVersion = JDK11;
+      for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
+        if ("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
+          throw new RuntimeException(" JDK 11 NimbusLookAndFeel alert");
+        }
+      }
+    }
+    else if (p_JavaVersion.startsWith("1.8.")) {
       jdkVersion = JDK1_8;
       for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
         if ("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {

@@ -687,7 +687,7 @@ public class JXMonthViewIssues extends InteractiveTestCase {
 
    @SuppressWarnings("unused")
    private String[] getTimeZoneIDs() {
-       List<String> zoneIds = new ArrayList<String>();
+       List<String> zoneIds = new ArrayList<>();
        for (int i = -12; i <= 12; i++) {
            String sign = i < 0 ? "-" : "+";
            zoneIds.add("GMT" + sign + i);

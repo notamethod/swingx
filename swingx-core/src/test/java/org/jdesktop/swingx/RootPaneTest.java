@@ -324,7 +324,7 @@ public class RootPaneTest extends TestCase {
 	public TestAction(String name, int mnemonic,
 			  String description) {
 	    super(name);
-	    putValue(Action.MNEMONIC_KEY, new Integer(mnemonic));
+	    putValue(Action.MNEMONIC_KEY, mnemonic);
 	    putValue(Action.LONG_DESCRIPTION, description);
 	}
 	public void actionPerformed(ActionEvent evt) {}

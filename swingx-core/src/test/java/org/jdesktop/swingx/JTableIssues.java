@@ -596,7 +596,7 @@ public class JTableIssues extends InteractiveTestCase {
           JTable table = new JTable(new AncientSwingTeam());
           PropertyChangeReport report = new PropertyChangeReport();
           table.addPropertyChangeListener(report);
-          table.setRowSorter(new TableRowSorter<TableModel>(table.getModel()));
+          table.setRowSorter(new TableRowSorter<>(table.getModel()));
           TestUtils.assertPropertyChangeEvent(report, "rowSorter", null, table.getRowSorter());
       }
       

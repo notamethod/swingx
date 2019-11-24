@@ -761,8 +761,8 @@ public class JXTreeUnitTest extends InteractiveTestCase {
     public void testInitInConstructors() {
         assertXTreeInit(new JXTree());
         assertXTreeInit(new JXTree(new Object[] {}));
-        assertXTreeInit(new JXTree(new Vector<Object>()));
-        assertXTreeInit(new JXTree(new Hashtable<Object, Object>()));
+        assertXTreeInit(new JXTree(new Vector<>()));
+        assertXTreeInit(new JXTree(new Hashtable<>()));
         assertXTreeInit(new JXTree(new DefaultMutableTreeNode("dummy"), false));
         assertXTreeInit(new JXTree(new DefaultMutableTreeNode("dummy")));
         assertXTreeInit(new JXTree(new DefaultTreeModel(new DefaultMutableTreeNode("dummy"))));

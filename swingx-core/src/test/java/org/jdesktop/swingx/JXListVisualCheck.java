@@ -54,8 +54,6 @@ import org.jdesktop.test.AncientSwingTeam;
 import org.junit.After;
 import org.junit.Before;
 
-import sun.font.CreatedFontTracker;
-
 @SuppressWarnings({ "rawtypes", "unchecked" })
 public class JXListVisualCheck extends InteractiveTestCase { //JXListTest {
     @SuppressWarnings("all")
@@ -490,7 +488,7 @@ public class JXListVisualCheck extends InteractiveTestCase { //JXListTest {
     public void interactiveTestRolloverHighlightAndLink() {
         JXList list = new JXList(createListModelWithLinks());
         EditorPaneLinkVisitor editorPaneLinkVisitor = new EditorPaneLinkVisitor();
-        LinkModelAction<?> action = new LinkModelAction<LinkModel>(editorPaneLinkVisitor);
+        LinkModelAction<?> action = new LinkModelAction<>(editorPaneLinkVisitor);
         HyperlinkProvider h = new HyperlinkProvider(action, LinkModel.class);
         list.setCellRenderer(new DefaultListRenderer(h));
         list.setRolloverEnabled(true);
@@ -509,7 +507,7 @@ public class JXListVisualCheck extends InteractiveTestCase { //JXListTest {
     protected DefaultListModel createAscendingListModel(int startRow, int count) {
         DefaultListModel l = new DefaultListModel();
         for (int row = startRow; row < startRow  + count; row++) {
-            l.addElement(new Integer(row));
+            l.addElement(row);
         }
         return l;
     }

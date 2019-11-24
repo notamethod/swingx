@@ -287,7 +287,7 @@ public class Utilities {
         str = System.getProperty("netbeans.taskbar.height"); // NOI18N
 
         if (str != null) {
-            bounds.height -= Integer.getInteger(str, 0).intValue();
+            bounds.height -= Integer.getInteger(str, 0);
 
             return bounds;
         }
@@ -333,8 +333,8 @@ public class Utilities {
             fields = new Field[0];
         }
 
-        HashMap<String,Integer> names = new HashMap<String,Integer>(((fields.length * 4) / 3) + 5, 0.75f);
-        HashMap<Integer,String> values = new HashMap<Integer,String>(((fields.length * 4) / 3) + 5, 0.75f);
+        HashMap<String,Integer> names = new HashMap<>(((fields.length * 4) / 3) + 5, 0.75f);
+        HashMap<Integer,String> values = new HashMap<>(((fields.length * 4) / 3) + 5, 0.75f);
 
         for (int i = 0; i < fields.length; i++) {
             if (Modifier.isStatic(fields[i].getModifiers())) {
@@ -347,7 +347,7 @@ public class Utilities {
 
                     try {
                         int numb = fields[i].getInt(null);
-                        Integer value = new Integer(numb);
+                        Integer value = numb;
                         names.put(name, value);
                         values.put(value, name);
                     } catch (IllegalArgumentException ex) {
@@ -359,18 +359,18 @@ public class Utilities {
 
         if (names.get("CONTEXT_MENU") == null) { // NOI18N
 
-            Integer n = new Integer(0x20C);
+            Integer n = 0x20C;
             names.put("CONTEXT_MENU", n); // NOI18N
             values.put(n, "CONTEXT_MENU"); // NOI18N
 
-            n = new Integer(0x20D);
+            n = 0x20D;
             names.put("WINDOWS", n); // NOI18N
             values.put(n, "WINDOWS"); // NOI18N
         }
 
         HashMap[] arr = { names, values };
 
-        namesAndValues = new SoftReference<Object>(arr);
+        namesAndValues = new SoftReference<>(arr);
 
         return arr;
     }
@@ -390,7 +390,7 @@ public class Utilities {
 
         HashMap[] namesAndValues = initNameAndValues();
 
-        String c = (String) namesAndValues[1].get(new Integer(stroke.getKeyCode()));
+        String c = (String) namesAndValues[1].get(stroke.getKeyCode());
 
         if (c == null) {
             sb.append(stroke.getKeyChar());
@@ -486,7 +486,7 @@ public class Utilities {
                             needed |= getMenuShortCutKeyMask();
 
                             if ((getOperatingSystem() & OS_MAC) != 0) {
-                                if (!usableKeyOnMac(i.intValue(), needed)) {
+                                if (!usableKeyOnMac(i, needed)) {
                                     needed &= ~getMenuShortCutKeyMask();
                                     needed |= KeyEvent.CTRL_MASK;
                                 }
@@ -501,7 +501,7 @@ public class Utilities {
                             }
                         }
 
-                        return KeyStroke.getKeyStroke(i.intValue(), needed);
+                        return KeyStroke.getKeyStroke(i, needed);
                     } else {
                         return null;
                     }
@@ -550,7 +550,7 @@ public class Utilities {
     */
     public static KeyStroke[] stringToKeys(String s) {
         StringTokenizer st = new StringTokenizer(s.toUpperCase(Locale.ENGLISH), " "); // NOI18N
-        ArrayList<KeyStroke> arr = new ArrayList<KeyStroke>();
+        ArrayList<KeyStroke> arr = new ArrayList<>();
 
         while (st.hasMoreElements()) {
             s = st.nextToken();
@@ -664,7 +664,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Integer) array[i]).intValue();
+                r[i] = (array[i] == null) ? 0 : (Integer) array[i];
 
             return r;
         }
@@ -675,7 +675,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] != null) && ((Boolean) array[i]).booleanValue();
+                r[i] = (array[i] != null) && (Boolean) array[i];
 
             return r;
         }
@@ -686,7 +686,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Byte) array[i]).byteValue();
+                r[i] = (array[i] == null) ? 0 : (Byte) array[i];
 
             return r;
         }
@@ -697,7 +697,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Character) array[i]).charValue();
+                r[i] = (array[i] == null) ? 0 : (Character) array[i];
 
             return r;
         }
@@ -708,7 +708,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Double) array[i]).doubleValue();
+                r[i] = (array[i] == null) ? 0 : (Double) array[i];
 
             return r;
         }
@@ -719,7 +719,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Float) array[i]).floatValue();
+                r[i] = (array[i] == null) ? 0 : (Float) array[i];
 
             return r;
         }
@@ -730,7 +730,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Long) array[i]).longValue();
+                r[i] = (array[i] == null) ? 0 : (Long) array[i];
 
             return r;
         }
@@ -741,7 +741,7 @@ public class Utilities {
             int k = array.length;
 
             for (i = 0; i < k; i++)
-                r[i] = (array[i] == null) ? 0 : ((Short) array[i]).shortValue();
+                r[i] = (array[i] == null) ? 0 : (Short) array[i];
 
             return r;
         }
@@ -767,7 +767,7 @@ public class Utilities {
             Integer[] r = new Integer[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Integer(((int[]) array)[i]);
+                r[i] = ((int[]) array)[i];
 
             return r;
         }
@@ -789,7 +789,7 @@ public class Utilities {
             Byte[] r = new Byte[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Byte(((byte[]) array)[i]);
+                r[i] = ((byte[]) array)[i];
 
             return r;
         }
@@ -800,7 +800,7 @@ public class Utilities {
             Character[] r = new Character[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Character(((char[]) array)[i]);
+                r[i] = ((char[]) array)[i];
 
             return r;
         }
@@ -811,7 +811,7 @@ public class Utilities {
             Double[] r = new Double[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Double(((double[]) array)[i]);
+                r[i] = ((double[]) array)[i];
 
             return r;
         }
@@ -822,7 +822,7 @@ public class Utilities {
             Float[] r = new Float[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Float(((float[]) array)[i]);
+                r[i] = ((float[]) array)[i];
 
             return r;
         }
@@ -833,7 +833,7 @@ public class Utilities {
             Long[] r = new Long[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Long(((long[]) array)[i]);
+                r[i] = ((long[]) array)[i];
 
             return r;
         }
@@ -844,7 +844,7 @@ public class Utilities {
             Short[] r = new Short[k];
 
             for (i = 0; i < k; i++)
-                r[i] = new Short(((short[]) array)[i]);
+                r[i] = ((short[]) array)[i];
 
             return r;
         }
@@ -906,7 +906,7 @@ widthcheck:  {
             return workingSet;
         }
 
-        java.util.ArrayList<String> lines = new java.util.ArrayList<String>();
+        java.util.ArrayList<String> lines = new java.util.ArrayList<>();
 
         int lineStart = 0; // the position of start of currently processed line in the original string
 

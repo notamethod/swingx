@@ -132,7 +132,7 @@ public class SelectionIssues extends InteractiveTestCase {
         // add hoc model
         SortedSet<Date> dates = getDates();
         
-        final JXList us = new JXList(new ListComboBoxModel<Date>(new ArrayList<Date>(dates)));
+        final JXList us = new JXList(new ListComboBoxModel<>(new ArrayList<>(dates)));
         us.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
         JXFrame frame = wrapWithScrollingInFrame(us, "list - autoscroll on selection");
         Action next = new AbstractActionExt("select last + 1") {

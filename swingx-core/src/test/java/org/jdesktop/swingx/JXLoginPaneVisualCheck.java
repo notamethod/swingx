@@ -304,7 +304,7 @@ public class JXLoginPaneVisualCheck extends InteractiveTestCase {
         // PENDING JW: removed while fixing #1186-swingx (no dependency on sun packages)
         // revisit: why do we do this at all? If really needed replace
 //        sun.awt.AppContext.getAppContext().put("JComponent.defaultLocale", Locale.FRANCE);
-        Map<String, char[]> aMap = new HashMap<String, char[]>();
+        Map<String, char[]> aMap = new HashMap<>();
         aMap.put("asdf", "asdf".toCharArray());
         JXLoginPane panel = new JXLoginPane(new SimpleLoginService(aMap));
         panel.setSaveMode(JXLoginPane.SaveMode.BOTH);

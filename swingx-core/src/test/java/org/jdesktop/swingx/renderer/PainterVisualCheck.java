@@ -138,7 +138,7 @@ public class PainterVisualCheck extends InteractiveTestCase {
         TableModel model = new AncientSwingTeam();
         JXTable table = new JXTable(model);
         MattePainter matte = new MattePainter(getTransparentColor(Color.RED, 80));
-        RelativePainter<?> painter = new RelativePainter<Object>(matte);
+        RelativePainter<?> painter = new RelativePainter<>(matte);
         painter.setYFactor(0.2);
         painter.setVerticalAlignment(VerticalAlignment.BOTTOM);
         Highlighter hl = new PainterHighlighter(HighlightPredicate.ROLLOVER_ROW, painter);
@@ -175,7 +175,7 @@ public class PainterVisualCheck extends InteractiveTestCase {
         TableModel model = new AncientSwingTeam();
         JXTable table = new JXTable(model);
         MattePainter p =  new MattePainter(getTransparentColor(Color.BLUE, 125));
-        RelativePainter<?> relativePainter = new RelativePainter<Object>(p);
+        RelativePainter<?> relativePainter = new RelativePainter<>(p);
         relativePainter.setXFactor(.5);
         Highlighter hl = new PainterHighlighter(createComponentTextBasedPredicate("y"), 
                 relativePainter);
@@ -256,7 +256,7 @@ public class PainterVisualCheck extends InteractiveTestCase {
         painter.setPaintStretched(true);
         // not entirely successful - the relative stretching is on
         // top of a .5 stretched gradient in matte
-        RelativePainter<?> wrapper = new RelativePainter<Object>(painter);
+        RelativePainter<?> wrapper = new RelativePainter<>(painter);
         wrapper.setXFactor(end);
         return wrapper;
     }
@@ -653,7 +653,7 @@ public class PainterVisualCheck extends InteractiveTestCase {
      * @param table
      */
     private void configureList(final JXList list, final JXTable table, boolean useRollover) {
-        final List<Action> actions = new ArrayList<Action>();
+        final List<Action> actions = new ArrayList<>();
         @SuppressWarnings("all")
         ColumnControlButton columnControl = new ColumnControlButton(table) {
 

@@ -182,7 +182,7 @@ public class StringValueProviderTest extends InteractiveTestCase {
      */
     private void initColumnClasses(StringValueRegistry registry,
             TableModel model) {
-        Map<Integer, Class<?>> classPerColumn = new HashMap<Integer, Class<?>>();
+        Map<Integer, Class<?>> classPerColumn = new HashMap<>();
         for (int i = 0; i < model.getColumnCount(); i++) {
             if (!Object.class.equals(model.getColumnClass(i))) {
                 classPerColumn.put(i, model.getColumnClass(i));
@@ -197,7 +197,7 @@ public class StringValueProviderTest extends InteractiveTestCase {
      */
     private void installPerClass(StringValueRegistry registry,
             Class<?>... clazz ) {
-        Map<Integer, Class<?>> classPerColumn = new HashMap<Integer, Class<?>>();
+        Map<Integer, Class<?>> classPerColumn = new HashMap<>();
         for (int i = 0; i < clazz.length; i++) {
             classPerColumn.put(i, clazz[i]);
         }

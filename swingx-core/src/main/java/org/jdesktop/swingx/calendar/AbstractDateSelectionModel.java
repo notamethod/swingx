@@ -41,7 +41,7 @@ import org.jdesktop.swingx.event.DateSelectionEvent.EventType;
  * @author Jeanette Winzenburg
  */
 public abstract class AbstractDateSelectionModel implements DateSelectionModel {
-    public static final SortedSet<Date> EMPTY_DATES = Collections.unmodifiableSortedSet(new TreeSet<Date>());
+    public static final SortedSet<Date> EMPTY_DATES = Collections.unmodifiableSortedSet(new TreeSet<>());
     
     protected EventListenerMap listenerMap;
     protected boolean adjusting;

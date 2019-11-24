@@ -99,7 +99,7 @@ public class TargetableActionTest extends TestCase {
         manager.addAction(createTargetableAction("right-justify", "Right", "R", true,
                                                  "position-group"));
 
-        List<String> list = new ArrayList<String>();
+        List<String> list = new ArrayList<>();
         list.add("cut-to-clipboard");
         list.add("copy-to-clipboard");
         list.add("paste-from-clipboard");
@@ -181,7 +181,7 @@ public class TargetableActionTest extends TestCase {
         TableModel dataModel = new AbstractTableModel() {
                 public int getColumnCount() { return 4; }
                 public int getRowCount() { return 4;}
-                public Object getValueAt(int row, int col) { return new Integer(row*col); }
+                public Object getValueAt(int row, int col) { return row * col; }
                 @Override
                 public boolean isCellEditable(int row, int col) { return true; }
             };

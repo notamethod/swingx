@@ -78,7 +78,7 @@ public class DefaultTreeTableModelUnitTest extends TestCase {
     protected void setUp() throws Exception {
         super.setUp();
         
-        Vector<String> names = new Vector<String>();
+        Vector<String> names = new Vector<>();
         names.add("A");
         
         model = new DefaultTreeTableModel(createTree(), names);

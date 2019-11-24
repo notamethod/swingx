@@ -504,7 +504,7 @@ public class JXListTest extends InteractiveTestCase {
         list.setSortable(false);
         Collator comparator = Collator.getInstance();
         list.setComparator(comparator);
-        ListSortController<?> controller = new ListSortController<ListModel>(list.getModel());
+        ListSortController<?> controller = new ListSortController<>(list.getModel());
         list.setRowSorter(controller);
         assertEquals("sortable propagated", false, controller.isSortable(0));
         assertSame("comparator propagated", comparator, controller.getComparator(0));
@@ -573,17 +573,17 @@ public class JXListTest extends InteractiveTestCase {
     public void testConstructorAutoCreateSorter() {
         assertAutoCreateRowSorter(new JXList(), false);
         assertAutoCreateRowSorter(new JXList(new DefaultListModel()), false);
-        assertAutoCreateRowSorter(new JXList(new Vector<Object>()), false);
+        assertAutoCreateRowSorter(new JXList(new Vector<>()), false);
         assertAutoCreateRowSorter(new JXList(new Object[] { }), false);
         
         assertAutoCreateRowSorter(new JXList(false), false);
         assertAutoCreateRowSorter(new JXList(new DefaultListModel(), false), false);
-        assertAutoCreateRowSorter(new JXList(new Vector<Object>(), false), false);
+        assertAutoCreateRowSorter(new JXList(new Vector<>(), false), false);
         assertAutoCreateRowSorter(new JXList(new Object[] { }, false), false);
 
         assertAutoCreateRowSorter(new JXList(true), true);
         assertAutoCreateRowSorter(new JXList(new DefaultListModel(), true), true);
-        assertAutoCreateRowSorter(new JXList(new Vector<Object>(), true), true);
+        assertAutoCreateRowSorter(new JXList(new Vector<>(), true), true);
         assertAutoCreateRowSorter(new JXList(new Object[] { }, true), true);
     }
     
@@ -595,7 +595,7 @@ public class JXListTest extends InteractiveTestCase {
     @Test
     public void testRowSorterSet() {
         assertNull(list.getRowSorter());
-        ListSortController<ListModel> controller = new ListSortController<ListModel>(list.getModel());
+        ListSortController<ListModel> controller = new ListSortController<>(list.getModel());
         PropertyChangeReport report = new PropertyChangeReport(list);
         list.setRowSorter(controller);
         TestUtils.assertPropertyChangeEvent(report, list, "rowSorter", null, controller);
@@ -936,7 +936,7 @@ public class JXListTest extends InteractiveTestCase {
     protected DefaultListModel createAscendingListModel(int startRow, int count) {
         DefaultListModel l = new DefaultListModel();
         for (int row = startRow; row < startRow  + count; row++) {
-            l.addElement(new Integer(row));
+            l.addElement(row);
         }
         return l;
     }

@@ -26,8 +26,8 @@ public class ListSelectionReport implements ListSelectionListener {
     /**
      * Holds a list of all received PropertyChangeEvents.
      */
-    protected List<ListSelectionEvent> events = Collections.synchronizedList(new LinkedList<ListSelectionEvent>());
-    protected List<ListSelectionEvent> notAdjustingEvents = Collections.synchronizedList(new LinkedList<ListSelectionEvent>());
+    protected List<ListSelectionEvent> events = Collections.synchronizedList(new LinkedList<>());
+    protected List<ListSelectionEvent> notAdjustingEvents = Collections.synchronizedList(new LinkedList<>());
     
 //------------------------ implement ListSelectionListener
     

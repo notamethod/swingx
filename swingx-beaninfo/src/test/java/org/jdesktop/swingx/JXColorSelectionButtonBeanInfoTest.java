@@ -19,4 +19,10 @@ public class JXColorSelectionButtonBeanInfoTest extends AbstractBeanInfoTest<JXC
     public void testSerialization() {
         super.testSerialization();
     }
+
+    @Test
+    @Override
+    @Ignore("JDK11: ClassCastException between mockito object and Integer, see readme")
+    public void testBoundProperties() throws Exception { super.testBoundProperties(); }
+
 }

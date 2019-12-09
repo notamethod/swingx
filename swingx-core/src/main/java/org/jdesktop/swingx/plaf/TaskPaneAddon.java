@@ -33,8 +33,12 @@ import javax.swing.plaf.metal.MetalLookAndFeel;
 import javax.swing.plaf.metal.OceanTheme;
 
 import org.jdesktop.swingx.JXTaskPane;
-import org.jdesktop.swingx.plaf.windows.WindowsClassicLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.windows.WindowsLookAndFeelAddons;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
+import org.jdesktop.swingx.ext.windows.WindowsClassicLookAndFeelAddons;
+import org.jdesktop.swingx.ext.windows.WindowsLookAndFeelAddons;
 import org.jdesktop.swingx.util.OS;
 
 /**
@@ -190,7 +194,7 @@ public class TaskPaneAddon extends AbstractComponentAddon {
   
     @Override
     protected void addNimbusDefaults(LookAndFeelAddons addon,
-            DefaultsList defaults) {
+                                     DefaultsList defaults) {
         super.addNimbusDefaults(addon, defaults);
 
         defaults.add(JXTaskPane.uiClassID,

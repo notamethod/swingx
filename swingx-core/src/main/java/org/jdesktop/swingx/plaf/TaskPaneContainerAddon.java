@@ -30,9 +30,10 @@ import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
 import org.jdesktop.swingx.JXTaskPaneContainer;
+import org.jdesktop.swingx.ext.*;
 import org.jdesktop.swingx.painter.MattePainter;
-import org.jdesktop.swingx.plaf.windows.WindowsClassicLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.windows.WindowsLookAndFeelAddons;
+import org.jdesktop.swingx.ext.windows.WindowsClassicLookAndFeelAddons;
+import org.jdesktop.swingx.ext.windows.WindowsLookAndFeelAddons;
 import org.jdesktop.swingx.util.OS;
 
 /**

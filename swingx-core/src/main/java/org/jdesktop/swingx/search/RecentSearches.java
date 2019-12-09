@@ -17,7 +17,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.jdesktop.swingx.JXSearchField;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  * Maintains a list of recent searches and persists this list automatically

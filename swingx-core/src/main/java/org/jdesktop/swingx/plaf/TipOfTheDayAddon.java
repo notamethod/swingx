@@ -30,6 +30,10 @@ import javax.swing.plaf.ColorUIResource;
 import javax.swing.plaf.FontUIResource;
 
 import org.jdesktop.swingx.JXTipOfTheDay;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.plaf.basic.BasicTipOfTheDayUI;
 import org.jdesktop.swingx.plaf.windows.WindowsTipOfTheDayUI;
 

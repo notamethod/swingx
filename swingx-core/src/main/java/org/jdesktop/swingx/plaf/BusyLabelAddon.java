@@ -27,6 +27,7 @@ import java.awt.geom.RoundRectangle2D;
 import javax.swing.plaf.ColorUIResource;
 
 import org.jdesktop.swingx.JXBusyLabel;
+import org.jdesktop.swingx.ext.*;
 
 /**
  * Addon for <code>JXBusyLabel</code>.<br>

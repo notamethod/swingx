@@ -30,7 +30,7 @@ import javax.swing.Icon;
 import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.plaf.HeaderAddon;
 import org.jdesktop.swingx.plaf.HeaderUI;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  * <p><code>JXHeader is a simple component consisting of a title, a description,

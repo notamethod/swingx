@@ -51,8 +51,9 @@ import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.decorator.ComponentAdapter;
 import org.jdesktop.swingx.decorator.CompoundHighlighter;
 import org.jdesktop.swingx.decorator.Highlighter;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
-import org.jdesktop.swingx.plaf.UIAction;
+import org.jdesktop.swingx.ext.UIDependent;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIAction;
 import org.jdesktop.swingx.plaf.XListAddon;
 import org.jdesktop.swingx.plaf.basic.core.BasicXListUI;
 import org.jdesktop.swingx.renderer.AbstractRenderer;
@@ -1649,7 +1650,7 @@ public class JXList extends JList {
     /**
      * Updates highlighter after <code>updateUI</code> changes.
      * 
-     * @see org.jdesktop.swingx.plaf.UIDependent
+     * @see UIDependent
      */
     protected void updateHighlighterUI() {
         if (compoundHighlighter == null) return;

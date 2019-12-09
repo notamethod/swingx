@@ -54,7 +54,7 @@ import org.jdesktop.swingx.JXTable;
 import org.jdesktop.swingx.action.AbstractActionExt;
 import org.jdesktop.swingx.action.ActionContainerFactory;
 import org.jdesktop.swingx.plaf.ColumnControlButtonAddon;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.table.ColumnControlPopup.ActionGrouper;
 import org.jdesktop.swingx.table.ColumnControlPopup.ActionGroupable;
 

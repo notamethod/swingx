@@ -25,7 +25,7 @@ import java.awt.Color;
 import javax.swing.JTable;
 import javax.swing.UIManager;
 
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  * Table specific <code>CellContext</code>.

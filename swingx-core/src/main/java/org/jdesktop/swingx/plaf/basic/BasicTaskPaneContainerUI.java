@@ -29,7 +29,7 @@ import javax.swing.plaf.UIResource;
 
 import org.jdesktop.swingx.JXTaskPaneContainer;
 import org.jdesktop.swingx.VerticalLayout;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TaskPaneContainerUI;
 
 /**

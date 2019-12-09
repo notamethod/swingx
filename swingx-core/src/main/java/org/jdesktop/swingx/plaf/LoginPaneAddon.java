@@ -33,6 +33,10 @@ import javax.swing.plaf.FontUIResource;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
 import org.jdesktop.swingx.JXLoginPane;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  *

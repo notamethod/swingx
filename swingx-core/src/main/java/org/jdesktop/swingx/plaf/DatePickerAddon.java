@@ -27,6 +27,10 @@ import javax.swing.border.LineBorder;
 import javax.swing.plaf.BorderUIResource;
 
 import org.jdesktop.swingx.JXDatePicker;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.plaf.basic.BasicDatePickerUI;
 import org.jdesktop.swingx.util.OS;
 

@@ -39,8 +39,8 @@ import javax.swing.plaf.basic.BasicOptionPaneUI;
 
 import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.action.BoundAction;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  * First cut for enhanced Dialog. The idea is to have a pluggable content

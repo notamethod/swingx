@@ -34,7 +34,7 @@ import javax.swing.JPanel;
 import javax.swing.UIManager;
 
 import org.jdesktop.beans.JavaBean;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TaskPaneAddon;
 import org.jdesktop.swingx.plaf.TaskPaneUI;
 

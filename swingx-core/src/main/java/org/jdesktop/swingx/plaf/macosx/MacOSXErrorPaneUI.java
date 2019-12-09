@@ -42,7 +42,7 @@ import org.jdesktop.swingx.JXEditorPane;
 import org.jdesktop.swingx.action.AbstractActionExt;
 import org.jdesktop.swingx.error.ErrorInfo;
 import org.jdesktop.swingx.error.ErrorLevel;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.plaf.basic.BasicErrorPaneUI;
 
 /**

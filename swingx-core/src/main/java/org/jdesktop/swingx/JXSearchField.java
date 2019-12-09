@@ -18,9 +18,9 @@ import javax.swing.text.Document;
 
 import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.plaf.SearchFieldAddon;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TextUIWrapper;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.prompt.BuddyButton;
 import org.jdesktop.swingx.search.NativeSearchFieldSupport;
 import org.jdesktop.swingx.search.RecentSearches;

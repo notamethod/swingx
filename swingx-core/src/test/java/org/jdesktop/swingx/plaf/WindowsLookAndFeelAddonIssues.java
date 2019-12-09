@@ -31,6 +31,7 @@ import javax.swing.UnsupportedLookAndFeelException;
 
 import org.jdesktop.swingx.InteractiveTestCase;
 import org.jdesktop.swingx.JXTable;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.util.OS;
 import org.junit.Test;
 import org.junit.runner.RunWith;

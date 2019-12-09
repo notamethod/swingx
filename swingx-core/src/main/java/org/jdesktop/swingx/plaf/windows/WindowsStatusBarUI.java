@@ -32,7 +32,7 @@ import javax.swing.JComponent;
 import javax.swing.plaf.ComponentUI;
 
 import org.jdesktop.swingx.JXStatusBar;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.plaf.basic.BasicStatusBarUI;
 
 /**

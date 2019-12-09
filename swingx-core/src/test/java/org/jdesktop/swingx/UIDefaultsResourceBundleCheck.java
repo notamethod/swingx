@@ -6,7 +6,7 @@ package org.jdesktop.swingx;
 
 import java.util.Locale;
 
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.resources.swingx;
 
 /**

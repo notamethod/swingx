@@ -41,7 +41,7 @@ import org.jdesktop.swingx.multislider.ThumbDataListener;
 import org.jdesktop.swingx.multislider.ThumbListener;
 import org.jdesktop.swingx.multislider.ThumbRenderer;
 import org.jdesktop.swingx.multislider.TrackRenderer;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.MultiThumbSliderAddon;
 import org.jdesktop.swingx.plaf.MultiThumbSliderUI;
 

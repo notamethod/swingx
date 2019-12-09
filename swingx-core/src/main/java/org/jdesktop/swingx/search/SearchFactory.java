@@ -49,8 +49,8 @@ import org.jdesktop.swingx.JXFindBar;
 import org.jdesktop.swingx.JXFindPanel;
 import org.jdesktop.swingx.JXFrame;
 import org.jdesktop.swingx.JXRootPane;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
-import org.jdesktop.swingx.plaf.UIDependent;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIDependent;
 import org.jdesktop.swingx.util.Utilities;
 
 /**

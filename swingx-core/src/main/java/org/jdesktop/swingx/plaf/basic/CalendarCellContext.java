@@ -31,7 +31,7 @@ import javax.swing.border.Border;
 
 import org.jdesktop.swingx.JXMonthView;
 import org.jdesktop.swingx.border.IconBorder;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.renderer.CellContext;
 
 /**

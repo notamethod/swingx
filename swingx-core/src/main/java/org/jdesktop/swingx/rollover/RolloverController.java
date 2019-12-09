@@ -30,7 +30,7 @@ import javax.swing.Action;
 import javax.swing.JComponent;
 import javax.swing.KeyStroke;
 
-import org.jdesktop.swingx.plaf.UIAction;
+import org.jdesktop.swingx.ext.UIAction;
 
 /**
  * Controller for "live" behaviour of XXRenderers.

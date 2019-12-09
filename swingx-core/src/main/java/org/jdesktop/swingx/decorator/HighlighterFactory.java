@@ -27,9 +27,9 @@ import javax.swing.UIManager;
 
 import org.jdesktop.swingx.decorator.HighlightPredicate.NotHighlightPredicate;
 import org.jdesktop.swingx.decorator.HighlightPredicate.RowGroupHighlightPredicate;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.UIColorHighlighterAddon;
-import org.jdesktop.swingx.plaf.UIDependent;
+import org.jdesktop.swingx.ext.UIDependent;
 import org.jdesktop.swingx.util.PaintUtils;
 
 /**

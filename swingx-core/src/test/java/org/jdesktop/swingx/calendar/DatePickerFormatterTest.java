@@ -34,7 +34,7 @@ import junit.framework.TestCase;
 
 import org.jdesktop.swingx.JXDatePicker;
 import org.jdesktop.swingx.calendar.DatePickerFormatter.DatePickerFormatterUIResource;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

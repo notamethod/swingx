@@ -26,6 +26,9 @@ import javax.swing.border.Border;
 import javax.swing.plaf.UIResource;
 
 import org.jdesktop.swingx.JXList;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  * Addon for <code>JXList</code>.
@@ -51,7 +54,7 @@ public class XListAddon extends AbstractComponentAddon {
 
     @Override
     protected void addNimbusDefaults(LookAndFeelAddons addon,
-            DefaultsList defaults) {
+                                     DefaultsList defaults) {
         defaults.add(JXList.uiClassID,
                 "org.jdesktop.swingx.plaf.synth.SynthXListUI");
     }

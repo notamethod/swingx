@@ -44,7 +44,7 @@ import javax.swing.event.ChangeEvent;
 import javax.swing.event.ChangeListener;
 
 import org.jdesktop.swingx.color.EyeDropperColorChooserPanel;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.util.GraphicsUtilities;
 import org.jdesktop.swingx.util.OS;
 import org.jdesktop.swingx.util.PaintUtils;

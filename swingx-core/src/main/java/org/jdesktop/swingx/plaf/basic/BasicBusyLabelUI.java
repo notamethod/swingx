@@ -31,7 +31,7 @@ import javax.swing.plaf.basic.BasicLabelUI;
 import org.jdesktop.swingx.JXBusyLabel;
 import org.jdesktop.swingx.painter.BusyPainter;
 import org.jdesktop.swingx.plaf.BusyLabelUI;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  * Base implementation of the <code>JXBusyLabel</code> UI.

@@ -64,8 +64,8 @@ import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.decorator.ComponentAdapter;
 import org.jdesktop.swingx.decorator.CompoundHighlighter;
 import org.jdesktop.swingx.decorator.Highlighter;
-import org.jdesktop.swingx.plaf.UIAction;
-import org.jdesktop.swingx.plaf.UIDependent;
+import org.jdesktop.swingx.ext.UIDependent;
+import org.jdesktop.swingx.ext.UIAction;
 import org.jdesktop.swingx.renderer.StringValue;
 import org.jdesktop.swingx.renderer.StringValues;
 import org.jdesktop.swingx.rollover.RolloverProducer;
@@ -756,7 +756,7 @@ public class JXTree extends JTree {
     /**
      * Updates highlighter after <code>updateUI</code> changes.
      * 
-     * @see org.jdesktop.swingx.plaf.UIDependent
+     * @see UIDependent
      */
     protected void updateHighlighterUI() {
         if (compoundHighlighter == null) return;

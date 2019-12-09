@@ -29,7 +29,7 @@ import org.jdesktop.swingx.JXSearchField.FindAction;
 import org.jdesktop.swingx.JXSearchField.LayoutStyle;
 import org.jdesktop.swingx.JXSearchField.SearchMode;
 import org.jdesktop.swingx.plaf.SearchFieldUI;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.search.NativeSearchFieldSupport;
 import org.jdesktop.swingx.search.RecentSearches;
 import org.jdesktop.swingx.search.RecentSearches.RecentSearchesPopup;

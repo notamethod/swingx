@@ -12,6 +12,7 @@ import javax.swing.plaf.basic.BasicTextUI;
 import javax.swing.text.JTextComponent;
 
 import org.jdesktop.swingx.JXSearchField;
+import org.jdesktop.swingx.ext.AbstractUIChangeHandler;
 import org.jdesktop.swingx.prompt.BuddySupport;
 
 /**

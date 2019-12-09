@@ -73,7 +73,7 @@ import javax.swing.tree.TreeSelectionModel;
 import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.decorator.ComponentAdapter;
 import org.jdesktop.swingx.event.TreeExpansionBroadcaster;
-import org.jdesktop.swingx.plaf.UIAction;
+import org.jdesktop.swingx.ext.UIAction;
 import org.jdesktop.swingx.renderer.StringValue;
 import org.jdesktop.swingx.renderer.StringValues;
 import org.jdesktop.swingx.rollover.RolloverProducer;

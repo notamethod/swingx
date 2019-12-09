@@ -70,8 +70,8 @@ import javax.swing.text.Position;
 
 import org.jdesktop.swingx.JXList;
 import org.jdesktop.swingx.SwingXUtilities;
-import org.jdesktop.swingx.plaf.LookAndFeelUtils;
-import org.jdesktop.swingx.plaf.UIAction;
+import org.jdesktop.swingx.ext.LookAndFeelUtils;
+import org.jdesktop.swingx.ext.UIAction;
 import org.jdesktop.swingx.plaf.basic.core.DragRecognitionSupport.BeforeDrag;
 
 //import sun.swing.DefaultLookup;

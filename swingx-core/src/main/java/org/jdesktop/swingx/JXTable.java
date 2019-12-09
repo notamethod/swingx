@@ -98,12 +98,12 @@ import org.jdesktop.swingx.decorator.CompoundHighlighter;
 import org.jdesktop.swingx.decorator.Highlighter;
 import org.jdesktop.swingx.decorator.ResetDTCRColorHighlighter;
 import org.jdesktop.swingx.event.TableColumnModelExtListener;
+import org.jdesktop.swingx.ext.UIDependent;
 import org.jdesktop.swingx.hyperlink.HyperlinkAction;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TableAddon;
-import org.jdesktop.swingx.plaf.UIAction;
-import org.jdesktop.swingx.plaf.UIDependent;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIAction;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.renderer.AbstractRenderer;
 import org.jdesktop.swingx.renderer.CheckBoxProvider;
 import org.jdesktop.swingx.renderer.DefaultTableRenderer;
@@ -4390,7 +4390,7 @@ public class JXTable extends JTable implements TableColumnModelExtListener {
     /**
      * Updates highlighter after <code>updateUI</code> changes.
      * 
-     * @see org.jdesktop.swingx.plaf.UIDependent
+     * @see UIDependent
      */
     protected void updateHighlighterUI() {
         if (compoundHighlighter == null)

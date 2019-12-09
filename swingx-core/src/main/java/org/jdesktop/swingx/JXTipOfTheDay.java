@@ -27,7 +27,7 @@ import java.util.prefs.Preferences;
 import javax.swing.JDialog;
 
 import org.jdesktop.beans.JavaBean;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TipOfTheDayAddon;
 import org.jdesktop.swingx.plaf.TipOfTheDayUI;
 import org.jdesktop.swingx.tips.DefaultTipOfTheDayModel;

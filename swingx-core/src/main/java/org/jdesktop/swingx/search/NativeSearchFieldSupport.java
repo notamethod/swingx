@@ -7,7 +7,7 @@ import javax.swing.JPopupMenu;
 import javax.swing.JTextField;
 import javax.swing.UIManager;
 
-import org.jdesktop.swingx.plaf.AbstractUIChangeHandler;
+import org.jdesktop.swingx.ext.AbstractUIChangeHandler;
 import org.jdesktop.swingx.util.OS;
 
 /**

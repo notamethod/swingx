@@ -22,6 +22,10 @@
 package org.jdesktop.swingx.plaf;
 
 import org.jdesktop.swingx.JXErrorPane;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  *

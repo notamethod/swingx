@@ -27,7 +27,7 @@ import javax.swing.Action;
 import javax.swing.JComponent;
 
 import org.jdesktop.swingx.action.AbstractActionExt;
-import org.jdesktop.swingx.plaf.UIDependent;
+import org.jdesktop.swingx.ext.UIDependent;
 
 /**
  * Encapsulates the popup component which is the delegate for

@@ -51,8 +51,8 @@ import org.jdesktop.swingx.JXLabel.MultiLineSupport;
 import org.jdesktop.swingx.painter.MattePainter;
 import org.jdesktop.swingx.painter.Painter;
 import org.jdesktop.swingx.plaf.HeaderUI;
-import org.jdesktop.swingx.plaf.PainterUIResource;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.PainterUIResource;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
  * Base implementation of <code>Header</code> UI. <p>

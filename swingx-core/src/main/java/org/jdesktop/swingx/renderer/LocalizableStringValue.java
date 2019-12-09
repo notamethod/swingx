@@ -3,7 +3,7 @@ package org.jdesktop.swingx.renderer;
 import java.util.Locale;
 import java.util.Map;
 
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.util.Contract;
 
 /**

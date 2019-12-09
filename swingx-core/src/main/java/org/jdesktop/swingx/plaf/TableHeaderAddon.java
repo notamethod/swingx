@@ -21,6 +21,10 @@
  */
 package org.jdesktop.swingx.plaf;
 
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+
 import javax.swing.BorderFactory;
 import javax.swing.UIManager;
 import javax.swing.border.Border;
@@ -45,7 +49,7 @@ public class TableHeaderAddon extends AbstractComponentAddon {
 
     @Override
     protected void addMetalDefaults(LookAndFeelAddons addon,
-            DefaultsList defaults) {
+                                    DefaultsList defaults) {
         super.addMetalDefaults(addon, defaults);
         String key = "TableHeader.cellBorder";
         Border border = UIManager.getBorder(key);

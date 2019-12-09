@@ -21,6 +21,9 @@
 package org.jdesktop.swingx.plaf;
 
 import org.jdesktop.swingx.JXMultiThumbSlider;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  *

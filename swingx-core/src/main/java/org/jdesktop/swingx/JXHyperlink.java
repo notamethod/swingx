@@ -36,7 +36,7 @@ import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.hyperlink.AbstractHyperlinkAction;
 import org.jdesktop.swingx.hyperlink.HyperlinkAction;
 import org.jdesktop.swingx.plaf.HyperlinkAddon;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  * A hyperlink component that derives from JButton to provide compatibility

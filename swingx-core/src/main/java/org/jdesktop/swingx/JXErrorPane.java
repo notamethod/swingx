@@ -35,7 +35,7 @@ import org.jdesktop.swingx.error.ErrorInfo;
 import org.jdesktop.swingx.error.ErrorReporter;
 import org.jdesktop.swingx.plaf.ErrorPaneAddon;
 import org.jdesktop.swingx.plaf.ErrorPaneUI;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  * <p>JXErrorPane is a common error component suitable for displaying errors,

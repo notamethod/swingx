@@ -27,7 +27,7 @@ import java.awt.Insets;
 import javax.swing.JComponent;
 
 import org.jdesktop.beans.JavaBean;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.StatusBarAddon;
 import org.jdesktop.swingx.plaf.StatusBarUI;
 

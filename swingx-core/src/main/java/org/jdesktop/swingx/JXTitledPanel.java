@@ -31,7 +31,7 @@ import javax.swing.JComponent;
 
 import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.painter.Painter;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TitledPanelAddon;
 import org.jdesktop.swingx.plaf.TitledPanelUI;
 

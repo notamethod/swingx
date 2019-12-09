@@ -21,6 +21,10 @@
  */
 package org.jdesktop.swingx.plaf;
 
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+
 import java.awt.Color;
 import java.util.logging.Logger;
 
@@ -51,7 +55,7 @@ public class TableAddon extends AbstractComponentAddon {
     
     @Override
     protected void addNimbusDefaults(LookAndFeelAddons addon,
-            DefaultsList defaults) {
+                                     DefaultsList defaults) {
         super.addNimbusDefaults(addon, defaults);
         // JW: Hacking around core issue #6882917
         // which is the underlying reason for issue #1180-swingx
@@ -94,7 +98,7 @@ public class TableAddon extends AbstractComponentAddon {
      * @param borderKey
      */
     private void replaceBorder(DefaultsList defaults, String componentPrefix,
-            String borderKey) {
+                               String borderKey) {
         String key = componentPrefix + borderKey;
         Border border = UIManager.getBorder(componentPrefix + borderKey);
         if (border instanceof AbstractBorder && border instanceof UIResource

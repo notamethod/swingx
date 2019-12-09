@@ -35,7 +35,7 @@ import org.jdesktop.swingx.icon.PainterIcon;
 import org.jdesktop.swingx.painter.BusyPainter;
 import org.jdesktop.swingx.plaf.BusyLabelAddon;
 import org.jdesktop.swingx.plaf.BusyLabelUI;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  * <p>A simple circular animation, useful for denoting an action is taking

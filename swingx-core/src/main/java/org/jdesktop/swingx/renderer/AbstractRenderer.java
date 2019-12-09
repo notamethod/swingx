@@ -23,7 +23,7 @@ package org.jdesktop.swingx.renderer;
 import java.awt.Color;
 import java.io.Serializable;
 
-import org.jdesktop.swingx.plaf.UIDependent;
+import org.jdesktop.swingx.ext.UIDependent;
 import org.jdesktop.swingx.rollover.RolloverRenderer;
 
 /**

@@ -24,7 +24,7 @@ import java.awt.event.ContainerAdapter;
 import java.awt.event.ContainerEvent;
 
 import org.jdesktop.beans.JavaBean;
-import org.jdesktop.swingx.plaf.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TaskPaneContainerAddon;
 import org.jdesktop.swingx.plaf.TaskPaneContainerUI;
 

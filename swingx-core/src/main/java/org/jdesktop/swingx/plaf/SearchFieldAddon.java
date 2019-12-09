@@ -9,6 +9,10 @@ import javax.swing.plaf.IconUIResource;
 import javax.swing.plaf.InsetsUIResource;
 
 import org.jdesktop.swingx.JXSearchField.LayoutStyle;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.UIManagerExt;
 
 @SuppressWarnings("nls")
 public class SearchFieldAddon extends AbstractComponentAddon {

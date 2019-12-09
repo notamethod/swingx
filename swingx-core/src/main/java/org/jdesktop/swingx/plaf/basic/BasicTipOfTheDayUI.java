@@ -64,7 +64,7 @@ import org.jdesktop.swingx.JXTipOfTheDay;
 import org.jdesktop.swingx.SwingXUtilities;
 import org.jdesktop.swingx.JXTipOfTheDay.ShowOnStartupChoice;
 import org.jdesktop.swingx.plaf.TipOfTheDayUI;
-import org.jdesktop.swingx.plaf.UIManagerExt;
+import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.tips.TipOfTheDayModel.Tip;
 
 /**

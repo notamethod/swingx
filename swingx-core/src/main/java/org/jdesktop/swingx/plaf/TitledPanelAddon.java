@@ -31,6 +31,7 @@ import javax.swing.plaf.InsetsUIResource;
 import javax.swing.plaf.metal.MetalLookAndFeel;
 
 import org.jdesktop.swingx.JXTitledPanel;
+import org.jdesktop.swingx.ext.*;
 import org.jdesktop.swingx.painter.MattePainter;
 
 /**

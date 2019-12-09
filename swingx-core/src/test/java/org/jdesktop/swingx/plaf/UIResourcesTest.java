@@ -24,13 +24,14 @@ import java.util.logging.Logger;
 
 import junit.framework.TestCase;
 
-import org.jdesktop.swingx.plaf.linux.LinuxLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.macosx.MacOSXLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.metal.MetalLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.motif.MotifLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.nimbus.NimbusLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.windows.WindowsClassicLookAndFeelAddons;
-import org.jdesktop.swingx.plaf.windows.WindowsLookAndFeelAddons;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
+import org.jdesktop.swingx.ext.linux.LinuxLookAndFeelAddons;
+import org.jdesktop.swingx.ext.macosx.MacOSXLookAndFeelAddons;
+import org.jdesktop.swingx.ext.metal.MetalLookAndFeelAddons;
+import org.jdesktop.swingx.ext.motif.MotifLookAndFeelAddons;
+import org.jdesktop.swingx.ext.nimbus.NimbusLookAndFeelAddons;
+import org.jdesktop.swingx.ext.windows.WindowsClassicLookAndFeelAddons;
+import org.jdesktop.swingx.ext.windows.WindowsLookAndFeelAddons;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;

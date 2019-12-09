@@ -24,6 +24,9 @@ package org.jdesktop.swingx.plaf;
 import javax.swing.plaf.ColorUIResource;
 
 import org.jdesktop.swingx.JXHyperlink;
+import org.jdesktop.swingx.ext.AbstractComponentAddon;
+import org.jdesktop.swingx.ext.DefaultsList;
+import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
  * Addon for <code>JXHyperlink</code>.<br>

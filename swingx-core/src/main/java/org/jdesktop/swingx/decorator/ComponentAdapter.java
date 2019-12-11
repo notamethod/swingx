@@ -29,7 +29,7 @@ import org.jdesktop.swingx.renderer.StringValues;
 
 /**
  * Abstract base class for all component data adapter classes. A
- * <code>ComponentAdapter</code> allows the decoration collaborators like f.i.
+ * {@code ComponentAdapter} allows the decoration collaborators like f.i.
  * {@link Highlighter} to interact with a {@link #target} component through a
  * common API. <p>
  * 
@@ -50,23 +50,23 @@ import org.jdesktop.swingx.renderer.StringValues;
  * configure a ColorHighlighter with the predicate and an appropriate background
  * color.
  * 
- * <pre><code>
+ * <pre>{@code
  * HighlightPredicate feverWarning = new HighlightPredicate() {
  *     int temperatureColumn = 10;
- * 
+ *
  *     public boolean isHighlighted(Component component, ComponentAdapter adapter) {
  *         return hasFever(adapter.getValue(temperatureColumn));
  *     }
- * 
+ *
  *     private boolean hasFever(Object value) {
  *         if (!value instanceof Number)
  *             return false;
- *         return ((Number) value).intValue() &gt; 37;
+ *         return ((Number) value).intValue() > 37;
  *     }
  * };
- * 
+ *
  * Highlighter hl = new ColorHighlighter(feverWarning, Color.RED, null);
- * </code></pre>
+ * }</pre>
  * 
  * The adapter is responsible for mapping column and row coordinates.
  * 
@@ -191,13 +191,13 @@ public abstract class ComponentAdapter {
      * override. Subclasses which support multiple columns must override this as
      * well to keep the contract as in (assuming that the lookup succeeded):
      * 
-     * <pre><code>
+     * <pre>{@code
      *  Object id = getColumnIdentifierAt(index);
      *  assertEquals(index, getColumnIndex(index);
-     *  // and the reverse 
+     *  // and the reverse
      *  int column = getColumnIndex(identifier);
      *  assertEquals(identifier, getColumnIdentifierAt(column));
-     * </code></pre>
+     * }</pre>
      * 
      * 
      * @param identifier the column's identifier, must not be null
@@ -231,7 +231,7 @@ public abstract class ComponentAdapter {
      * Returns the common class of all data column identified by the given
      * column index in model coordinates.<p>
      * 
-     * This implementation returns <code>Object.class</code>. Subclasses should
+     * This implementation returns {@code Object.class}. Subclasses should
      * implement as appropriate.
      * 
      * @return the common class of all data given column in model coordinates.
@@ -294,7 +294,7 @@ public abstract class ComponentAdapter {
      * 
      * @param row the row to query in model coordinates
      * @param column the column to query in model coordinates
-     * @return <code>true</code> if the cell is editable, <code>false</code>
+     * @return {@code true} if the cell is editable, <code>false</code>
      *         otherwise
      */
     public abstract boolean isCellEditable(int row, int column);

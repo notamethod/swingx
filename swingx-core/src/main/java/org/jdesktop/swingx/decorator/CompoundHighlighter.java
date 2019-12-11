@@ -32,7 +32,7 @@ import org.jdesktop.swingx.ext.UIDependent;
 import org.jdesktop.swingx.util.Contract;
 
 /**
- * A class which manages the lists of <code>Highlighter</code>s.
+ * A class which manages the lists of {@code Highlighter}s.
  *
  * @see Highlighter
  *
@@ -52,7 +52,7 @@ public class CompoundHighlighter extends AbstractHighlighter
     
     /**
      * Instantiates a CompoundHighlighter containing the given 
-     * <code>Highlighter</code>s. 
+     * {@code Highlighter}s.
      * 
      * @param inList zero or more not-null Highlighters to manage by this
      *   CompoundHighlighter.
@@ -64,7 +64,7 @@ public class CompoundHighlighter extends AbstractHighlighter
 
     /**
      * Instantiates a CompoundHighlighter with the given predicate containing the given 
-     * <code>Highlighter</code>s. 
+     * {@code Highlighter}s.
      * 
      * @param predicate the highlightPredicate to use
      * @param inList zero or more not-null Highlighters to manage by this
@@ -79,7 +79,7 @@ public class CompoundHighlighter extends AbstractHighlighter
 
     /**
      * Sets the given 
-     * <code>Highlighter</code>s. 
+     * {@code Highlighter}s.
      * 
      * @param inList zero or more not-null Highlighters to manage by this
      *   CompoundHighlighter.
@@ -182,8 +182,8 @@ public class CompoundHighlighter extends AbstractHighlighter
     }   
 
     /**
-     * Returns the <code>ChangeListner</code> to contained
-     * <code>Highlighter</code>s. The listener is lazily created.
+     * Returns the {@code ChangeListner} to contained
+     * {@code Highlighter}s. The listener is lazily created.
      *  
      * @return the listener for contained highlighters, guaranteed
      *   to be not null.
@@ -197,7 +197,7 @@ public class CompoundHighlighter extends AbstractHighlighter
 
     /**
      * Creates and returns the ChangeListener registered to
-     * contained <code>Highlighter</code>s. Here: fires a 
+     * contained {@code Highlighter}s. Here: fires a
      * stateChanged on each notification. 
      * 
      * @return the listener for contained Highlighters.

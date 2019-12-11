@@ -39,7 +39,7 @@ import java.util.*;
 
 
 /**
- * A <code>DefaultMutableTreeNode</code> is a general-purpose node in a tree data
+ * A {@code DefaultMutableTreeNode} is a general-purpose node in a tree data
  * structure.
  * For examples of using default mutable tree nodes, see
  * <a
@@ -49,7 +49,7 @@ import java.util.*;
  * <p>
  *
  * A tree node may have at most one parent and 0 or more children.
- * <code>DefaultMutableTreeNode</code> provides operations for examining and modifying a
+ * {@code DefaultMutableTreeNode} provides operations for examining and modifying a
  * node's parent and children and also operations for examining the tree that
  * the node is a part of.  A node's tree is the set of all nodes that can be
  * reached by starting at the node and following all the possible links to
@@ -59,9 +59,9 @@ import java.util.*;
  * <p>
  * This class provides enumerations for efficiently traversing a tree or
  * subtree in various orders or for following the path between two nodes.
- * A <code>DefaultMutableTreeNode</code> may also hold a reference to a user object, the
- * use of which is left to the user.  Asking a <code>DefaultMutableTreeNode</code> for its
- * string representation with <code>toString()</code> returns the string
+ * A {@code DefaultMutableTreeNode} may also hold a reference to a user object, the
+ * use of which is left to the user.  Asking a {@code DefaultMutableTreeNode} for its
+ * string representation with {@code toString()} returns the string
  * representation of its user object.
  * <p>
  * <b>This is not a thread safe class.</b>If you intend to use
@@ -85,7 +85,7 @@ import java.util.*;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans&trade;
- * has been added to the <code>java.beans</code> package.
+ * has been added to the {@code java.beans} package.
  * Please see {@link java.beans.XMLEncoder}.
  *
  * @see MutableTreeNode
@@ -167,19 +167,19 @@ public class DefaultMutableTreeNodeTest implements
     //
 
     /**
-     * Removes <code>newChild</code> from its present parent (if it has a
+     * Removes {@code newChild} from its present parent (if it has a
      * parent), sets the child's parent to this node, and then adds the child
-     * to this node's child array at index <code>childIndex</code>.
-     * <code>newChild</code> must not be null and must not be an ancestor of
+     * to this node's child array at index {@code childIndex}.
+     * {@code newChild} must not be null and must not be an ancestor of
      * this node.
      *
      * @param   newChild        the MutableTreeNode to insert under this node
      * @param   childIndex      the index in this node's child array
      *                          where this node is to be inserted
      * @exception       ArrayIndexOutOfBoundsException  if
-     *                          <code>childIndex</code> is out of bounds
+     *                          {@code childIndex} is out of bounds
      * @exception       IllegalArgumentException        if
-     *                          <code>newChild</code> is null or is an
+     *                          {@code newChild} is null or is an
      *                          ancestor of this node
      * @exception       IllegalStateException   if this node does not allow
      *                                          children
@@ -210,12 +210,12 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Removes the child at the specified index from this node's children
      * and sets that node's parent to null. The child node to remove
-     * must be a <code>MutableTreeNode</code>.
+     * must be a {@code MutableTreeNode}.
      *
      * @param   childIndex      the index in this node's child array
      *                          of the child to remove
      * @exception       ArrayIndexOutOfBoundsException  if
-     *                          <code>childIndex</code> is out of bounds
+     *                          {@code childIndex} is out of bounds
      */
     public void remove(int childIndex) {
         MutableTreeNode child = (MutableTreeNode)getChildAt(childIndex);
@@ -224,9 +224,9 @@ public class DefaultMutableTreeNodeTest implements
     }
 
     /**
-     * Sets this node's parent to <code>newParent</code> but does not
+     * Sets this node's parent to {@code newParent} but does not
      * change the parent's child array.  This method is called from
-     * <code>insert()</code> and <code>remove()</code> to
+     * {@code insert()} and <code>remove()</code> to
      * reassign a child's parent, it should not be messaged from anywhere
      * else.
      *
@@ -290,14 +290,14 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Returns the index of the specified child in this node's child array.
      * If the specified node is not a child of this node, returns
-     * <code>-1</code>.  This method performs a linear search and is O(n)
+     * {@code -1}.  This method performs a linear search and is O(n)
      * where n is the number of children.
      *
      * @param   aChild  the TreeNode to search for among this node's children
-     * @exception       IllegalArgumentException        if <code>aChild</code>
+     * @exception       IllegalArgumentException        if {@code aChild}
      *                                                  is null
      * @return  an int giving the index of the node in this node's child
-     *          array, or <code>-1</code> if the specified node is a not
+     *          array, or {@code -1} if the specified node is a not
      *          a child of this node
      */
     public int getIndex(TreeNode aChild) {
@@ -328,7 +328,7 @@ public class DefaultMutableTreeNodeTest implements
 
     /**
      * Determines whether or not this node is allowed to have children.
-     * If <code>allows</code> is false, all of this node's children are
+     * If {@code allows} is false, all of this node's children are
      * removed.
      * <p>
      * Note: By default, a node allows children.
@@ -354,7 +354,7 @@ public class DefaultMutableTreeNodeTest implements
     }
 
     /**
-     * Sets the user object for this node to <code>userObject</code>.
+     * Sets the user object for this node to {@code userObject}.
      *
      * @param   userObject      the Object that constitutes this node's
      *                          user-specified data
@@ -394,11 +394,11 @@ public class DefaultMutableTreeNodeTest implements
     }
 
     /**
-     * Removes <code>aChild</code> from this node's child array, giving it a
+     * Removes {@code aChild} from this node's child array, giving it a
      * null parent.
      *
      * @param   aChild  a child of this node to remove
-     * @exception       IllegalArgumentException        if <code>aChild</code>
+     * @exception       IllegalArgumentException        if {@code aChild}
      *                                  is null or is not a child of this node
      */
     public void remove(MutableTreeNode aChild) {
@@ -432,12 +432,12 @@ public class DefaultMutableTreeNodeTest implements
     }
 
     /**
-     * Removes <code>newChild</code> from its parent and makes it a child of
+     * Removes {@code newChild} from its parent and makes it a child of
      * this node by adding it to the end of this node's child array.
      *
      * @see             #insert
      * @param   newChild        node to add as a child of this node
-     * @exception       IllegalArgumentException    if <code>newChild</code>
+     * @exception       IllegalArgumentException    if {@code newChild}
      *                                          is null
      * @exception       IllegalStateException   if this node does not allow
      *                                          children
@@ -456,17 +456,17 @@ public class DefaultMutableTreeNodeTest implements
     //
 
     /**
-     * Returns true if <code>anotherNode</code> is an ancestor of this node
+     * Returns true if {@code anotherNode} is an ancestor of this node
      * -- if it is this node, this node's parent, or an ancestor of this
      * node's parent.  (Note that a node is considered an ancestor of itself.)
-     * If <code>anotherNode</code> is null, this method returns false.  This
+     * If {@code anotherNode} is null, this method returns false.  This
      * operation is at worst O(h) where h is the distance from the root to
      * this node.
      *
      * @see             #isNodeDescendant
      * @see             #getSharedAncestor
      * @param   anotherNode     node to test as an ancestor of this node
-     * @return  true if this node is a descendant of <code>anotherNode</code>
+     * @return  true if this node is a descendant of {@code anotherNode}
      */
     public boolean isNodeAncestor(TreeNode anotherNode) {
         if (anotherNode == null) {
@@ -485,17 +485,17 @@ public class DefaultMutableTreeNodeTest implements
     }
 
     /**
-     * Returns true if <code>anotherNode</code> is a descendant of this node
+     * Returns true if {@code anotherNode} is a descendant of this node
      * -- if it is this node, one of this node's children, or a descendant of
      * one of this node's children.  Note that a node is considered a
-     * descendant of itself.  If <code>anotherNode</code> is null, returns
+     * descendant of itself.  If {@code anotherNode} is null, returns
      * false.  This operation is at worst O(h) where h is the distance from the
-     * root to <code>anotherNode</code>.
+     * root to {@code anotherNode}.
      *
      * @see     #isNodeAncestor
      * @see     #getSharedAncestor
      * @param   anotherNode     node to test as descendant of this node
-     * @return  true if this node is an ancestor of <code>anotherNode</code>
+     * @return  true if this node is an ancestor of {@code anotherNode}
      */
     public boolean isNodeDescendant(DefaultMutableTreeNodeTest anotherNode) {
         if (anotherNode == null)
@@ -505,15 +505,15 @@ public class DefaultMutableTreeNodeTest implements
     }
 
     /**
-     * Returns the nearest common ancestor to this node and <code>aNode</code>.
+     * Returns the nearest common ancestor to this node and {@code aNode}.
      * Returns null, if no such ancestor exists -- if this node and
-     * <code>aNode</code> are in different trees or if <code>aNode</code> is
+     * {@code aNode} are in different trees or if <code>aNode</code> is
      * null.  A node is considered an ancestor of itself.
      *
      * @see     #isNodeAncestor
      * @see     #isNodeDescendant
      * @param   aNode   node to find common ancestor with
-     * @return  nearest ancestor common to this node and <code>aNode</code>,
+     * @return  nearest ancestor common to this node and {@code aNode},
      *          or null if none
      */
     public TreeNode getSharedAncestor(DefaultMutableTreeNodeTest aNode) {
@@ -568,14 +568,14 @@ public class DefaultMutableTreeNodeTest implements
 
 
     /**
-     * Returns true if and only if <code>aNode</code> is in the same tree
-     * as this node.  Returns false if <code>aNode</code> is null.
+     * Returns true if and only if {@code aNode} is in the same tree
+     * as this node.  Returns false if {@code aNode} is null.
      *
      * @param   aNode node to find common ancestor with
      * @see     #getSharedAncestor
      * @see     #getRoot
-     * @return  true if <code>aNode</code> is in the same tree as this node;
-     *          false if <code>aNode</code> is null
+     * @return  true if {@code aNode} is in the same tree as this node;
+     *          false if {@code aNode} is null
      */
     public boolean isNodeRelated(DefaultMutableTreeNodeTest aNode) {
         return (aNode != null) && (getRoot() == aNode.getRoot());
@@ -586,7 +586,7 @@ public class DefaultMutableTreeNodeTest implements
      * Returns the depth of the tree rooted at this node -- the longest
      * distance from this node to a leaf.  If this node has no children,
      * returns 0.  This operation is much more expensive than
-     * <code>getLevel()</code> because it must effectively traverse the entire
+     * {@code getLevel()} because it must effectively traverse the entire
      * tree rooted at this node.
      *
      * @see     #getLevel
@@ -762,7 +762,7 @@ public class DefaultMutableTreeNodeTest implements
 
     /**
      * Returns the node that precedes this node in a preorder traversal of
-     * this node's tree.  Returns <code>null</code> if this node is the
+     * this node's tree.  Returns {@code null} if this node is the
      * first node of the traversal -- the root of the tree.
      * This is an inefficient way to
      * traverse the entire tree; use an enumeration, instead.
@@ -794,7 +794,7 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Creates and returns an enumeration that traverses the subtree rooted at
      * this node in preorder.  The first node returned by the enumeration's
-     * <code>nextElement()</code> method is this node.<P>
+     * {@code nextElement()} method is this node.<P>
      *
      * Modifying the tree by inserting, removing, or moving a node invalidates
      * any enumerations created before the modification.
@@ -809,7 +809,7 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Creates and returns an enumeration that traverses the subtree rooted at
      * this node in postorder.  The first node returned by the enumeration's
-     * <code>nextElement()</code> method is the leftmost leaf.  This is the
+     * {@code nextElement()} method is the leftmost leaf.  This is the
      * same as a depth-first traversal.<P>
      *
      * Modifying the tree by inserting, removing, or moving a node invalidates
@@ -826,7 +826,7 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Creates and returns an enumeration that traverses the subtree rooted at
      * this node in breadth-first order.  The first node returned by the
-     * enumeration's <code>nextElement()</code> method is this node.<P>
+     * enumeration's {@code nextElement()} method is this node.<P>
      *
      * Modifying the tree by inserting, removing, or moving a node invalidates
      * any enumerations created before the modification.
@@ -841,7 +841,7 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Creates and returns an enumeration that traverses the subtree rooted at
      * this node in depth-first order.  The first node returned by the
-     * enumeration's <code>nextElement()</code> method is the leftmost leaf.
+     * enumeration's {@code nextElement()} method is the leftmost leaf.
      * This is the same as a postorder traversal.<P>
      *
      * Modifying the tree by inserting, removing, or moving a node invalidates
@@ -857,12 +857,12 @@ public class DefaultMutableTreeNodeTest implements
 
     /**
      * Creates and returns an enumeration that follows the path from
-     * <code>ancestor</code> to this node.  The enumeration's
-     * <code>nextElement()</code> method first returns <code>ancestor</code>,
-     * then the child of <code>ancestor</code> that is an ancestor of this
+     * {@code ancestor} to this node.  The enumeration's
+     * {@code nextElement()} method first returns <code>ancestor</code>,
+     * then the child of {@code ancestor} that is an ancestor of this
      * node, and so on, and finally returns this node.  Creation of the
      * enumeration is O(m) where m is the number of nodes between this node
-     * and <code>ancestor</code>, inclusive.  Each <code>nextElement()</code>
+     * and {@code ancestor}, inclusive.  Each <code>nextElement()</code>
      * message is O(1).<P>
      *
      * Modifying the tree by inserting, removing, or moving a node invalidates
@@ -871,7 +871,7 @@ public class DefaultMutableTreeNodeTest implements
      * @param           ancestor the node to start enumeration from
      * @see             #isNodeAncestor
      * @see             #isNodeDescendant
-     * @exception       IllegalArgumentException if <code>ancestor</code> is
+     * @exception       IllegalArgumentException if {@code ancestor} is
      *                                          not an ancestor of this node
      * @return  an enumeration for following the path from an ancestor of
      *          this node to this one
@@ -886,12 +886,12 @@ public class DefaultMutableTreeNodeTest implements
     //
 
     /**
-     * Returns true if <code>aNode</code> is a child of this node.  If
-     * <code>aNode</code> is null, this method returns false.
+     * Returns true if {@code aNode} is a child of this node.  If
+     * {@code aNode} is null, this method returns false.
      *
      * @param   aNode the node to determinate whether it is a child
-     * @return  true if <code>aNode</code> is a child of this node; false if
-     *                  <code>aNode</code> is null
+     * @return  true if {@code aNode} is a child of this node; false if
+     *                  {@code aNode} is null
      */
     public boolean isNodeChild(TreeNode aNode) {
         boolean retval;
@@ -942,18 +942,18 @@ public class DefaultMutableTreeNodeTest implements
 
     /**
      * Returns the child in this node's child array that immediately
-     * follows <code>aChild</code>, which must be a child of this node.  If
-     * <code>aChild</code> is the last child, returns null.  This method
+     * follows {@code aChild}, which must be a child of this node.  If
+     * {@code aChild} is the last child, returns null.  This method
      * performs a linear search of this node's children for
-     * <code>aChild</code> and is O(n) where n is the number of children; to
+     * {@code aChild} and is O(n) where n is the number of children; to
      * traverse the entire array of children, use an enumeration instead.
      *
      * @param           aChild the child node to look for next child after it
      * @see             #children
-     * @exception       IllegalArgumentException if <code>aChild</code> is
+     * @exception       IllegalArgumentException if {@code aChild} is
      *                                  null or is not a child of this node
      * @return  the child of this node that immediately follows
-     *          <code>aChild</code>
+     *          {@code aChild}
      */
     public TreeNode getChildAfter(TreeNode aChild) {
         if (aChild == null) {
@@ -976,16 +976,16 @@ public class DefaultMutableTreeNodeTest implements
 
     /**
      * Returns the child in this node's child array that immediately
-     * precedes <code>aChild</code>, which must be a child of this node.  If
-     * <code>aChild</code> is the first child, returns null.  This method
-     * performs a linear search of this node's children for <code>aChild</code>
+     * precedes {@code aChild}, which must be a child of this node.  If
+     * {@code aChild} is the first child, returns null.  This method
+     * performs a linear search of this node's children for {@code aChild}
      * and is O(n) where n is the number of children.
      *
      * @param           aChild the child node to look for previous child before it
-     * @exception       IllegalArgumentException if <code>aChild</code> is null
+     * @exception       IllegalArgumentException if {@code aChild} is null
      *                                          or is not a child of this node
      * @return  the child of this node that immediately precedes
-     *          <code>aChild</code>
+     *          {@code aChild}
      */
     public TreeNode getChildBefore(TreeNode aChild) {
         if (aChild == null) {
@@ -1012,12 +1012,12 @@ public class DefaultMutableTreeNodeTest implements
 
 
     /**
-     * Returns true if <code>anotherNode</code> is a sibling of (has the
+     * Returns true if {@code anotherNode} is a sibling of (has the
      * same parent as) this node.  A node is its own sibling.  If
-     * <code>anotherNode</code> is null, returns false.
+     * {@code anotherNode} is null, returns false.
      *
      * @param   anotherNode     node to test as sibling of this node
-     * @return  true if <code>anotherNode</code> is a sibling of this node
+     * @return  true if {@code anotherNode} is a sibling of this node
      */
     public boolean isNodeSibling(TreeNode anotherNode) {
         boolean retval;
@@ -1043,7 +1043,7 @@ public class DefaultMutableTreeNodeTest implements
     /**
      * Returns the number of siblings of this node.  A node is its own sibling
      * (if it has no parent or no siblings, this method returns
-     * <code>1</code>).
+     * {@code 1}).
      *
      * @return  the number of siblings of this node
      */
@@ -1123,7 +1123,7 @@ public class DefaultMutableTreeNodeTest implements
      * Returns true if this node has no children.  To distinguish between
      * nodes that have no children and nodes that <i>cannot</i> have
      * children (e.g. to distinguish files from empty directories), use this
-     * method in conjunction with <code>getAllowsChildren</code>
+     * method in conjunction with {@code getAllowsChildren}
      *
      * @see     #getAllowsChildren
      * @return  true if this node has no children
@@ -1177,15 +1177,15 @@ public class DefaultMutableTreeNodeTest implements
      * Returns the leaf after this node or null if this node is the
      * last leaf in the tree.
      * <p>
-     * In this implementation of the <code>MutableNode</code> interface,
+     * In this implementation of the {@code MutableNode} interface,
      * this operation is very inefficient. In order to determine the
      * next node, this method first performs a linear search in the
      * parent's child-list in order to find the current node.
      * <p>
      * That implementation makes the operation suitable for short
      * traversals from a known position. But to traverse all of the
-     * leaves in the tree, you should use <code>depthFirstEnumeration</code>
-     * to enumerate the nodes in the tree and use <code>isLeaf</code>
+     * leaves in the tree, you should use {@code depthFirstEnumeration}
+     * to enumerate the nodes in the tree and use {@code isLeaf}
      * on each node to determine which are leaves.
      *
      * @see     #depthFirstEnumeration
@@ -1212,15 +1212,15 @@ public class DefaultMutableTreeNodeTest implements
      * Returns the leaf before this node or null if this node is the
      * first leaf in the tree.
      * <p>
-     * In this implementation of the <code>MutableNode</code> interface,
+     * In this implementation of the {@code MutableNode} interface,
      * this operation is very inefficient. In order to determine the
      * previous node, this method first performs a linear search in the
      * parent's child-list in order to find the current node.
      * <p>
      * That implementation makes the operation suitable for short
      * traversals from a known position. But to traverse all of the
-     * leaves in the tree, you should use <code>depthFirstEnumeration</code>
-     * to enumerate the nodes in the tree and use <code>isLeaf</code>
+     * leaves in the tree, you should use {@code depthFirstEnumeration}
+     * to enumerate the nodes in the tree and use {@code isLeaf}
      * on each node to determine which are leaves.
      *
      * @see             #depthFirstEnumeration
@@ -1245,7 +1245,7 @@ public class DefaultMutableTreeNodeTest implements
 
     /**
      * Returns the total number of leaves that are descendants of this node.
-     * If this node is a leaf, returns <code>1</code>.  This method is O(n)
+     * If this node is a leaf, returns {@code 1}.  This method is O(n)
      * where n is the number of descendants of this node.
      *
      * @see     #isNodeAncestor
@@ -1277,7 +1277,7 @@ public class DefaultMutableTreeNodeTest implements
     //
 
     /**
-     * Returns the result of sending <code>toString()</code> to this node's
+     * Returns the result of sending {@code toString()} to this node's
      * user object, or the empty string if the node has no user object.
      *
      * @see     #getUserObject

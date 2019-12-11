@@ -67,7 +67,7 @@ import org.jdesktop.swingx.icon.EmptyIcon;
 import org.jdesktop.swingx.plaf.TaskPaneUI;
 
 /**
- * Base implementation of the <code>JXTaskPane</code> UI.
+ * Base implementation of the {@code JXTaskPane} UI.
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  */
@@ -304,7 +304,7 @@ public class BasicTaskPaneUI extends TaskPaneUI {
 
     /**
      * Configures internally used hyperlink on new action creation and on every call to 
-     * <code>updateUI()</code>.
+     * {@code updateUI()}.
      * @param link Configured hyperlink.
      */
     protected void configure(JXHyperlink link) {
@@ -568,7 +568,7 @@ public class BasicTaskPaneUI extends TaskPaneUI {
         }
 
         /**
-         * Overwritten to always return <code>true</code> to speed up
+         * Overwritten to always return {@code true} to speed up
          * painting. Don't use transparent borders unless providing UI delegate
          * that provides proper return value when calling this method.
          * 

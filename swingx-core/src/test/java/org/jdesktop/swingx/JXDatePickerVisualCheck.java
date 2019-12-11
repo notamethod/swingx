@@ -83,7 +83,7 @@ import org.jdesktop.test.VerticalLayoutPref;
  * Simple tests to ensure that the {@code JXDatePicker} can be instantiated and
  * displayed.<p>
  * 
- * JW: being lazy - added visuals for <code>JXMonthView</code> as well.
+ * JW: being lazy - added visuals for {@code JXMonthView} as well.
  * 
  * @author Karl Schaefer
  */

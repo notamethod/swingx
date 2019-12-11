@@ -33,11 +33,11 @@ import javax.swing.plaf.ComponentUI;
  * all "stable" points in their life-cycle. That is the following invariant is
  * guaranteed:
  * 
- * <pre><code>
+ * <pre>{@code
  * Date selected = datePicker.getMonthView().getSelectedDate();
  * assertEquals(selected, datePicker.getDate());
  * assertEquals(selected, datePicker.getEditor().getValue());
- * </code></pre>
+ * }</pre>
  * 
  * @author Joshua Outwater
  * @author Jeanette Winzenburg

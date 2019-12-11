@@ -68,7 +68,7 @@ import org.jdesktop.swingx.plaf.MonthViewUI;
 import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
- * Base implementation of the <code>JXMonthView</code> UI.<p>
+ * Base implementation of the {@code JXMonthView} UI.<p>
  *
  * <b>Note</b>: The api changed considerably between releases 0.9.4 and 0.9.5.  
  * <p>
@@ -479,7 +479,7 @@ public class BasicMonthViewUI extends MonthViewUI {
     }
 
     /**
-     * Returns the <code>CalendarRenderingHandler</code> to use. Subclasses may override to 
+     * Returns the {@code CalendarRenderingHandler} to use. Subclasses may override to
      * plug-in custom implementations. <p>
      * 
      * This implementation returns an instance of RenderingHandler.

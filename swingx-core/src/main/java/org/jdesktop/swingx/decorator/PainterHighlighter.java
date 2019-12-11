@@ -52,7 +52,7 @@ import org.jdesktop.swingx.renderer.PainterAware;
  * As an example, a ValueBasedPainterHighlighter might safely change any painter
  * property to decorate a component depending on content.
  * 
- * <pre><code>
+ * <pre>{@code
  * &#64;Override
  * protected Component doHighlight(Component renderer, ComponentAdapter adapter) {
  *      float end = getEndOfGradient((Number) adapter.getValue());
@@ -61,13 +61,13 @@ import org.jdesktop.swingx.renderer.PainterAware;
  *      ((PainterAware) renderer).setPainter(painter);
  *      return renderer;
  * }
- * 
+ *
  * &#64;Override
  * protected boolean canHighlight(Component renderer, ComponentAdapter adapter) {
  *     return super.canHighlight(renderer, adapter) &&
  *        (adapter.getValue() instanceof Number);
  * }
- * </code></pre>
+ * }</pre>
  * 
  * NOTE: this will change once the Painter api is stable.
  * 

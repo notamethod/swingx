@@ -45,12 +45,12 @@ import org.jdesktop.swingx.painter.effects.AreaEffect;
  * vertical properties.</p>
  * 
  * <p>Here is an example that draws a rectangle aligned on the center right:
- * <pre><code>
+ * <pre>{@code
  *  Rectangle2D.Double rect = new Rectangle2D.Double(0, 0, 50, 50);
  *  ShapePainter p = new ShapePainter(rect);
  * p.setHorizontal(HorizontalAlignment.RIGHT);
  * p.setVertical(VerticalAlignment.CENTER);
- * </code></pre>
+ * }</pre>
  * @author rbair
  */
 @JavaBean

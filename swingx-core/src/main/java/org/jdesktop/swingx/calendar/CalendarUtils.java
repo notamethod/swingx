@@ -634,13 +634,11 @@ public class CalendarUtils {
      * 
      * The only way to guarantee a flushed state is to let client code call
      * getTime or getTimeInMillis. See
-     * 
-     * <a href=http://forums.java.net/jive/thread.jspa?threadID=74472&tstart=0>Despairing
-     * in Calendar</a>
+     *
      * <p>
      * Note: this if for testing only and not entirely safe!
      * 
-     * @param calendar
+     * @param calendar the calendar object
      * @return
      */
     public static boolean isFlushed(Calendar calendar) {

@@ -30,7 +30,7 @@ import javax.swing.UIManager;
 import org.jdesktop.swingx.painter.Painter;
 
 /**
- * A <code>JCheckBox</code> optimized for usage in renderers and
+ * A {@code JCheckBox} optimized for usage in renderers and
  * with a minimal background painter support. <p>
  * 
  * <b>Note</b>: As of revision #4223, there's a complete overhaul (aka: changed the tricksery) to 
@@ -129,23 +129,23 @@ public class JRendererCheckBox extends JCheckBox implements PainterAware {
      * 
      * The overall logic currently (since 1.6.5) is to simply call super without SwingX
      * painter. Otherwise, that is with SwingX painter:
-     * <ol>
-     * <li> if opaque  
-     * <ol>
+     * <ul><li>if opaque
+     * <ul>
      * <li> set a flag which fakes transparency, that is both
-     *      <code>contentAreaFilled</code> and 
-     *      <code>opaque</code> return false 
+     *      {@code contentAreaFilled} and
+     *      {@code opaque} return false
      * <li> fill background with the component's background color
      * <li> apply swingx painter
-     * <li> hook into <code>ui.paint(...)</code> 
+     * <li> hook into {@code ui.paint(...)}
      * <li> reset the flag
-     * </ol>
+     * </ul>
+     * </li>
      * <li> else
-     * <ol> apply swingx painter
-     * <ol> call super
-     * <li> 
-     * <ol> 
-     * </ol>
+     * <ul>
+     * <li> apply swingx painter
+     * <li> call super
+     * </ul>
+     * </ul>
      * 
      * Note that Nimbus is special cased (mainly due to its bug of 
      * even row striping instead of odd)

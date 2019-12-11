@@ -48,7 +48,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Unit test for <code>JXHeader</code>.
+ * Unit test for {@code JXHeader}.
  * <p>
  *
  * All test methods in this class are expected to pass.

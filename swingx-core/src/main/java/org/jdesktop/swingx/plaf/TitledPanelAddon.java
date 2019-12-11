@@ -35,7 +35,7 @@ import org.jdesktop.swingx.ext.*;
 import org.jdesktop.swingx.painter.MattePainter;
 
 /**
- * Addon for <code>JXTitledPanel</code>.<br>
+ * Addon for {@code JXTitledPanel}.<br>
  *
  */
 public class TitledPanelAddon extends AbstractComponentAddon {

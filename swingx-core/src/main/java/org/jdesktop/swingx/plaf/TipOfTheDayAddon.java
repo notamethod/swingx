@@ -38,7 +38,7 @@ import org.jdesktop.swingx.plaf.basic.BasicTipOfTheDayUI;
 import org.jdesktop.swingx.plaf.windows.WindowsTipOfTheDayUI;
 
 /**
- * Addon for <code>JXTipOfTheDay</code>.<br>
+ * Addon for {@code JXTipOfTheDay}.<br>
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  */

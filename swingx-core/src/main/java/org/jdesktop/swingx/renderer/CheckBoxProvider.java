@@ -37,25 +37,25 @@ import javax.swing.JLabel;
  * of type TableColumnExt with the column's visibility mapped to the selected
  * and the column's title to the text:
  * 
- * <pre><code>
- *            
+ * <pre>{@code
+ *
  *     BooleanValue bv = new BooleanValue(){
  *        public boolean getBoolean(Object value) {
- *           if (value instanceof TableColumnExt) 
+ *           if (value instanceof TableColumnExt)
  *               return ((TableColumnExt) value).isVisible();
  *           return false;
  *        }
  *     };
  *     StringValue sv = new StringValue() {
  *         public String getString(Object value) {
- *           if (value instanceof TableColumnExt) 
+ *           if (value instanceof TableColumnExt)
  *               return ((TableColumnExt) value).getTitle();
- *           return &quot;&quot;;
+ *           return "";
  *         }
  *     };
  *     list.setCellRenderer(new DefaultListRenderer(
- *           new CheckBoxProvider(new MappedValue(sv, null, bv), JLabel.LEADING))); 
- * </code></pre>
+ *           new CheckBoxProvider(new MappedValue(sv, null, bv), JLabel.LEADING)));
+ * }</pre>
  * 
  * 
  * @see BooleanValue
@@ -142,7 +142,7 @@ public class CheckBoxProvider extends ComponentProvider<AbstractButton> {
      * Returns a boolean representation of the content.<p>
      * 
      * This method messages the 
-     * <code>BooleanValue</code> to get the boolean rep. If none available,
+     * {@code BooleanValue} to get the boolean rep. If none available,
      * checks for Boolean type directly and returns its value. Returns
      * false otherwise. <p>
      * 

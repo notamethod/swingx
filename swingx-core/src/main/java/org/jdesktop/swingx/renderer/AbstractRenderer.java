@@ -63,7 +63,7 @@ public abstract class AbstractRenderer
     /**
      * The default ComponentProvider to use if no special.
      * 
-     * @return the default <code>ComponentProvider</code>
+     * @return the default {@code ComponentProvider}
      */
     protected abstract ComponentProvider<?> createDefaultComponentProvider();
     

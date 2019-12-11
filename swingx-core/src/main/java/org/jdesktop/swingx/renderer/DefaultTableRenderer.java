@@ -34,9 +34,9 @@ import javax.swing.table.TableCellRenderer;
  * interact with this class except at instantiation time.
  * <p>
  * 
- * <code>JXTable</code> uses instances of this as per-class default renderers.
+ * {@code JXTable} uses instances of this as per-class default renderers.
  * 
- * <pre><code>
+ * <pre>{@code
  * setDefaultRenderer(Object.class, new DefaultTableRenderer());
  * setDefaultRenderer(Number.class, new DefaultTableRenderer(
  *         FormatStringValues.NUMBER_TO_STRING, JLabel.RIGHT));
@@ -50,7 +50,7 @@ import javax.swing.table.TableCellRenderer;
  * // use a CheckBoxProvider for booleans
  * setDefaultRenderer(Boolean.class,
  *         new DefaultTableRenderer(new CheckBoxProvider()));
- * </code></pre>
+ * }</pre>
  * 
  * 
  * 
@@ -83,7 +83,7 @@ public class DefaultTableRenderer extends AbstractRenderer
     /**
      * Instantiates a default table renderer with the given component provider.
      * If the controller is null, creates and uses a default. The default
-     * provider is of type <code>LabelProvider</code>.
+     * provider is of type {@code LabelProvider}.
      * 
      * @param componentProvider the provider of the configured component to
      *        use for cell rendering
@@ -153,9 +153,9 @@ public class DefaultTableRenderer extends AbstractRenderer
      * Note: The component's name is set to "Table.cellRenderer" for the sake
      * of Synth-based LAFs.
      * 
-     * @param table the <code>JTable</code>
+     * @param table the {@code JTable}
      * @param value the value to assign to the cell at
-     *        <code>[row, column]</code>
+     *        {@code [row, column]}
      * @param isSelected true if cell is selected
      * @param hasFocus true if cell has focus
      * @param row the row of the cell to render

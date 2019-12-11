@@ -6,7 +6,7 @@
  * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -56,18 +56,18 @@ import javax.imageio.ImageIO;
 import javax.swing.JComponent;
 
 /**
- * <p><code>GraphicsUtilities</code> contains a set of tools to perform
+ * <p>{@code GraphicsUtilities} contains a set of tools to perform
  * common graphics operations easily. These operations are divided into
  * several themes, listed below.</p>
  *
- * <h2>Compatible Images</h2>
+ * <h1>Compatible Images</h1>
  *
  * <p>Compatible images can, and should, be used to increase drawing
  * performance. This class provides a number of methods to load compatible
  * images directly from files or to convert existing images to compatibles
  * images.</p>
  *
- * <h2>Creating Thumbnails</h2>
+ * <h1>Creating Thumbnails</h1>
  *
  * <p>This class provides a number of methods to easily scale down images.
  * Some of these methods offer a trade-off between speed and result quality and
@@ -77,7 +77,7 @@ import javax.swing.JComponent;
  *
  * <p>All these methods are both faster than
  * {@link java.awt.Image#getScaledInstance(int, int, int)} and produce
- * better-looking results than the various <code>drawImage()</code> methods
+ * better-looking results than the various {@code drawImage()} methods
  * in {@link java.awt.Graphics}, which can be used for image scaling.</p>
  * 
  * <h2>Image Manipulation</h2>
@@ -86,7 +86,7 @@ import javax.swing.JComponent;
  * These methods try to avoid unmanaging the image in order to keep good
  * performance.</p>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  * @author rbair
  * @author Karl Schaefer
  */
@@ -127,15 +127,15 @@ public class GraphicsUtilities {
     }
 
     /**
-     * <p>Returns a new <code>BufferedImage</code> using the same color model
+     * <p>Returns a new {@code BufferedImage} using the same color model
      * as the image passed as a parameter. The returned image is only compatible
      * with the image passed as a parameter. This does not mean the returned
      * image is compatible with the hardware.</p>
      *
      * @param image the reference image from which the color model of the new
      *   image is obtained
-     * @return a new <code>BufferedImage</code>, compatible with the color model
-     *   of <code>image</code>
+     * @return a new {@code BufferedImage}, compatible with the color model
+     *   of {@code image}
      */
     public static BufferedImage createColorModelCompatibleImage(BufferedImage image) {
         ColorModel cm = image.getColorModel();
@@ -161,8 +161,8 @@ public class GraphicsUtilities {
      * @see #toCompatibleImage(java.awt.image.BufferedImage)
      * @param image the reference image from which the dimension and the
      *   transparency of the new image are obtained
-     * @return a new compatible <code>BufferedImage</code> with the same
-     *   dimension and transparency as <code>image</code>
+     * @return a new compatible {@code BufferedImage} with the same
+     *   dimension and transparency as {@code image}
      */
     public static BufferedImage createCompatibleImage(BufferedImage image) {
         return createCompatibleImage(image, image.getWidth(), image.getHeight());
@@ -171,7 +171,7 @@ public class GraphicsUtilities {
     /**
      * <p>Returns a new compatible image of the specified width and height, and
      * the same transparency setting as the image specified as a parameter.
-     * That is, the returned <code>BufferedImage</code> is compatible with
+     * That is, the returned {@code BufferedImage} is compatible with
      * the graphics hardware. If the method is called in a headless
      * environment, then the returned BufferedImage will be compatible with
      * the source image.</p>
@@ -186,8 +186,8 @@ public class GraphicsUtilities {
      * @param height the height of the new image
      * @param image the reference image from which the transparency of the new
      *   image is obtained
-     * @return a new compatible <code>BufferedImage</code> with the same
-     *   transparency as <code>image</code> and the specified dimension
+     * @return a new compatible {@code BufferedImage} with the same
+     *   transparency as {@code image} and the specified dimension
      */
     public static BufferedImage createCompatibleImage(BufferedImage image,
                                                       int width, int height) {
@@ -199,7 +199,7 @@ public class GraphicsUtilities {
 
     /**
      * <p>Returns a new opaque compatible image of the specified width and
-     * height. That is, the returned <code>BufferedImage</code> is compatible with
+     * height. That is, the returned {@code BufferedImage} is compatible with
      * the graphics hardware. If the method is called in a headless
      * environment, then the returned BufferedImage will be compatible with
      * the source image.</p>
@@ -211,7 +211,7 @@ public class GraphicsUtilities {
      * @see #toCompatibleImage(java.awt.image.BufferedImage)
      * @param width the width of the new image
      * @param height the height of the new image
-     * @return a new opaque compatible <code>BufferedImage</code> of the
+     * @return a new opaque compatible {@code BufferedImage} of the
      *   specified width and height
      */
     public static BufferedImage createCompatibleImage(int width, int height) {
@@ -222,7 +222,7 @@ public class GraphicsUtilities {
 
     /**
      * <p>Returns a new translucent compatible image of the specified width and
-     * height. That is, the returned <code>BufferedImage</code> is compatible with
+     * height. That is, the returned {@code BufferedImage} is compatible with
      * the graphics hardware. If the method is called in a headless
      * environment, then the returned BufferedImage will be compatible with
      * the source image.</p>
@@ -234,7 +234,7 @@ public class GraphicsUtilities {
      * @see #toCompatibleImage(java.awt.image.BufferedImage)
      * @param width the width of the new image
      * @param height the height of the new image
-     * @return a new translucent compatible <code>BufferedImage</code> of the
+     * @return a new translucent compatible {@code BufferedImage} of the
      *   specified width and height
      */
     public static BufferedImage createCompatibleTranslucentImage(int width,
@@ -259,7 +259,7 @@ public class GraphicsUtilities {
      * @see #toCompatibleImage(java.awt.image.BufferedImage)
      * @param in
      *            the stream of the picture to load as a compatible image
-     * @return a new translucent compatible <code>BufferedImage</code> of the
+     * @return a new translucent compatible {@code BufferedImage} of the
      *         specified width and height
      * @throws java.io.IOException
      *             if the image cannot be read or loaded
@@ -281,7 +281,7 @@ public class GraphicsUtilities {
      * @see #createCompatibleTranslucentImage(int, int)
      * @see #toCompatibleImage(java.awt.image.BufferedImage)
      * @param resource the URL of the picture to load as a compatible image
-     * @return a new translucent compatible <code>BufferedImage</code> of the
+     * @return a new translucent compatible {@code BufferedImage} of the
      *   specified width and height
      * @throws java.io.IOException if the image cannot be read or loaded
      */
@@ -297,7 +297,7 @@ public class GraphicsUtilities {
      * and therefore optimized for fast blitting operations.</p>
      *
      * <p>If the method is called in a headless environment, then the returned
-     * <code>BufferedImage</code> will be the source image.</p>
+     * {@code BufferedImage} will be the source image.</p>
      *
      * @see #createCompatibleImage(java.awt.image.BufferedImage)
      * @see #createCompatibleImage(java.awt.image.BufferedImage, int, int)
@@ -306,7 +306,7 @@ public class GraphicsUtilities {
      * @see #loadCompatibleImage(java.net.URL)
      * @param image the image to copy into a new compatible image
      * @return a new compatible copy, with the
-     *   same width and height and transparency and content, of <code>image</code>
+     *   same width and height and transparency and content, of {@code image}
      */
     public static BufferedImage toCompatibleImage(BufferedImage image) {
         if (isHeadless()) {
@@ -334,7 +334,7 @@ public class GraphicsUtilities {
     }
 
     /**
-     * <p>Returns a thumbnail of a source image. <code>newSize</code> defines
+     * <p>Returns a thumbnail of a source image. {@code newSize} defines
      * the length of the longest dimension of the thumbnail. The other
      * dimension is then computed according to the dimensions ratio of the
      * original picture.</p>
@@ -350,10 +350,10 @@ public class GraphicsUtilities {
      * @see #createThumbnail(java.awt.image.BufferedImage, int, int)
      * @param image the source image
      * @param newSize the length of the largest dimension of the thumbnail
-     * @return a new compatible <code>BufferedImage</code> containing a
-     *   thumbnail of <code>image</code>
-     * @throws IllegalArgumentException if <code>newSize</code> is larger than
-     *   the largest dimension of <code>image</code> or &lt;= 0
+     * @return a new compatible {@code BufferedImage} containing a
+     *   thumbnail of {@code image}
+     * @throws IllegalArgumentException if {@code newSize} is larger than
+     *   the largest dimension of {@code image} or &lt;= 0
      */
     public static BufferedImage createThumbnailFast(BufferedImage image,
                                                     int newSize) {
@@ -416,11 +416,11 @@ public class GraphicsUtilities {
      * @param image the source image
      * @param newWidth the width of the thumbnail
      * @param newHeight the height of the thumbnail
-     * @return a new compatible <code>BufferedImage</code> containing a
-     *   thumbnail of <code>image</code>
-     * @throws IllegalArgumentException if <code>newWidth</code> is larger than
-     *   the width of <code>image</code> or if code>newHeight</code> is larger
-     *   than the height of <code>image</code> or if one of the dimensions
+     * @return a new compatible {@code BufferedImage} containing a
+     *   thumbnail of {@code image}
+     * @throws IllegalArgumentException if {@code newWidth} is larger than
+     *   the width of {@code image} or if <code>newHeight</code> is larger
+     *   than the height of {@code image} or if one of the dimensions
      *   is &lt;= 0
      */
     public static BufferedImage createThumbnailFast(BufferedImage image,
@@ -450,7 +450,7 @@ public class GraphicsUtilities {
     }
 
     /**
-     * <p>Returns a thumbnail of a source image. <code>newSize</code> defines
+     * <p>Returns a thumbnail of a source image. {@code newSize} defines
      * the length of the longest dimension of the thumbnail. The other
      * dimension is then computed according to the dimensions ratio of the
      * original picture.</p>
@@ -465,10 +465,10 @@ public class GraphicsUtilities {
      * @see #createThumbnail(java.awt.image.BufferedImage, int, int)
      * @param image the source image
      * @param newSize the length of the largest dimension of the thumbnail
-     * @return a new compatible <code>BufferedImage</code> containing a
-     *   thumbnail of <code>image</code>
-     * @throws IllegalArgumentException if <code>newSize</code> is larger than
-     *   the largest dimension of <code>image</code> or &lt;= 0
+     * @return a new compatible {@code BufferedImage} containing a
+     *   thumbnail of {@code image}
+     * @throws IllegalArgumentException if {@code newSize} is larger than
+     *   the largest dimension of {@code image} or &lt;= 0
      */
     public static BufferedImage createThumbnail(BufferedImage image,
                                                 int newSize) {
@@ -578,11 +578,11 @@ public class GraphicsUtilities {
      * @param image the source image
      * @param newWidth the width of the thumbnail
      * @param newHeight the height of the thumbnail
-     * @return a new compatible <code>BufferedImage</code> containing a
-     *   thumbnail of <code>image</code>
-     * @throws IllegalArgumentException if <code>newWidth</code> is larger than
-     *   the width of <code>image</code> or if code>newHeight</code> is larger
-     *   than the height of <code>image or if one the dimensions is not &gt; 0</code>
+     * @return a new compatible {@code BufferedImage} containing a
+     *   thumbnail of {@code image}
+     * @throws IllegalArgumentException if {@code newWidth} is larger than
+     *   the width of {@code image} or if <code>newHeight</code> is larger
+     *   than the height of {@code image or if one the dimensions is not > 0}
      */
     public static BufferedImage createThumbnail(BufferedImage image,
                                                 int newWidth, int newHeight) {
@@ -670,10 +670,10 @@ public class GraphicsUtilities {
 
     /**
      * <p>Returns an array of pixels, stored as integers, from a
-     * <code>BufferedImage</code>. The pixels are grabbed from a rectangular
+     * {@code BufferedImage}. The pixels are grabbed from a rectangular
      * area defined by a location and two dimensions. Calling this method on
-     * an image of type different from <code>BufferedImage.TYPE_INT_ARGB</code>
-     * and <code>BufferedImage.TYPE_INT_RGB</code> will unmanage the image.</p>
+     * an image of type different from {@code BufferedImage.TYPE_INT_ARGB}
+     * and {@code BufferedImage.TYPE_INT_RGB} will unmanage the image.</p>
      *
      * @param img the source image
      * @param x the x location at which to start grabbing pixels
@@ -681,9 +681,9 @@ public class GraphicsUtilities {
      * @param w the width of the rectangle of pixels to grab
      * @param h the height of the rectangle of pixels to grab
      * @param pixels a pre-allocated array of pixels of size w*h; can be null
-     * @return <code>pixels</code> if non-null, a new array of integers
+     * @return {@code pixels} if non-null, a new array of integers
      *   otherwise
-     * @throws IllegalArgumentException is <code>pixels</code> is non-null and
+     * @throws IllegalArgumentException is {@code pixels} is non-null and
      *   of length &lt; w*h
      */
     public static int[] getPixels(BufferedImage img,
@@ -712,9 +712,9 @@ public class GraphicsUtilities {
 
     /**
      * <p>Writes a rectangular area of pixels in the destination
-     * <code>BufferedImage</code>. Calling this method on
-     * an image of type different from <code>BufferedImage.TYPE_INT_ARGB</code>
-     * and <code>BufferedImage.TYPE_INT_RGB</code> will unmanage the image.</p>
+     * {@code BufferedImage}. Calling this method on
+     * an image of type different from {@code BufferedImage.TYPE_INT_ARGB}
+     * and {@code BufferedImage.TYPE_INT_RGB} will unmanage the image.</p>
      *
      * @param img the destination image
      * @param x the x location at which to start storing pixels
@@ -722,7 +722,7 @@ public class GraphicsUtilities {
      * @param w the width of the rectangle of pixels to store
      * @param h the height of the rectangle of pixels to store
      * @param pixels an array of pixels, stored as integers
-     * @throws IllegalArgumentException is <code>pixels</code> is non-null and
+     * @throws IllegalArgumentException is {@code pixels} is non-null and
      *   of length &lt; w*h
      */
     public static void setPixels(BufferedImage img,
@@ -770,6 +770,11 @@ public class GraphicsUtilities {
     /**
      * Draws an image on top of a component by doing a 3x3 grid stretch of the image
      * using the specified insets.
+     *
+     * @param g Graphic context
+     * @param comp The component
+     * @param img The image to paint
+     * @param ins The insets
      */
     public static void tileStretchPaint(Graphics g, 
                 JComponent comp,

@@ -86,17 +86,17 @@ import org.jdesktop.swingx.treetable.TreeTableModelProvider;
 import org.jdesktop.swingx.util.Contract;
 
 /**
- * <p><code>JXTreeTable</code> is a specialized {@link javax.swing.JTable table}
+ * <p>{@code JXTreeTable} is a specialized {@link javax.swing.JTable table}
  * consisting of a single column in which to display hierarchical data, and any
  * number of other columns in which to display regular data. The interface for
- * the data model used by a <code>JXTreeTable</code> is
+ * the data model used by a {@code JXTreeTable} is
  * {@link org.jdesktop.swingx.treetable.TreeTableModel}. It extends the
  * {@link javax.swing.tree.TreeModel} interface to allow access to cell data by
  * column indices within each node of the tree hierarchy.</p>
  *
- * <p>The most straightforward way create and use a <code>JXTreeTable</code>, is to
+ * <p>The most straightforward way create and use a {@code JXTreeTable}, is to
  * first create a suitable data model for it, and pass that to a
- * <code>JXTreeTable</code> constructor, as shown below:
+ * {@code JXTreeTable} constructor, as shown below:
  * <pre>
  *  TreeTableModel  treeTableModel = new FileSystemModel(); // any TreeTableModel
  *  JXTreeTable     treeTable = new JXTreeTable(treeTableModel);
@@ -106,17 +106,17 @@ import org.jdesktop.swingx.util.Contract;
  * inside a scroll pane is necessary.</p>
  *
  * <p>A single treetable model instance may be shared among more than one
- * <code>JXTreeTable</code> instances. To access the treetable model, always call
+ * {@code JXTreeTable} instances. To access the treetable model, always call
  * {@link #getTreeTableModel() getTreeTableModel} and
  * {@link #setTreeTableModel(org.jdesktop.swingx.treetable.TreeTableModel) setTreeTableModel}.
- * <code>JXTreeTable</code> wraps the supplied treetable model inside a private
+ * {@code JXTreeTable} wraps the supplied treetable model inside a private
  * adapter class to adapt it to a {@link javax.swing.table.TableModel}. Although
  * the model adapter is accessible through the {@link #getModel() getModel} method, you
  * should avoid accessing and manipulating it in any way. In particular, each
  * model adapter instance is tightly bound to a single table instance, and any
  * attempt to share it with another table (for example, by calling
  * {@link #setModel(javax.swing.table.TableModel) setModel})
- * will throw an <code>IllegalArgumentException</code>!
+ * will throw an {@code IllegalArgumentException}!
  *
  * <b>Note</b>: <p>
  * This implementation is basically as hacky as the very first version
@@ -182,7 +182,7 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Constructs a <code>JXTreeTable</code> using the specified
+     * Constructs a {@code JXTreeTable} using the specified
      * {@link org.jdesktop.swingx.JXTreeTable.TreeTableCellRenderer}.
      * 
      * @param renderer
@@ -522,16 +522,16 @@ public class JXTreeTable extends JXTable {
      * caused a selection change instead of a node expansion/ collapse.</li>
      * <li>
      * The consumption of events are handled within this class itself because
-     * the behavior associated with the way that <code>processMouseEvent(MouseEvent)</code> 
+     * the behavior associated with the way that {@code processMouseEvent(MouseEvent)}
      * consumed events was incompatible with the way this
      * class does things. As a consequence,
-     * <code>hitHandleDetectionFromProcessMouse(MouseEvent)</code> 
-     * always returns false so that <code>processMoueEvent(MouseEvent)</code> will not 
+     * {@code hitHandleDetectionFromProcessMouse(MouseEvent)}
+     * always returns false so that {@code processMoueEvent(MouseEvent)} will not
      * doing anything other than call its super
      * method.</li>
      * <li>
      * All events of type MOUSE_PRESSED, MOUSE_RELEASED, and MOUSE_CLICKED, but
-     * excluding when <code>isPopupTrigger()</code> returns true, are sent to
+     * excluding when {@code isPopupTrigger()} returns true, are sent to
      * the JTree. This has the added benefit of not having to piggy back a mouse
      * released event as we can just use the real mouse released event. This
      * keeps the look and feel consistent for the user of UI's that
@@ -542,7 +542,7 @@ public class JXTreeTable extends JXTable {
      * didn't occur in any of the look and feels I tested. Perhaps that was the
      * case if events that landed within the content area of a node were sent to
      * the JTree. If that behavior is actually necessary, then it can be added
-     * to the <code>isTreeHandleEventType(MouseEvent)</code> method. This
+     * to the {@code isTreeHandleEventType(MouseEvent)} method. This
      * implementation sends all events regardless of the modifiers.</li>
      * <li>
      * This implementation toggles the processing of mouse motion events. When
@@ -1242,7 +1242,7 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Returns the actual row that is editing as <code>getEditingRow</code>
+     * Returns the actual row that is editing as {@code getEditingRow}
      * will always return -1.
      */
     private int realEditingRow() {
@@ -1451,10 +1451,10 @@ public class JXTreeTable extends JXTable {
      * Overridden to decorate the tree's renderer after calling super.
      * At that point, it is only the tree itself that has been decorated. 
      *
-     * @param renderer the <code>TableCellRenderer</code> to prepare
+     * @param renderer the {@code TableCellRenderer} to prepare
      * @param row the row of the cell to render, where 0 is the first row
      * @param column the column of the cell to render, where 0 is the first column
-     * @return the <code>Component</code> used as a stamp to render the specified cell
+     * @return the {@code Component} used as a stamp to render the specified cell
      * 
      * @see #applyRenderer(Component, ComponentAdapter)
      */
@@ -1701,14 +1701,14 @@ public class JXTreeTable extends JXTable {
      * Makes sure all the path components in path are expanded (except
      * for the last path component) and scrolls so that the 
      * node identified by the path is displayed. Only works when this
-     * <code>JTree</code> is contained in a <code>JScrollPane</code>.
+     * {@code JTree} is contained in a <code>JScrollPane</code>.
      * 
      * (doc copied from JTree)
      * 
      * PENDING: JW - where exactly do we want to scroll? Here: the scroll
      * is in vertical direction only. Might need to show the tree column?
      * 
-     * @param path  the <code>TreePath</code> identifying the node to
+     * @param path  the {@code TreePath} identifying the node to
      *          bring into view
      */
     public void scrollPathToVisible(TreePath path) {
@@ -1799,19 +1799,19 @@ public class JXTreeTable extends JXTable {
 
     
     /**
-     * Returns an <code>Enumeration</code> of the descendants of the
-     * path <code>parent</code> that
-     * are currently expanded. If <code>parent</code> is not currently
-     * expanded, this will return <code>null</code>.
+     * Returns an {@code Enumeration} of the descendants of the
+     * path {@code parent} that
+     * are currently expanded. If {@code parent} is not currently
+     * expanded, this will return {@code null}.
      * If you expand/collapse nodes while
-     * iterating over the returned <code>Enumeration</code>
+     * iterating over the returned {@code Enumeration}
      * this may not return all
      * the expanded paths, or may return paths that are no longer expanded.
      *
      * @param parent  the path which is to be examined
-     * @return an <code>Enumeration</code> of the descendents of 
-     *        <code>parent</code>, or <code>null</code> if
-     *        <code>parent</code> is not currently expanded
+     * @return an {@code Enumeration} of the descendents of
+     *        {@code parent}, or <code>null</code> if
+     *        {@code parent} is not currently expanded
      */
     
     public Enumeration<?> getExpandedDescendants(TreePath parent) {
@@ -1825,7 +1825,7 @@ public class JXTreeTable extends JXTable {
      * @param x x value
      * @param y y value
      *
-     * @return the <code>TreePath</code> for the givern location.
+     * @return the {@code TreePath} for the givern location.
      */
      public TreePath getPathForLocation(int x, int y) {
         int row = rowAtPoint(new Point(x,y));
@@ -1840,7 +1840,7 @@ public class JXTreeTable extends JXTable {
      *
      * @param row
      *
-     * @return the <code>TreePath</code> for the given row.
+     * @return the {@code TreePath} for the given row.
      */
      public TreePath getPathForRow(int row) {
         return renderer.getPathForRow(row);
@@ -1850,7 +1850,7 @@ public class JXTreeTable extends JXTable {
       * Returns the row for a given TreePath.
       *
       * @param path
-      * @return the row for the given <code>TreePath</code>.
+      * @return the row for the given {@code TreePath}.
       */
      public int getRowForPath(TreePath path) {
        return renderer.getRowForPath(path);
@@ -1887,7 +1887,7 @@ public class JXTreeTable extends JXTable {
 
 
     /**
-     * Sets the value of the <code>scrollsOnExpand</code> property for the tree
+     * Sets the value of the {@code scrollsOnExpand} property for the tree
      * part. This property specifies whether the expanded paths should be scrolled
      * into view. In a look and feel in which a tree might not need to scroll
      * when expanded, this property may be ignored.
@@ -1900,16 +1900,16 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Returns the value of the <code>scrollsOnExpand</code> property.
+     * Returns the value of the {@code scrollsOnExpand} property.
      *
-     * @return the value of the <code>scrollsOnExpand</code> property
+     * @return the value of the {@code scrollsOnExpand} property
      */
     public boolean getScrollsOnExpand() {
         return renderer.getScrollsOnExpand();
     }
 
     /**
-     * Sets the value of the <code>showsRootHandles</code> property for the tree
+     * Sets the value of the {@code showsRootHandles} property for the tree
      * part. This property specifies whether the node handles should be displayed.
      * If handles are not supported by a particular look and feel, this property
      * may be ignored.
@@ -1922,16 +1922,16 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Returns the value of the <code>showsRootHandles</code> property.
+     * Returns the value of the {@code showsRootHandles} property.
      *
-     * @return the value of the <code>showsRootHandles</code> property
+     * @return the value of the {@code showsRootHandles} property
      */
     public boolean getShowsRootHandles() {
         return renderer.getShowsRootHandles();
     }
 
     /**
-     * Sets the value of the <code>expandsSelectedPaths</code> property for the tree
+     * Sets the value of the {@code expandsSelectedPaths} property for the tree
      * part. This property specifies whether the selected paths should be expanded.
      *
      * @param expand true, if selected paths should be expanded; false, otherwise
@@ -1941,9 +1941,9 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Returns the value of the <code>expandsSelectedPaths</code> property.
+     * Returns the value of the {@code expandsSelectedPaths} property.
      *
-     * @return the value of the <code>expandsSelectedPaths</code> property
+     * @return the value of the {@code expandsSelectedPaths} property
      */
     public boolean getExpandsSelectedPaths() {
         return renderer.getExpandsSelectedPaths();
@@ -2003,7 +2003,7 @@ public class JXTreeTable extends JXTable {
 //------------------------------ exposed tree listeners
     
     /**
-     * Adds a listener for <code>TreeExpansion</code> events.
+     * Adds a listener for {@code TreeExpansion} events.
      * 
      * @param tel a TreeExpansionListener that will be notified 
      * when a tree node is expanded or collapsed
@@ -2024,8 +2024,8 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Removes a listener for <code>TreeExpansion</code> events.
-     * @param tel the <code>TreeExpansionListener</code> to remove
+     * Removes a listener for {@code TreeExpansion} events.
+     * @param tel the {@code TreeExpansionListener} to remove
      */
     public void removeTreeExpansionListener(TreeExpansionListener tel) {
         if (treeExpansionBroadcaster == null) return;
@@ -2033,7 +2033,7 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Adds a listener for <code>TreeSelection</code> events.
+     * Adds a listener for {@code TreeSelection} events.
      * TODO (JW): redirect event source to this. 
      * 
      * @param tsl a TreeSelectionListener that will be notified 
@@ -2044,15 +2044,15 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Removes a listener for <code>TreeSelection</code> events.
-     * @param tsl the <code>TreeSelectionListener</code> to remove
+     * Removes a listener for {@code TreeSelection} events.
+     * @param tsl the {@code TreeSelectionListener} to remove
      */
     public void removeTreeSelectionListener(TreeSelectionListener tsl) {
         renderer.removeTreeSelectionListener(tsl);
     }
 
     /**
-     * Adds a listener for <code>TreeWillExpand</code> events.
+     * Adds a listener for {@code TreeWillExpand} events.
      * TODO (JW): redirect event source to this. 
      * 
      * @param tel a TreeWillExpandListener that will be notified 
@@ -2063,8 +2063,8 @@ public class JXTreeTable extends JXTable {
     }
 
     /**
-     * Removes a listener for <code>TreeWillExpand</code> events.
-     * @param tel the <code>TreeWillExpandListener</code> to remove
+     * Removes a listener for {@code TreeWillExpand} events.
+     * @param tel the {@code TreeWillExpandListener} to remove
      */
     public void removeTreeWillExpandListener(TreeWillExpandListener tel) {
         renderer.removeTreeWillExpandListener(tel);
@@ -2084,7 +2084,7 @@ public class JXTreeTable extends JXTable {
      * Overriden to invoke supers implementation, and then,
      * if the receiver is editing a Tree column, the editors bounds is
      * reset. The reason we have to do this is because JTable doesn't
-     * think the table is being edited, as <code>getEditingRow</code> returns
+     * think the table is being edited, as {@code getEditingRow} returns
      * -1, and therefore doesn't automaticly resize the editor for us.
      */
     @Override
@@ -2228,7 +2228,7 @@ public class JXTreeTable extends JXTable {
         }
 
         /**
-         * This is overridden to set <code>updatingListSelectionModel</code>
+         * This is overridden to set {@code updatingListSelectionModel}
          * and message super. This is the only place DefaultTreeSelectionModel
          * alters the ListSelectionModel.
          */
@@ -2258,7 +2258,7 @@ public class JXTreeTable extends JXTable {
         }
 
         /**
-         * If <code>updatingListSelectionModel</code> is false, this will
+         * If {@code updatingListSelectionModel} is false, this will
          * reset the selected paths from the selected rows in the list
          * selection model.
          */
@@ -2468,7 +2468,7 @@ public class JXTreeTable extends JXTable {
         }
 
         /**
-         * @return <code>TreeModelListener</code>
+         * @return {@code TreeModelListener}
          */
         private TreeModelListener getTreeModelListener() {
             if (treeModelListener == null) {
@@ -3263,7 +3263,7 @@ public class JXTreeTable extends JXTable {
         private final JXTreeTable table;
 
         /**
-         * Constructs a <code>TreeTableDataAdapter</code> for the specified
+         * Constructs a {@code TreeTableDataAdapter} for the specified
          * target component.
          *
          * @param component the target component

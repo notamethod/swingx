@@ -485,10 +485,10 @@ public class TableColumnModelTest extends InteractiveTestCase {
     
     /**
      * creates and returns a TableColumnModelExt with the given number
-     * of configured columns of type <code>TableColumnExt</code>.
+     * of configured columns of type {@code TableColumnExt}.
      * 
      * @param columns the number of columns to create and add to the model
-     * @return a <code>TableColumnModelExt</code> filled with columns.
+     * @return a {@code TableColumnModelExt} filled with columns.
      *    
      * @see createTableColumnExt
      */
@@ -504,13 +504,13 @@ public class TableColumnModelTest extends InteractiveTestCase {
     /**
      * Creates and returns a TableColumnExt with simple standard configuration.
      * 
-     * <pre><code>
+     * <pre>{@code
      * column.getModelIndex() == modelIndex
      * column.getIdentifier() == String.valueOf(modelIndex);
-     * </code></pre>
+     * }</pre>
      *  
      * @param modelIndex the model column index to use for config
-     * @return a <code>TableColumnExt</code> with standard configuration
+     * @return a {@code TableColumnExt} with standard configuration
      */
     protected TableColumnExt createTableColumnExt(int modelIndex) {
         TableColumnExt column = new TableColumnExt(modelIndex);

@@ -39,9 +39,9 @@ public class XProperties {
      * encoders. In other words: Register once on an arbitrary encoder makes
      * them available for all. Example usage:
      * 
-     * <pre><code>
+     * <pre>{@code
      * new XProperties.registerPersistenceDelegates();
-     * </code></pre>
+     * }</pre>
      * 
      * PENDING JW: cleanup for 1.6 sorting/filtering incomplete. Missing storage
      * - multiple sort keys

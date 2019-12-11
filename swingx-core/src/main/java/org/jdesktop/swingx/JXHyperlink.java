@@ -62,7 +62,7 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  *            }
  *      };
  *      JXHyperlink hyperlink = new JXHyperlink(linkAction);
- * <code> </pre>
+ * </code> </pre>
  * 
  * The hyperlink can be configured to always update its clicked 
  * property after firing the actionPerformed:
@@ -70,7 +70,7 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  * <pre> <code>
  *      JXHyperlink hyperlink = new JXHyperlink(action);
  *      hyperlink.setOverrulesActionOnClick(true);
- * <code> </pre>
+ * </code> </pre>
  * 
  * By default, this property is false. The hyperlink will 
  * auto-click only if it has no action. Developers can change the
@@ -217,7 +217,7 @@ public class JXHyperlink extends JButton {
     /**
      * Returns a boolean indicating if this link has already been visited.
      * 
-     * @return <code>true</code> if hyper link has already been clicked.
+     * @return {@code true} if hyper link has already been clicked.
      * @see #setClicked(boolean)
      */
     public boolean isClicked() {
@@ -228,7 +228,7 @@ public class JXHyperlink extends JButton {
      * Sets the overrulesActionOnClick property. It controls whether this
      * button should overrule the Action's visited property on actionPerformed. <p>
      * 
-     * The default value is <code>false</code>.
+     * The default value is {@code false}.
      * 
      * @param overrule if true, fireActionPerformed will set clicked to true
      *   independent of action.
@@ -281,7 +281,7 @@ public class JXHyperlink extends JButton {
 
     /**
      * Creates and returns a listener that will watch the changes of the
-     * provided <code>Action</code> and will update JXHyperlink's properties
+     * provided {@code Action} and will update JXHyperlink's properties
      * accordingly.
      */
     @Override
@@ -307,8 +307,8 @@ public class JXHyperlink extends JButton {
     }
 
     /**
-     * Read all the essential properties from the provided <code>Action</code>
-     * and apply it to the <code>JXHyperlink</code>
+     * Read all the essential properties from the provided {@code Action}
+     * and apply it to the {@code JXHyperlink}
      */
     @Override
     protected void configurePropertiesFromAction(Action a) {
@@ -339,8 +339,8 @@ public class JXHyperlink extends JButton {
     }
     
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
-     * Replaces the current UI object with the latest version from the <code>UIManager</code>.
+     * Notification from the {@code UIManager} that the L&F has changed.
+     * Replaces the current UI object with the latest version from the {@code UIManager}.
      * 
      * @see javax.swing.JComponent#updateUI
      */

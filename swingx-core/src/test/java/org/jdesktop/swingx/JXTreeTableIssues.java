@@ -80,7 +80,7 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 /**
- * Test to exposed known issues of <code>JXTreeTable</code>. <p>
+ * Test to exposed known issues of {@code JXTreeTable}. <p>
  * 
  * Ideally, there would be at least one failing test method per open
  * issue in the issue tracker. Plus additional failing test methods for

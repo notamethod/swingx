@@ -50,11 +50,11 @@ public class TableSortController<M extends TableModel> extends DefaultSortContro
     }
 
     /**
-     * Sets the <code>TableModel</code> to use as the underlying model
-     * for this <code>TableRowSorter</code>.  A value of <code>null</code>
+     * Sets the {@code TableModel} to use as the underlying model
+     * for this {@code TableRowSorter}.  A value of <code>null</code>
      * can be used to set an empty model.
      *
-     * @param model the underlying model to use, or <code>null</code>
+     * @param model the underlying model to use, or {@code null}
      */
     public void setModel(M model) {
         tableModel = model;
@@ -65,17 +65,17 @@ public class TableSortController<M extends TableModel> extends DefaultSortContro
 
     
     /**
-     * Returns the <code>Comparator</code> for the specified 
-     * column.  If a <code>Comparator</code> has not been specified using
-     * the <code>setComparator</code> method a <code>Comparator</code>
+     * Returns the {@code Comparator} for the specified
+     * column.  If a {@code Comparator} has not been specified using
+     * the {@code setComparator} method a <code>Comparator</code>
      * will be returned based on the column class
-     * (<code>TableModel.getColumnClass</code>) of the specified column.
-     * If the column class is <code>String</code>,
-     * <code>Collator.getInstance</code> is returned.  If the
-     * column class implements <code>Comparable</code> a private
-     * <code>Comparator</code> is returned that invokes the
-     * <code>compareTo</code> method.  Otherwise
-     * <code>Collator.getInstance</code> is returned.<p>
+     * ({@code TableModel.getColumnClass}) of the specified column.
+     * If the column class is {@code String},
+     * {@code Collator.getInstance} is returned.  If the
+     * column class implements {@code Comparable} a private
+     * {@code Comparator} is returned that invokes the
+     * {@code compareTo} method.  Otherwise
+     * {@code Collator.getInstance} is returned.<p>
      * 
      * PENDING JW: think about implications to string value lookup!
      *

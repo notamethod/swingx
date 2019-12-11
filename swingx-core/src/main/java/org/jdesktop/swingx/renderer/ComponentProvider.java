@@ -32,11 +32,11 @@ import org.jdesktop.swingx.ext.UIDependent;
 /**
  * Abstract base class of a provider for a cell rendering component. Configures
  * the component's content and default visuals depending on the renderee's state
- * as captured in a <code>CellContext</code>. It's basically re-usable across
+ * as captured in a {@code CellContext}. It's basically re-usable across
  * all types of renderees (JTable, JList, JTree).
  * <p>
  * 
- * <h2> Content </h2>
+ * <h1> Content </h1>
  * 
  * A provider guarantees to configure the "content" properties completely
  * for any given object. The most frequent mappings are to text and/or icon
@@ -46,7 +46,7 @@ import org.jdesktop.swingx.ext.UIDependent;
  * always. <p>
  * 
  * To ease content configuration, it supports a pluggable
- * <code>StringValue</code> which purpose is to create and return a string
+ * {@code StringValue} which purpose is to create and return a string
  * representation of a given object. Implemenations of a ComponentProvider can
  * use it to configure their rendering component as appropriate.<p>
  * 
@@ -56,37 +56,37 @@ import org.jdesktop.swingx.ext.UIDependent;
  * constructors to take the converter and create a default LabelProvider which
  * uses it).
  * 
- * <pre><code>
+ * <pre>{@code
  * StringValue stringValue = new StringValue() {
- * 
+ *
  *     public String getString(Object value) {
  *         if (!(value instanceof Contributor))
  *             return TO_STRING.getString(value);
  *         Contributor contributor = (Contributor) value;
- *         return contributor.lastName + &quot;, &quot; + contributor.firstName;
+ *         return contributor.lastName + ", " + contributor.firstName;
  *     }
- * 
+ *
  * };
  * table.setDefaultRenderer(Contributor.class, new DefaultTableRenderer(
  *         stringValue));
  * list.setCellRenderer(new DefaultListRenderer(stringValue));
  * tree.setCellRenderer(new DefaultTreeRenderer(stringValue));
- * 
- * </code></pre>
+ *
+ * }</pre>
  * 
  * To ease handling of formatted localizable content, there's a
- * <code>FormatStringValue</code> which is pluggable with a
- * <code>Format</code>. <p>
+ * {@code FormatStringValue} which is pluggable with a
+ * {@code Format}. <p>
  * 
  * F.i. to show a Date's time in the default Locale's SHORT
  * version and right align the cell
  * 
- * <pre><code>
+ * <pre>{@code
  *   StringValue stringValue = new FormatStringValue(
  *       DateFormat.getTimeInstance(DateFormat.SHORT));
- *   table.getColumnExt(&quot;timeID&quot;).setCellRenderer(
- *       new DefaultTableRenderer(stringValue, JLabel.RIGHT);  
- * </code></pre>
+ *   table.getColumnExt("timeID").setCellRenderer(
+ *       new DefaultTableRenderer(stringValue, JLabel.RIGHT);
+ * }</pre>
  * 
  * 
  * <p>
@@ -95,7 +95,7 @@ import org.jdesktop.swingx.ext.UIDependent;
  * <h2> Default Visuals </h2>
  * 
  * Guarantees to completely configure the visual properties listed below. As a
- * consequence, client code (f.i. in <code>Highlighter</code>s) can safely
+ * consequence, client code (f.i. in {@code Highlighter}s) can safely
  * change them without long-lasting visual artefacts.
  * 
  * <ul>
@@ -111,7 +111,7 @@ import org.jdesktop.swingx.ext.UIDependent;
  * </ul>
  * 
  * As this internally delegates default visual configuration to a
- * <code>DefaultVisuals</code> (which handles the first eight items)
+ * {@code DefaultVisuals} (which handles the first eight items)
  * subclasses have to guarantee the alignment only.
  * <p>
  * 
@@ -220,7 +220,7 @@ public abstract class ComponentProvider<T extends JComponent>
 
     /**
      * Sets the StringValue to use. If the given StringValue is null,
-     * defaults to <code>StringValue.TO_STRING</code>. <p>
+     * defaults to {@code StringValue.TO_STRING}. <p>
      * 
      * @param formatter the format to use.
      */
@@ -251,12 +251,12 @@ public abstract class ComponentProvider<T extends JComponent>
      * same value as the parameter passed-in here. That is (assuming that the
      * rendering component has a getText())
      * 
-     * <pre><code>
+     * <pre>{@code
      * if (equals(value, context.getValue()) {
-     *     assertEquals(provider.getString(value), 
+     *     assertEquals(provider.getString(value),
      *     provider.getRenderingComponent(context).getText());
      * }
-     * </code></pre>
+     * }</pre>
      * 
      * This implementation simply delegates to its StringValue. Subclasses might
      * need to override to comply.
@@ -278,7 +278,7 @@ public abstract class ComponentProvider<T extends JComponent>
      * Returns a String representation of the content.<p>
      * 
      * This method messages the 
-     * <code>StringValue</code> to get the String rep. Meant as 
+     * {@code StringValue} to get the String rep. Meant as
      * a convenience for subclasses.
      * 
      * @param context the cell context, must not be null.
@@ -293,7 +293,7 @@ public abstract class ComponentProvider<T extends JComponent>
      * Returns a Icon representation of the content.<p>
      * 
      * This method messages the 
-     * <code>IconValue</code> to get the Icon rep. Meant as 
+     * {@code IconValue} to get the Icon rep. Meant as
      * a convenience for subclasses.
      * 
      * @param context the cell context, must not be null.

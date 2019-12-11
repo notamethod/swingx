@@ -53,12 +53,12 @@ import org.jdesktop.swingx.util.PaintUtils;
  *
  * <p>For example, if you wanted to blur <em>just the text</em> on the button, and let everything else be
  * handled by the UI delegate for your look and feel, then you could:
- * <pre><code>
+ * <pre>{@code
  *  JXButton b = new JXButton("Execute");
  *  AbstractPainter fgPainter = (AbstractPainter)b.getForegroundPainter();
  *  StackBlurFilter filter = new StackBlurFilter();
  *  fgPainter.setFilters(filter);
- * </code></pre>
+ * }</pre>
  *
  * <p>If <em>either</em> the foreground painter or the background painter is set,
  * then super.paintComponent() is not called. By setting both the foreground and background
@@ -728,8 +728,8 @@ public class JXButton extends JButton implements BackgroundPaintable {
     }
     
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
-     * Replaces the current UI object with the latest version from the <code>UIManager</code>.
+     * Notification from the {@code UIManager} that the L&F has changed.
+     * Replaces the current UI object with the latest version from the {@code UIManager}.
      * 
      * @see javax.swing.JComponent#updateUI
      */

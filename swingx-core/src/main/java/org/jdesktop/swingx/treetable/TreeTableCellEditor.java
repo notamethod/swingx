@@ -62,7 +62,7 @@ import org.jdesktop.swingx.JXTable.GenericEditor;
  * the tree to paint any decorations the tree wants. Then, we would
  * only have to worry about the editing part. The approach taken
  * here is to determine where tree would place the editor, and to override
- * the <code>reshape</code> method in the JTextField component to
+ * the {@code reshape} method in the JTextField component to
  * nudge the textfield to the location tree would place it. Since
  * JXTreeTable will paint the tree behind the editor everything should
  * just work. So, that is what we are doing here. Determining of
@@ -95,7 +95,7 @@ public class TreeTableCellEditor extends GenericEditor {
 
     /**
      * Overriden to determine an offset that tree would place the editor at. The
-     * offset is determined from the <code>getRowBounds</code> JTree method,
+     * offset is determined from the {@code getRowBounds} JTree method,
      * and additionaly from the icon DefaultTreeCellRenderer will use.
      * <p>
      * The offset is then set on the TreeTableTextField component created in the
@@ -149,8 +149,8 @@ public class TreeTableCellEditor extends GenericEditor {
 
     /**
      * Component used by TreeTableCellEditor. The only thing this does
-     * is to override the <code>reshape</code> method, and to ALWAYS
-     * make the x location be <code>offset</code>.
+     * is to override the {@code reshape} method, and to ALWAYS
+     * make the x location be {@code offset}.
      */
     static class TreeTableTextField extends JTextField {
         private int iconWidth;

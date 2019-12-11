@@ -240,7 +240,7 @@ public class BasicStatusBarUI extends StatusBarUI {
     
     /**
      * Returns an instance of the UI delegate for the specified component.
-     * Each subclass must provide its own static <code>createUI</code>
+     * Each subclass must provide its own static {@code createUI}
      * method that returns an instance of that UI delegate subclass.
      * If the UI delegate subclass is stateless, it may return an instance
      * that is shared by multiple components.  If the UI delegate is
@@ -376,7 +376,7 @@ public class BasicStatusBarUI extends StatusBarUI {
     /**
      * Remove the installed listeners from the status bar.
      * The number and types of listeners removed in this method should be
-     * the same that were added in <code>installListeners</code>
+     * the same that were added in {@code installListeners}
      */
     protected void uninstallListeners(JXStatusBar sb) {
         if (mouseListener != null) {

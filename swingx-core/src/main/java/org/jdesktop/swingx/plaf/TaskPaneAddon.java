@@ -42,7 +42,7 @@ import org.jdesktop.swingx.ext.windows.WindowsLookAndFeelAddons;
 import org.jdesktop.swingx.util.OS;
 
 /**
- * Addon for <code>JXTaskPane</code>.<br>
+ * Addon for {@code JXTaskPane}.<br>
  *
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  * @author Karl Schaefer

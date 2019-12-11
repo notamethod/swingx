@@ -34,8 +34,8 @@ import org.jdesktop.swingx.util.PaintUtils;
  * squares (squareSize).</p>
  * 
  * <p>To configure a checkerboard pattern that used a gradient for the dark
- * tiles and Color.WHITE for the light tiles, you could:
- * <pre><code>
+ * tiles and Color.WHITE for the light tiles, you could:</p>
+ * <pre>{@code
  *  GradientPaint gp = new GradientPaint(
  *      new Point2D.Double(0, 0),
  *      Color.BLACK,
@@ -46,7 +46,7 @@ import org.jdesktop.swingx.util.PaintUtils;
  *  p.setLightPaint(Color.WHITE);
  *  p.setSquareSize(32);
  *  panel.seBackgroundPainter(p);
- * </code></pre></p>
+ * }</pre>
  * 
  * <p>Note that in this example, the "32" in the GradientPaint matches the "32"
  * set for the squareSize. This is necessary because GradientPaints don't

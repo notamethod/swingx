@@ -17,7 +17,7 @@ public abstract class AbstractInputEventDispatcher extends AbstractBean
 
     /**
      * {@inheritDoc}
-     * <p/>
+     * <p></p>
      * This method calls the appropriate
      * {@code process<eventType>Event}
      * method for the given class of event.

@@ -35,7 +35,7 @@ public class ErrorEvent extends EventObject {
     private Throwable throwable;
     
     /**
-     * Creates a new instance of <CODE>ErrorEvent</CODE>
+     * Creates a new instance of {@code ErrorEvent}
      * @param throwable The Error or Exception which occurred.
      * @param source The object which threw the Error or Exception
      */

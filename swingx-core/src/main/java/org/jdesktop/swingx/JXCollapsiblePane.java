@@ -50,7 +50,7 @@ import org.jdesktop.beans.JavaBean;
 import org.jdesktop.swingx.util.GraphicsUtilities;
 
 /**
- * <code>JXCollapsiblePane</code> provides a component which can collapse or
+ * {@code JXCollapsiblePane} provides a component which can collapse or
  * expand its content area with animation and fade in/fade out effects.
  * It also acts as a standard container for other Swing components.
  * <p>
@@ -58,34 +58,34 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  * displayed contents. This means that colors, fonts, and other display 
  * configuration items must be set on the content pane.
  * 
- * <pre><code>
+ * <pre>{@code
  * // to set the font
  * collapsiblePane.getContentPane().setFont(font);
  * // to set the background color
  * collapsiblePane.getContentPane().setBackground(Color.RED);
- * </code>
+ * }
  * </pre>
  * 
  * For convenience, the {@code add} and {@code remove} methods forward to the
  * content pane.  The following code shows to ways to add a child to the
  * content pane.
  * 
- * <pre><code>
+ * <pre>{@code
  * // to add a child
  * collapsiblePane.getContentPane().add(component);
  * // to add a child
  * collapsiblePane.add(component);
- * </code>
+ * }
  * </pre>
  * 
  * To set the content pane, do not use {@code add}, use {@link #setContentPane(Container)}.
  * 
  * <p>
- * In this example, the <code>JXCollapsiblePane</code> is used to build
+ * In this example, the {@code JXCollapsiblePane} is used to build
  * a Search pane which can be shown and hidden on demand.
  *
  * <pre>
- * <code>
+ * {@code
  * JXCollapsiblePane cp = new JXCollapsiblePane();
  *
  * // JXCollapsiblePane can be used like any other container
@@ -116,18 +116,18 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  *
  * frame.pack();
  * frame.setVisible(true);
- * </code>
+ * }
  * </pre>
  *
  * <p>
- * The <code>JXCollapsiblePane</code> has a default toggle action registered
+ * The {@code JXCollapsiblePane} has a default toggle action registered
  * under the name {@link #TOGGLE_ACTION}. Bind this action to a button and
  * pressing the button will automatically toggle the pane between expanded
  * and collapsed states. Additionally, you can define the icons to use through
  * the {@link #EXPAND_ICON} and {@link #COLLAPSE_ICON} properties on the action.
  * Example
  * <pre>
- * <code>
+ * {@code
  * // get the built-in toggle action
  * Action toggleAction = collapsible.getActionMap().
  *   get(JXCollapsiblePane.TOGGLE_ACTION);
@@ -137,11 +137,11 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  *                       UIManager.getIcon("Tree.expandedIcon"));
  * toggleAction.putValue(JXCollapsiblePane.EXPAND_ICON,
  *                       UIManager.getIcon("Tree.collapsedIcon"));
- * </code>
+ * }
  * </pre>
  *
  * <p>
- * Note: <code>JXCollapsiblePane</code> requires its parent container to have a
+ * Note: {@code JXCollapsiblePane} requires its parent container to have a
  * {@link java.awt.LayoutManager} using {@link #getPreferredSize()} when
  * calculating its layout (example {@link org.jdesktop.swingx.VerticalLayout},
  * {@link java.awt.BorderLayout}).
@@ -305,7 +305,7 @@ public class JXCollapsiblePane extends JXPanel {
     /**
      * JXCollapsible has a built-in toggle action which can be bound to buttons.
      * Accesses the action through
-     * <code>collapsiblePane.getActionMap().get(JXCollapsiblePane.TOGGLE_ACTION)</code>.
+     * {@code collapsiblePane.getActionMap().get(JXCollapsiblePane.TOGGLE_ACTION)}.
      */
     public final static String TOGGLE_ACTION = "toggle";
 
@@ -475,14 +475,14 @@ public class JXCollapsiblePane extends JXPanel {
      * animation is turned off.
      *
      * <p>
-     * When animated, the <code>JXCollapsiblePane</code> will progressively
+     * When animated, the {@code JXCollapsiblePane} will progressively
      * reduce (when collapsing) or enlarge (when expanding) the height of its
      * content area until it becomes 0 or until it reaches the preferred height of
      * the components it contains. The transparency of the content area will also
      * change during the animation.
      *
      * <p>
-     * If not animated, the <code>JXCollapsiblePane</code> will simply hide
+     * If not animated, the {@code JXCollapsiblePane} will simply hide
      * (collapsing) or show (expanding) its content area.
      *
      * @param animated
@@ -577,16 +577,16 @@ public class JXCollapsiblePane extends JXPanel {
     }
 
     /**
-     * Expands or collapses this <code>JXCollapsiblePane</code>.
+     * Expands or collapses this {@code JXCollapsiblePane}.
      *
      * <p>
-     * If the component is collapsed and <code>val</code> is false, then this
+     * If the component is collapsed and {@code val} is false, then this
      * call expands the JXCollapsiblePane, such that the entire JXCollapsiblePane
      * will be visible. If {@link #isAnimated()} returns true, the expansion will
      * be accompanied by an animation.
      *
      * <p>
-     * However, if the component is expanded and <code>val</code> is true, then
+     * However, if the component is expanded and {@code val} is true, then
      * this call collapses the JXCollapsiblePane, such that the entire
      * JXCollapsiblePane will be invisible. If {@link #isAnimated()} returns true,
      * the collapse will be accompanied by an animation.
@@ -709,7 +709,7 @@ public class JXCollapsiblePane extends JXPanel {
     }
 
     /**
-     * The critical part of the animation of this <code>JXCollapsiblePane</code>
+     * The critical part of the animation of this {@code JXCollapsiblePane}
      * relies on the calculation of its preferred size. During the animation, its
      * preferred size (specially its height) will change, when expanding, from 0
      * to the preferred size of the content pane, and the reverse when collapsing.
@@ -1082,7 +1082,7 @@ public class JXCollapsiblePane extends JXPanel {
          * Overridden paint method to take into account the alpha setting.
          * 
          * @param g
-         *            the <code>Graphics</code> context in which to paint
+         *            the {@code Graphics} context in which to paint
          */
         @Override
         public void paint(Graphics g) {

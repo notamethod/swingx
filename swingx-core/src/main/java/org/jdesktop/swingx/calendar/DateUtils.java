@@ -43,7 +43,7 @@ public class DateUtils {
      * Returns the last millisecond of the specified date.
      *
      * @param date Date to calculate end of day from
-     * @return Last millisecond of <code>date</code>
+     * @return Last millisecond of {@code date}
      */
     public static Date endOfDay(Date date) {
         Calendar calendar = CALENDAR;
@@ -63,7 +63,7 @@ public class DateUtils {
      * set to 0.
      *
      * @param date Date used in calculating start of day
-     * @return Start of <code>date</code>
+     * @return Start of {@code date}
      */
     public static Date startOfDay(Date date) {
         Calendar calendar = CALENDAR;
@@ -82,7 +82,7 @@ public class DateUtils {
      * set to 0.
      *
      * @param date long used in calculating start of day
-     * @return Start of <code>date</code>
+     * @return Start of {@code date}
      */
     public static long startOfDayInMillis(long date) {
         Calendar calendar = CALENDAR;
@@ -100,7 +100,7 @@ public class DateUtils {
      * Returns the last millisecond of the specified date.
      *
      * @param date long to calculate end of day from
-     * @return Last millisecond of <code>date</code>
+     * @return Last millisecond of {@code date}
      */
     public static long endOfDayInMillis(long date) {
         Calendar calendar = CALENDAR;
@@ -116,17 +116,17 @@ public class DateUtils {
 
 
     /**
-     * Returns the day after <code>date</code>.
+     * Returns the day after {@code date}.
      *
      * @param date Date used in calculating next day
-     * @return Day after <code>date</code>.
+     * @return Day after {@code date}.
      */
     public static Date nextDay(Date date) {
         return new Date(addDays(date.getTime(), 1));
     }
 
     /**
-     * Adds <code>amount</code> days to <code>time</code> and returns
+     * Adds {@code amount} days to <code>time</code> and returns
      * the resulting time.
      *
      * @param time Base time
@@ -144,20 +144,20 @@ public class DateUtils {
     }
 
     /**
-     * Returns the day after <code>date</code>.
+     * Returns the day after {@code date}.
      *
      * @param date Date used in calculating next day
-     * @return Day after <code>date</code>.
+     * @return Day after {@code date}.
      */
     public static long nextDay(long date) {
         return addDays(date, 1);
     }
 
     /**
-     * Returns the week after <code>date</code>.
+     * Returns the week after {@code date}.
      *
      * @param date Date used in calculating next week
-     * @return week after <code>date</code>.
+     * @return week after {@code date}.
      */
     public static long nextWeek(long date) {
         return addDays(date, 7);
@@ -165,13 +165,13 @@ public class DateUtils {
 
 
     /**
-     * Returns the number of days difference between <code>t1</code> and
-     * <code>t2</code>.
+     * Returns the number of days difference between {@code t1} and
+     * {@code t2}.
      *
      * @param t1 Time 1
      * @param t2 Time 2
      * @param checkOverflow indicates whether to check for overflow
-     * @return Number of days between <code>start</code> and <code>end</code>
+     * @return Number of days between {@code start} and <code>end</code>
      */
     public static int getDaysDiff(long t1, long t2, boolean checkOverflow) {
         if (t1 > t2) {
@@ -195,12 +195,12 @@ public class DateUtils {
     }
 
    /**
-     * Returns the number of days difference between <code>t1</code> and
-     * <code>t2</code>.
+     * Returns the number of days difference between {@code t1} and
+     * {@code t2}.
      *
      * @param t1 Time 1
      * @param t2 Time 2
-     * @return Number of days between <code>start</code> and <code>end</code>
+     * @return Number of days between {@code start} and <code>end</code>
      */
       public static int getDaysDiff(long t1, long t2) {
        return  getDaysDiff(t1, t2, true);
@@ -210,7 +210,7 @@ public class DateUtils {
      * Check, whether the date passed in is the first day of the year.
      *
      * @param date date to check in millis
-     * @return <code>true</code> if <var>date</var> corresponds to the first
+     * @return {@code true} if <var>date</var> corresponds to the first
      *         day of a year
      * @see Date#getTime() 
      */
@@ -232,7 +232,7 @@ public class DateUtils {
      * Check, whether the date passed in is the first day of the month.
      *
      * @param date date to check in millis
-     * @return <code>true</code> if <var>date</var> corresponds to the first
+     * @return {@code true} if <var>date</var> corresponds to the first
      *         day of a month
      * @see Date#getTime() 
      */
@@ -252,20 +252,20 @@ public class DateUtils {
 
 
     /**
-     * Returns the day before <code>date</code>.
+     * Returns the day before {@code date}.
      *
      * @param date Date used in calculating previous day
-     * @return Day before <code>date</code>.
+     * @return Day before {@code date}.
      */
     public static long previousDay(long date) {
         return addDays(date, -1);
     }
 
     /**
-     * Returns the week before <code>date</code>.
+     * Returns the week before {@code date}.
      *
      * @param date Date used in calculating previous week
-     * @return week before <code>date</code>.
+     * @return week before {@code date}.
      */
     public static long previousWeek(long date) {
         return addDays(date, -7);
@@ -273,10 +273,10 @@ public class DateUtils {
 
 
     /**
-     * Returns the first day before <code>date</code> that has the
-     * day of week matching <code>startOfWeek</code>.  For example, if you
-     * want to find the previous monday relative to <code>date</code> you
-     * would call <code>getPreviousDay(date, Calendar.MONDAY)</code>.
+     * Returns the first day before {@code date} that has the
+     * day of week matching {@code startOfWeek}.  For example, if you
+     * want to find the previous monday relative to {@code date} you
+     * would call {@code getPreviousDay(date, Calendar.MONDAY)}.
      *
      * @param date Base date
      * @param startOfWeek Calendar constant correspoding to start of week.
@@ -289,10 +289,10 @@ public class DateUtils {
     }
 
     /**
-     * Returns the first day after <code>date</code> that has the
-     * day of week matching <code>startOfWeek</code>.  For example, if you
-     * want to find the next monday relative to <code>date</code> you
-     * would call <code>getPreviousDay(date, Calendar.MONDAY)</code>.
+     * Returns the first day after {@code date} that has the
+     * day of week matching {@code startOfWeek}.  For example, if you
+     * want to find the next monday relative to {@code date} you
+     * would call {@code getPreviousDay(date, Calendar.MONDAY)}.
      *
      * @param date Base date
      * @param startOfWeek Calendar constant correspoding to start of week.

@@ -26,26 +26,26 @@ import org.jdesktop.swingx.util.Contract;
  * panel would install the compound focus listener like:
  * 
  * <pre>
- * <code>
+ * {@code
  *         // add some components inside
- *         panel.add(new JTextField(&quot;something to .... focus&quot;));
+ *         panel.add(new JTextField("something to .... focus"));
  *         panel.add(new JXDatePicker(new Date()));
- *         JComboBox combo = new JComboBox(new Object[] {&quot;dooooooooo&quot;, 1, 2, 3, 4 });
+ *         JComboBox combo = new JComboBox(new Object[] {"dooooooooo", 1, 2, 3, 4 });
  *         combo.setEditable(true);
- *         panel.add(new JButton(&quot;something else to ... focus&quot;));
+ *         panel.add(new JButton("something else to ... focus"));
  *         panel.add(combo);
- *         panel.setBorder(new TitledBorder(&quot;has focus dispatcher&quot;));
+ *         panel.setBorder(new TitledBorder("has focus dispatcher"));
  *         // register the compound dispatcher
  *         CompoundFocusListener report = new CompoundFocusListener(panel);
  *         PropertyChangeListener l = new PropertyChangeListener() {
- * 
+ *
  *             public void propertyChange(PropertyChangeEvent evt) {
  *                 // do something useful here
- *                 
+ *
  *             }};
- *         report.addPropertyChangeListener(l);    
- *         
- * </code>
+ *         report.addPropertyChangeListener(l);
+ *
+ * }
  * </pre>
  * 
  * PENDING JW: change of current instance of KeyboardFocusManager?

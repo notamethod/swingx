@@ -31,7 +31,7 @@ import org.jdesktop.swingx.rollover.RolloverRenderer;
 /**
  * Renderer for hyperlinks". <p>
  * 
- * The renderer is configured with a LinkAction<T>. 
+ * The renderer is configured with a LinkAction&lt;T&gt;.
  * It's mostly up to the developer to guarantee that the all
  * values which are passed into the getXXRendererComponent(...) are
  * compatible with T: she can provide a runtime class to check against.

@@ -47,25 +47,25 @@ public final class LookUtils {
     // Basics System Properties **********************************************
 
     /**
-     * The <code>java.version</code> System Property.<p>
+     * The {@code java.version} System Property.<p>
      *
-     * Defaults to <code>null</code> if the runtime does not have security 
+     * Defaults to {@code null} if the runtime does not have security
      * access to read this property or the property does not exist.
      */
     private static final String JAVA_VERSION = getSystemProperty("java.version");    
     
     /**
-     * The <code>os.name</code> System Property. Operating system name.<p>
+     * The {@code os.name} System Property. Operating system name.<p>
      *
-     * Defaults to <code>null</code> if the runtime does not have security 
+     * Defaults to {@code null} if the runtime does not have security
      * access to read this property or the property does not exist.
      */
     private static final String OS_NAME = getSystemProperty("os.name");
 
     /**
-     * The <code>os.version</code> System Property. Operating system version.<p>
+     * The {@code os.version} System Property. Operating system version.<p>
      *
-     * Defaults to <code>null</code> if the runtime does not have security 
+     * Defaults to {@code null} if the runtime does not have security
      * access to read this property or the property does not exist.
      */
     private static final String OS_VERSION = getSystemProperty("os.version");
@@ -253,10 +253,10 @@ public final class LookUtils {
     /**
      * Tries to look up the System property for the given key.
      * In untrusted environments this may throw a SecurityException.
-     * In this case we catch the exception and answer <code>null</code>. 
+     * In this case we catch the exception and answer {@code null}.
      * 
      * @param key   the name of the system property
-     * @return the system property's String value, or <code>null</code> if there's
+     * @return the system property's String value, or {@code null} if there's
      *     no such value, or a SecurityException has been caught
      */
     public static String getSystemProperty(String key) {
@@ -289,16 +289,16 @@ public final class LookUtils {
     
     /**
      * Checks if a boolean system property has been set for the given key,
-     * and returns the associated Boolean, or <code>null</code> if no value
+     * and returns the associated Boolean, or {@code null} if no value
      * has been set. The test for the property ignores case. 
      * If a Boolean value has been set, a message is logged 
      * with the given prefix. 
      * 
      * @param key          the key used to lookup the system property value
      * @param logMessage   a prefix used when a message is logged 
-     * @return <code>Boolean.TRUE</code> if the system property has been set to 
-     * "true" (case ignored), <code>Boolean.FALSE</code> if it has been set to 
-     * "false", <code>null</code> otherwise
+     * @return {@code Boolean.TRUE} if the system property has been set to
+     * "true" (case ignored), {@code Boolean.FALSE} if it has been set to
+     * "false", {@code null} otherwise
      */
     public static Boolean getBooleanSystemProperty(String key, String logMessage) {
         String value = getSystemProperty(key, "");
@@ -330,7 +330,7 @@ public final class LookUtils {
      * a System property.<p>
      * 
      * First checks the platform, platform version and Java version. Then 
-     * checks whether the desktop property <tt>win.xpstyle.themeActive</tt>
+     * checks whether the desktop property <code>win.xpstyle.themeActive</code>
      * is set or not.
      * 
      * @return true if the Windows XP style is enabled

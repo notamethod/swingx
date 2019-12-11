@@ -22,8 +22,8 @@ interface Mnemonicable {
      * Alt) will activate this component.
      * <p>
      * A mnemonic must correspond to a single key on the keyboard and should be
-     * specified using one of the <code>VK_XXX</code> keycodes defined in
-     * <code>java.awt.event.KeyEvent</code>. Mnemonics are case-insensitive,
+     * specified using one of the {@code VK_XXX} keycodes defined in
+     * {@code java.awt.event.KeyEvent}. Mnemonics are case-insensitive,
      * therefore a key event with the corresponding keycode would cause the
      * button to be activated whether or not the Shift modifier was pressed.
      * 
@@ -60,12 +60,12 @@ interface Mnemonicable {
      * you do not wish the default character to be underlined. For example, if
      * the text was 'Save As', with a mnemonic of 'a', and you wanted the 'A'
      * to be decorated, as 'Save <u>A</u>s', you would have to invoke
-     * <code>setDisplayedMnemonicIndex(5)</code> after invoking
-     * <code>setMnemonic(KeyEvent.VK_A)</code>.
+     * {@code setDisplayedMnemonicIndex(5)} after invoking
+     * {@code setMnemonic(KeyEvent.VK_A)}.
      *
      * @since 1.4
      * @param index Index into the String to underline
-     * @exception IllegalArgumentException will be thrown if <code>index</code>
+     * @exception IllegalArgumentException will be thrown if {@code index}
      *            is &gt;= length of the text, or &lt; -1
      * @see #getDisplayedMnemonicIndex
      *

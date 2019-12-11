@@ -89,7 +89,7 @@ import org.jdesktop.test.AncientSwingTeam;
  * 
  * Links
  * <ul>
- * <li> <a href="">Sneak preview II - Transparent Highlighter</a>
+ * <li> <a href="x">Sneak preview II - Transparent Highlighter</a>
  * </ul>
  * 
  * 

@@ -40,11 +40,11 @@ public class ListSortController<M extends ListModel> extends DefaultSortControll
     }
 
     /**
-     * Sets the <code>TableModel</code> to use as the underlying model
-     * for this <code>TableRowSorter</code>.  A value of <code>null</code>
+     * Sets the {@code TableModel} to use as the underlying model
+     * for this {@code TableRowSorter}.  A value of <code>null</code>
      * can be used to set an empty model.
      *
-     * @param model the underlying model to use, or <code>null</code>
+     * @param model the underlying model to use, or {@code null}
      */
     public void setModel(M model) {
         listModel = model;

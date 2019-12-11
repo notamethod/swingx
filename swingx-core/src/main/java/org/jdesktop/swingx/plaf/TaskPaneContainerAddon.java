@@ -37,7 +37,7 @@ import org.jdesktop.swingx.ext.windows.WindowsLookAndFeelAddons;
 import org.jdesktop.swingx.util.OS;
 
 /**
- * Addon for <code>JXTaskPaneContainer</code>. This addon defines the following properties:
+ * Addon for {@code JXTaskPaneContainer}. This addon defines the following properties:
  * <table>
  * <tr><td>TaskPaneContainer.background</td><td>background color</td></tr>
  * <tr><td>TaskPaneContainer.backgroundPainter</td><td>background painter</td></tr>

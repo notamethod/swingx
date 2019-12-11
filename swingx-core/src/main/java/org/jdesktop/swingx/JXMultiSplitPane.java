@@ -95,7 +95,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
 
     /** 
      * A convenience method that sets the MultiSplitLayout model.
-     * Equivalent to <code>getMultiSplitLayout.setModel(model)</code>
+     * Equivalent to {@code getMultiSplitLayout.setModel(model)}
      * 
      * @param model the root of the MultiSplitLayout model
      * @see #getMultiSplitLayout
@@ -108,7 +108,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
     /** 
      * A convenience method that sets the MultiSplitLayout dividerSize
      * property. Equivalent to 
-     * <code>getMultiSplitLayout().setDividerSize(newDividerSize)</code>.
+     * {@code getMultiSplitLayout().setDividerSize(newDividerSize)}.
      * 
      * @param dividerSize the value of the dividerSize property
      * @see #getMultiSplitLayout
@@ -121,7 +121,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
     /** 
      * A convenience method that returns the MultiSplitLayout dividerSize
      * property. Equivalent to 
-     * <code>getMultiSplitLayout().getDividerSize()</code>.
+     * {@code getMultiSplitLayout().getDividerSize()}.
      * 
      * @see #getMultiSplitLayout
      * @see MultiSplitLayout#getDividerSize
@@ -131,7 +131,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
     }
 
     /**
-     * Sets the value of the <code>continuousLayout</code> property.
+     * Sets the value of the {@code continuousLayout} property.
      * If true, then the layout is revalidated continuously while
      * a divider is being moved.  The default value of this property
      * is true.
@@ -150,7 +150,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
      * the layout when the drag gesture ends (typically, when the 
      * mouse button is released).
      *
-     * @return the value of the <code>continuousLayout</code> property
+     * @return the value of the {@code continuousLayout} property
      * @see #setContinuousLayout
      */
     public boolean isContinuousLayout() {
@@ -219,30 +219,30 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
 
     /**
      * Calls the UI delegate's paint method, if the UI delegate
-     * is non-<code>null</code>.  We pass the delegate a copy of the
-     * <code>Graphics</code> object to protect the rest of the
+     * is non-{@code null}.  We pass the delegate a copy of the
+     * {@code Graphics} object to protect the rest of the
      * paint code from irrevocable changes
-     * (for example, <code>Graphics.translate</code>).
+     * (for example, {@code Graphics.translate}).
      * <p>
      * If you override this in a subclass you should not make permanent
-     * changes to the passed in <code>Graphics</code>. For example, you
-     * should not alter the clip <code>Rectangle</code> or modify the
+     * changes to the passed in {@code Graphics}. For example, you
+     * should not alter the clip {@code Rectangle} or modify the
      * transform. If you need to do these operations you may find it
-     * easier to create a new <code>Graphics</code> from the passed in
-     * <code>Graphics</code> and manipulate it. Further, if you do not
+     * easier to create a new {@code Graphics} from the passed in
+     * {@code Graphics} and manipulate it. Further, if you do not
      * invoker super's implementation you must honor the opaque property,
      * that is
      * if this component is opaque, you must completely fill in the background
      * in a non-opaque color. If you do not honor the opaque property you
      * will likely see visual artifacts.
      * <p>
-     * The passed in <code>Graphics</code> object might
+     * The passed in {@code Graphics} object might
      * have a transform other than the identify transform
      * installed on it.  In this case, you might get
      * unexpected results if you cumulatively apply
      * another transform.
      *
-     * @param g the <code>Graphics</code> object to protect
+     * @param g the {@code Graphics} object to protect
      * @see #paint(Graphics)
      * @see javax.swing.plaf.ComponentUI
      */
@@ -270,7 +270,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
     
     /**
      * Specifies a Painter to use to paint the background of this JXPanel.
-     * If <code>p</code> is not null, then setOpaque(false) will be called
+     * If {@code p} is not null, then setOpaque(false) will be called
      * as a side effect. A component should not be opaque if painters are
      * being used, because Painters may paint transparent pixels or not
      * paint certain pixels, such as around the border insets.
@@ -315,7 +315,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
     /**
      * Uses the DividerPainter (if any) to paint each Divider that
      * overlaps the clip Rectangle.  This is done after the call to
-     * <code>super.paintChildren()</code> so that Dividers can be 
+     * {@code super.paintChildren()} so that Dividers can be
      * rendered "on top of" the children.
      * <p>
      * {@inheritDoc}
@@ -420,7 +420,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
      * size of a node during a drag operation on a divider. When implementing 
      * this method in a subclass the node instance should be checked, for 
      * example:
-     * <code>
+     * {@code
      * class MyMultiSplitPane extends JXMultiSplitPane
      * {
      *   protected Dimension getMaxNodeSize( MultiSplitLayout msl, Node n )
@@ -430,7 +430,7 @@ public class JXMultiSplitPane extends JPanel implements BackgroundPaintable {
      *     return null;
      *   }
      * }
-     * </code>
+     * }
      * @param msl the MultiSplitLayout used by this pane
      * @param n the node being resized
      * @return the maximum size or null (by default) to ignore the maximum size.

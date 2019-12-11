@@ -17,8 +17,8 @@ import javax.swing.event.ListDataEvent;
 import javax.swing.event.ListDataListener;
 
 /**
- * A <code>ListDataListener</code> that stores the received 
- * <code>ListDataEvents</code>.
+ * A {@code ListDataListener} that stores the received
+ * {@code ListDataEvents}.
  * 
  */
 public class ListDataReport implements ListDataListener {

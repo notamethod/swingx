@@ -68,7 +68,7 @@ import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.tips.TipOfTheDayModel.Tip;
 
 /**
- * Base implementation of the <code>JXTipOfTheDay</code> UI.
+ * Base implementation of the {@code JXTipOfTheDay} UI.
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  */

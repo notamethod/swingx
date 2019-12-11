@@ -68,9 +68,11 @@ public final class MacOSXPopupLocationFix {
         
         popupMenu.addPopupMenuListener(listener);
     }
-    
+
     /**
      * Install the fix for the specified combo box.
+     * @param comboBox the combobox component
+     * @return the fixed combobox
      */
     public static MacOSXPopupLocationFix install(JComboBox comboBox) {
         if(comboBox == null) throw new IllegalArgumentException();
@@ -135,7 +137,7 @@ public final class MacOSXPopupLocationFix {
      * Figure out the dimensions of our screen.
      *
      * <p>This code is inspired by similar in
-     * <code>JPopupMenu.adjustPopupLocationToFitScreen()</code>.
+     * {@code JPopupMenu.adjustPopupLocationToFitScreen()}.
      *
      * @author <a href="mailto:jesse@swank.ca">Jesse Wilson</a>
      */

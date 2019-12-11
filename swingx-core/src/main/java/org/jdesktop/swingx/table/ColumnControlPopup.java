@@ -65,13 +65,13 @@ public interface ColumnControlPopup extends UIDependent {
     /**
      * Adds items corresponding to the column's visibility actions.
      * <p>
-     * Each <code>Action</code> in the list is a <code>stateAction</code>,
-     * its <code>selected</code> property bound to a column's
-     * <code>visible</code> property, that is toggling the selected will
+     * Each {@code Action} in the list is a <code>stateAction</code>,
+     * its {@code selected} property bound to a column's
+     * {@code visible} property, that is toggling the selected will
      * toggle the column's visibility (if the action is enabled).
      * 
-     * The  <code>Action</code>s <code>name</code> property is bound to 
-     * the column's <code>title</code>.
+     * The  {@code Action}s <code>name</code> property is bound to
+     * the column's {@code title}.
      * 
      * @param actions List of AbstractActionExt to add.
      */
@@ -83,7 +83,7 @@ public interface ColumnControlPopup extends UIDependent {
     /**
      * Adds additional actions to the popup. 
      * 
-     * @param actions List of <code>Action</code>s to add to the popup.
+     * @param actions List of {@code Action}s to add to the popup.
      */
     void addAdditionalActionItems(List<? extends Action> actions);
     

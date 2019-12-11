@@ -246,7 +246,7 @@ public class JXImageView extends JXPanel {
     }
     
     /**
-     * Sets the <CODE>dragEnabled</CODE> property, which determines whether or not 
+     * Sets the {@code dragEnabled} property, which determines whether or not
      * the user can drag images out of the image view and into other components or 
      * application. Note: <B>setting
      * this to true will disable the ability to move the image around within the
@@ -260,8 +260,8 @@ public class JXImageView extends JXPanel {
     }
 
     /**
-     * Gets the current value of the <CODE>dragEnabled</CODE> property.
-     * @return the current value of the <CODE>dragEnabled</CODE> property
+     * Gets the current value of the {@code dragEnabled} property.
+     * @return the current value of the {@code dragEnabled} property
      */
     public boolean isDragEnabled() {
         return dragEnabled;

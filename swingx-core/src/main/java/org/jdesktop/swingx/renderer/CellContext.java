@@ -32,7 +32,7 @@ import javax.swing.border.EmptyBorder;
 
 /**
  * Encapsulates a snapshop of cell content and default display context 
- * for usage by a <code>ComponentProvider</code>.
+ * for usage by a {@code ComponentProvider}.
  * <p>
  * 
  * One part is the super-set of properties that's traditionally passed into the 
@@ -257,7 +257,7 @@ public class CellContext implements Serializable {
      * cell-related state.
      * <p>
      * 
-     * Here: <code>null</code>.
+     * Here: {@code null}.
      * 
      * @return the cell's icon.
      */

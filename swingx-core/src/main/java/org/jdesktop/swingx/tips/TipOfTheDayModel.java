@@ -36,7 +36,7 @@ public interface TipOfTheDayModel {
 
   /**
    * @param index
-   * @return the tip at <code>index</code>
+   * @return the tip at {@code index}
    * @throws IndexOutOfBoundsException
    *           if the index is out of range (index &lt; 0 || index &gt;=
    *           getTipCount()).

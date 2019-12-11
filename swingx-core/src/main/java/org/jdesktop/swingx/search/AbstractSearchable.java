@@ -62,7 +62,7 @@ public abstract class AbstractSearchable implements Searchable {
      * across the Searchable using String that represents a
      * regex pattern; {@link java.util.regex.Pattern}. 
      * 
-     * @param searchString <code>String</code> that we will try to locate
+     * @param searchString {@code String} that we will try to locate
      * @return the position of the match in appropriate coordinates or -1 if
      *   no match found.
      */
@@ -76,7 +76,7 @@ public abstract class AbstractSearchable implements Searchable {
      * using String that represents a regex
      * pattern; {@link java.util.regex.Pattern}. 
      * 
-     * @param searchString <code>String</code> that we will try to locate
+     * @param searchString {@code String} that we will try to locate
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
      * @return the position of the match in appropriate coordinates or -1 if
@@ -93,10 +93,10 @@ public abstract class AbstractSearchable implements Searchable {
      * pattern; {@link java.util.regex.Pattern}. The search direction 
      * depends on the boolean parameter: forward/backward if false/true, respectively.
      * 
-     * @param searchString <code>String</code> that we will try to locate
+     * @param searchString {@code String} that we will try to locate
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
-     * @param backward <code>true</code> if we should perform search towards the beginning
+     * @param backward {@code true} if we should perform search towards the beginning
      * @return the position of the match in appropriate coordinates or -1 if
      *   no match found.
      */
@@ -113,7 +113,7 @@ public abstract class AbstractSearchable implements Searchable {
      * Performs a forward search starting at the beginning 
      * across the Searchable using the pattern; {@link java.util.regex.Pattern}. 
      * 
-     * @param pattern <code>Pattern</code> that we will try to locate
+     * @param pattern {@code Pattern} that we will try to locate
      * @return the position of the match in appropriate coordinates or -1 if
      *   no match found.
      */
@@ -126,7 +126,7 @@ public abstract class AbstractSearchable implements Searchable {
      * Performs a forward search starting at the given startIndex
      * using the Pattern; {@link java.util.regex.Pattern}. 
      *
-     * @param pattern <code>Pattern</code> that we will try to locate
+     * @param pattern {@code Pattern} that we will try to locate
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
      * @return the position of the match in appropriate coordinates or -1 if
@@ -145,10 +145,10 @@ public abstract class AbstractSearchable implements Searchable {
      * 
      * Updates visible and internal search state.
      * 
-     * @param pattern <code>Pattern</code> that we will try to locate
+     * @param pattern {@code Pattern} that we will try to locate
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
-     * @param backwards <code>true</code> if we should perform search towards the beginning
+     * @param backwards {@code true} if we should perform search towards the beginning
      * @return the position of the match in appropriate coordinates or -1 if
      *   no match found.
      */
@@ -167,10 +167,10 @@ public abstract class AbstractSearchable implements Searchable {
      * 
      * Updates internal search state.
      * 
-     * @param pattern <code>Pattern</code> that we will try to locate
+     * @param pattern {@code Pattern} that we will try to locate
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
-     * @param backwards <code>true</code> if we should perform search towards the beginning
+     * @param backwards {@code true} if we should perform search towards the beginning
      * @return the position of the match in appropriate coordinates or -1 if
      *   no match found.
      */
@@ -207,10 +207,10 @@ public abstract class AbstractSearchable implements Searchable {
      * Loops through the searchable until a match is found or the 
      * end is reached. Updates internal search state.
      *
-     * @param pattern <code>Pattern</code> that we will try to locate
+     * @param pattern {@code Pattern} that we will try to locate
      * @param startRow position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
-     * @param backwards <code>true</code> if we should perform search towards the beginning
+     * @param backwards {@code true} if we should perform search towards the beginning
      */
     protected abstract void findMatchAndUpdateState(Pattern pattern, int startRow, boolean backwards);
 
@@ -221,7 +221,7 @@ public abstract class AbstractSearchable implements Searchable {
      * This implementation returns true if pattern is null or startIndex 
      * exceeds the upper size limit.<p>
      * 
-     * @param pattern <code>Pattern</code> that we will try to locate
+     * @param pattern {@code Pattern} that we will try to locate
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
      * @return true if we can say ahead that no match will be found with given search criteria
@@ -231,14 +231,14 @@ public abstract class AbstractSearchable implements Searchable {
     }
 
     /**
-     * Called if <code>startIndex</code> is different from last search
+     * Called if {@code startIndex} is different from last search
      * and make sure a backwards/forwards search starts at last/first row,
      * respectively.<p>
      * 
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
-     * @param backwards <code>true</code> if we should perform search from towards the beginning
-     * @return adjusted <code>startIndex</code>
+     * @param backwards {@code true} if we should perform search from towards the beginning
+     * @return adjusted {@code startIndex}
      */
     protected int adjustStartPosition(int startIndex, boolean backwards) {
         if (startIndex < 0) {
@@ -262,8 +262,8 @@ public abstract class AbstractSearchable implements Searchable {
      *   
      * @param startIndex position in the document in the appropriate coordinates
      * from which we will start search or -1 to start from the beginning
-     * @param backwards <code>true</code> if we should perform search towards the beginning
-     * @return adjusted <code>startIndex</code>
+     * @param backwards {@code true} if we should perform search towards the beginning
+     * @return adjusted {@code startIndex}
      */
     protected int moveStartPosition(int startIndex, boolean backwards) {
         if (backwards) {
@@ -281,8 +281,8 @@ public abstract class AbstractSearchable implements Searchable {
      * <p>
      * This implementation compares the patterns' regex.
      * 
-     * @param pattern <code>Pattern</code> that we will compare with last request
-     * @return if provided <code>Pattern</code> is the same as the stored from 
+     * @param pattern {@code Pattern} that we will compare with last request
+     * @return if provided {@code Pattern} is the same as the stored from
      * the previous search attempt
      */
     protected boolean isEqualPattern(Pattern pattern) {
@@ -293,7 +293,7 @@ public abstract class AbstractSearchable implements Searchable {
      * Checks if the startIndex should be considered as the same as in
      * the previous search.
      * 
-     * @param startIndex <code>startIndex</code> that we will compare with the index
+     * @param startIndex {@code startIndex} that we will compare with the index
      * stored by the previous search request
      * @return true if the startIndex should be re-matched, false if not.
      */
@@ -306,8 +306,8 @@ public abstract class AbstractSearchable implements Searchable {
      * <p>
      * This implementation returns true if string is null or has zero length.
      * 
-     * @param searchString <code>String</code> that we should evaluate
-     * @return true if the provided <code>String</code> should be interpreted as empty
+     * @param searchString {@code String} that we should evaluate
+     * @return true if the provided {@code String} should be interpreted as empty
      */
     protected boolean isEmpty(String searchString) {
         return (searchString == null) || searchString.length() == 0;
@@ -319,8 +319,8 @@ public abstract class AbstractSearchable implements Searchable {
      * Called if sameRowIndex && !hasEqualRegEx.
      * PRE: lastFoundColumn valid.
      * 
-     * @param pattern <code>Pattern</code> that we will try to match
-     * @param row position at which we will get the value to match with the provided <code>Pattern</code>
+     * @param pattern {@code Pattern} that we will try to match
+     * @param row position at which we will get the value to match with the provided {@code Pattern}
      * @return result of the match; {@link SearchResult}
      */
     protected abstract SearchResult findExtendedMatch(Pattern pattern, int row);
@@ -331,7 +331,7 @@ public abstract class AbstractSearchable implements Searchable {
      * @param matcher the matcher after a successful find. Must not be null.
      * @param row the found index
      * @param column the found column
-     * @return newly created <code>SearchResult</code>
+     * @return newly created {@code SearchResult}
      */
     protected SearchResult createSearchResult(Matcher matcher, int row, int column) {
         return new SearchResult(matcher.pattern(), 
@@ -342,7 +342,7 @@ public abstract class AbstractSearchable implements Searchable {
     * Checks if index is in range: 0 <= index < getSize().
     * 
     * @param index possible start position that we will check for validity
-    * @return <code>true</code> if given parameter is valid index
+    * @return {@code true} if given parameter is valid index
     */ 
    protected boolean isValidIndex(int index) {
         return index >= 0 && index < getSize();
@@ -358,8 +358,8 @@ public abstract class AbstractSearchable implements Searchable {
     /**
      * Updates inner searchable state based on provided search result
      *
-     * @param searchResult <code>SearchResult</code> that represents the new state 
-     *  of this <code>AbstractSearchable</code>
+     * @param searchResult {@code SearchResult} that represents the new state
+     *  of this {@code AbstractSearchable}
      */
     protected void updateState(SearchResult searchResult) {
         lastSearchResult.updateFrom(searchResult);

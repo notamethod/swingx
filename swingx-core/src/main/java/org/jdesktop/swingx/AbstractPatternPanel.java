@@ -138,8 +138,8 @@ public abstract class AbstractPatternPanel extends JXPanel {
 
     /**
      * Returns a potentially localized value from the UIManager. The given key
-     * is prefixed by this component|s <code>UIPREFIX</code> before doing the
-     * lookup. The lookup respects this table's current <code>locale</code>
+     * is prefixed by this component|s {@code UIPREFIX} before doing the
+     * lookup. The lookup respects this table's current {@code locale}
      * property. Returns the key, if no value is found.
      * 
      * @param key the bare key to look up in the UIManager.
@@ -152,7 +152,7 @@ public abstract class AbstractPatternPanel extends JXPanel {
     /**
      * Returns a potentially localized value from the UIManager for the 
      * given locale. The given key
-     * is prefixed by this component's <code>UIPREFIX</code> before doing the
+     * is prefixed by this component's {@code UIPREFIX} before doing the
      * lookup. Returns the key, if no value is found.
      * 
      * @param key the bare key to look up in the UIManager.
@@ -261,7 +261,7 @@ public abstract class AbstractPatternPanel extends JXPanel {
      * returns the patternModel. Lazyly creates and registers a
      * propertyChangeListener if null.
      * 
-     * @return current <code>PatternModel</code> if it exists or newly created 
+     * @return current {@code PatternModel} if it exists or newly created
      * one if it was not initialized before this call
      */
     protected PatternModel getPatternModel() {
@@ -277,7 +277,7 @@ public abstract class AbstractPatternPanel extends JXPanel {
      * factory method to create the PatternModel.
      * Hook for subclasses to install custom models.
      *
-     * @return newly created <code>PatternModel</code>
+     * @return newly created {@code PatternModel}
      */
     protected PatternModel createPatternModel() {
         return new PatternModel();
@@ -290,7 +290,7 @@ public abstract class AbstractPatternPanel extends JXPanel {
      * there's no need to keep a reference to the listener.
      * 
      * @return created and bound to appropriate callback methods 
-     *  <code>PropertyChangeListener</code>
+     *  {@code PropertyChangeListener}
      */
     protected PropertyChangeListener getPatternModelListener() {
         return new PropertyChangeListener() {    
@@ -359,10 +359,10 @@ public abstract class AbstractPatternPanel extends JXPanel {
     }
 
     /**
-     * Create <code>DocumentListener</code> for the search field that calls
+     * Create {@code DocumentListener} for the search field that calls
      * corresponding callback method whenever the search field contents is being changed
      *
-     * @return newly created <code>DocumentListener</code>
+     * @return newly created {@code DocumentListener}
      */
     protected DocumentListener getSearchFieldListener() {
         return new DocumentListener() {
@@ -414,7 +414,7 @@ public abstract class AbstractPatternPanel extends JXPanel {
     }
     
     /**
-     * @return current <code>ActionContainerFactory</code>. 
+     * @return current {@code ActionContainerFactory}.
      * Will lazily create new factory if it does not exist
      */
     protected ActionContainerFactory getActionContainerFactory() {

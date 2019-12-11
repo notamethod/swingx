@@ -45,7 +45,7 @@ import org.junit.Test;
 
 
 /**
- * Test to expose known issues of <code>JXTree</code>.
+ * Test to expose known issues of {@code JXTree}.
  * <p>
  * 
  * Ideally, there would be at least one failing test method per open issue in

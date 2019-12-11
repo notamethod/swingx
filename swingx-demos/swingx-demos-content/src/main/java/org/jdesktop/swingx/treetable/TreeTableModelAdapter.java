@@ -23,34 +23,34 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
  * have Person objects as userObject, developers can implement a PersonNodeModel
  * for the columnar data
  * 
- * <pre><code>
+ * <pre>{@code
  * public class PersonNodeModel implements NodeModel {
- *      public Class&lt;?&gt; getColumnClass(int column) {
+ *      public Class<?> getColumnClass(int column) {
  *      if (column == 2) return Date.class;
  *      return String.class;
  *  }
- * 
+ *
  *  public int getColumnCount() {
  *      return 3;
  *  }
- * 
+ *
  *  public String getColumnName(int column) {
  *      switch(column) {
  *              case 0:
- *                      return &quot;Name&quot;;
+ *                      return "Name";
  *              case 1:
- *                      return &quot;First Name&quot;;
+ *                      return "First Name";
  *              case 2:
- *                      return &quot;Birth Date&quot;;
+ *                      return "Birth Date";
  *              default:
  *                      return null;
  *      }
  *  }
- * 
+ *
  *  public int getHierarchicalColumn() {
  *      return 0;
  *  }
- * 
+ *
  *  public Object getValueAt(Object node, int column) {
  *      Person person = getPerson(node);
  *      if (person == null) return note;
@@ -64,7 +64,7 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
  *      }
  *      return null;
  *  }
- * 
+ *
  *  private Person getPerson(Object node) {
  *      if (node instanceof DefaultMutableTreeNode) {
  *              node = ((DefaultMutableTreeNode) node).getUserObject();
@@ -72,11 +72,11 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
  *      if (node instanceof Person) return (Person) node;
  *      return null;
  *  }
- * 
+ *
  *  public boolean isCellEditable(Object node, int column) {
  *      return true;
  *  }
- * 
+ *
  *  public void setValueAt(Object value, Object node, int column) {
  *      Person person = getPerson(node);
  *      if (note == null) return;
@@ -89,23 +89,23 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
  *              break;
  *      case 2:
  *              person.setBirthDate((Date) value);
- * 
+ *
  *      }
- * 
+ *
  *  }
- * 
- * 
+ *
+ *
  * }
- * </code></pre>
+ * }</pre>
  * 
  * For usage in a read-only JXTreeTable:
  * 
  * 
- * <pre><code>
+ * <pre>{@code
  * TreeTableModel treeTableModel = new TreeTableModelAdapter(personTreeModel,
  *         new PersonNodeModel());
  * treeTable.setModel(treeTableModel);
- * </code></pre>
+ * }</pre>
  * 
  * For usage in an editable JXTreeTable, you'll need to configure the adapter
  * with an appropriate NodeChangedMediator which takes care of change
@@ -114,9 +114,9 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
  * you'll have to implement a custom mediator which knows how to trigger changed events on 
  * behalf of the TreeModel):
  * 
- * <pre><code>
+ * <pre>{@code
  * treeTableModel.setNodeChangedMediator(NodeChangedMediator.DEFAULT);
- * </code></pre>
+ * }</pre>
  */
 public class TreeTableModelAdapter implements TreeTableModel {
 

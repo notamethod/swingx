@@ -89,7 +89,7 @@ public class BasicTitledPanelUI extends TitledPanelUI {
     
     /**
      * Returns an instance of the UI delegate for the specified component.
-     * Each subclass must provide its own static <code>createUI</code>
+     * Each subclass must provide its own static {@code createUI}
      * method that returns an instance of that UI delegate subclass.
      * If the UI delegate subclass is stateless, it may return an instance
      * that is shared by multiple components.  If the UI delegate is
@@ -102,7 +102,7 @@ public class BasicTitledPanelUI extends TitledPanelUI {
     }
     /**
      * Configures the specified component appropriate for the look and feel.
-     * This method is invoked when the <code>ComponentUI</code> instance is being installed
+     * This method is invoked when the {@code ComponentUI} instance is being installed
      * as the UI delegate on the specified component.  This method should
      * completely configure the component for the look and feel,
      * including the following:
@@ -111,10 +111,10 @@ public class BasicTitledPanelUI extends TitledPanelUI {
      *     icons, opacity, etc. on the component.  Whenever possible,
      *     property values initialized by the client program should <i>not</i>
      *     be overridden.
-     * <li>Install a <code>LayoutManager</code> on the component if necessary.
+     * <li>Install a {@code LayoutManager} on the component if necessary.
      * <li>Create/add any required sub-components to the component.
      * <li>Create/install event listeners on the component.
-     * <li>Create/install a <code>PropertyChangeListener</code> on the component in order
+     * <li>Create/install a {@code PropertyChangeListener} on the component in order
      *     to detect and respond to component property changes appropriately.
      * <li>Install keyboard UI (mnemonics, traversal, etc.) on the component.
      * <li>Initialize any appropriate instance data.
@@ -204,11 +204,11 @@ public class BasicTitledPanelUI extends TitledPanelUI {
     
     /**
      * Reverses configuration which was done on the specified component during
-     * <code>installUI</code>.  This method is invoked when this
-     * <code>UIComponent</code> instance is being removed as the UI delegate
+     * {@code installUI}.  This method is invoked when this
+     * {@code UIComponent} instance is being removed as the UI delegate
      * for the specified component.  This method should undo the
-     * configuration performed in <code>installUI</code>, being careful to
-     * leave the <code>JComponent</code> instance in a clean state (no
+     * configuration performed in {@code installUI}, being careful to
+     * leave the {@code JComponent} instance in a clean state (no
      * extraneous listeners, look-and-feel-specific property objects, etc.).
      * This should include the following:
      * <ol>
@@ -288,14 +288,14 @@ public class BasicTitledPanelUI extends TitledPanelUI {
     
     /**
      * Paints the specified component appropriate for the look and feel.
-     * This method is invoked from the <code>ComponentUI.update</code> method when
+     * This method is invoked from the {@code ComponentUI.update} method when
      * the specified component is being painted.  Subclasses should override
-     * this method and use the specified <code>Graphics</code> object to
+     * this method and use the specified {@code Graphics} object to
      * render the content of the component.<p>
      * 
      * PENDING JW: we don't need this, do we - remove!
      *
-     * @param g the <code>Graphics</code> context in which to paint
+     * @param g the {@code Graphics} context in which to paint
      * @param c the component being painted;
      *          this argument is often ignored,
      *          but might be used if the UI object is stateless

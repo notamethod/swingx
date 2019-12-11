@@ -28,7 +28,7 @@ import javax.swing.UIManager;
 import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
- * Table specific <code>CellContext</code>.
+ * Table specific {@code CellContext}.
  * 
  * This implementation optionally can handle LAF provide alternateRowColor. The default 
  * is not doing it. To enable, client code must set a UI-Property with key 

@@ -6,7 +6,7 @@
  * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -42,7 +42,7 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
 /**
  * <p>A color tint filter can be used to mix a solid color to an image. The
  * result is an image tinted by the specified color. The force of the effect
- * can be controlled with the <code>mixValue</code>, a number between  0.0 and
+ * can be controlled with the {@code mixValue}, a number between  0.0 and
  * 1.0 that can be seen as the percentage of the mix (0.0 does not affect the
  * source image and 1.0 replaces all the pixels by the solid color).</p>
  * <p>The color of the pixels in the resulting image is computed as follows:</p>
@@ -51,13 +51,13 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  * </pre>
  * <p>Definition of the parameters:</p>
  * <ul>
- *   <li><code>cR</code>: color of the resulting pixel</li>
- *   <li><code>cS</code>: color of the source pixel</li>
- *   <li><code>cM</code>: the solid color to mix with the source image</li>
- *   <li><code>mixValue</code>: strength of the mix, a value between 0.0 and 1.0</li>
+ *   <li>{@code cR}: color of the resulting pixel</li>
+ *   <li>{@code cS}: color of the source pixel</li>
+ *   <li>{@code cM}: the solid color to mix with the source image</li>
+ *   <li>{@code mixValue}: strength of the mix, a value between 0.0 and 1.0</li>
  * </ul>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 
 public class ColorTintFilter extends AbstractFilter {
@@ -71,12 +71,12 @@ public class ColorTintFilter extends AbstractFilter {
     /**
      * <p>Creates a new color mixer filter. The specified color will be used
      * to tint the source image, with a mixing strength defined by
-     * <code>mixValue</code>.</p>
+     * {@code mixValue}.</p>
      *
      * @param mixColor the solid color to mix with the source image
      * @param mixValue the strength of the mix, between 0.0 and 1.0; if the
      *   specified value lies outside this range, it is clamped
-     * @throws IllegalArgumentException if <code>mixColor</code> is null
+     * @throws IllegalArgumentException if {@code mixColor} is null
      */
     public ColorTintFilter(Color mixColor, float mixValue) {
         if (mixColor == null) {

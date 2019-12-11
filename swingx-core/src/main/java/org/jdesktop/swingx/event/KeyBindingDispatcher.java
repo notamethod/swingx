@@ -20,10 +20,10 @@ import org.jdesktop.swingx.util.Contract;
  * <p>
  * 
  * The mechanism is the same as for component bindings, that is using a pair
- * <code>InputMap/ActionMap</code>. The maps can be accessed directly to bind
+ * {@code InputMap/ActionMap}. The maps can be accessed directly to bind
  * KeyStrokes and Actions individually. Additionally, the implementation provides
  * convenience methods
- * to bind pairs of <code>KeyStroke/Action</code> easily.
+ * to bind pairs of {@code KeyStroke/Action} easily.
  * Once the dispatcher is added to the KeyboardFocusManager, all KeyEvents will
  * be served first to the bindings (modulo other dispatchers earlier in the chain), 
  * and consumed if an action is available, enabled and performed.
@@ -31,12 +31,12 @@ import org.jdesktop.swingx.util.Contract;
  * 
  * Usage:
  * <pre>
- * <code>
+ * {@code
  *     KeyBindingDispatcher d = new KeyBindingDispatcher();
  *     d.bind(myKeyStroke, myAction);
  *     KeyboardFocusManager.getCurrentKeyboardFocusManager()
  *         .addKeyEventDispatcher(d);
- * </code>
+ * }
  * </pre>
  * 
  * @author Jeanette Winzenburg, Berlin
@@ -198,8 +198,8 @@ public class KeyBindingDispatcher implements KeyEventDispatcher {
     }
 
     /**
-     * Registers a binding for <code>keyStroke</code> to
-     * <code>actionMapKey</code>. Semantics are the same as the corresponding
+     * Registers a binding for {@code keyStroke} to
+     * {@code actionMapKey}. Semantics are the same as the corresponding
      * method in InputMap.
      * 
      * @param keyStroke the keyStroke to bind
@@ -222,7 +222,7 @@ public class KeyBindingDispatcher implements KeyEventDispatcher {
     }
 
     /**
-     * Registers a binding for <code>key</code> to <code>action</code>.
+     * Registers a binding for {@code key} to <code>action</code>.
      * Semantics are the same as that of the corresponding method in ActionMap.
      * 
      * @param key the key used for binding.

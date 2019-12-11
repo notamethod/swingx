@@ -45,26 +45,26 @@ import org.jdesktop.swingx.painter.Painter;
  * Provides additional pluggable UI for new components added by the library. By default, the library
  * uses the pluggable UI returned by {@link #getBestMatchAddonClassName()}.
  * <p>
- * The default addon can be configured using the <code>swing.addon</code> system property as follow:
+ * The default addon can be configured using the {@code swing.addon} system property as follow:
  * <ul>
- * <li>on the command line, <code>java -Dswing.addon=ADDONCLASSNAME ...</code></li>
+ * <li>on the command line, {@code java -Dswing.addon=ADDONCLASSNAME ...}</li>
  * <li>at runtime and before using the library components
- * <code>System.getProperties().put("swing.addon", ADDONCLASSNAME);</code></li>
+ * {@code System.getProperties().put("swing.addon", ADDONCLASSNAME);}</li>
  * </ul>
  * <p>
  * The default {@link #getCrossPlatformAddonClassName() cross platform addon} can be configured
- * using the <code>swing.crossplatformlafaddon</code> system property as follow:
+ * using the {@code swing.crossplatformlafaddon} system property as follow:
  * <ul>
- * <li>on the command line, <code>java -Dswing.crossplatformlafaddon=ADDONCLASSNAME ...</code></li>
+ * <li>on the command line, {@code java -Dswing.crossplatformlafaddon=ADDONCLASSNAME ...}</li>
  * <li>at runtime and before using the library components
- * <code>System.getProperties().put("swing.crossplatformlafaddon", ADDONCLASSNAME);</code> <br>
+ * {@code System.getProperties().put("swing.crossplatformlafaddon", ADDONCLASSNAME);} <br>
  * Note: changing this property after the UI has been initialized may result in unexpected behavior.
  * </li>
  * </ul>
  * <p>
  * The addon can also be installed directly by calling the {@link #setAddon(String)}method. For
  * example, to install the Windows addons, add the following statement
- * <code>LookAndFeelAddons.setAddon("org.jdesktop.swingx.plaf.windows.WindowsLookAndFeelAddons");</code>.
+ * {@code LookAndFeelAddons.setAddon("org.jdesktop.swingx.plaf.windows.WindowsLookAndFeelAddons");}.
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  * @author Karl Schaefer
@@ -251,8 +251,8 @@ public abstract class LookAndFeelAddons {
     }
     
     /**
-     * Based on the current look and feel (as returned by <code>UIManager.getLookAndFeel()</code>),
-     * this method returns the name of the closest <code>LookAndFeelAddons</code> to use.
+     * Based on the current look and feel (as returned by {@code UIManager.getLookAndFeel()}),
+     * this method returns the name of the closest {@code LookAndFeelAddons} to use.
      * <p>
      * The lookup fallback is implemented
      * <ol>
@@ -299,7 +299,7 @@ public abstract class LookAndFeelAddons {
      * The lookup sequence is implemented to 
      * <ol>
      * <li> get and return the system property 
-     *   <code>swing.crossplatformlafaddon</code> if available
+     *   {@code swing.crossplatformlafaddon} if available
      * <li> return the addon (hard-coded!) for Metal   
      * </ol>
      * 

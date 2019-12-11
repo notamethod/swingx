@@ -51,7 +51,7 @@ import org.jdesktop.swingx.autocomplete.workarounds.MacOSXPopupLocationFix;
  * This class contains only static utility methods that can be used to set up
  * automatic completion for some Swing components.
  * <p>Usage examples:</p>
- * <p><pre><code>
+ * <pre><code>
  * JComboBox comboBox = [...];
  * AutoCompleteDecorator.<b>decorate</b>(comboBox);
  * 
@@ -62,7 +62,7 @@ import org.jdesktop.swingx.autocomplete.workarounds.MacOSXPopupLocationFix;
  * JList list = [...];
  * JTextField textField = [...];
  * AutoCompleteDecorator.<b>decorate</b>(list, textField);
- * </code></pre></p>
+ * </code></pre>
  *
  * @author Thomas Bierhance
  * @author Karl Schaefer
@@ -246,7 +246,7 @@ public class AutoCompleteDecorator {
      * Enables automatic completion for the given JTextComponent based on the
      * items contained in the given JList. The two components will be
      * synchronized. The automatic completion will always be strict.
-     * @param list a <tt>JList</tt> containing the items for automatic completion
+     * @param list a <code>JList</code> containing the items for automatic completion
      * @param textComponent the text component that will be enabled for automatic
      * completion
      */
@@ -258,7 +258,7 @@ public class AutoCompleteDecorator {
      * Enables automatic completion for the given JTextComponent based on the
      * items contained in the given JList. The two components will be
      * synchronized. The automatic completion will always be strict.
-     * @param list a <tt>JList</tt> containing the items for automatic completion
+     * @param list a <code>JList</code> containing the items for automatic completion
      * @param textComponent the text component that will be used for automatic
      * completion
      * @param stringConverter the converter used to transform items to strings
@@ -282,11 +282,11 @@ public class AutoCompleteDecorator {
     
     /**
      * Enables automatic completion for the given JTextComponent based on the
-     * items contained in the given <tt>List</tt>.
+     * items contained in the given <code>List</code>.
      * @param textComponent the text component that will be used for automatic
      * completion.
      * @param items contains the items that are used for autocompletion
-     * @param strictMatching <tt>true</tt>, if only given items should be allowed to be entered
+     * @param strictMatching <code>true</code>, if only given items should be allowed to be entered
      */
     public static void decorate(JTextComponent textComponent, List<?> items, boolean strictMatching) {
         decorate(textComponent, items, strictMatching, null);
@@ -294,11 +294,11 @@ public class AutoCompleteDecorator {
     
     /**
      * Enables automatic completion for the given JTextComponent based on the
-     * items contained in the given <tt>List</tt>.
+     * items contained in the given <code>List</code>.
      * @param items contains the items that are used for autocompletion
      * @param textComponent the text component that will be used for automatic
      * completion.
-     * @param strictMatching <tt>true</tt>, if only given items should be allowed to be entered
+     * @param strictMatching <code>true</code>, if only given items should be allowed to be entered
      * @param stringConverter the converter used to transform items to strings
      */
     public static void decorate(JTextComponent textComponent, List<?> items, boolean strictMatching, ObjectToStringConverter stringConverter) {

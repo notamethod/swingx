@@ -40,7 +40,7 @@ import org.jdesktop.swingx.JXLabel;
 import org.jdesktop.swingx.action.AbstractActionExt;
 
 /**
- * Test to exposed known issues of <code>Painter</code>s.
+ * Test to exposed known issues of {@code Painter}s.
  * 
  * Ideally, there would be at least one failing test method per open
  * Issue in the issue tracker. Plus additional failing test methods for

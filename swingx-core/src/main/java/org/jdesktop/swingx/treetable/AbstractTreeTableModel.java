@@ -137,11 +137,11 @@ public abstract class AbstractTreeTableModel implements TreeTableModel {
     }
 
     /**
-     * Returns <code>true</code> if <code>node</code> is a leaf.
+     * Returns {@code true} if <code>node</code> is a leaf.
      *
      * @impl {@code true} if {@code getChildCount(node) == 0}
      * @param   node  a node in the tree, obtained from this data source
-     * @return  true if <code>node</code> is a leaf
+     * @return  true if {@code node} is a leaf
      */
     @Override
     public boolean isLeaf(Object node) {
@@ -178,7 +178,7 @@ public abstract class AbstractTreeTableModel implements TreeTableModel {
      * @param path
      *            path to the node that has changed
      * @param newValue
-     *            the new value from the <code>TreeCellEditor</code>
+     *            the new value from the {@code TreeCellEditor}
      */
     @Override
     public void valueForPathChanged(TreePath path, Object newValue) {
@@ -202,10 +202,10 @@ public abstract class AbstractTreeTableModel implements TreeTableModel {
     }
 
     /**
-     * Returns an array of all the <code>TreeModelListener</code>s added
+     * Returns an array of all the {@code TreeModelListener}s added
      * to this JXTreeTable with addTreeModelListener().
      *
-     * @return all of the <code>TreeModelListener</code>s added or an empty
+     * @return all of the {@code TreeModelListener}s added or an empty
      *         array if no listeners have been added
      */
     public TreeModelListener[] getTreeModelListeners() {

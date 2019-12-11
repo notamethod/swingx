@@ -124,10 +124,10 @@ public abstract class AbstractActionExt extends AbstractAction
      * Sets the short description of the action. This will also
      * set the long description value is it is null.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.SHORT_DESCRIPTION</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.SHORT_DESCRIPTION} key.
      *
-     * @param desc the short description; can be <code>null</code>w
+     * @param desc the short description; can be {@code null}w
      * @see Action#SHORT_DESCRIPTION
      * @see Action#putValue
      */
@@ -151,10 +151,10 @@ public abstract class AbstractActionExt extends AbstractAction
      * Sets the long description of the action. This will also set the
      * value of the short description if that value is null.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.LONG_DESCRIPTION</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.LONG_DESCRIPTION} key.
      *
-     * @param desc the long description; can be <code>null</code>
+     * @param desc the long description; can be {@code null}
      * @see Action#LONG_DESCRIPTION
      * @see Action#putValue
      */
@@ -177,10 +177,10 @@ public abstract class AbstractActionExt extends AbstractAction
     /**
      * Sets the small icon which represents the action.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.SMALL_ICON</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.SMALL_ICON} key.
      *
-     * @param icon the small icon; can be <code>null</code>
+     * @param icon the small icon; can be {@code null}
      * @see Action#SMALL_ICON
      * @see Action#putValue
      */
@@ -200,10 +200,10 @@ public abstract class AbstractActionExt extends AbstractAction
     /**
      * Sets the large icon which represents the action.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>LARGE_ICON</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code LARGE_ICON} key.
      *
-     * @param icon the large icon; can be <code>null</code>
+     * @param icon the large icon; can be {@code null}
      * @see #LARGE_ICON
      * @see Action#putValue
      */
@@ -214,10 +214,10 @@ public abstract class AbstractActionExt extends AbstractAction
     /**
      * Sets the name of the action.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.NAME</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.NAME} key.
      *
-     * @param name the name of the action; can be <code>null</code>
+     * @param name the name of the action; can be {@code null}
      * @see Action#NAME
      * @see Action#putValue
      */
@@ -243,8 +243,8 @@ public abstract class AbstractActionExt extends AbstractAction
     /**
      * Sets the mnemonic key code for the action.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.MNEMONIC_KEY</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.MNEMONIC_KEY} key.
      * <p>
      * This method does not validate the value. Please see
      * {@link javax.swing.AbstractButton#setMnemonic(int)} for details
@@ -276,8 +276,8 @@ public abstract class AbstractActionExt extends AbstractAction
      * Sets the action command key. The action command key
      * is used to identify the action.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.ACTION_COMMAND_KEY</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.ACTION_COMMAND_KEY} key.
      *
      * @param key the action command
      * @see Action#ACTION_COMMAND_KEY
@@ -310,10 +310,10 @@ public abstract class AbstractActionExt extends AbstractAction
      * Sets the key stroke which represents an accelerator
      * for the action.
      * <p>
-     * This is a convenience method for <code>putValue</code> with the
-     * <code>Action.ACCELERATOR_KEY</code> key.
+     * This is a convenience method for {@code putValue} with the
+     * {@code Action.ACCELERATOR_KEY} key.
      *
-     * @param key the key stroke; can be <code>null</code>
+     * @param key the key stroke; can be {@code null}
      * @see Action#ACCELERATOR_KEY
      * @see Action#putValue
      */
@@ -430,7 +430,7 @@ public abstract class AbstractActionExt extends AbstractAction
     }
     
     /**
-     * Callback method as <code>ItemListener</code>. Updates internal state based
+     * Callback method as {@code ItemListener}. Updates internal state based
      * on the given ItemEvent. <p>
      * 
      * Here: synchs selected property if isStateAction(), does nothing otherwise.

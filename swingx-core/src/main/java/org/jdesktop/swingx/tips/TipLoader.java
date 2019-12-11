@@ -38,17 +38,17 @@ public class TipLoader {
    * properties, its name and its description:
    * 
    * <pre>
-   * <code>
+   * {@code
    * tip.1.name=First Tip
    * tip.1.description=This is the description
-   *  
+   *
    * tip.2.name=Second Tip
-   * tip.2.description=&lt;html&gt;This is an html description
-   * 
+   * tip.2.description=<html>This is an html description
+   *
    * ...
-   * 
+   *
    * tip.10.description=No name for this tip, name is optional
-   * </code>
+   * }
    * </pre>
    * 
    * @param props

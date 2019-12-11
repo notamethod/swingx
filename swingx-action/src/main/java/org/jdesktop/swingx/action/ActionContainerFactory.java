@@ -47,8 +47,8 @@ import javax.swing.JToolBar;
 /**
  * Creates user interface elements based on action ids and lists of action ids.
  * All action ids must represent actions managed by the ActionManager.
- * <p>
- * <h3>Action Lists</h3>
+ * <p></p>
+ * <h1>Action Lists</h1>
  * Use the createXXX(List) methods to construct containers of actions like menu 
  * bars, menus, popups and toolbars from actions represented as action ids in a 
  * <i>java.util.List</i>. Each element in the action-list can be one of 3 types:
@@ -57,17 +57,18 @@ import javax.swing.JToolBar;
  * <li>null: indicates a separator should be inserted.
  * <li>java.util.List: represents a submenu. See the note below which describes 
  * the configuration of menus. 
- * </li>
+ * </li></ul>
+ * <p>
  * The order of elements in an action-list determines the arrangement of the ui 
  * components which are constructed from the action-list.
- * <p>
+ * </p>
  * For a menu or submenu, the first element in the action-list represents a menu 
  * and subsequent elements represent menu items or separators (if null). 
  * <p>
  * This class can be used as a general component factory which will construct
- * components from Actions if the <code>create&lt;comp&gt;(Action,...)</code>
+ * components from Actions if the {@code create<comp>(Action,...)}
  * methods are used.
- *
+ * </p>
  * @see ActionManager
  */
 public class ActionContainerFactory {

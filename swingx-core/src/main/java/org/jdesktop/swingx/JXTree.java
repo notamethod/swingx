@@ -93,13 +93,13 @@ import org.jdesktop.swingx.tree.DefaultXTreeCellRenderer;
  * <p>
  * 
  * <pre>
- * <code>
- * 
+ * {@code
+ *
  * JXTree tree = new JXTree(new FileSystemModel());
  * // use system file icons and name to render
- * tree.setCellRenderer(new DefaultTreeRenderer(IconValues.FILE_ICON, 
+ * tree.setCellRenderer(new DefaultTreeRenderer(IconValues.FILE_ICON,
  *      StringValues.FILE_NAME));
- * // highlight condition: file modified after a date     
+ * // highlight condition: file modified after a date
  * HighlightPredicate predicate = new HighlightPredicate() {
  *    public boolean isHighlighted(Component renderer,
  *                     ComponentAdapter adapter) {
@@ -107,10 +107,10 @@ import org.jdesktop.swingx.tree.DefaultXTreeCellRenderer;
  *       return file != null ? lastWeek < file.lastModified : false;
  *    }
  * };
- * // highlight with foreground color 
- * tree.addHighlighter(new ColorHighlighter(predicate, null, Color.RED);      
- * 
- * </code>
+ * // highlight with foreground color
+ * tree.addHighlighter(new ColorHighlighter(predicate, null, Color.RED);
+ *
+ * }
  * </pre>
  * 
  * <i>Note:</i> for full functionality, a DefaultTreeRenderer must be installed
@@ -132,15 +132,15 @@ import org.jdesktop.swingx.tree.DefaultXTreeCellRenderer;
  * as well, f.i. to decorate the rollover row using a Highlighter.
  * 
  * <pre>
- * <code>
- * 
+ * {@code
+ *
  * JXTree tree = new JXTree();
  * tree.setRolloverEnabled(true);
  * tree.setCellRenderer(new DefaultTreeRenderer());
- * tree.addHighlighter(new ColorHighlighter(HighlightPredicate.ROLLOVER_ROW, 
- *      null, Color.RED);      
- * 
- * </code>
+ * tree.addHighlighter(new ColorHighlighter(HighlightPredicate.ROLLOVER_ROW,
+ *      null, Color.RED);
+ *
+ * }
  * </pre>
  * 
  * <h2>Location of Trigger for ComponentPopupMenu</h2>
@@ -151,18 +151,18 @@ import org.jdesktop.swingx.tree.DefaultXTreeCellRenderer;
  * <p>
  * 
  * The example below selects the cell that was clicked, event being the
- * <code>PopupMenuEvent</code> received in a <code>PopupMenuListener</code>.
+ * {@code PopupMenuEvent} received in a <code>PopupMenuListener</code>.
  * <p>
  * 
  * <pre>
- * <code>
+ * {@code
  * JXTree tree = (JXTree) ((JPopupMenu) e.getSource()).getInvoker();
  * Point trigger = tree.getPopupTriggerLocation();
  * if (trigger != null) {
  *     int row = tree.getRowForLocation(trigger.x, trigger.y);
  *     tree.setSelectionRow(row);
  * }
- * </code>
+ * }
  * </pre>
  * 
  * 
@@ -257,7 +257,7 @@ public class JXTree extends JTree {
     
     
     /**
-     * Constructs a <code>JXTree</code> with a sample model. The default model
+     * Constructs a {@code JXTree} with a sample model. The default model
      * used by this tree defines a leaf node as any node without children.
      */
     public JXTree() {
@@ -265,7 +265,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Constructs a <code>JXTree</code> with each element of the specified array
+     * Constructs a {@code JXTree} with each element of the specified array
      * as the child of a new root node which is not displayed. By default, this
      * tree defines a leaf node as any node without children.
      *
@@ -280,7 +280,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Constructs a <code>JXTree</code> with each element of the specified
+     * Constructs a {@code JXTree} with each element of the specified
      * Vector as the child of a new root node which is not displayed.
      * By default, this tree defines a leaf node as any node without children.
      *
@@ -295,7 +295,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Constructs a <code>JXTree</code> created from a Hashtable which does not
+     * Constructs a {@code JXTree} created from a Hashtable which does not
      * display with root. Each value-half of the key/value pairs in the HashTable
      * becomes a child of the new root node. By default, the tree defines a leaf
      * node as any node without children.
@@ -311,7 +311,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Constructs a <code>JXTree</code> with the specified TreeNode as its root,
+     * Constructs a {@code JXTree} with the specified TreeNode as its root,
      * which displays the root node. By default, the tree defines a leaf node as
      * any node without children.
      *
@@ -326,7 +326,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Constructs a <code>JXTree</code> with the specified TreeNode as its root,
+     * Constructs a {@code JXTree} with the specified TreeNode as its root,
      * which displays the root node and which decides whether a node is a leaf
      * node in the specified manner.
      *
@@ -344,14 +344,14 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Constructs an instance of <code>JXTree</code> which displays the root
+     * Constructs an instance of {@code JXTree} which displays the root
      * node -- the tree is created using the specified data model.
      * 
      * This version of the constructor simply invokes the super class version
      * with the same arguments.
      * 
      * @param newModel
-     *            the <code>TreeModel</code> to use as the data model
+     *            the {@code TreeModel} to use as the data model
      */
     public JXTree(TreeModel newModel) {
         super(newModel);
@@ -611,7 +611,7 @@ public class JXTree extends JTree {
     /**
      * Returns the background color for selected cells.
      *
-     * @return the <code>Color</code> used for the background of
+     * @return the {@code Color} used for the background of
      * selected list items
      * @see #setSelectionBackground
      * @see #setSelectionForeground
@@ -623,7 +623,7 @@ public class JXTree extends JTree {
     /**
      * Returns the selection foreground color.
      *
-     * @return the <code>Color</code> object for the foreground property
+     * @return the {@code Color} object for the foreground property
      * @see #setSelectionForeground
      * @see #setSelectionBackground
      */
@@ -641,7 +641,7 @@ public class JXTree extends JTree {
      * <p>
      * This is a JavaBeans bound property.
      *
-     * @param selectionForeground  the <code>Color</code> to use in the foreground
+     * @param selectionForeground  the {@code Color} to use in the foreground
      *                             for selected list items
      * @see #getSelectionForeground
      * @see #setSelectionBackground
@@ -669,7 +669,7 @@ public class JXTree extends JTree {
      * <p>
      * This is a JavaBeans bound property.
      *
-     * @param selectionBackground  the <code>Color</code> to use for the 
+     * @param selectionBackground  the {@code Color} to use for the
      *                             background of selected cells
      * @see #getSelectionBackground
      * @see #setSelectionForeground
@@ -754,7 +754,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Updates highlighter after <code>updateUI</code> changes.
+     * Updates highlighter after {@code updateUI} changes.
      * 
      * @see UIDependent
      */
@@ -847,7 +847,7 @@ public class JXTree extends JTree {
      * Creates and returns the RolloverProducer to use with this tree.
      * <p>
      * 
-     * @return <code>RolloverProducer</code> to use with this tree
+     * @return {@code RolloverProducer} to use with this tree
      * 
      * @see #setRolloverEnabled(boolean)
      */
@@ -904,7 +904,7 @@ public class JXTree extends JTree {
 //----------------------- Highlighter api
     
     /**
-     * Sets the <code>Highlighter</code>s to the table, replacing any old settings.
+     * Sets the {@code Highlighter}s to the table, replacing any old settings.
      * None of the given Highlighters must be null.<p>
      * 
      * This is a bound property. <p> 
@@ -927,7 +927,7 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Returns the <code>Highlighter</code>s used by this table.
+     * Returns the {@code Highlighter}s used by this table.
      * Maybe empty, but guarantees to be never null.
      * 
      * @return the Highlighters used by this table, guaranteed to never null.
@@ -938,12 +938,12 @@ public class JXTree extends JTree {
     }
     
     /**
-     * Appends a <code>Highlighter</code> to the end of the list of used
-     * <code>Highlighter</code>s. The argument must not be null. 
+     * Appends a {@code Highlighter} to the end of the list of used
+     * {@code Highlighter}s. The argument must not be null.
      * <p>
      * 
-     * @param highlighter the <code>Highlighter</code> to add, must not be null.
-     * @throws NullPointerException if <code>Highlighter</code> is null.
+     * @param highlighter the {@code Highlighter} to add, must not be null.
+     * @throws NullPointerException if {@code Highlighter} is null.
      * 
      * @see #removeHighlighter(Highlighter)
      * @see #setHighlighters(Highlighter[])
@@ -984,11 +984,11 @@ public class JXTree extends JTree {
     }
 
     /**
-     * Returns the <code>ChangeListener</code> to use with highlighters. Lazily 
+     * Returns the {@code ChangeListener} to use with highlighters. Lazily
      * creates the listener.
      * 
      * @return the ChangeListener for observing changes of highlighters, 
-     *   guaranteed to be <code>not-null</code>
+     *   guaranteed to be {@code not-null}
      */
     protected ChangeListener getHighlighterChangeListener() {
         if (highlighterChangeListener == null) {
@@ -1147,8 +1147,8 @@ public class JXTree extends JTree {
      * <p>
      * 
      * This implementation returns a renderer of type
-     * <code>DefaultTreeCellRenderer</code>. <b>Note:</b> Will be changed to
-     * return a renderer of type <code>DefaultTreeRenderer</code>,
+     * {@code DefaultTreeCellRenderer}. <b>Note:</b> Will be changed to
+     * return a renderer of type {@code DefaultTreeRenderer},
      * once WrappingProvider is reasonably stable.
      * 
      * @return the default cell renderer to use with this tree.
@@ -1195,7 +1195,7 @@ public class JXTree extends JTree {
      * 
      * Note: the wrapping implies that the renderer returned from the getCellRenderer
      * is <b>not</b> the renderer as given here, but the wrapper. To access the original,
-     * use <code>getWrappedCellRenderer</code>.
+     * use {@code getWrappedCellRenderer}.
      * 
      * @see #getWrappedCellRenderer()
      * @see #getCellRenderer()
@@ -1640,7 +1640,7 @@ public class JXTree extends JTree {
         private final JXTree tree;
 
         /**
-         * Constructs a <code>TableCellRenderContext</code> for the specified
+         * Constructs a {@code TableCellRenderContext} for the specified
          * target component.
          *
          * @param component the target component

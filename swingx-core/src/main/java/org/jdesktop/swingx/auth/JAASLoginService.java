@@ -111,7 +111,7 @@ public class JAASLoginService extends LoginService {
     }
 
 	/**
-	 * Returns the <code>LoginContext</code> used during the authentication
+	 * Returns the {@code LoginContext} used during the authentication
 	 * process.
 	 */
 	public LoginContext getLoginContext()
@@ -120,8 +120,8 @@ public class JAASLoginService extends LoginService {
 	}
 
 	/**
-	 * Returns the <code>Subject</code> representing the authenticated 
-	 * individual, or <code>null</code> if the user has not yet been 
+	 * Returns the {@code Subject} representing the authenticated
+	 * individual, or {@code null} if the user has not yet been
 	 * successfully authenticated.
 	 */
 	public Subject getSubject()

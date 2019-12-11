@@ -112,11 +112,11 @@ class StrictNumberFormatter extends NumberFormatter {
 
     
     /**
-     * Returns the <code>Object</code> representation of the
-     * <code>String</code> <code>text</code>, may be null.
+     * Returns the {@code Object} representation of the
+     * {@code String} <code>text</code>, may be null.
      *
-     * @param text <code>String</code> to convert
-     * @return <code>Object</code> representation of text
+     * @param text {@code String} to convert
+     * @return {@code Object} representation of text
      * @throws ParseException if there is an error in the conversion
      */
     @Override
@@ -135,10 +135,10 @@ class StrictNumberFormatter extends NumberFormatter {
 
     /**
      * Converts the passed in value to the passed in class. This only
-     * works if <code>valueClass</code> is one of <code>Integer</code>,
-     * <code>Long</code>, <code>Float</code>, <code>Double</code>,
-     * <code>Byte</code> or <code>Short</code> and <code>value</code>
-     * is an instanceof <code>Number</code>.
+     * works if {@code valueClass} is one of <code>Integer</code>,
+     * {@code Long}, <code>Float</code>, <code>Double</code>,
+     * {@code Byte} or <code>Short</code> and <code>value</code>
+     * is an instanceof {@code Number}.
      */
     private Object convertValueToValueClass(Object value, Class<?> valueClass) {
         if (valueClass != null && (value instanceof Number)) {
@@ -165,7 +165,7 @@ class StrictNumberFormatter extends NumberFormatter {
     }
 
     /**
-     * Invokes <code>parseObject</code> on <code>f</code>, returning
+     * Invokes {@code parseObject} on <code>f</code>, returning
      * its value.
      */
     private Object getParsedValue(String text, Format f) throws ParseException {
@@ -177,7 +177,7 @@ class StrictNumberFormatter extends NumberFormatter {
 
     
     /**
-     * Returns true if <code>value</code> is between the min/max.
+     * Returns true if {@code value} is between the min/max.
      *
      * @param wantsCCE If false, and a ClassCastException is thrown in
      *                 comparing the values, the exception is consumed and

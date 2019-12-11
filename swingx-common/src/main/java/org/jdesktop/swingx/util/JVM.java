@@ -56,7 +56,7 @@ public class JVM {
   private int jdkVersion;
 
   /**
-   * Creates a new JVM data from the <code>java.version</code>
+   * Creates a new JVM data from the {@code java.version}
    * System property
    *  
    */
@@ -65,22 +65,23 @@ public class JVM {
   }
 
   /**
-   * Constructor for the OS object
+* Constructor for the OS object
+   * @param p_JavaVersion Java version from System property
    */
   public JVM(String p_JavaVersion) {
     if (p_JavaVersion.startsWith("11.")) {
       jdkVersion = JDK11;
       for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-        if ("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
-          throw new RuntimeException(" JDK 11 NimbusLookAndFeel alert");
+        if ("javax.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
+       //   throw new RuntimeException(" JDK 11 NimbusLookAndFeel alert");
         }
       }
     }
     else if (p_JavaVersion.startsWith("1.8.")) {
       jdkVersion = JDK1_8;
       for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-        if ("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
-          throw new RuntimeException(" JDK 8 NimbusLookAndFeel alert");
+        if ("javax.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
+      //    throw new RuntimeException(" JDK 8 NimbusLookAndFeel alert");
         }
       }
     }
@@ -88,7 +89,7 @@ public class JVM {
       jdkVersion = JDK1_7;
     } else if (p_JavaVersion.startsWith("1.6.")) {
       for (LookAndFeelInfo info : UIManager.getInstalledLookAndFeels()) {
-          if ("com.sun.java.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
+          if ("javax.swing.plaf.nimbus.NimbusLookAndFeel".equals(info.getClassName())) {
               jdkVersion = JDK1_6N;
               break;
           }

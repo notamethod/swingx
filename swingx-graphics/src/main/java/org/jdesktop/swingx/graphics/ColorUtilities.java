@@ -6,7 +6,7 @@
  * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -37,10 +37,10 @@ package org.jdesktop.swingx.graphics;
 import java.awt.Color;
 
 /**
- * <p><code>ColorUtilities</code> contains a set of tools to perform
+ * <p>{@code ColorUtilities} contains a set of tools to perform
  * common color operations easily.</p>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 public class ColorUtilities {
     private ColorUtilities() {
@@ -63,8 +63,8 @@ public class ColorUtilities {
      *
      * @param color the RGB color to convert
      * @param hsl a pre-allocated array of floats; can be null
-     * @return <code>hsl</code> if non-null, a new array of 3 floats otherwise
-     * @throws IllegalArgumentException if <code>hsl</code> has a length lower
+     * @return {@code hsl} if non-null, a new array of 3 floats otherwise
+     * @throws IllegalArgumentException if {@code hsl} has a length lower
      *   than 3
      */
     public static float[] RGBtoHSL(Color color, float[] hsl) {
@@ -92,8 +92,8 @@ public class ColorUtilities {
      * @param g the green component, between 0 and 255
      * @param b the blue component, between 0 and 255
      * @param hsl a pre-allocated array of floats; can be null
-     * @return <code>hsl</code> if non-null, a new array of 3 floats otherwise
-     * @throws IllegalArgumentException if <code>hsl</code> has a length lower
+     * @return {@code hsl} if non-null, a new array of 3 floats otherwise
+     * @throws IllegalArgumentException if {@code hsl} has a length lower
      *   than 3
      */
     public static float[] RGBtoHSL(int r, int g, int b, float[] hsl) {
@@ -181,7 +181,7 @@ public class ColorUtilities {
      * @param h the hue component, between 0.0 and 1.0
      * @param s the saturation component, between 0.0 and 1.0
      * @param l the luminance component, between 0.0 and 1.0
-     * @return a new <code>Color</code> object equivalent to the HSL components
+     * @return a new {@code Color} object equivalent to the HSL components
      */
     public static Color HSLtoRGB(float h, float s, float l) {
         int[] rgb = HSLtoRGB(h, s, l, null);
@@ -196,8 +196,8 @@ public class ColorUtilities {
      * @param s the saturation component, between 0.0 and 1.0
      * @param l the luminance component, between 0.0 and 1.0
      * @param rgb a pre-allocated array of ints; can be null
-     * @return <code>rgb</code> if non-null, a new array of 3 ints otherwise
-     * @throws IllegalArgumentException if <code>rgb</code> has a length lower
+     * @return {@code rgb} if non-null, a new array of 3 ints otherwise
+     * @throws IllegalArgumentException if {@code rgb} has a length lower
      *   than 3
      */
     public static int[] HSLtoRGB(float h, float s, float l, int[] rgb) {

@@ -46,7 +46,7 @@ import org.jdesktop.swingx.JXHeader.IconPosition;
 import org.jdesktop.swingx.test.XTestUtils;
 
 /**
- * Tests previously created to expose known issues of <code>JXHeader</code>, now fixed.
+ * Tests previously created to expose known issues of {@code JXHeader}, now fixed.
  * Still need visual inspection from time to time.
  * <p>
  *

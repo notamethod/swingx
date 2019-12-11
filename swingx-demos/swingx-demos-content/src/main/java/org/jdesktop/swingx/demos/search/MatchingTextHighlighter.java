@@ -48,7 +48,7 @@ import org.jdesktop.swingx.renderer.PainterAware;
 
 /**
  * <p>
- * <code>Highlighter</code> implementation that changes the background behind
+ * {@code Highlighter} implementation that changes the background behind
  * characters that match a regular expression. The highlighting style can be
  * configured with a {@link Painter}.
  * </p>
@@ -102,7 +102,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	private PropertyChangeListener painterListener;
 
 	/**
-	 * Instantiates a <code>MatchingTextHighlighter</code> with no highlight
+	 * Instantiates a {@code MatchingTextHighlighter} with no highlight
 	 * predicate or painter.
 	 */
 	public MatchingTextHighlighter() {
@@ -110,7 +110,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	}
 
 	/**
-	 * Instantiates a <code>MatchingTextHighlighter</code> with no highlight
+	 * Instantiates a {@code MatchingTextHighlighter} with no highlight
 	 * predicate that paints with the specified painter.
 	 * 
 	 * @param painter the painter used to render matching text
@@ -121,7 +121,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 
 	/**
 	 * <p>
-	 * Instantiates a <code>MatchingTextHighlighter</code> with the given
+	 * Instantiates a {@code MatchingTextHighlighter} with the given
 	 * predicate that matches text with the specified pattern with the specified
 	 * highlight color.
 	 * </p>
@@ -163,7 +163,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	/**
 	 * Returns the painter used for highlighting matching characters.
 	 * 
-	 * @return a <code>Painter</code>
+	 * @return a {@code Painter}
 	 */
 	public Painter<JLabel> getPainter() {
 		return painter;
@@ -172,7 +172,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	/**
 	 * Sets the painter used for highlighting matching characters.
 	 * 
-	 * @param painter a <code>Painter</code>
+	 * @param painter a {@code Painter}
 	 */
 	public void setPainter(Painter<JLabel> painter) {
 		if (areEqual(painter, this.painter)) {
@@ -250,7 +250,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	 * @param object an optional configuration parameter. This may be null.
 	 * @param width width of the area to paint.
 	 * @param height height of the area to paint.
-	 * @return a <code>List</code> of <code>Rectangle</code>s marking characters
+	 * @return a {@code List} of <code>Rectangle</code>s marking characters
 	 *         to highlight
 	 */
 	protected List<Rectangle> findHighlightAreas(JLabel object, int width,
@@ -314,7 +314,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	 * @param yOffset the y offset at which text rendering starts (e.g.
 	 *        different rowHeights)
 	 * @param height the height of painted highlights
-	 * @return a <code>List</code> of highlight areas to paint
+	 * @return a {@code List} of highlight areas to paint
 	 */
 	protected List<Rectangle> createHighlightAreas(String fullText,
 			String clippedText, FontMetrics fm, int xOffset, int yOffset,
@@ -375,7 +375,7 @@ public class MatchingTextHighlighter extends AbstractHighlighter {
 	 * such a horizontal gradient - the gradient will not restart when there are
 	 * two adjacent highlight areas.
 	 * 
-	 * @param highlightAreas a <code>List</code> of <code>Rectangle</code>s.
+	 * @param highlightAreas a {@code List} of <code>Rectangle</code>s.
 	 */
 	protected void coalesceHighlightAreas(List<Rectangle> highlightAreas) {
 		Collections.sort(highlightAreas, X_AXIS_RECTANGLE_COMPARATOR);

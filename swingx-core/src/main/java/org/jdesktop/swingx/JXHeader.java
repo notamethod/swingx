@@ -33,19 +33,19 @@ import org.jdesktop.swingx.plaf.HeaderUI;
 import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
- * <p><code>JXHeader is a simple component consisting of a title, a description,
+ * <p><code>JXHeader</code> is a simple component consisting of a title, a description,
  * and an icon. An example of such a component can be seen on
  * <a href="http://jext.free.fr/header.png">Romain Guys ProgX website</a></p>
  *
- * <p><code>JXHeader</code> is a simple component that is also sufficiently
+ * <p>{@code JXHeader} is a simple component that is also sufficiently
  * configurable to be usable. The description area
  * accepts HTML conforming to version 3.2 of the HTML standard. The icon, title,
- * and description are all configurable. <code>JXHeader</code> itself extends
+ * and description are all configurable. {@code JXHeader} itself extends
  * {@link JXPanel}, providing translucency and painting delegates.</p>
  *
  * <p>If I were to reconstruct the ui shown in the above screenshot, I might
- * do so like this:<br/>
- * <pre><code>
+ * do so like this:</p>
+ * <pre>{@code
  *      JXHeader header = new JXHeader();
  *      header.setTitle("Timing Framework Spline Editor");
  *      header.setDescription("Drag control points in the display to change the " +
@@ -53,7 +53,7 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  *          "Click the Copy Code button to generate the corresponding Java code.");
  *      Icon icon = new ImageIcon(getClass().getResource("tools.png"));
  *      header.setIcon(icon);
- * </code></pre></p>
+ * }</pre>
  *
  * Note: The HTML support doesn't exist yet. The UI delegate needs to discover whether
  * the text supplied is HTML or not, and change the content type of the editor pane
@@ -61,12 +61,11 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  * This same situation will be found in other parts of the code (JXErrorPane, for instance),
  * so this needs to be dealt with.
  *
- * <h2>Defaults</h2>
+ * <h1>Defaults</h1>
  * <p>BasicHeaderUI uses the following UI defaults:
  *  <ul>
  *      <li><b>Header.defaultIcon:</b> The default icon to use when creating a new JXHeader.</li>
  *  </ul>
- * </p>
  *
  * @status REVIEWED
  * @author rbair
@@ -172,9 +171,9 @@ public class JXHeader extends JXPanel {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the {@code UIManager} that the L&F has changed.
      * Replaces the current UI object with the latest version from the
-     * <code>UIManager</code>.
+     * {@code UIManager}.
      *
      * @see javax.swing.JComponent#updateUI
      */

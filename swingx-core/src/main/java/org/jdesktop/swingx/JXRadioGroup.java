@@ -150,7 +150,7 @@ public class JXRadioGroup<T> extends JPanel {
 
     /**
      * You can use this method to manually add your own AbstractButton objects, provided you declared
-     * the class as <code>JXRadioGroup&lt;JRadioButton&gt;</code>.
+     * the class as {@code JXRadioGroup<JRadioButton>}.
      */
     public void add(T radioValue) {
         if (values.contains(radioValue))
@@ -276,12 +276,12 @@ public class JXRadioGroup<T> extends JPanel {
     }
     
     /** 
-     * Adds an <code>ActionListener</code>. 
+     * Adds an {@code ActionListener}.
      * <p>
-     * The <code>ActionListener</code> will receive an <code>ActionEvent</code>
+     * The {@code ActionListener} will receive an <code>ActionEvent</code>
      * when a selection has been made.
      *
-     * @param l  the <code>ActionListener</code> that is to be notified
+     * @param l  the {@code ActionListener} that is to be notified
      * @see #setSelectedValue(Object)
      */
     public void addActionListener(ActionListener l) {
@@ -289,20 +289,20 @@ public class JXRadioGroup<T> extends JPanel {
     }
 
     /**
-     * Removes an <code>ActionListener</code>.
+     * Removes an {@code ActionListener}.
      * 
      * @param l
-     *            the <code>ActionListener</code> to remove
+     *            the {@code ActionListener} to remove
      */
     public void removeActionListener(ActionListener l) {
         listenerList.remove(ActionListener.class, l);
     }
 
     /**
-     * Returns an array of all the <code>ActionListener</code>s added
+     * Returns an array of all the {@code ActionListener}s added
      * to this JRadioGroup with addActionListener().
      *
-     * @return all of the <code>ActionListener</code>s added or an empty
+     * @return all of the {@code ActionListener}s added or an empty
      *         array if no listeners have been added
      */
     public ActionListener[] getActionListeners() {

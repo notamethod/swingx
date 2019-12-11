@@ -30,7 +30,7 @@ import javax.swing.RowFilter;
 import org.jdesktop.swingx.util.Contract;
 
 /**
- * Factory of additional <code>RowFilter</code>s. <p>
+ * Factory of additional {@code RowFilter}s. <p>
  * 
  * Trigger is the missing of Pattern/Regex+matchflags factory method in core.
  * Can't do much other than c&p core as both abstract base class GeneralFilter and
@@ -42,10 +42,10 @@ import org.jdesktop.swingx.util.Contract;
 public class RowFilters {
     
     /**
-     * Returns a <code>RowFilter</code> that uses a regular
+     * Returns a {@code RowFilter} that uses a regular
      * expression to determine which entries to include.  Only entries
      * with at least one matching value are included.  For
-     * example, the following creates a <code>RowFilter</code> that
+     * example, the following creates a {@code RowFilter} that
      * includes entries with at least one value starting with
      * "a":
      * <pre>
@@ -63,12 +63,12 @@ public class RowFilters {
      * @param regex the regular expression to filter on
      * @param indices the indices of the values to check.  If not supplied all
      *               values are evaluated
-     * @return a <code>RowFilter</code> implementing the specified criteria
-     * @throws NullPointerException if <code>regex</code> is
-     *         <code>null</code>
-     * @throws IllegalArgumentException if any of the <code>indices</code>
+     * @return a {@code RowFilter} implementing the specified criteria
+     * @throws NullPointerException if {@code regex} is
+     *         {@code null}
+     * @throws IllegalArgumentException if any of the {@code indices}
      *         are &lt; 0
-     * @throws PatternSyntaxException if <code>regex</code> is
+     * @throws PatternSyntaxException if {@code regex} is
      *         not a valid regular expression.
      * @see java.util.regex.Pattern
      */
@@ -78,10 +78,10 @@ public class RowFilters {
     }
     
     /**
-     * Returns a <code>RowFilter</code> that uses a regular
+     * Returns a {@code RowFilter} that uses a regular
      * expression to determine which entries to include.  Only entries
      * with at least one matching value are included.  For
-     * example, the following creates a <code>RowFilter</code> that
+     * example, the following creates a {@code RowFilter} that
      * includes entries with at least one value starting with
      * "a" ignoring case:
      * <pre>
@@ -105,15 +105,15 @@ public class RowFilters {
      * @param regex the regular expression to filter on
      * @param indices the indices of the values to check.  If not supplied all
      *               values are evaluated
-     * @return a <code>RowFilter</code> implementing the specified criteria
-     * @throws NullPointerException if <code>regex</code> is
-     *         <code>null</code>
-     * @throws IllegalArgumentException if any of the <code>indices</code>
+     * @return a {@code RowFilter} implementing the specified criteria
+     * @throws NullPointerException if {@code regex} is
+     *         {@code null}
+     * @throws IllegalArgumentException if any of the {@code indices}
      *         are &lt; 0
      * @throws  IllegalArgumentException
      *          If bit values other than those corresponding to the defined
-     *          match flags are set in <tt>flags</tt>
-     * @throws PatternSyntaxException if <code>regex</code> is
+     *          match flags are set in <code>flags</code>
+     * @throws PatternSyntaxException if {@code regex} is
      *         not a valid regular expression.
      * @see java.util.regex.Pattern
      */
@@ -123,15 +123,15 @@ public class RowFilters {
     }
     
     /**
-     * Returns a <code>RowFilter</code> that uses a regular
+     * Returns a {@code RowFilter} that uses a regular
      * expression to determine which entries to include.  
      * 
      * @param pattern the Pattern to use for matching
      * @param indices the indices of the values to check.  If not supplied all
      *               values are evaluated
-     * @return a <code>RowFilter</code> implementing the specified criteria
-     * @throws NullPointerException if <code>pattern</code> is
-     *         <code>null</code>
+     * @return a {@code RowFilter} implementing the specified criteria
+     * @throws NullPointerException if {@code pattern} is
+     *         {@code null}
      * @see java.util.regex.Pattern
      */
     public static <M,I> RowFilter<M,I> regexFilter(Pattern pattern,

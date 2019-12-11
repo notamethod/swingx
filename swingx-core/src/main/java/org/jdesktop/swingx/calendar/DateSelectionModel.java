@@ -77,9 +77,9 @@ public interface DateSelectionModel {
     
     /**
      * Gets what the first day of the week is; e.g.,
-     * <code>Calendar.SUNDAY</code> in the U.S., <code>Calendar.MONDAY</code>
+     * {@code Calendar.SUNDAY} in the U.S., <code>Calendar.MONDAY</code>
      * in France.  This is needed when the model selection mode is 
-     * <code>WEEK_INTERVAL_SELECTION</code>.
+     * {@code WEEK_INTERVAL_SELECTION}.
      * 
      * PENDING JW: move week-interval selection from JXMonthView into the model.
      *
@@ -90,7 +90,7 @@ public interface DateSelectionModel {
 
     /**
      * Sets what the first day of the week is. E.g.,
-     * <code>Calendar.SUNDAY</code> in US, <code>Calendar.MONDAY</code>
+     * {@code Calendar.SUNDAY} in US, <code>Calendar.MONDAY</code>
      * in France. Fires a DateSelectionEvent of type CALENDAR_CHANGED, if the
      * value is different from the old. <p>
      * 
@@ -259,12 +259,12 @@ public interface DateSelectionModel {
      * 
      * The overall contract:
      * 
-     * <pre><code>
-     * if ((date != null) &amp;&amp; isSelectable(date)) {
+     * <pre>{@code
+     * if ((date != null) && isSelectable(date)) {
      *     setSelectionInterval(date, date);
      *     assertEquals(getNormalized(date), getFirstSelectionDate();
      * }
-     * </code></pre>
+     * }</pre>
      * 
      * 
      * @return the date as it would be normalized before used in the model, 
@@ -282,7 +282,7 @@ public interface DateSelectionModel {
 
 
     /**
-     * Returns a <code>SortedSet</code> of <code>Date</codes>s that are unselectable.
+     * Returns a {@code SortedSet} of <code>Date</code>s that are unselectable.
      *
      * @return sorted set of dates
      */

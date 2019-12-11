@@ -9,7 +9,7 @@ package org.jdesktop.swingx.table;
 import java.util.logging.Logger;
 
 /**
- * Test to exposed known issues of <code>ColumnControlButton</code>. <p>
+ * Test to exposed known issues of {@code ColumnControlButton}. <p>
  * 
  * Ideally, there would be at least one failing test method per open
  * issue in the issue tracker. Plus additional failing test methods for

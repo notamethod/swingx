@@ -30,9 +30,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
- * <p><code>StackLayout</code> is a Swing layout aimed to act as the layers
+ * <p>{@code StackLayout} is a Swing layout aimed to act as the layers
  * stack of most popuplar graphics editing tools like <i>The GIMP</i> or
- * <i>Photoshop</i>. While similar to <code>CardLayout</code>, this layout
+ * <i>Photoshop</i>. While similar to {@code CardLayout}, this layout
  * displays all the components of the container. If you are using non-rectangular
  * components (i.e. transparent) you will see them from top to bottom of the
  * stack.</p>
@@ -44,15 +44,15 @@ import java.util.List;
  * panel.add(new JLabel("At bottom"), StackLayout.BOTTOM);
  * </pre>
  * If you don't specify the constraint, the component will be added at the top
- * of the components stack.</p>
+ * of the components stack.
  * <p>All the components managed by this layout will be given the same size as
  * the container itself. The minimum, maximum and preferred size of the 
  * container are based upon the largest minimum, maximum and preferred size of
  * the children components.</p>
- * <p><code>StackLayout</code> works only with JSE 1.5 and Java SE 6 and
+ * <p>{@code StackLayout} works only with JSE 1.5 and Java SE 6 and
  * greater.</p>
  * 
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 
 public class StackLayout implements LayoutManager2 {

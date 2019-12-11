@@ -426,20 +426,20 @@ public class JXRootPane extends JRootPane {
 
 
     /**
-     * Sets the <code>cancelButton</code> property,
-     * which determines the current default cancel button for this <code>JRootPane</code>.
+     * Sets the {@code cancelButton} property,
+     * which determines the current default cancel button for this {@code JRootPane}.
      * The cancel button is the button which will be activated 
      * when a UI-defined activation event (typically the <b>ESC</b> key) 
      * occurs in the root pane regardless of whether or not the button 
      * has keyboard focus (unless there is another component within 
      * the root pane which consumes the activation event,
-     * such as a <code>JTextPane</code>).
+     * such as a {@code JTextPane}).
      * For default activation to work, the button must be an enabled
      * descendant of the root pane when activation occurs.
      * To remove a cancel button from this root pane, set this
-     * property to <code>null</code>.
+     * property to {@code null}.
      *
-     * @param cancelButton the <code>JButton</code> which is to be the cancel button
+     * @param cancelButton the {@code JButton} which is to be the cancel button
      * @see #getCancelButton() 
      *
      * @beaninfo
@@ -463,8 +463,8 @@ public class JXRootPane extends JRootPane {
     }
 
     /**
-     * Returns the value of the <code>cancelButton</code> property. 
-     * @return the <code>JButton</code> which is currently the default cancel button
+     * Returns the value of the {@code cancelButton} property.
+     * @return the {@code JButton} which is currently the default cancel button
      * @see #setCancelButton
      */
     public JButton getCancelButton() { 

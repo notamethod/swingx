@@ -37,13 +37,13 @@ public abstract class TextUIWrapper<UI extends TextUI> {
 
     /**
      * <p>
-     * Wraps and replaces the current UI of the given <code>textComponent</code>, by calling
+     * Wraps and replaces the current UI of the given {@code textComponent}, by calling
      * {@link #wrapUI(JTextComponent)} if necessary.
      * </p>
      * 
      * @param textComponent
      * @param stayOnUIChange
-     *            if <code>true</code>, a {@link PropertyChangeListener} is registered, which
+     *            if {@code true}, a {@link PropertyChangeListener} is registered, which
      *            listens for UI changes and wraps any new UI object.
      */
     public final void install(final JTextComponent textComponent, boolean stayOnUIChange) {
@@ -58,7 +58,7 @@ public abstract class TextUIWrapper<UI extends TextUI> {
      * text components current UI is not an instance of the given wrapper class.
      * 
      * @param textComponent
-     * @return <code>true</code> if the UI has been replaced
+     * @return {@code true} if the UI has been replaced
      */
     protected boolean replaceUIIfNeeded(JTextComponent textComponent) {
         if (wrapperClass.isAssignableFrom(textComponent.getUI().getClass())) {
@@ -90,7 +90,7 @@ public abstract class TextUIWrapper<UI extends TextUI> {
     /**
      * <p>
      * Removes the {@link PropertyChangeListener}, which listens for "UI" property changes (if
-     * installed) and then calls {@link JComponent#updateUI()} on the <code>textComponent</code> to
+     * installed) and then calls {@link JComponent#updateUI()} on the {@code textComponent} to
      * set the UI object provided by the current {@link UIDefaults}.
      * </p>
      * 
@@ -119,12 +119,12 @@ public abstract class TextUIWrapper<UI extends TextUI> {
 
         /**
          * <p>
-         * Creates a new {@link PromptTextUI}, which wraps the given <code>textComponent</code>s UI.
+         * Creates a new {@link PromptTextUI}, which wraps the given {@code textComponent}s UI.
          * </p>
          * <p>
          * If the UI is already of type {@link PromptTextUI}, it will be returned. If
-         * <code>textComponent</code> is of type {@link JXSearchField} a new {@link SearchFieldUI}
-         * object will be returned. If <code>textComponent</code> is of type {@link JTextField} or
+         * {@code textComponent} is of type {@link JXSearchField} a new {@link SearchFieldUI}
+         * object will be returned. If {@code textComponent} is of type {@link JTextField} or
          * {@link JTextArea} a {@link BuddyTextFieldUI} or {@link PromptTextAreaUI} will be
          * returned, respectively. If the UI is of any other type, a
          * {@link IllegalArgumentException} will be thrown.
@@ -132,7 +132,7 @@ public abstract class TextUIWrapper<UI extends TextUI> {
          * 
          * @param textComponent
          *            wrap this components UI
-         * @return a {@link PromptTextUI} which wraps the <code>textComponent</code>s UI.
+         * @return a {@link PromptTextUI} which wraps the {@code textComponent}s UI.
          */
         @Override
         public PromptTextUI wrapUI(JTextComponent textComponent) {

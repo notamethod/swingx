@@ -27,7 +27,7 @@ import javax.swing.Action;
 
 /**
  * UIAction is the basis of all of basic's action classes that are used in
- * an ActionMap. Subclasses need to override <code>actionPerformed</code>.
+ * an ActionMap. Subclasses need to override {@code actionPerformed}.
  * <p>
  * A typical subclass will look like:
  * <pre>
@@ -48,8 +48,8 @@ import javax.swing.Action;
  * </pre>
  * <p>
  * Subclasses that wish to conditionalize the enabled state should override
- * <code>isEnabled(Component)</code>, and be aware that the passed in
- * <code>Component</code> may be null.
+ * {@code isEnabled(Component)}, and be aware that the passed in
+ * {@code Component} may be null.
  * <p>
  * This is based on sun.swing.UIAction in J2SE 1.5
  *
@@ -83,7 +83,7 @@ public abstract class UIAction implements Action {
     }
 
     /**
-     * Cover method for <code>isEnabled(null)</code>.
+     * Cover method for {@code isEnabled(null)}.
      */
     @Override
     public final boolean isEnabled() {
@@ -92,7 +92,7 @@ public abstract class UIAction implements Action {
 
     /**
      * Subclasses that need to conditionalize the enabled state should
-     * override this. Be aware that <code>sender</code> may be null.
+     * override this. Be aware that {@code sender} may be null.
      *
      * @param sender Widget enabled state is being asked for, may be null.
      */

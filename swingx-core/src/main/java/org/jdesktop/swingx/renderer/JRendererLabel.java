@@ -32,7 +32,7 @@ import javax.swing.UIManager;
 import org.jdesktop.swingx.painter.Painter;
 
 /**
- * A <code>JLabel</code> optimized for usage in renderers and
+ * A {@code JLabel} optimized for usage in renderers and
  * with a minimal background painter support. <p>
  * 
  * <i>Note</i>: the painter support will be switched to painter_work as 
@@ -40,21 +40,21 @@ import org.jdesktop.swingx.painter.Painter;
  * 
  * The reasoning for the performance-overrides is copied from core: <p>
  * 
- * The standard <code>JLabel</code> component was not
+ * The standard {@code JLabel} component was not
  * designed to be used this way and we want to avoid 
- * triggering a <code>revalidate</code> each time the
+ * triggering a {@code revalidate} each time the
  * cell is drawn. This would greatly decrease performance because the
- * <code>revalidate</code> message would be
+ * {@code revalidate} message would be
  * passed up the hierarchy of the container to determine whether any other
  * components would be affected.  
  * As the renderer is only parented for the lifetime of a painting operation
  * we similarly want to avoid the overhead associated with walking the
  * hierarchy for painting operations.
  * So this class
- * overrides the <code>validate</code>, <code>invalidate</code>,
- * <code>revalidate</code>, <code>repaint</code>, and
- * <code>firePropertyChange</code> methods to be 
- * no-ops and override the <code>isOpaque</code> method solely to improve
+ * overrides the {@code validate}, <code>invalidate</code>,
+ * {@code revalidate}, <code>repaint</code>, and
+ * {@code firePropertyChange} methods to be
+ * no-ops and override the {@code isOpaque} method solely to improve
  * performance.  If you write your own renderer component,
  * please keep this performance consideration in mind.
  * <p>

@@ -17,7 +17,7 @@ public class ComponentOrientationHighlighter extends AbstractHighlighter {
     private ComponentOrientation co;
 
     /**
-     * Instantiates a ComponentOrientationHighlighter with <code>ComponentOrientation.LEFT_TO_RIGHT</code>. 
+     * Instantiates a ComponentOrientationHighlighter with {@code ComponentOrientation.LEFT_TO_RIGHT}.
      * The Highlighter is applied always.
      */
     public ComponentOrientationHighlighter() {
@@ -26,7 +26,7 @@ public class ComponentOrientationHighlighter extends AbstractHighlighter {
 
     /**
      * Instantiates a ComponentOrientationHighlighter with the given HighlightPredicate 
-     * and <code>ComponentOrientation.LEFT_TO_RIGHT</code>.
+     * and {@code ComponentOrientation.LEFT_TO_RIGHT}.
      * 
      * @param predicate the HighlightPredicate to use, may be null to default to ALWAYS.
      */

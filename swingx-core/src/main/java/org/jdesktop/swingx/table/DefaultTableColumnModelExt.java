@@ -38,7 +38,7 @@ import org.jdesktop.swingx.event.TableColumnModelExtListener;
 
 
 /**
- * A default implementation of <code>TableColumnModelExt</code>.
+ * A default implementation of {@code TableColumnModelExt}.
  * <p>
  * 
  * TODO: explain sub-optimal notification on showing/hiding columns.
@@ -329,9 +329,9 @@ public class DefaultTableColumnModelExt extends DefaultTableColumnModel
     }
 
     /**
-     * Notifies <code>TableColumnModelExtListener</code>s about property
+     * Notifies {@code TableColumnModelExtListener}s about property
      * changes of contained columns. The event instance
-     * is the original as fired by the <code>TableColumn</code>.
+     * is the original as fired by the {@code TableColumn}.
      * @param  evt the event received
      * @see EventListenerList
      */

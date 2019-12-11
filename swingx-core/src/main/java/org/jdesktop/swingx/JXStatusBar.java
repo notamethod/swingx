@@ -32,68 +32,68 @@ import org.jdesktop.swingx.plaf.StatusBarAddon;
 import org.jdesktop.swingx.plaf.StatusBarUI;
 
 /**
- * <p>A container for <code>JComponents</code> that is typically placed at
+ * <p>A container for {@code JComponents} that is typically placed at
  * the bottom of a form and runs the entire width of the form. There are 3
- * important functions that <code>JXStatusBar</code> provides.
- * First, <code>JXStatusBar</code> provides a hook for a pluggable look.
+ * important functions that {@code JXStatusBar} provides.
+ * First, {@code JXStatusBar} provides a hook for a pluggable look.
  * There is a definite look associated with status bars on windows, for instance.
  * By implementing a subclass of {@link JComponent}, we provide a way for the
  * pluggable look and feel system to modify the look of the status bar.</p>
  *
- * <p>Second, <code>JXStatusBar</code> comes with its own layout manager. Each item is added to
- * the <code>JXStatusBar</code> with a <code>JXStatusBar.Constraint</code>
- * as the constraint argument. The <code>JXStatusBar.Constraint</code> contains 
- * an <code>Insets</code> object, as well as a <code>ResizeBehavior</code>, 
+ * <p>Second, {@code JXStatusBar} comes with its own layout manager. Each item is added to
+ * the {@code JXStatusBar} with a <code>JXStatusBar.Constraint</code>
+ * as the constraint argument. The {@code JXStatusBar.Constraint} contains
+ * an {@code Insets} object, as well as a <code>ResizeBehavior</code>,
  * which can be FIXED or FILL. The resize behaviour applies to the width of
  * components. All components added will maintain there preferred height, and the
- * height of the <code>JXStatusBar</code> will be the height of the highest 
+ * height of the {@code JXStatusBar} will be the height of the highest
  * component plus insets.</p>
  *  
- * <p>A constraint with <code>JXStatusBar.Constraint.ResizeBehavior.FIXED</code>
- * will cause the component to occupy a fixed area on the <code>JXStatusBar</code>.
- * The size of the area remains constant when the <code>JXStatusBar</code> is resized.
+ * <p>A constraint with {@code JXStatusBar.Constraint.ResizeBehavior.FIXED}
+ * will cause the component to occupy a fixed area on the {@code JXStatusBar}.
+ * The size of the area remains constant when the {@code JXStatusBar} is resized.
  * A constraint with this behavior may also take a width value, see 
  * {@link JXStatusBar.Constraint#setFixedWidth(int)}. The width is a preferred
  * minimum width. If the component preferred width is greater than the constraint
  * width, the component width will apply.</p>
  * 
- * <p>All components with constraint <code>JXStatusBar.Constraint.ResizeBehavior.FILL</code>
- * will share equally any spare space in the <code>JXStatusBar</code>. Spare space
+ * <p>All components with constraint {@code JXStatusBar.Constraint.ResizeBehavior.FILL}
+ * will share equally any spare space in the {@code JXStatusBar}. Spare space
  * is that left over after allowing for all FIXED component and the preferred 
  * width of FILL components, plus insets  
  * 
- * <p>Constructing a <code>JXStatusBar</code> is very straightforward:
- * <pre><code>
+ * <p>Constructing a {@code JXStatusBar} is very straightforward:</p>
+ * <pre>{@code
  *      JXStatusBar bar = new JXStatusBar();
  *      JLabel statusLabel = new JLabel("Ready");
- *      JXStatusBar.Constraint c1 = new JXStatusBar.Constraint() 
+ *      JXStatusBar.Constraint c1 = new JXStatusBar.Constraint()
  *      c1.setFixedWidth(100);
  *      bar.add(statusLabel, c1);     // Fixed width of 100 with no inserts
  *      JXStatusBar.Constraint c2 = new JXStatusBarConstraint(
  *              JXStatusBar.Constraint.ResizeBehavior.FILL) // Fill with no inserts
  *      JProgressBar pbar = new JProgressBar();
  *      bar.add(pbar, c2);            // Fill with no inserts - will use remaining space
- * </code></pre></p>
+ * }</pre>
  *
  * <p>Two common use cases for status bars include tracking application status and
- * progress. <code>JXStatusBar</code> does not manage these tasks, but instead special components
+ * progress. {@code JXStatusBar} does not manage these tasks, but instead special components
  * exist or can be created that do manage these tasks. For example, if your application
  * has a TaskManager or some other repository of currently running jobs, you could
  * easily create a TaskManagerProgressBar that tracks those jobs. This component
- * could then be added to the <code>JXStatusBar</code> like any other component.</p>
+ * could then be added to the {@code JXStatusBar} like any other component.</p>
  *
- * <h2>Client Properties</h2>
+ * <h1>Client Properties</h1>
  * <p>The BasicStatusBarUI.AUTO_ADD_SEPARATOR client property can be specified, which
  *    will disable the auto-adding of separators. In this case, you must add your own
- *    JSeparator components. To use:
- * <pre><code>
+ *    JSeparator components. To use:</p>
+ * <pre>{@code
  *      JXStatusBar sbar = new JXStatusBar();
  *      sbar.putClientProperty(BasicStatusBarUI.AUTO_ADD_SEPARATOR, false);
  *      sbar.add(comp1);
  *      sbar.add(new JSeparator(JSeparator.VERTICAL));
  *      sbar.add(comp2);
  *      sbar.add(comp3);
- *  </code></pre></p>
+ *  }</pre>
  *
  * @status REVIEWED
  *
@@ -185,9 +185,9 @@ public class JXStatusBar extends JComponent {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the {@code UIManager} that the L&F has changed.
      * Replaces the current UI object with the latest version from the
-     * <code>UIManager</code>.
+     * {@code UIManager}.
      * 
      * @see javax.swing.JComponent#updateUI
      */
@@ -198,7 +198,7 @@ public class JXStatusBar extends JComponent {
     }
 
     /**
-     * The constraint object to be used with the <code>JXStatusBar</code>. It takes
+     * The constraint object to be used with the {@code JXStatusBar}. It takes
      * a ResizeBehaviour, Insets and a Width. Width is only applicable for  
      * ResizeBehavior.FIXED. @see JXStatusBar class documentation.
      */
@@ -275,7 +275,7 @@ public class JXStatusBar extends JComponent {
         
         /**
          * Set the fixed width the component added with this 
-         * constraint will occupy on the <code>JXStatusBar</code>. Only applies
+         * constraint will occupy on the {@code JXStatusBar}. Only applies
          * to ResizeBehavior.FIXED. Will be ignored for ResizeBehavior.FILL.
          *  
          * @param width - minimum width component will occupy. If 0, the preferred

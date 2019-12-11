@@ -55,7 +55,7 @@ import org.jdesktop.swingx.ext.PainterUIResource;
 import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
- * Base implementation of <code>Header</code> UI. <p>
+ * Base implementation of {@code Header} UI. <p>
  * 
  * PENDING JW: This implementation is unusual in that it does not keep a reference
  * to the component it controls. Typically, such is only the case if the ui is
@@ -113,7 +113,7 @@ public class BasicHeaderUI extends HeaderUI {
 
     /**
      * Returns an instance of the UI delegate for the specified component.
-     * Each subclass must provide its own static <code>createUI</code>
+     * Each subclass must provide its own static {@code createUI}
      * method that returns an instance of that UI delegate subclass.
      * If the UI delegate subclass is stateless, it may return an instance
      * that is shared by multiple components.  If the UI delegate is
@@ -127,7 +127,7 @@ public class BasicHeaderUI extends HeaderUI {
 
     /**
      * Configures the specified component appropriate for the look and feel.
-     * This method is invoked when the <code>ComponentUI</code> instance is being installed
+     * This method is invoked when the {@code ComponentUI} instance is being installed
      * as the UI delegate on the specified component.  This method should
      * completely configure the component for the look and feel,
      * including the following:
@@ -136,10 +136,10 @@ public class BasicHeaderUI extends HeaderUI {
      *     icons, opacity, etc. on the component.  Whenever possible,
      *     property values initialized by the client program should <i>not</i>
      *     be overridden.
-     * <li>Install a <code>LayoutManager</code> on the component if necessary.
+     * <li>Install a {@code LayoutManager} on the component if necessary.
      * <li>Create/add any required sub-components to the component.
      * <li>Create/install event listeners on the component.
-     * <li>Create/install a <code>PropertyChangeListener</code> on the component in order
+     * <li>Create/install a {@code PropertyChangeListener} on the component in order
      *     to detect and respond to component property changes appropriately.
      * <li>Install keyboard UI (mnemonics, traversal, etc.) on the component.
      * <li>Initialize any appropriate instance data.
@@ -163,11 +163,11 @@ public class BasicHeaderUI extends HeaderUI {
 
     /**
      * Reverses configuration which was done on the specified component during
-     * <code>installUI</code>.  This method is invoked when this
-     * <code>UIComponent</code> instance is being removed as the UI delegate
+     * {@code installUI}.  This method is invoked when this
+     * {@code UIComponent} instance is being removed as the UI delegate
      * for the specified component.  This method should undo the
-     * configuration performed in <code>installUI</code>, being careful to
-     * leave the <code>JComponent</code> instance in a clean state (no
+     * configuration performed in {@code installUI}, being careful to
+     * leave the {@code JComponent} instance in a clean state (no
      * extraneous listeners, look-and-feel-specific property objects, etc.).
      * This should include the following:
      * <ol>

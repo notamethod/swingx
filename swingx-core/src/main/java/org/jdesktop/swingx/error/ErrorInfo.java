@@ -95,7 +95,7 @@ public class ErrorInfo {
      *                              this be the same value as you would use when logging.
      *                              May be null.
      *
-     * @param errorException        <code>Throwable</code> that can be used as a
+     * @param errorException        {@code Throwable} that can be used as a
      *                              source for additional information such as call
      *                              stack, thread name, etc. May be null.
      *
@@ -171,7 +171,7 @@ public class ErrorInfo {
      * sparingly. Generally, such formatting makes sense for making certain words bold,
      * but should not be used for page layout or other such things.</p>
      *
-     * <p>For example, the following are perfectly acceptable basic error messages:
+     * <p>For example, the following are perfectly acceptable basic error messages:</p>
      * <pre>
      *      "Your camera cannot be located. Please make sure that it is powered on
      *       and that it is connected to this computer. Consult the instructions
@@ -181,7 +181,7 @@ public class ErrorInfo {
      *      "&lt;html&gt;You are running on &lt;b&gt;reserver&lt;/b&gt; battery
      *       power. Please plug into a power source immediately, or your work may
      *       be lost!&lt;/html&gt;"
-     * </pre></p>
+     * </pre>
      *
      * @return basic error message or null
      */
@@ -218,7 +218,7 @@ public class ErrorInfo {
      * Gets the actual exception that generated the error. If this returns a
      * non null value, then {@link #getBasicErrorMessage} may return a null value.
      * If this returns a non null value and {@link #getDetailedErrorMessage} returns
-     * a null value, then this returned <code>Throwable</code> may be used as the
+     * a null value, then this returned {@code Throwable} may be used as the
      * basis for the detailed error message (generally by showing the stack trace).
      *
      * @return exception or null
@@ -228,9 +228,9 @@ public class ErrorInfo {
     }
     
     /**
-     * Gets the severity of the error. The default level is <code>Level.SEVERE</code>,
+     * Gets the severity of the error. The default level is {@code Level.SEVERE},
      * but any {@link Level} may be specified when constructing an
-     * <code>ErrorInfo</code>.
+     * {@code ErrorInfo}.
      *
      * @return the error level. This will never be null
      */

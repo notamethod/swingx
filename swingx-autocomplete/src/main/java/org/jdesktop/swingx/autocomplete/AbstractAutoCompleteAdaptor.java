@@ -77,7 +77,7 @@ public abstract class AbstractAutoCompleteAdaptor {
     /**
      * Returns the item at a given index. It is supposed that <code>0&lt;=index&lt;<b>getItemCount()</b></code>.
      * @param index the index of the item that is to be returned
-     * @return the item at the given <code>index</code>
+     * @return the item at the given {@code index}
      */
     public abstract Object getItem(int index);
     
@@ -108,7 +108,7 @@ public abstract class AbstractAutoCompleteAdaptor {
     
     /**
      * Marks/selects the text that is displayed inside the text component starting from the
-     * character with index <tt>start</tt>.
+     * character with index <code>start</code>.
      * @param start index of the first character that should be marked
      */
     public void markText(int start) {

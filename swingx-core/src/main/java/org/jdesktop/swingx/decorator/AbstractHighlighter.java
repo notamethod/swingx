@@ -28,7 +28,7 @@ import javax.swing.event.ChangeListener;
 import org.jdesktop.swingx.event.WeakEventListenerList;
 
 /**
- * Abstract <code>Highlighter</code> implementation which manages change 
+ * Abstract {@code Highlighter} implementation which manages change
  * notification and supports conditional highlighting. 
  * Subclasses are required to fire ChangeEvents on internal changes which might
  * effect the highlight. The HighlightPredicate controls whether or not
@@ -40,48 +40,48 @@ import org.jdesktop.swingx.event.WeakEventListenerList;
  * attribute to highlight. This allows easy re-use by composition.  F.i. a custom
  * FontHighlighter:
  * 
- * <pre><code>
+ * <pre>{@code
  * public static class FontHighlighter extends AbstractHighlighter {
- * 
+ *
  *     private Font font;
- * 
+ *
  *     public FontHighlighter(HighlightPredicate predicate, Font font) {
  *         super(predicate);
  *         setFont(font);
  *     }
- * 
+ *
  *     &#64;Override
  *     protected Component doHighlight(Component component,
  *             ComponentAdapter adapter) {
  *         component.setFont(font);
  *         return component;
  *     }
- *     
+ *
  *     public final void setFont(Font font) {
  *        if (equals(font, this.font)) return;
  *        this.font = font;
  *        fireStateChanged();
  *     }
- *     
- * 
+ *
+ *
  * }
- * 
- * </code></pre>
+ *
+ * }</pre>
  * 
  * Client code can combine the effect with a f.i. Color decoration, and use a
  * shared HighlightPredicate to apply both for the same condition.
  * 
- * <pre><code>
+ * <pre>{@code
  * HighlightPredicate predicate = new HighlightPredicate() {
  *     public boolean isHighlighted(Component renderer, ComponentAdapter adapter) {
  *         Object value = adapter.getFilteredValueAt(adapter.row, adapter.column);
- *         return (value instanceof Number) &amp;&amp; ((Number) value).intValue() &lt; 0;
+ *         return (value instanceof Number) && ((Number) value).intValue() < 0;
  *     }
  * };
  * table.setHighlighters(
  *         new ColorHighlighter(predicate, Color.RED, null),
  *         new FontHighlighter(predicate, myBoldFont));
- * </code></pre>
+ * }</pre>
  * 
  * @author Jeanette Winzenburg
  * 
@@ -91,7 +91,7 @@ import org.jdesktop.swingx.event.WeakEventListenerList;
 public abstract class AbstractHighlighter implements Highlighter {
 
     /**
-     * Only one <code>ChangeEvent</code> is needed per model instance since the
+     * Only one {@code ChangeEvent} is needed per model instance since the
      * event's only (read-only) state is the source property.  The source
      * of events generated here is always "this".
      */
@@ -223,7 +223,7 @@ public abstract class AbstractHighlighter implements Highlighter {
     //------------------------ implement Highlighter change notification
 
     /**
-     * Adds a <code>ChangeListener</code>. ChangeListeners are
+     * Adds a {@code ChangeListener}. ChangeListeners are
      * notified after changes of any attribute. 
      *
      * @param l the ChangeListener to add
@@ -235,9 +235,9 @@ public abstract class AbstractHighlighter implements Highlighter {
     }
 
     /**
-     * Removes a <code>ChangeListener</code>e. 
+     * Removes a {@code ChangeListener}e.
      *
-     * @param l the <code>ChangeListener</code> to remove
+     * @param l the {@code ChangeListener} to remove
      * @see #addChangeListener
      */
     @Override
@@ -247,9 +247,9 @@ public abstract class AbstractHighlighter implements Highlighter {
 
     /**
      * Returns an array of all the change listeners
-     * registered on this <code>Highlighter</code>.
+     * registered on this {@code Highlighter}.
      *
-     * @return all of this model's <code>ChangeListener</code>s 
+     * @return all of this model's {@code ChangeListener}s
      *         or an empty
      *         array if no change listeners are currently registered
      *
@@ -264,7 +264,7 @@ public abstract class AbstractHighlighter implements Highlighter {
     }
 
     /** 
-     * Notifies registered <code>ChangeListener</code>s about
+     * Notifies registered {@code ChangeListener}s about
      * state changes.<p>
      * 
      * Note: subclasses should be polite and implement any property

@@ -45,8 +45,8 @@ import org.jdesktop.swingx.search.SearchFactory;
  * All interactive test methods should be prefixed with &quot;interactive&quot;,
  * e.g.  interactiveTestTableSorting().</p>
  * <p>
- * The test class's <code>main</code> method should be used to control which
- * interactive tests should run.  Use <code>runInteractiveTests()</code> method
+ * The test class's {@code main} method should be used to control which
+ * interactive tests should run.  Use {@code runInteractiveTests()} method
  * to run all interactive tests in the class.</p>
  * <p>
  * Ultimately we need to investigate moving to a mechanism which can help automate
@@ -374,7 +374,7 @@ public abstract class InteractiveTestCase extends junit.framework.TestCase {
     }
 
     /**
-     * Returns the <code>JXFrame</code>'s status bar. Lazily creates and 
+     * Returns the {@code JXFrame}'s status bar. Lazily creates and
      * sets an instance if necessary.
      * @param frame the target frame
      * @return the frame's statusbar

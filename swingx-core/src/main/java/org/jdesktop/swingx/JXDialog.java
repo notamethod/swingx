@@ -94,7 +94,7 @@ public class JXDialog extends JDialog {
     
     /**
      * Creates a non-modal dialog with the given component as content and the
-     * specified <code>Frame</code> as owner.
+     * specified {@code Frame} as owner.
      * <p>
      * @param frame the owner
      * @param content the component to show and to auto-configure from.
@@ -106,7 +106,7 @@ public class JXDialog extends JDialog {
     
     /**
      * Creates a non-modal dialog with the given component as content and the
-     * specified <code>Dialog</code> as owner.
+     * specified {@code Dialog} as owner.
      * <p>
      * @param dialog the owner
      * @param content the component to show and to auto-configure from.
@@ -118,7 +118,7 @@ public class JXDialog extends JDialog {
     
     /**
      * Creates a non-modal dialog with the given component as content and the
-     * specified <code>Window</code> as owner.
+     * specified {@code Window} as owner.
      * <p>
      * @param window the owner
      * @param content the component to show and to auto-configure from.
@@ -378,7 +378,7 @@ public class JXDialog extends JDialog {
      * convenience wrapper to access rootPane's actionMap.
      * 
      * @param key
-     * @return root pane's <code>ActionMap</code>
+     * @return root pane's {@code ActionMap}
      */
     private Action getAction(Object key) {
         return getRootPane().getActionMap().get(key);
@@ -386,8 +386,8 @@ public class JXDialog extends JDialog {
 
     /**
      * Returns a potentially localized value from the UIManager. The given key
-     * is prefixed by this component|s <code>UIPREFIX</code> before doing the
-     * lookup. The lookup respects this table's current <code>locale</code>
+     * is prefixed by this component|s {@code UIPREFIX} before doing the
+     * lookup. The lookup respects this table's current {@code locale}
      * property. Returns the key, if no value is found.
      * 
      * @param key the bare key to look up in the UIManager.
@@ -400,7 +400,7 @@ public class JXDialog extends JDialog {
     /**
      * Returns a potentially localized value from the UIManager for the 
      * given locale. The given key
-     * is prefixed by this component's <code>UIPREFIX</code> before doing the
+     * is prefixed by this component's {@code UIPREFIX} before doing the
      * lookup. Returns the key, if no value is found.
      * 
      * @param key the bare key to look up in the UIManager.

@@ -105,7 +105,7 @@ import static org.junit.Assert.*;
 
 
 /**
-* Tests of <code>JXTable</code>.
+* Tests of {@code JXTable}.
 * 
 * 
 * @author Jeanette Winzenburg

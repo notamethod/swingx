@@ -79,7 +79,7 @@ public abstract class LoginService extends AbstractBean {
      * @param server
      *            server (optional)
      * 
-     * @return <code>true</code> on authentication success
+     * @return {@code true} on authentication success
      * @throws Exception
      */
     public abstract boolean authenticate(String name, char[] password,
@@ -90,7 +90,7 @@ public abstract class LoginService extends AbstractBean {
      * return an array of user roles or null if role based permissions are not
      * used.
      * 
-     * @return per default <code>null</code>
+     * @return per default {@code null}
      */
     public String[] getUserRoles() {
         return null;

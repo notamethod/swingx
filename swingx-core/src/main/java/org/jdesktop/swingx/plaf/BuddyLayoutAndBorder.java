@@ -59,9 +59,8 @@ public class BuddyLayoutAndBorder implements LayoutManager, Border, PropertyChan
 
 	/**
 	 * Does nothing.
-	 * 
-	 * @see BuddySupport#add(javax.swing.JComponent, Position, JTextField)
-	 */
+	 *
+     */
 	@Override
     public void addLayoutComponent(String name, Component comp) {
 	}

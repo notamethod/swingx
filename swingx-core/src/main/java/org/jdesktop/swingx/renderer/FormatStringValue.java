@@ -23,21 +23,21 @@ package org.jdesktop.swingx.renderer;
 import java.text.Format;
 
 /**
- * Base type for <code>Format</code>-backed <code>StringValue</code>. Has
+ * Base type for {@code Format}-backed <code>StringValue</code>. Has
  * static defaults for Date and Number which use the locale-dependent default
- * <code>Format</code>s as returned from xxFormat.getInstance().
+ * {@code Format}s as returned from xxFormat.getInstance().
  * <p>
  * 
  * This class is intended to ease the handling of formatted cell content.
- * F.i. to show a list of <code>Date</code>s in the default
- * <code>Locale</code>'s FULL version and right align the text:
+ * F.i. to show a list of {@code Date}s in the default
+ * {@code Locale}'s FULL version and right align the text:
  * 
- * <pre><code>
+ * <pre>{@code
  *    StringValue stringValue = new FormatStringValue(
  *        DateFormat.getInstance(DateFormat.FULL));
  *    list.setCellRenderer(
- *        new DefaultListRenderer(stringValue, JLabel.RIGHT);  
- * </code></pre>
+ *        new DefaultListRenderer(stringValue, JLabel.RIGHT);
+ * }</pre>
  * 
  * 
  * PENDING: need to update on Locale change? How to detect? When?

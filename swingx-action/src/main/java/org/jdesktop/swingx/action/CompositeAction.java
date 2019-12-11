@@ -34,8 +34,8 @@ import javax.swing.Icon;
  * The action ids are added to the internal list. When this action is invoked,
  * the event will be dispatched to the actions in the internal list.
  * <p>
- * The action ids are represented by the value of the <code>Action.ACTION_COMMAND_KEY</code>
- * and must be managed by the <code>ActionManager</code>. When this action is 
+ * The action ids are represented by the value of the {@code Action.ACTION_COMMAND_KEY}
+ * and must be managed by the {@code ActionManager}. When this action is
  * invoked, then the actions are retrieved from the ActionManager in list order
  * and invoked.
  * 

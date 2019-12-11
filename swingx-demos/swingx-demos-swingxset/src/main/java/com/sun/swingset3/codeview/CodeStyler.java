@@ -47,7 +47,7 @@ import java.util.*;
 /**
  * A class that syntax highlights Java code by turning it into html.
  * 
- * <p> A <code>CodeStyler</code> object is created and then keeps state as
+ * <p> A {@code CodeStyler} object is created and then keeps state as
  * lines are passed in. Each line passed in as java text, is returned as syntax
  * highlighted html text. (note: this class was originally named CodeViewer)
  * 

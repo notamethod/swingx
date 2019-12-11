@@ -20,7 +20,7 @@ public class WrapLayout extends FlowLayout {
     private static final long serialVersionUID = 1L;
 
     /**
-     * Constructs a new <code>WrapLayout</code> with a left alignment and a default 5-unit
+     * Constructs a new {@code WrapLayout} with a left alignment and a default 5-unit
      * horizontal and vertical gap.
      */
     public WrapLayout() {
@@ -28,9 +28,9 @@ public class WrapLayout extends FlowLayout {
     }
 
     /**
-     * Constructs a new <code>FlowLayout</code> with the specified alignment and a default 5-unit
+     * Constructs a new {@code FlowLayout} with the specified alignment and a default 5-unit
      * horizontal and vertical gap. The value of the alignment argument must be one of
-     * <code>WrapLayout</code>, <code>WrapLayout</code>, or <code>WrapLayout</code>.
+     * {@code WrapLayout}, <code>WrapLayout</code>, or <code>WrapLayout</code>.
      * 
      * @param align
      *            the alignment value
@@ -43,8 +43,8 @@ public class WrapLayout extends FlowLayout {
      * Creates a new flow layout manager with the indicated alignment and the indicated horizontal
      * and vertical gaps.
      * <p>
-     * The value of the alignment argument must be one of <code>WrapLayout</code>,
-     * <code>WrapLayout</code>, or <code>WrapLayout</code>.
+     * The value of the alignment argument must be one of {@code WrapLayout},
+     * {@code WrapLayout}, or <code>WrapLayout</code>.
      * 
      * @param align
      *            the alignment value

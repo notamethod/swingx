@@ -46,7 +46,7 @@ import org.jdesktop.swingx.util.Contract;
  * This is a on/off <b>decision</b> only, the actual decoration is
  * left to the AbstractHighlighter which typically respects this predicate. <p>
  * 
- * Note: implementations should be immutable because <code>Highlighter</code>s 
+ * Note: implementations should be immutable because {@code Highlighter}s
  * guarantee to notify listeners on any state change which might effect the highlight. 
  * They can't comply to that contract if predicate internal state changes under their 
  * feet. If dynamic predicate state is required, the safe alternative is to create 

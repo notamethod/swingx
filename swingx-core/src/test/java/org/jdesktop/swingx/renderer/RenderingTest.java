@@ -1176,7 +1176,7 @@ public class RenderingTest extends InteractiveTestCase {
     }
 
     /**
-     * public methods of <code>ComponentProvider</code> must cope
+     * public methods of {@code ComponentProvider} must cope
      * with null context. Here: test getRenderingComponent in WrappingProvider.
      *
      */
@@ -1187,7 +1187,7 @@ public class RenderingTest extends InteractiveTestCase {
     }
 
     /**
-     * public methods of <code>ComponentProvider</code> must cope
+     * public methods of {@code ComponentProvider} must cope
      * with null context. Here: test getRenderingComponent in LabelProvider.
      */
     @Test

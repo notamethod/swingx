@@ -31,16 +31,16 @@ import org.jdesktop.swingx.icon.EmptyIcon;
  * <p>
  * 
  * This class is intended to be the "small coin" to configure/format icon cell
- * content of concrete subclasses of <code>ComponentProvider</code>.
+ * content of concrete subclasses of {@code ComponentProvider}.
  * <p>
  * 
  * 
  * NOTE: this is experimental, most probably will change. A (near) future
  * version with change the signature of the getIcon method to
  * 
- * <pre><code>
+ * <pre>{@code
  * Icon getIcon(Object value, IconType type);
- * </code></pre>
+ * }</pre>
  * 
  * That will allow a more fine-grained control of custom icons in tree rendering.
  * 

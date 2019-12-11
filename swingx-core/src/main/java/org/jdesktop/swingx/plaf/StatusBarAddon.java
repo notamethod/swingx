@@ -28,7 +28,7 @@ import org.jdesktop.swingx.ext.windows.WindowsLookAndFeelAddons;
 import org.jdesktop.swingx.util.OS;
 
 /**
- * Addon for <code>JXStatusBar</code>.<br>
+ * Addon for {@code JXStatusBar}.<br>
  *
  */
 public class StatusBarAddon extends AbstractComponentAddon {

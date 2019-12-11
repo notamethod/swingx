@@ -2080,18 +2080,18 @@ public class RendererVisualCheck extends InteractiveTestCase {
     /**
      * c&p'd from JGoodies BeanUtils.
      * 
-     * Looks up and returns a <code>PropertyDescriptor</code> for the
+     * Looks up and returns a {@code PropertyDescriptor} for the
      * given Java Bean class and property name using the standard 
      * Java Bean introspection behavior.
      * 
      * @param beanClass     the type of the bean that holds the property
      * @param propertyName  the name of the Bean property
-     * @return the <code>PropertyDescriptor</code> associated with the given
+     * @return the {@code PropertyDescriptor} associated with the given
      *     bean and property name as returned by the Bean introspection
      *     
      * @throws IntrospectionException if an exception occurs during
      *     introspection.
-     * @throws NullPointerException if the beanClass or propertyName is <code>null</code>
+     * @throws NullPointerException if the beanClass or propertyName is {@code null}
      * 
      * @since 1.1.1
      */
@@ -2123,7 +2123,7 @@ public class RendererVisualCheck extends InteractiveTestCase {
      * @param propertyDescriptor  describes the property to be read
      * @return the bean's property value
      * 
-     * @throws NullPointerException           if the bean is <code>null</code>
+     * @throws NullPointerException           if the bean is {@code null}
      * @throws UnsupportedOperationException  if the bean property is write-only
      * @throws PropertyAccessException        if the new value could not be read
      */

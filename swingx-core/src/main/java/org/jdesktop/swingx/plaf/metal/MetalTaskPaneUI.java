@@ -33,7 +33,7 @@ import org.jdesktop.swingx.JXTaskPane;
 import org.jdesktop.swingx.plaf.basic.BasicTaskPaneUI;
 
 /**
- * Metal implementation of the <code>JXTaskPane</code> UI. <br>
+ * Metal implementation of the {@code JXTaskPane} UI. <br>
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  */

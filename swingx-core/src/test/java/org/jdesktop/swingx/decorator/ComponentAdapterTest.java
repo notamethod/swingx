@@ -52,7 +52,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Test <code>ComponentAdapter</code>.
+ * Test {@code ComponentAdapter}.
  * 
  * @author Jeanette Winzenburg
  */

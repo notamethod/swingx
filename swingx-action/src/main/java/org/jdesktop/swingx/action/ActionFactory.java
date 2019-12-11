@@ -57,7 +57,7 @@ public class ActionFactory {
     }
 
     /**
-     * Factory Methods for creating <code>CompositeAction</code>
+     * Factory Methods for creating {@code CompositeAction}
      * @see CompositeAction
      */
     public static CompositeAction createCompositeAction(String id, String name,
@@ -132,7 +132,7 @@ public class ActionFactory {
     /**
      * Add additional attributes to the action. If any of these attributes
      * are null then they will still be set on the action. Many of these
-     * attributes map to the set methods on <code>AbstractActionExt</code>
+     * attributes map to the set methods on {@code AbstractActionExt}
      *
      * @see AbstractActionExt
      * @param action the action which will all the attributes will be applied

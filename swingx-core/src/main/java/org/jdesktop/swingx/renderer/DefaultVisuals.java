@@ -27,13 +27,13 @@ import javax.swing.JComponent;
 
 /**
  * Encapsulates the default visual configuration of renderering components,
- * respecting the state of the passed-in <code>CellContext</code>. It's
+ * respecting the state of the passed-in {@code CellContext}. It's
  * basically re-usable across all types of renderees (JTable, JList, JTree).
  * <p>
  * 
  * Guarantees to completely configure the default visual properties (listed
  * below) of a given component. As a consequence, client code (f.i. in
- * <code>Highlighter</code>s) can safely change them without long-lasting
+ * {@code Highlighter}s) can safely change them without long-lasting
  * visual artefacts.
  * 
  * <ul>
@@ -52,9 +52,9 @@ import javax.swing.JComponent;
  * place to change on introduction of new properties considered as belonging
  * to the "default visuals" of rendering components. <p>
  * 
- * PENDING: allow mutators for overruling the <code>CellContext</code>s
+ * PENDING: allow mutators for overruling the {@code CellContext}s
  * defaults? Would prefer not to, as in the context of SwingX visual config on
- * the renderer level is discouraged (the way to go are <code>Highlighter</code>s.<p>
+ * the renderer level is discouraged (the way to go are {@code Highlighter}s.<p>
  * 
  * PENDING: not yet quite decided whether the toolTipText property belongs
  * into the visual default config. Doing so gives client code the choice to
@@ -73,7 +73,7 @@ public class DefaultVisuals<T extends JComponent> implements Serializable {
 
     /**
      * Sets the renderer's unselected-foreground color to the specified color.
-     * If <code>not null</code> this color will overrule the default color of
+     * If {@code not null} this color will overrule the default color of
      * the CellContext.
      * 
      * @param c set the foreground color to this value
@@ -84,7 +84,7 @@ public class DefaultVisuals<T extends JComponent> implements Serializable {
 
     /**
      * Sets the renderer's unselected-background color to the specified color.
-     * If <code>not null</code> this color will overrule the default color of
+     * If {@code not null} this color will overrule the default color of
      * the CellContext.
      * 
      * @param c set the background color to this value
@@ -129,15 +129,15 @@ public class DefaultVisuals<T extends JComponent> implements Serializable {
      * cell context.
      * <p>
      * 
-     * Here: synch <code>Font</code>, <code>ComponentOrientation</code> and
-     * <code>enabled</code> to context's component. Resets toolTipText to null.
+     * Here: synch {@code Font}, <code>ComponentOrientation</code> and
+     * {@code enabled} to context's component. Resets toolTipText to null.
      * Calls configureSizes to reset xxSize if appropriate. Resets the component's
      * name property.
      * <p>
      * 
      * PENDING: not fully defined - "divers" means everything that's not 
-     * <code>Color</code>s
-     * nor <code>Border</code> nor <code>Painter</code>.
+     * {@code Color}s
+     * nor {@code Border} nor <code>Painter</code>.
      *      
      * @param renderingComponent the component to configure, must not be null
      * @param context the cell context to configure from, must not be null

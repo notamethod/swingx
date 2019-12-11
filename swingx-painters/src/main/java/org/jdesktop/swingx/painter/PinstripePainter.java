@@ -53,11 +53,11 @@ import org.jdesktop.beans.JavaBean;
  * Here is a custom code snippet that paints Color.GRAY pinstripes at a 135 degree angle:
  * 
  * <pre>
- * <code>
+ * {@code
  *  PinstripePainter p = new PinstripePainter();
  *  p.setAngle(135);
  *  p.setPaint(Color.GRAY);
- * </code>
+ * }
  * </pre>
  * 
  * @author rbair

@@ -62,7 +62,7 @@ public class ListSearchable extends AbstractSearchable {
          * 
          * @param pattern 
          * @param row a valid row index in view coordinates
-         * @return <code>SearchResult</code> if matched otherwise null
+         * @return {@code SearchResult} if matched otherwise null
          */
         protected SearchResult findMatchAt(Pattern pattern, int row) {
             String text = list.getStringAt(row);

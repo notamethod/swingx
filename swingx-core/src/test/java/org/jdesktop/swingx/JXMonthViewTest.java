@@ -64,7 +64,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Test case for <code>JXMonthView</code>
+ * Test case for {@code JXMonthView}
  *
  * There's another class with passing unit tests for JXMonthView (JXMonthViewVisualTest)
  * because this 

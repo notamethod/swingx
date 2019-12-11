@@ -35,8 +35,8 @@ import org.jdesktop.swingx.search.NativeSearchFieldSupport;
 public class SearchFieldUI extends BuddyTextFieldUI {
     /**
      * The search field that we're a UI delegate for. Initialized by the
-     * <code>installUI</code> method, and reset to null by
-     * <code>uninstallUI</code>.
+     * {@code installUI} method, and reset to null by
+     * {@code uninstallUI}.
      * 
      * @see #installUI
      * @see #uninstallUI
@@ -193,7 +193,7 @@ public class SearchFieldUI extends BuddyTextFieldUI {
      * Initialize the search fields various properties based on the
      * corresponding "SearchField.*" properties from defaults table. The
      * {@link JXSearchField}s layout is set to the value returned by
-     * <code>createLayout</code>. Also calls {@link #replaceBorderIfNecessary()}
+     * {@code createLayout}. Also calls {@link #replaceBorderIfNecessary()}
      * and {@link #updateButtons()}. This method is called by
      * {@link #installUI(JComponent)}.
      * 
@@ -269,11 +269,11 @@ public class SearchFieldUI extends BuddyTextFieldUI {
     }
 
     /**
-     * Returns true if <code>o</code> is <code>null</code> or of instance
+     * Returns true if {@code o} is <code>null</code> or of instance
      * {@link UIResource}.
      * 
      * @param o an object
-     * @return true if <code>o</code> is <code>null</code> or of instance
+     * @return true if {@code o} is <code>null</code> or of instance
      *         {@link UIResource}
      */
     protected boolean shouldReplaceResource(Object o) {
@@ -283,9 +283,9 @@ public class SearchFieldUI extends BuddyTextFieldUI {
     /**
      * Convience method for only replacing icons if they have not been
      * customized by the user. Returns the icon from the defaults table
-     * belonging to <code>resKey</code>, if
-     * {@link #shouldReplaceResource(Object)} with the <code>icon</code> as a
-     * parameter returns <code>true</code>. Otherwise returns <code>icon</code>.
+     * belonging to {@code resKey}, if
+     * {@link #shouldReplaceResource(Object)} with the {@code icon} as a
+     * parameter returns {@code true}. Otherwise returns <code>icon</code>.
      * 
      * @param icon the current icon
      * @param resKey the resource key identifying the default icon
@@ -330,8 +330,8 @@ public class SearchFieldUI extends BuddyTextFieldUI {
     }
 
     /**
-     * Returns <code>true</code> if
-     * {@link JXSearchField#isUseSeperatePopupButton()} is <code>true</code> and
+     * Returns {@code true} if
+     * {@link JXSearchField#isUseSeperatePopupButton()} is {@code true} and
      * a search popup menu has been set.
      * 
      * @return the popup button is used in addition to the search button
@@ -345,7 +345,7 @@ public class SearchFieldUI extends BuddyTextFieldUI {
      * Returns the number of pixels between the popup button and the clear (or
      * search) button as specified in the default table by
      * 'SearchField.popupOffset'. Returns 0 if
-     * {@link #usingSeperatePopupButton()} returns <code>false</code>
+     * {@link #usingSeperatePopupButton()} returns {@code false}
      * 
      * @return number of pixels between the popup button and the clear (or
      *         search) button

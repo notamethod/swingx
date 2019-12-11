@@ -41,7 +41,7 @@ public class DemoCalendarRenderingHandler extends BasicCalendarRenderingHandler 
     private CompoundHighlighter demoHighlighter;
 
     /**
-     * Sets the <code>Highlighter</code>s to the table, replacing any old settings.
+     * Sets the {@code Highlighter}s to the table, replacing any old settings.
      * None of the given Highlighters must be null.<p>
      * 
      * @param highlighters zero or more not null highlighters to use for renderer decoration.
@@ -55,8 +55,8 @@ public class DemoCalendarRenderingHandler extends BasicCalendarRenderingHandler 
     // </snip>
     
     /**
-     * Appends the <code>Highlighter</code>s to the end of the list of used
-     * <code>Highlighter</code>s. None of the given Highlighters must be null.
+     * Appends the {@code Highlighter}s to the end of the list of used
+     * {@code Highlighter}s. None of the given Highlighters must be null.
      * <p>
      * 
      * @param highlighters zero or more not null highlighters to use for renderer decoration.

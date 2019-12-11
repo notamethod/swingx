@@ -110,7 +110,6 @@ public abstract class AbstractTestSortController<SC extends DefaultSortControlle
         controller.toggleSortOrder(getColumnCount());
     }
     /**
-     * @param string
      * @param first
      * @param second
      */

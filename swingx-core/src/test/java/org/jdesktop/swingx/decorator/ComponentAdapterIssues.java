@@ -36,7 +36,7 @@ import org.jdesktop.swingx.treetable.TreeTableModel;
 import org.jdesktop.test.AncientSwingTeam;
 
 /**
- * Test to exposed known issues of <code>ComponentAdapter</code>.
+ * Test to exposed known issues of {@code ComponentAdapter}.
  * 
  * Ideally, there would be at least one failing test method per open
  * Issue in the issue tracker. Plus additional failing test methods for

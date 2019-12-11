@@ -35,7 +35,7 @@ import javax.swing.tree.TreePath;
 import org.jdesktop.swingx.JXTree;
 
 /**
- * Tree specific <code>CellContext</code>. 
+ * Tree specific {@code CellContext}.
  * 
  * <ul>
  * <li>PENDING: use focus border as returned from list or table instead of

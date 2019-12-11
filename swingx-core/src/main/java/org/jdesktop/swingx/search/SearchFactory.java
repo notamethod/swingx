@@ -129,7 +129,7 @@ public class SearchFactory implements UIDependent {
     /** 
      * Returns the shared SearchFactory.
      * 
-     * @return the shared <code>SearchFactory</code>
+     * @return the shared {@code SearchFactory}
      */
     public static SearchFactory getInstance() {
           if (searchFactory == null) {
@@ -201,7 +201,7 @@ public class SearchFactory implements UIDependent {
     /**
      * Shows an appropriate find widget targeted at the searchable.
      * Opens a batch-find or incremental-find 
-     * widget based on the return value of <code>isUseFindBar</code>. 
+     * widget based on the return value of {@code isUseFindBar}.
      *  
      * @param target - the component associated with the searchable
      * @param searchable - the object to search.
@@ -261,7 +261,7 @@ public class SearchFactory implements UIDependent {
      * Returns the shared JXFindBar. Creates and configures on 
      * first call.
      * 
-     * @return the shared <code>JXFindBar</code>
+     * @return the shared {@code JXFindBar}
      */
     public JXFindBar getSharedFindBar() {
         if (findBar == null) {
@@ -274,7 +274,7 @@ public class SearchFactory implements UIDependent {
     /**
      * Factory method to create a JXFindBar.
      * 
-     * @return the <code>JXFindBar</code>
+     * @return the {@code JXFindBar}
      */
     public JXFindBar createFindBar() {
         return new JXFindBar();
@@ -425,7 +425,7 @@ public class SearchFactory implements UIDependent {
      * Returns the shared JXFindPanel. Lazyly creates and configures on 
      * first call.
      * 
-     * @return the shared <code>JXFindPanel</code>
+     * @return the shared {@code JXFindPanel}
      */
     public JXFindPanel getSharedFindPanel() {
         if (findPanel == null) {
@@ -444,7 +444,7 @@ public class SearchFactory implements UIDependent {
     /**
      * Factory method to create a JXFindPanel.
      * 
-     * @return <code>JXFindPanel</code>
+     * @return {@code JXFindPanel}
      */
     public JXFindPanel createFindPanel() {
         return new JXFindPanel();

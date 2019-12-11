@@ -472,11 +472,11 @@ public class MultiSplitLayout implements LayoutManager, Serializable
   
   /**
    * Add a component to this MultiSplitLayout.  The
-   * <code>name</code> should match the name property of the Leaf
-   * node that represents the bounds of <code>child</code>.  After
+   * {@code name} should match the name property of the Leaf
+   * node that represents the bounds of {@code child}.  After
    * layoutContainer() recomputes the bounds of all of the nodes in
    * the model, it will set this child's bounds to the bounds of the
-   * Leaf node with <code>name</code>.  Note: if a component was already
+   * Leaf node with {@code name}.  Note: if a component was already
    * added with the same name, this method does not remove it from
    * its parent.
    *
@@ -1283,7 +1283,7 @@ public Dimension minimumLayoutSize(Container parent) {
    * <ul>
    * <li>DEFAULT_LAYOUT - use the preferred and minimum sizes when sizing the children</li>
    * <li>LAYOUT_NO_MIN_SIZE - ignore the minimum size when sizing the children</li>
-   * </li>
+   * </ul>
    */
   public void setLayoutMode( int layoutMode )
   {
@@ -1494,8 +1494,8 @@ public void layoutContainer(Container parent)
      * Determines whether this node should be visible when its
      * parent is visible. Nodes are 
      * initially visible
-     * @return <code>true</code> if the node is visible,
-     * <code>false</code> otherwise
+     * @return {@code true} if the node is visible,
+     * {@code false} otherwise
      */
     public boolean isVisible() {
       return isVisible;
@@ -1533,7 +1533,7 @@ public void layoutContainer(Container parent)
     /**
      * Set the bounding Rectangle for this node.  The value of
      * bounds may not be null.  The default value of bounds
-     * is equal to <code>new Rectangle(0,0,0,0)</code>.
+     * is equal to {@code new Rectangle(0,0,0,0)}.
      *
      * @param bounds the new value of the bounds property
      * @throws IllegalArgumentException if bounds is null
@@ -1680,8 +1680,8 @@ public void layoutContainer(Container parent)
      * Determines whether this node should be visible when its
      * parent is visible. Nodes are 
      * initially visible
-     * @return <code>true</code> if the node is visible,
-     * <code>false</code> otherwise
+     * @return {@code true} if the node is visible,
+     * {@code false} otherwise
      */
     @Override
     public boolean isVisible() {

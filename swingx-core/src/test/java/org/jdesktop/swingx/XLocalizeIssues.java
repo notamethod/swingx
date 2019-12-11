@@ -41,7 +41,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Test to expose known issues around <code>Locale</code> setting.
+ * Test to expose known issues around {@code Locale} setting.
  * 
  * Ideally, there would be at least one failing test method per open
  * Issue in the issue tracker. Plus additional failing test methods for
@@ -181,8 +181,8 @@ public class XLocalizeIssues extends InteractiveTestCase {
 //------------------ core components for comparison.
     
     /**
-     * Trying to understand how core Swing handles <code>Locale</code>
-     * in <code>JFileChooser</code>.
+     * Trying to understand how core Swing handles {@code Locale}
+     * in {@code JFileChooser}.
      * <p>
      * 
      * Not very intuitive: the default locale for all J** is controlled by the
@@ -249,8 +249,8 @@ public class XLocalizeIssues extends InteractiveTestCase {
         frame.setVisible(true);
     }
     /**
-     * Trying to understand how core Swing handles <code>Locale</code>
-     * switching in <code>JOptionPane</code>.
+     * Trying to understand how core Swing handles {@code Locale}
+     * switching in {@code JOptionPane}.
      * <p>
      * 
      * Not very intuitive: the default locale for all J** is controlled by the
@@ -259,7 +259,7 @@ public class XLocalizeIssues extends InteractiveTestCase {
      * Changing the Locale-defined default later on has no effect.
      * <p>
      * 
-     * <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4884480 ">
+     * <a href="http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=4884480">
      * Core bug JOptionPane</a>
      * 
      */

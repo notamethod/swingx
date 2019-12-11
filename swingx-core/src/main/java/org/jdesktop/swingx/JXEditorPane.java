@@ -92,7 +92,7 @@ import org.jdesktop.swingx.search.Searchable;
  * Users can revert to the behavior of {@code JEditorPane} by setting the 
  * property to {@code false}.
  * </p>
- * <h3>Additional Features</h3>
+ * <h1>Additional Features</h1>
  * <dl>
  * <dt>
  * Improved text editing</dt>
@@ -123,11 +123,11 @@ import org.jdesktop.swingx.search.Searchable;
  * JXEditorPane} provides search capabilities, allowing the user to find text
  * within the document.</dd>
  * </dl>
- * <h3>Example</h3>
+ * <h1>Example</h1>
  * <p>
  * Creating a {@code JXEditorPane} is no different than creating a {@code
  * JEditorPane}. However, the following example demonstrates the best way to
- * access the improved command functionality.
+ * access the improved command functionality. * </p>
  * 
  * <pre>
  * JXEditorPane editorPane = new JXEditorPane("some URL");
@@ -137,7 +137,6 @@ import org.jdesktop.swingx.search.Searchable;
  * toolBar.add(editorPane.getParagraphSelector());
  * setToolBar(toolBar);
  * </pre>
- * </p>
  * 
  * @author Mark Davidson
  */
@@ -179,19 +178,19 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
     private Searchable searchable;
     
     /**
-     * Creates a new <code>JXEditorPane</code>.
-     * The document model is set to <code>null</code>.
+     * Creates a new {@code JXEditorPane}.
+     * The document model is set to {@code null}.
      */
     public JXEditorPane() {
         init();
     }
 
     /**
-     * Creates a <code>JXEditorPane</code> based on a string containing
+     * Creates a {@code JXEditorPane} based on a string containing
      * a URL specification.
      *
      * @param url the URL
-     * @exception IOException if the URL is <code>null</code> or
+     * @exception IOException if the URL is {@code null} or
      *      cannot be accessed
      */
     public JXEditorPane(String url) throws IOException {
@@ -200,14 +199,14 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
     }
 
     /**
-     * Creates a <code>JXEditorPane</code> that has been initialized
+     * Creates a {@code JXEditorPane} that has been initialized
      * to the given text.  This is a convenience constructor that calls the
-     * <code>setContentType</code> and <code>setText</code> methods.
+     * {@code setContentType} and <code>setText</code> methods.
      *
      * @param type mime type of the given text
-     * @param text the text to initialize with; may be <code>null</code>
-     * @exception NullPointerException if the <code>type</code> parameter
-     *      is <code>null</code>
+     * @param text the text to initialize with; may be {@code null}
+     * @exception NullPointerException if the {@code type} parameter
+     *      is {@code null}
      */
     public JXEditorPane(String type, String text) {
         super(type, text);
@@ -215,10 +214,10 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
     }
 
     /**
-     * Creates a <code>JXEditorPane</code> based on a specified URL for input.
+     * Creates a {@code JXEditorPane} based on a specified URL for input.
      *
      * @param initialPage the URL
-     * @exception IOException if the URL is <code>null</code>
+     * @exception IOException if the URL is {@code null}
      *      or cannot be accessed
      */
     public JXEditorPane(URL initialPage) throws IOException {
@@ -529,7 +528,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
     }
 
     /**
-     * The paste method has been overloaded to strip off the <html><body> tags
+     * The paste method has been overloaded to strip off the {@code <html><body>} tags
      * This doesn't really work.
      */
     @Override
@@ -761,7 +760,7 @@ public class JXEditorPane extends JEditorPane implements /*Searchable, */Targeta
         /**
          * @param matcher
          * @param useFirst whether or not to return after the first match is found.
-         * @return <code>MatchResult</code> or null
+         * @return {@code MatchResult} or null
          */
         private MatchResult getMatchResult(Matcher matcher, boolean  useFirst) {
             MatchResult currentResult = null;

@@ -29,7 +29,7 @@ import org.jdesktop.swingx.painter.MattePainter;
 
 
 /**
- * Test to expose known issues of <code>JXHeader</code>.
+ * Test to expose known issues of {@code JXHeader}.
  * <p>
  * 
  * Ideally, there would be at least one failing test method per open issue in

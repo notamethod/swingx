@@ -27,28 +27,28 @@ import java.io.Serializable;
  * A simple converter to return a String representation of an object.
  * 
  * This class is intended to be the "small coin" to configure/format textual
- * cell content of concrete subclasses of <code>ComponentProvider</code>.
+ * cell content of concrete subclasses of {@code ComponentProvider}.
  * <p>
  * 
  * F.i. to show a Contributor cell object as "Busywoman, Herta" implement a
  * custom StringValue and use it in a text rendering provider.
  * 
- * <pre><code>
+ * <pre>{@code
  * StringValue stringValue = new StringValue() {
- * 
+ *
  *     public String getString(Object value) {
  *         if (!(value instanceof Contributor))
  *             return TO_STRING.getString(value);
  *         Contributor contributor = (Contributor) value;
- *         return contributor.lastName + &quot;, &quot; + contributor.firstName;
+ *         return contributor.lastName + ", " + contributor.firstName;
  *     }
- * 
+ *
  * };
- * 
+ *
  * ComponentProvider provider = new LabelProvider(stringValue);
- * table.setDefaultRenderer(Contributor.class, 
+ * table.setDefaultRenderer(Contributor.class,
  *   new DefaultTableRenderer(provider));
- * </code></pre>
+ * }</pre>
  * 
  * <p>
  * 

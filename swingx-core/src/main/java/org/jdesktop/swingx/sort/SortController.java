@@ -35,10 +35,10 @@ import javax.swing.SortOrder;
  * This is very-much work-in-progress: while moving from ol' SwingX sorting to 
  * core jdk6 sorting we need a hook for sorting api on the view. So in terms of
  * jdk6 classes, this is something like:<p>
- * 
- * <code><pre>
+ * <pre>
+ * <code>
  * SortController == DefaultRowSorter - RowSorter + XX
- * </pre></code>
+ * </code></pre>
  * All methods which change sort state must respect per-controller and per-column 
  * sortable property, as follows
  * <ol>
@@ -92,7 +92,7 @@ public interface SortController<M> {
      * @param column the column to enable or disable sorting on, in terms
      *        of the underlying model
      * @param sortable whether or not the specified column is sortable
-     * @throws IndexOutOfBoundsException if <code>column</code> is outside
+     * @throws IndexOutOfBoundsException if {@code column} is outside
      *         the range of the model
      * @see #isSortable(int)        
      * @see #toggleSortOrder(int)
@@ -117,26 +117,26 @@ public interface SortController<M> {
     boolean isSortable(int column);
 
     /**
-     * Sets the <code>Comparator</code> to use when sorting the specified
+     * Sets the {@code Comparator} to use when sorting the specified
      * column.  This does not trigger a sort.  If you want to sort after
-     * setting the comparator you need to explicitly invoke <code>sort</code>.
+     * setting the comparator you need to explicitly invoke {@code sort}.
      *
-     * @param column the index of the column the <code>Comparator</code> is
+     * @param column the index of the column the {@code Comparator} is
      *        to be used for, in terms of the underlying model
-     * @param comparator the <code>Comparator</code> to use
-     * @throws IndexOutOfBoundsException if <code>column</code> is outside
+     * @param comparator the {@code Comparator} to use
+     * @throws IndexOutOfBoundsException if {@code column} is outside
      *         the range of the underlying model
      */
     public void setComparator(int column, Comparator<?> comparator);
 
     /**
-     * Returns the <code>Comparator</code> for the specified 
-     * column.  This will return <code>null</code> if a <code>Comparator</code>
+     * Returns the {@code Comparator} for the specified
+     * column.  This will return {@code null} if a <code>Comparator</code>
      * has not been specified for the column.
      *
-     * @param column the column to fetch the <code>Comparator</code> for, in
+     * @param column the column to fetch the {@code Comparator} for, in
      *        terms of the underlying model
-     * @return the <code>Comparator</code> for the specified column
+     * @return the {@code Comparator} for the specified column
      * @throws IndexOutOfBoundsException if column is outside
      *         the range of the underlying model
      */
@@ -160,7 +160,7 @@ public interface SortController<M> {
     
     /**
      * If true, specifies that a sort should happen when the underlying
-     * model is updated (<code>rowsUpdated</code> is invoked).  For
+     * model is updated ({@code rowsUpdated} is invoked).  For
      * example, if this is true and the user edits an entry the
      * location of that item in the view may change.  The default is
      * true.
@@ -249,12 +249,12 @@ public interface SortController<M> {
     /**
      * Sets the filter that determines which rows, if any, should be
      * hidden from the view.  The filter is applied before sorting.  A value
-     * of <code>null</code> indicates all values from the model should be
+     * of {@code null} indicates all values from the model should be
      * included.
      * <p>
-     * <code>RowFilter</code>'s <code>include</code> method is passed an
-     * <code>Entry</code> that wraps the underlying model.  The number
-     * of columns in the <code>Entry</code> corresponds to the
+     * {@code RowFilter}'s <code>include</code> method is passed an
+     * {@code Entry} that wraps the underlying model.  The number
+     * of columns in the {@code Entry} corresponds to the
      * number of columns in the underlying model.  The identifier
      * comes from the underlying model as well.
      * <p>

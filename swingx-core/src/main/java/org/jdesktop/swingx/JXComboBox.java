@@ -210,7 +210,7 @@ public class JXComboBox extends JComboBox {
         private final JXComboBox comboBox;
 
         /**
-         * Constructs a <code>ListAdapter</code> for the specified target
+         * Constructs a {@code ListAdapter} for the specified target
          * JXList.
          * 
          * @param component  the target list.
@@ -423,8 +423,8 @@ public class JXComboBox extends JComboBox {
     private boolean updatingUI;
 
     /**
-     * Creates a <code>JXComboBox</code> with a default data model. The default data model is an
-     * empty list of objects. Use <code>addItem</code> to add items. By default the first item in
+     * Creates a {@code JXComboBox} with a default data model. The default data model is an
+     * empty list of objects. Use {@code addItem} to add items. By default the first item in
      * the data model becomes selected.
      * 
      * @see DefaultComboBoxModel
@@ -435,13 +435,13 @@ public class JXComboBox extends JComboBox {
     }
 
     /**
-     * Creates a <code>JXComboBox</code> that takes its items from an existing
-     * <code>ComboBoxModel</code>. Since the <code>ComboBoxModel</code> is provided, a combo box
+     * Creates a {@code JXComboBox} that takes its items from an existing
+     * {@code ComboBoxModel}. Since the <code>ComboBoxModel</code> is provided, a combo box
      * created using this constructor does not create a default combo box model and may impact how
      * the insert, remove and add methods behave.
      * 
      * @param model
-     *            the <code>ComboBoxModel</code> that provides the displayed list of items
+     *            the {@code ComboBoxModel} that provides the displayed list of items
      * @see DefaultComboBoxModel
      */
     public JXComboBox(ComboBoxModel model) {
@@ -450,7 +450,7 @@ public class JXComboBox extends JComboBox {
     }
 
     /**
-     * Creates a <code>JXComboBox</code> that contains the elements in the specified array. By
+     * Creates a {@code JXComboBox} that contains the elements in the specified array. By
      * default the first item in the array (and therefore the data model) becomes selected.
      * 
      * @param items
@@ -463,7 +463,7 @@ public class JXComboBox extends JComboBox {
     }
 
     /**
-     * Creates a <code>JXComboBox</code> that contains the elements in the specified Vector. By
+     * Creates a {@code JXComboBox} that contains the elements in the specified Vector. By
      * default the first item in the vector (and therefore the data model) becomes selected.
      * 
      * @param items
@@ -627,7 +627,7 @@ public class JXComboBox extends JComboBox {
 
     /**
      * Creates and returns the default cell renderer to use. Subclasses
-     * may override to use a different type. Here: returns a <code>DefaultListRenderer</code>.
+     * may override to use a different type. Here: returns a {@code DefaultListRenderer}.
      * 
      * @return the default cell renderer to use with this list.
      */
@@ -672,7 +672,7 @@ public class JXComboBox extends JComboBox {
      * 
      * Note: the wrapping implies that the renderer returned from the getCellRenderer
      * is <b>not</b> the renderer as given here, but the wrapper. To access the original,
-     * use <code>getWrappedCellRenderer</code>.
+     * use {@code getWrappedCellRenderer}.
      * 
      * @see #getWrappedRenderer()
      * @see #getRenderer()
@@ -729,7 +729,7 @@ public class JXComboBox extends JComboBox {
      * Assigns a CompoundHighlighter to the table, maybe null to remove all Highlighters.
      * <p>
      * 
-     * The default value is <code>null</code>.
+     * The default value is {@code null}.
      * <p>
      * 
      * PENDING: open up for subclasses again?.
@@ -756,7 +756,7 @@ public class JXComboBox extends JComboBox {
     }
 
     /**
-     * Sets the <code>Highlighter</code>s to the column, replacing any old settings. None of the
+     * Sets the {@code Highlighter}s to the column, replacing any old settings. None of the
      * given Highlighters must be null.
      * <p>
      * 
@@ -780,7 +780,7 @@ public class JXComboBox extends JComboBox {
     }
 
     /**
-     * Returns the <code>Highlighter</code>s used by this column. Maybe empty, but guarantees to be
+     * Returns the {@code Highlighter}s used by this column. Maybe empty, but guarantees to be
      * never null.
      * 
      * @return the Highlighters used by this column, guaranteed to never null.
@@ -796,9 +796,9 @@ public class JXComboBox extends JComboBox {
      * <p>
      * 
      * @param highlighter
-     *            the <code>Highlighter</code> to add.
+     *            the {@code Highlighter} to add.
      * @throws NullPointerException
-     *             if <code>Highlighter</code> is null.
+     *             if {@code Highlighter} is null.
      * 
      * @see #removeHighlighter(Highlighter)
      * @see #setHighlighters(Highlighter[])
@@ -831,11 +831,11 @@ public class JXComboBox extends JComboBox {
     }
 
     /**
-     * Returns the <code>ChangeListener</code> to use with highlighters. Lazily creates the
+     * Returns the {@code ChangeListener} to use with highlighters. Lazily creates the
      * listener.
      * 
      * @return the ChangeListener for observing changes of highlighters, guaranteed to be
-     *         <code>not-null</code>
+     *         {@code not-null}
      */
     protected ChangeListener getHighlighterChangeListener() {
         if (highlighterChangeListener == null) {

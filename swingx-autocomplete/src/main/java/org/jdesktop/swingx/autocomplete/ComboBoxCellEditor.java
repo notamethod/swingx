@@ -38,15 +38,13 @@ import javax.swing.text.JTextComponent;
  * <p>
  * Usage example:
  * </p>
- * <p>
- * <pre><code>
+ * <pre>{@code
  * JTable table = ...;
  * JComboBox comboBox = ...;
  * ...
  * TableColumn column = table.getColumnModel().getColumn(0);
  * column.setCellEditor(new ComboBoxCellEditor(comboBox));
- * </code></pre>
- * </p>
+ * }</pre>
  */
 public class ComboBoxCellEditor extends DefaultCellEditor {
     

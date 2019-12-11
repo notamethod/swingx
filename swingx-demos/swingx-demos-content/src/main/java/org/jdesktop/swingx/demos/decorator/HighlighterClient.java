@@ -35,8 +35,8 @@ import org.jdesktop.swingx.plaf.UIDependent;
 public interface HighlighterClient extends UIDependent {
 
     /**
-     * Sets the <code>Highlighter</code>s to this client, replacing any old settings.
-     * No argument or an empty array removes all <code>Highlighter</code>s. <p>
+     * Sets the {@code Highlighter}s to this client, replacing any old settings.
+     * No argument or an empty array removes all {@code Highlighter}s. <p>
      * 
      * This is a bound property.
      * 
@@ -51,7 +51,7 @@ public interface HighlighterClient extends UIDependent {
     void setHighlighters(Highlighter... highlighters);
 
     /**
-     * Returns the <code>Highlighter</code>s used by this client.
+     * Returns the {@code Highlighter}s used by this client.
      * Maybe empty, but guarantees to be never null.
      * 
      * @return the Highlighters used by this table, guaranteed to never null.
@@ -61,12 +61,12 @@ public interface HighlighterClient extends UIDependent {
     Highlighter[] getHighlighters();
 
     /**
-     * Appends a <code>Highlighter</code> to the end of the list of used
-     * <code>Highlighter</code>s. The argument must not be null. 
+     * Appends a {@code Highlighter} to the end of the list of used
+     * {@code Highlighter}s. The argument must not be null.
      * <p>
      * 
-     * @param highlighter the <code>Highlighter</code> to add, must not be null.
-     * @throws NullPointerException if <code>Highlighter</code> is null.
+     * @param highlighter the {@code Highlighter} to add, must not be null.
+     * @throws NullPointerException if {@code Highlighter} is null.
      * 
      * @see #removeHighlighter(Highlighter)
      * @see #setHighlighters(Highlighter[])
@@ -74,10 +74,10 @@ public interface HighlighterClient extends UIDependent {
     void addHighlighter(Highlighter highlighter);
 
     /**
-     * Removes the given <code>Highlighter</code>. Does nothing if the
-     * <code>Highlighter</code> is not contained.
+     * Removes the given {@code Highlighter}. Does nothing if the
+     * {@code Highlighter} is not contained.
      * 
-     * @param highlighter the <code>Highlighter</code> to remove.
+     * @param highlighter the {@code Highlighter} to remove.
      * 
      * @see #addHighlighter(Highlighter)
      * @see #setHighlighters(Highlighter...)
@@ -93,7 +93,7 @@ public interface HighlighterClient extends UIDependent {
     void addPropertyChangeListener(PropertyChangeListener l);
 
     /**
-     * Removes the <code>PropertyChangeListener</code>. Does nothing if the
+     * Removes the {@code PropertyChangeListener}. Does nothing if the
      * listener is not contained.
      * 
      * @param l the listener to remove. 

@@ -44,12 +44,12 @@ import java.awt.Rectangle;
  * it is painting. If you wanted to paint the image in the lower right hand corner of the paintable
  * area, but inset by 5 pixels, you could do the following:
  * 
- * <pre><code>
+ * <pre>{@code
  *     ImagePainter p = new ImagePainter(null);
  *     p.setVerticalAlignment(AbstractLayoutPainter.VerticalAlignment.BOTTOM);
  *     p.setHorizontalAlignment(AbstractLayoutPainter.HorizontalAlignment.RIGHT);
  *     p.setInsets(new Insets(0,0,5,5));
- * </code></pre>
+ * }</pre>
  * 
  * 
  * For something which is resizable, like a RectanglePainter, you can use the fill properties
@@ -58,14 +58,14 @@ import java.awt.Rectangle;
  * by 10 pixels on all sides, you could do
  * the following:
  * 
- * <pre><code>
+ * <pre>{@code
  *     RectanglePainter p = new RectanglePainter();
  *     p.setRoundHeight(20);
  *     p.setRoundWidth(20);
  *     p.setInsets(new Insets(10,10,10,10));
  *     p.setFillHorizontal(true);
  *     p.setFillVertical(true);
- * </code></pre>
+ * }</pre>
  * 
  * 
  * @author joshua@marinacci.org

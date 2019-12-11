@@ -25,7 +25,7 @@ import org.jdesktop.swingx.error.ErrorInfo;
 
 
 /**
- * Test to expose known issues around <code>JXError*</code>.
+ * Test to expose known issues around {@code JXError*}.
  * 
  * Ideally, there would be at least one failing test method per open
  * Issue in the issue tracker. Plus additional failing test methods for

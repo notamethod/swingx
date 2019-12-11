@@ -42,16 +42,16 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  * place that may take an unknown length of time to complete. Similar to an
  * indeterminant JProgressBar, but with a different look.</p>
  *
- * <p>For example:
- * <pre><code>
+ * <p>For example:</p>
+ * <pre>{@code
  *     JXFrame frame = new JXFrame("test", true);
  *     JXBusyLabel label = new JXBusyLabel();
  *     frame.add(label);
  *     //...
  *     label.setBusy(true);
- * </code></pre></p>
+ * }</pre>
  * Another more complicated example:
- * <pre><code>
+ * <pre>{@code
  * JXBusyLabel label = new JXBusyLabel(new Dimension(100,84));
  * BusyPainter painter = new BusyPainter(
  * new Rectangle2D.Float(0, 0,13.500001f,1),
@@ -62,20 +62,20 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  * label.setPreferredSize(new Dimension(100,84));
  * label.setIcon(new EmptyIcon(100,84));
  * label.setBusyPainter(painter);
- *</code></pre>
+ *}</pre>
  *
  * Another example:
- * <pre><code>
+ * <pre>{@code
  *     JXBusyLabel label = new MyBusyLabel(new Dimension(100, 84));
- * </code></pre>
+ * }</pre>
  * 
  * where MyBusyLabel is:<br>
- * <pre><code>
+ * <pre>{@code
  * public class MyBusyLabel extends JXBusyLabel {
  *     public MyBusyLabel(Dimension prefSize) {
  *         super(prefSize);
  *     }
- *     
+ *
  *     protected BusyLabel createBusyLabel(Dimension dim) {
  *         BusyPainter painter = new BusyPainter(
  *         new Rectangle2D.Float(0, 0,13.500001f,1),
@@ -83,11 +83,11 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
  *         painter.setTrailLength(5);
  *         painter.setPoints(31);
  *         painter.setFrame(1);
- *         
+ *
  *         return painter;
  *     }
  * }
- * </code></pre>
+ * }</pre>
  * 
  * @author rbair
  * @author joshy
@@ -110,8 +110,8 @@ public class JXBusyLabel extends JLabel {
     public final static String uiClassID = "BusyLabelUI";
 
     /**
-     * Sets direction of rotation. <code>Direction.RIGHT</code> is the default 
-     * value. Direction is taken from the very top point so <code>Direction.RIGHT</code> enables rotation clockwise.
+     * Sets direction of rotation. {@code Direction.RIGHT} is the default
+     * value. Direction is taken from the very top point so {@code Direction.RIGHT} enables rotation clockwise.
      * @param dir Direction of rotation.
      */
     public void setDirection(BusyPainter.Direction dir) {
@@ -136,13 +136,13 @@ public class JXBusyLabel extends JLabel {
         }
     }
     
-    /** Creates a new instance of <code>JXBusyLabel</code> initialized to circular shape in bounds of 26 by 26 points.*/
+    /** Creates a new instance of {@code JXBusyLabel} initialized to circular shape in bounds of 26 by 26 points.*/
     public JXBusyLabel() {
         this(null);
     }
     
     /**
-     * Creates a new instance of <code>JXBusyLabel</code> initialized to the arbitrary size and using default circular progress indicator.
+     * Creates a new instance of {@code JXBusyLabel} initialized to the arbitrary size and using default circular progress indicator.
      * @param dim Preferred size of the label.
      */
     public JXBusyLabel(Dimension dim) {
@@ -199,8 +199,8 @@ public class JXBusyLabel extends JLabel {
     }
     
     /**
-     * <p>Gets whether this <code>JXBusyLabel</code> is busy. If busy, then
-     * the <code>JXBusyLabel</code> instance will indicate that it is busy,
+     * <p>Gets whether this {@code JXBusyLabel} is busy. If busy, then
+     * the {@code JXBusyLabel} instance will indicate that it is busy,
      * generally by animating some state.</p>
      * 
      * @return true if this instance is busy
@@ -210,11 +210,11 @@ public class JXBusyLabel extends JLabel {
     }
 
     /**
-     * <p>Sets whether this <code>JXBusyLabel</code> instance should consider
+     * <p>Sets whether this {@code JXBusyLabel} instance should consider
      * itself busy. A busy component may indicate that it is busy via animation,
      * or some other means.</p>
      *
-     * @param busy whether this <code>JXBusyLabel</code> instance should
+     * @param busy whether this {@code JXBusyLabel} instance should
      *        consider itself busy
      */
     public void setBusy(boolean busy) {
@@ -344,9 +344,9 @@ public class JXBusyLabel extends JLabel {
     //------------------------------------------------------------- UI Logic
     
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the {@code UIManager} that the L&F has changed.
      * Replaces the current UI object with the latest version from the
-     * <code>UIManager</code>.
+     * {@code UIManager}.
      *
      * @see javax.swing.JComponent#updateUI
      */

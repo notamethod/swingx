@@ -96,8 +96,8 @@ public class JXTableHeader extends JTableHeader
     private Point popupTriggerLocation;
 
     /**
-     *  Constructs a <code>JTableHeader</code> with a default 
-     *  <code>TableColumnModel</code>.
+     *  Constructs a {@code JTableHeader} with a default
+     *  {@code TableColumnModel}.
      *
      * @see #createDefaultColumnModel
      */
@@ -106,10 +106,10 @@ public class JXTableHeader extends JTableHeader
     }
 
     /**
-     * Constructs a <code>JTableHeader</code> which is initialized with
-     * <code>cm</code> as the column model. If <code>cm</code> is
-     * <code>null</code> this method will initialize the table header with a
-     * default <code>TableColumnModel</code>.
+     * Constructs a {@code JTableHeader} which is initialized with
+     * {@code cm} as the column model. If <code>cm</code> is
+     * {@code null} this method will initialize the table header with a
+     * default {@code TableColumnModel}.
      * 
      * @param columnModel the column model for the table
      * @see #createDefaultColumnModel
@@ -299,7 +299,7 @@ public class JXTableHeader extends JTableHeader
     /**
      * Returns the tableColumn at the given location or null if
      * the location is outside or the column is not of type 
-     * <code>TableColumnExt</code>.
+     * {@code TableColumnExt}.
      * 
      * @param point the location to return the column for
      * @return the tableColumn at the location or null
@@ -475,7 +475,7 @@ public class JXTableHeader extends JTableHeader
      * 
      * Overridden to scroll the table to keep the dragged column visible.
      * This side-effect is enabled only if the header's autoscroll property is
-     * <code>true</code> and the associated table is of type JXTable.<p> 
+     * {@code true} and the associated table is of type JXTable.<p>
      * 
      * The autoscrolls is disabled by default. With or without - core 
      * issue #6503981 has weird effects (for jdk 1.6 - 1.6u3) on a plain 
@@ -499,10 +499,10 @@ public class JXTableHeader extends JTableHeader
     
     /**
      * Returns the the dragged column if and only if, a drag is in process and
-     * the column is visible, otherwise returns <code>null</code>.
+     * the column is visible, otherwise returns {@code null}.
      * 
      * @return the dragged column, if a drag is in process and the column is
-     *         visible, otherwise returns <code>null</code>
+     *         visible, otherwise returns {@code null}
      * @see #getDraggedDistance
      */
     @Override
@@ -513,7 +513,7 @@ public class JXTableHeader extends JTableHeader
     /**
      * Checks and returns the column's visibility. 
      * 
-     * @param column the <code>TableColumn</code> to check
+     * @param column the {@code TableColumn} to check
      * @return a boolean indicating if the column is visible
      */
     private boolean isVisible(TableColumn column) {

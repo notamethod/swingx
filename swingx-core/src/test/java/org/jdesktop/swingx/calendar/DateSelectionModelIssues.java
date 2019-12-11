@@ -35,7 +35,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Test to expose known Issues with <code>DateSelectionModel</code>
+ * Test to expose known Issues with {@code DateSelectionModel}
  *  and implementations.
  * 
  * Moved from swingx to calendar package as of version 1.8.

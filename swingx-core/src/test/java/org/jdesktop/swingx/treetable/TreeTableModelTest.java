@@ -80,13 +80,13 @@ public class TreeTableModelTest extends InteractiveTestCase {
      * 
      * Expected contract (non-doc'ed but common sense...)
      * 
-     * <pre> <code>
-     * 
+     * <pre> {@code
+     *
      * Object value = model.getValueAt(node, column);
-     * assert((value == null) || 
+     * assert((value == null) ||
      *    (model.getColumnClass(column).isAssignableFrom(value.getClass())))
-     *    
-     * </code> </pre>
+     *
+     * } </pre>
      * 
      * Here: FileSystemModel.
      * 

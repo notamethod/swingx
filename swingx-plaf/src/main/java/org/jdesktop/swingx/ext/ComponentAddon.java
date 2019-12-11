@@ -22,7 +22,7 @@ package org.jdesktop.swingx.ext;
 
 /**
  * Each new component type of the library will contribute an addon to
- * the LookAndFeelAddons. A <code>ComponentAddon</code> is the
+ * the LookAndFeelAddons. A {@code ComponentAddon} is the
  * equivalent of a {@link javax.swing.LookAndFeel}but focused on one
  * component. <br>
  * 
@@ -48,7 +48,7 @@ public interface ComponentAddon {
   /**
    * Uninitializes this addon.
    * 
-   * @param addon
+   * @param addon the current addon
    */
   void uninitialize(LookAndFeelAddons addon);
 

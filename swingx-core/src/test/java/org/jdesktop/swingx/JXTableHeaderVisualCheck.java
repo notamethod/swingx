@@ -32,7 +32,7 @@ import org.jdesktop.swingx.table.TableColumnExt;
 import org.jdesktop.test.AncientSwingTeam;
 
 /**
- * Interactive "test" methods for <code>JXTableHeader</code>.
+ * Interactive "test" methods for {@code JXTableHeader}.
  * 
  * @author Jeanette Winzenburg
  */

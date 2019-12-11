@@ -61,6 +61,7 @@ import org.jdesktop.swingx.util.Contract;
  * <li>Support for returning non-{@code String} localizations from
  * {@code ResourceBundle}s.</li>
  * </ul>
+ * <h1></h1><h2></h2>
  * <h3>Safe Methods</h3>
  * <p>
  * The {@code getSafeXXX} methods are designed for use with

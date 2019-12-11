@@ -70,7 +70,7 @@ import org.jdesktop.swingx.JXHyperlink;
 import org.jdesktop.swingx.SwingXUtilities;
 
 /**
- * Basic implementation of the <code>JXHyperlink</code> UI. <br>
+ * Basic implementation of the {@code JXHyperlink} UI. <br>
  * This is copied from org.jdesktop.jdnc.plaf.basic.BasicLinkButtonUI
  */
 public class BasicHyperlinkUI extends BasicButtonUI {

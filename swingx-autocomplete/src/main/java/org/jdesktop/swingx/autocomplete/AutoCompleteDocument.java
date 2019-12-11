@@ -363,7 +363,7 @@ public class AutoCompleteDocument implements Document {
      * and will only match at the beginning of each item's string representation.
      *
      * @param pattern the pattern that should be matched
-     * @return the first item that matches the pattern or <code>null</code> if no item matches
+     * @return the first item that matches the pattern or {@code null} if no item matches
      */
     private LookupResult lookupItem(String pattern) {
         Object selectedItem = adaptor.getSelectedItem();

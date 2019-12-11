@@ -47,7 +47,7 @@ import org.jdesktop.swingx.util.WindowUtils;
  * replace any {@code JFrame}, it has features that make it particularly useful
  * as the "main" frame for an application.
  * </p>
- * <h3>Additional Features</h3>
+ * <h1>Additional Features</h1>
  * <p>
  * Root pane: {@code JXFrame} uses {@link JXRootPane} as its default root pane.
  * The frame provide several convenience methods to provide easy access to the
@@ -114,16 +114,16 @@ public class JXFrame extends JFrame {
     }
 
     /**
-     * Creates a <code>JXFrame</code> in the specified
-     * <code>GraphicsConfiguration</code> of
+     * Creates a {@code JXFrame} in the specified
+     * {@code GraphicsConfiguration} of
      * a screen device, a blank title and default closing behaviour.
      * <p>
      *
-     * @param gc the <code>GraphicsConfiguration</code> that is used
-     *          to construct the new <code>Frame</code>;
-     *          if <code>gc</code> is <code>null</code>, the system
-     *          default <code>GraphicsConfiguration</code> is assumed
-     * @exception IllegalArgumentException if <code>gc</code> is not from
+     * @param gc the {@code GraphicsConfiguration} that is used
+     *          to construct the new {@code Frame};
+     *          if {@code gc} is <code>null</code>, the system
+     *          default {@code GraphicsConfiguration} is assumed
+     * @exception IllegalArgumentException if {@code gc} is not from
      *          a screen device.  This exception is always thrown when
      *      GraphicsEnvironment.isHeadless() returns true.
      */
@@ -133,19 +133,19 @@ public class JXFrame extends JFrame {
 
     
     /**
-     * Creates a <code>JXFrame</code> with the specified title, the
-     * specified <code>GraphicsConfiguration</code> of a screen device and
+     * Creates a {@code JXFrame} with the specified title, the
+     * specified {@code GraphicsConfiguration} of a screen device and
      * default closing behaviour.
      * <p>
      *
      * @param title the title to be displayed in the
-     *          frame's border. A <code>null</code> value is treated as
+     *          frame's border. A {@code null} value is treated as
      *          an empty string, "".
-     * @param gc the <code>GraphicsConfiguration</code> that is used
-     *          to construct the new <code>JFrame</code> with;
-     *          if <code>gc</code> is <code>null</code>, the system
-     *          default <code>GraphicsConfiguration</code> is assumed
-     * @exception IllegalArgumentException if <code>gc</code> is not from
+     * @param gc the {@code GraphicsConfiguration} that is used
+     *          to construct the new {@code JFrame} with;
+     *          if {@code gc} is <code>null</code>, the system
+     *          default {@code GraphicsConfiguration} is assumed
+     * @exception IllegalArgumentException if {@code gc} is not from
      *          a screen device.  This exception is always thrown when
      *      GraphicsEnvironment.isHeadless() returns true.
      */
@@ -172,13 +172,13 @@ public class JXFrame extends JFrame {
      * and closing behavior.
      * 
      * @param title the frame title
-     * @param gc the <code>GraphicsConfiguration</code> of the target screen
-     *        device. If <code>gc</code> is <code>null</code>, the system
-     *        default <code>GraphicsConfiguration</code> is assumed.
+     * @param gc the {@code GraphicsConfiguration} of the target screen
+     *        device. If {@code gc} is <code>null</code>, the system
+     *        default {@code GraphicsConfiguration} is assumed.
      * @param exitOnClose {@code true} to override the default ({@link JFrame})
      *        closing behavior and use {@link JFrame#EXIT_ON_CLOSE
      *        EXIT_ON_CLOSE} instead; {@code false} to use the default behavior
-     * @exception IllegalArgumentException if <code>gc</code> is not from a
+     * @exception IllegalArgumentException if {@code gc} is not from a
      *            screen device.
      * 
      */

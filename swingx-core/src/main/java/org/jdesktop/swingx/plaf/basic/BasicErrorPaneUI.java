@@ -84,7 +84,7 @@ import org.jdesktop.swingx.ext.UIManagerExt;
 import org.jdesktop.swingx.util.WindowUtils;
 
 /**
- * Base implementation of the <code>JXErrorPane</code> UI.
+ * Base implementation of the {@code JXErrorPane} UI.
  *
  * @author rbair
  * @author rah003
@@ -245,7 +245,7 @@ public class BasicErrorPaneUI extends ErrorPaneUI {
     /**
      * Remove the installed listeners from the Error Pane.
      * The number and types of listeners removed and in this method should be
-     * the same that was added in <code>installListeners</code>
+     * the same that was added in {@code installListeners}
      */
     protected void uninstallListeners() {
         //remove the property change listener from the pane
@@ -783,13 +783,13 @@ public class BasicErrorPaneUI extends ErrorPaneUI {
         }
 
         /**
-         * If the <code>preferredSize</code> has been set to a
-         * non-<code>null</code> value just returns it.
-         * If the UI delegate's <code>getPreferredSize</code>
-         * method returns a non <code>null</code> value then return that;
+         * If the {@code preferredSize} has been set to a
+         * non-{@code null} value just returns it.
+         * If the UI delegate's {@code getPreferredSize}
+         * method returns a non {@code null} value then return that;
          * otherwise defer to the component's layout manager.
          *
-         * @return the value of the <code>preferredSize</code> property
+         * @return the value of the {@code preferredSize} property
          * @see #setPreferredSize
          * @see ComponentUI
          */

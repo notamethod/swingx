@@ -17,8 +17,8 @@ import javax.swing.event.PopupMenuEvent;
 import javax.swing.event.PopupMenuListener;
 
 /**
- * A <code>ListDataListener</code> that stores the received 
- * <code>ListDataEvents</code>.
+ * A {@code ListDataListener} that stores the received
+ * {@code ListDataEvents}.
  * 
  */
 public class PopupMenuReport implements PopupMenuListener {

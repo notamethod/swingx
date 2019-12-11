@@ -17,7 +17,7 @@ import org.jdesktop.test.PropertyChangeReport;
 import org.jdesktop.test.SerializableSupport;
 
 /**
- * Test to exposed known issues of <code>TableColumnExt</code>.
+ * Test to exposed known issues of {@code TableColumnExt}.
  * 
  * Ideally, there would be at least one failing test method per open
  * Issue in the issue tracker. Plus additional failing test methods for

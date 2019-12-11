@@ -29,33 +29,32 @@ import org.jdesktop.swingx.plaf.TaskPaneContainerAddon;
 import org.jdesktop.swingx.plaf.TaskPaneContainerUI;
 
 /**
- * <code>JXTaskPaneContainer</code> provides an elegant view
+ * {@code JXTaskPaneContainer} provides an elegant view
  * to display a list of tasks ordered by groups ({@link org.jdesktop.swingx.JXTaskPane}s).
  * 
  * <p>
  * Although {@link org.jdesktop.swingx.JXTaskPane} can be added to any other
- * container, the <code>JXTaskPaneContainer</code> will provide better
+ * container, the {@code JXTaskPaneContainer} will provide better
  * fidelity when it comes to matching the look and feel of the host operating
  * system than any other panel. As example, when using on a Windows platform,
- * the <code>JXTaskPaneContainer</code> will be painted with a light gradient
- * background. Also <code>JXTaskPaneContainer</code> takes care of using the
+ * the {@code JXTaskPaneContainer} will be painted with a light gradient
+ * background. Also {@code JXTaskPaneContainer} takes care of using the
  * right {@link java.awt.LayoutManager} (as required by
  * {@link org.jdesktop.swingx.JXCollapsiblePane}) so that
  * {@link org.jdesktop.swingx.JXTaskPane} behaves correctly when collapsing and
  * expanding its content.
  *  
  * <p>
- * <code>JXTaskPaneContainer<code> can be added to a JScrollPane.
- * 
- * <p>
+ * <code>JXTaskPaneContainer</code> can be added to a JScrollPane.
+ *
  * Example:
  * <pre>
- * <code>
+ * {@code
  * JXFrame frame = new JXFrame();
- * 
+ *
  * // a container to put all JXTaskPane together
  * JXTaskPaneContainer taskPaneContainer = new JXTaskPaneContainer();
- * 
+ *
  * // add JXTaskPanes to the container
  * JXTaskPane actionPane = createActionPane();
  * JXTaskPane miscActionPane = createMiscActionPane();
@@ -66,15 +65,15 @@ import org.jdesktop.swingx.plaf.TaskPaneContainerUI;
  *
  * // put the action list on the left in a JScrollPane
  * // as we have several taskPane and we want to make sure they
- * // all get visible.   
+ * // all get visible.
  * frame.add(new JScrollPane(taskPaneContainer), BorderLayout.EAST);
- * 
+ *
  * // and a file browser in the middle
  * frame.add(fileBrowser, BorderLayout.CENTER);
- * 
+ *
  * frame.pack().
  * frame.setVisible(true);
- * </code>
+ * }
  * </pre>
  *
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
@@ -130,9 +129,9 @@ public class JXTaskPaneContainer extends JXPanel {
     }
   
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the {@code UIManager} that the L&F has changed.
      * Replaces the current UI object with the latest version from the
-     * <code>UIManager</code>.
+     * {@code UIManager}.
      * 
      * @see javax.swing.JComponent#updateUI
      */
@@ -145,7 +144,7 @@ public class JXTaskPaneContainer extends JXPanel {
     /**
      * Sets the L&F object that renders this component.
      * 
-     * @param ui the <code>TaskPaneContainerUI</code> L&F object
+     * @param ui the {@code TaskPaneContainerUI} L&F object
      * @see javax.swing.UIDefaults#getUI
      * 
      * @beaninfo bound: true hidden: true description: The UI object that

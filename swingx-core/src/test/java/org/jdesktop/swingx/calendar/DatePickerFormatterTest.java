@@ -43,7 +43,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Unit tests for <code>DatePickerFormatter</code>.
+ * Unit tests for {@code DatePickerFormatter}.
  * 
  * Extracted from JXDatePickerTest.
  * 

@@ -144,16 +144,16 @@ public class JXPanel extends JPanel implements AlphaPaintable, BackgroundPaintab
     private PropertyChangeListener painterChangeListener;
     
     /**
-     * Creates a new <code>JXPanel</code> with a double buffer
+     * Creates a new {@code JXPanel} with a double buffer
      * and a flow layout.
      */
     public JXPanel() {
     }
     
     /**
-     * Creates a new <code>JXPanel</code> with <code>FlowLayout</code>
+     * Creates a new {@code JXPanel} with <code>FlowLayout</code>
      * and the specified buffering strategy.
-     * If <code>isDoubleBuffered</code> is true, the <code>JXPanel</code>
+     * If {@code isDoubleBuffered} is true, the <code>JXPanel</code>
      * will use a double buffer.
      *
      * @param isDoubleBuffered  a boolean, true for double-buffering, which
@@ -571,7 +571,7 @@ public class JXPanel extends JPanel implements AlphaPaintable, BackgroundPaintab
      * Overridden paint method to take into account the alpha setting.
      * 
      * @param g
-     *            the <code>Graphics</code> context in which to paint
+     *            the {@code Graphics} context in which to paint
      */
     @Override
     public void paint(Graphics g) {
@@ -610,7 +610,7 @@ public class JXPanel extends JPanel implements AlphaPaintable, BackgroundPaintab
      * if it is not null, else it will call super.paintComponent().
      * 
      * @param g
-     *            the <code>Graphics</code> context in which to paint
+     *            the {@code Graphics} context in which to paint
      */
     @Override
     @SuppressWarnings("unchecked")

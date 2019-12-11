@@ -24,7 +24,7 @@ package org.jdesktop.swingx.error;
 import java.util.logging.Level;
 
 /**
- * <p>Extends {@link java.util.logging.Level} adding the <code>FATAL</code> error level.
+ * <p>Extends {@link java.util.logging.Level} adding the {@code FATAL} error level.
  * Fatal errors are those unrecoverable errors that must result in the termination
  * of the application.</p>
  *
@@ -40,7 +40,7 @@ public class ErrorLevel extends Level {
      * of considerable critical and which will prevent
      * program execution.   They should be reasonably intelligible
      * to end users and to system administrators.
-     * This level is initialized to <CODE>1100</CODE>.
+     * This level is initialized to {@code 1100}.
      */    
     public static final ErrorLevel FATAL = new ErrorLevel("FATAL", 1100);
     

@@ -69,7 +69,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Tests behaviour of SwingX <code>DefaultTreeRenderer</code>. 
+ * Tests behaviour of SwingX {@code DefaultTreeRenderer}.
  * Contains characterization to
  * guarantee that it behaves similar to the standard. 
  * 

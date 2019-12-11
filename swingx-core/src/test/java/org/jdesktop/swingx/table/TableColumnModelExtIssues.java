@@ -18,7 +18,7 @@ import org.junit.runner.RunWith;
 import org.junit.runners.JUnit4;
 
 /**
- * Test to exposed known issues of <code>TableColumnModelExt</code>
+ * Test to exposed known issues of {@code TableColumnModelExt}
  * implementations.
  * 
  * Ideally, there would be at least one failing test method per open

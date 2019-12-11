@@ -58,10 +58,10 @@ import org.jdesktop.swingx.painter.Painter;
 // TODO: programmatically zoom in and out (or expose ZOOM_MULTIPLIER)
 
 /**
- * <p><code>JXGraph</code> provides a component which can display one or more
+ * <p>{@code JXGraph} provides a component which can display one or more
  * plots on top of a graduated background (or grid.)</p>
  * 
- * <h2>User input</h2>
+ * <h1>User input</h1>
  * 
  * <p>To help analyze the plots, this component allows the user to pan the
  * view by left-clicking and dragging the mouse around. Using the mouse wheel,
@@ -102,16 +102,16 @@ import org.jdesktop.swingx.painter.Painter;
  *
  * <h3>View and origin</h3>
  *
- * <p>The default constructor defines a view bounds by <code>-1.0</code> and
- * <code>+1.0</code> on both axis, and centered on an origin at
- * <code>(0, 0)</code>.</p>
+ * <p>The default constructor defines a view bounds by {@code -1.0} and
+ * {@code +1.0} on both axis, and centered on an origin at
+ * {@code (0, 0)}.</p>
  *
  * <p>To simplify the API, the origin can be read and written with a
- * <code>Point2D</code> instance (see {@link #getOrigin()} and
+ * {@code Point2D} instance (see {@link #getOrigin()} and
  * {@link #setOrigin(Point2D)}.)</p>
  *
  * <p>Likewise, the view can be read and written with a
- * <code>Rectangle2D</code> instance (see {@link #getView()} and
+ * {@code Rectangle2D} instance (see {@link #getView()} and
  * {@link #setView(Rectangle2D)}.) In this case, you need not to define the
  * maximum boundaries of the view. Instead, you need to set the origin of the
  * rectangle as the minimum boundaries. The width and the height of the
@@ -121,8 +121,8 @@ import org.jdesktop.swingx.painter.Painter;
  *
  * <pre>new Rectangle2D.Double(-1.0d, -1.0d, 2.0d, 2.0d);</pre>
  *
- * <p>You can check the boundaries by calling <code>Rectangle2D.getMaxX()</code>
- * and <code>Rectangle2D.getMaxY()</code> once your rectangle has been
+ * <p>You can check the boundaries by calling {@code Rectangle2D.getMaxX()}
+ * and {@code Rectangle2D.getMaxY()} once your rectangle has been
  * created.</p>
  *
  * <p>Alternatively, you can set the view and the origin at the same time by
@@ -167,7 +167,7 @@ import org.jdesktop.swingx.painter.Painter;
  * <h3>Usage example</h3>
  *
  * <p>The following code snippet creates a new graph centered on
- * <code>(0, 0)</code>, bound to the view <code>[-1.0 1.0 -1.0 1.0]</code>, with
+ * {@code (0, 0)}, bound to the view <code>[-1.0 1.0 -1.0 1.0]</code>, with
  * a major grid line every 0.5 units and a minor grid line count of 5:</p>
  *
  * <pre>
@@ -183,15 +183,15 @@ import org.jdesktop.swingx.painter.Painter;
  * <p>A plot is defined by a mathematical transformation that, given a value on
  * the graph's X axis, returns a value on the Y axis. The component draws the
  * result by plotting a spot of color at the coordinates defined by
- * <code>(X, f(X))</code> where <code>f()</code> is the aforementionned
+ * {@code (X, f(X))} where <code>f()</code> is the aforementionned
  * mathematical transformation. Given the following transformation:</p>
  *
  * <pre>
  * f(X) = X * 2.0
  * </pre>
  *
- * <p>For <code>X=1.0</code>, the component will show a spot of color at the
- * coordinates <code>(1.0, 2.0)</code>.</p>
+ * <p>For {@code X=1.0}, the component will show a spot of color at the
+ * coordinates {@code (1.0, 2.0)}.</p>
  *
  * <h3>Creating a new plot</h3>
  *
@@ -204,7 +204,7 @@ import org.jdesktop.swingx.painter.Painter;
  * </pre>
  *
  * <p>The previous example can be defined by a concrete
- * <code>JXGraph.Plot</code> as follow:</p>
+ * {@code JXGraph.Plot} as follow:</p>
  *
  * <pre>
  * class TwiceTheValuePlot extends JXGraph.Plot {
@@ -217,12 +217,12 @@ import org.jdesktop.swingx.painter.Painter;
  * <p>Most of the time though, a plot requires supplementary parameters. For
  * instance, let's define the X axis of your graph as the mass of an object. To
  * compute the weight of the object given its mass, you need to use the
- * acceleration of gravity (<code>w=m*g</code> where <code>g</code> is the
+ * acceleration of gravity ({@code w=m*g} where <code>g</code> is the
  * acceleration.) To let the user modify this last parameter, to compute his
  * weight at the surface of the moon for instance, you need to add a parameter
  * to your plot.</p>
  *
- * <p>While <code>JXGraph.Plot</code> does not give you an API for such a
+ * <p>While {@code JXGraph.Plot} does not give you an API for such a
  * purpose, it does define an event dispatching API (see
  * {@link JXGraph#firePropertyChange(String, double, double)}.) Whenever a
  * plot is added to the graph, the component registers itself as a property
@@ -278,11 +278,11 @@ import org.jdesktop.swingx.painter.Painter;
  * </ul>
  *
  * <p>If you have defined a graph view centered on the origin
- * <code>(0, 0)</code>, the origin of the graph will be at the exact center of
- * the screen. That means the world coordinates <code>(0, 0)</code> are
- * equivalent to the pixel coordinates <code>(width / 2, height / 2)</code>.
- * Thus, calling <code>xPositionToPixel(0.0d)</code> would give you the same
- * value as the expression <code>getWidth() / 2.0d</code>.</p>
+ * {@code (0, 0)}, the origin of the graph will be at the exact center of
+ * the screen. That means the world coordinates {@code (0, 0)} are
+ * equivalent to the pixel coordinates {@code (width / 2, height / 2)}.
+ * Thus, calling {@code xPositionToPixel(0.0d)} would give you the same
+ * value as the expression {@code getWidth() / 2.0d}.</p>
  *
  * <p>Converting from world coordinates to pixel coordinates is mostly used to
  * draw the result of a mathematical transformation. Converting from pixel
@@ -290,7 +290,7 @@ import org.jdesktop.swingx.painter.Painter;
  * world of a mouse event.</p>
  *
  * @see JXGraph.Plot
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 @JavaBean
 public class JXGraph extends JXPanel {
@@ -363,7 +363,7 @@ public class JXGraph extends JXPanel {
      * automatically set:</p>
      * <ul>
      *   <li><i>view</i>: -1.0 to +1.0 on both axis</li>
-     *   <li><i>origin</i>: At <code>(0, 0)</code></li>
+     *   <li><i>origin</i>: At {@code (0, 0)}</li>
      *   <li><i>grid</i>: Spacing of 0.2 between major lines; minor lines
      *   count is 4</li>
      * </ul>
@@ -376,7 +376,7 @@ public class JXGraph extends JXPanel {
      * <p>Creates a new graph display with the specified view. The following
      * properties are automatically set:</p>
      * <ul>
-     *   <li><i>origin</i>: Center of the specified view</code></li>
+     *   <li><i>origin</i>: Center of the specified view</li>
      *   <li><i>grid</i>: Spacing of 0.2 between major lines; minor lines
      *   count is 4</li>
      * </ul>
@@ -1090,8 +1090,8 @@ public class JXGraph extends JXPanel {
 
     /**
      * <p>Gets the origin coordinates of the graph. The coordinates are
-     * represented as an instance of <code>Point2D</code> and stored in
-     * <code>double</code> format.</p>
+     * represented as an instance of {@code Point2D} and stored in
+     * {@code double} format.</p>
 
      * @return the origin coordinates in double format
      * @see #setOrigin(Point2D)
@@ -1201,8 +1201,8 @@ public class JXGraph extends JXPanel {
      * <p>Converts a position, in graph units, from the Y axis into a pixel
      * coordinate. For instance, if you defined the origin so it appears at the
      * exact center of the view, calling
-     * <code>yPositionToPixel(getOriginY())</code> will return a value
-     * approximately equal to <code>getHeight() / 2.0</code>.</p>
+     * {@code yPositionToPixel(getOriginY())} will return a value
+     * approximately equal to {@code getHeight() / 2.0}.</p>
      *
      * @param position the Y position to be converted into pixels
      * @return the coordinate in pixels of the specified graph Y position
@@ -1218,8 +1218,8 @@ public class JXGraph extends JXPanel {
      * <p>Converts a position, in graph units, from the X axis into a pixel
      * coordinate. For instance, if you defined the origin so it appears at the
      * exact center of the view, calling
-     * <code>xPositionToPixel(getOriginX())</code> will return a value
-     * approximately equal to <code>getWidth() / 2.0</code>.</p>
+     * {@code xPositionToPixel(getOriginX())} will return a value
+     * approximately equal to {@code getWidth() / 2.0}.</p>
      *
      * @param position the X position to be converted into pixels
      * @return the coordinate in pixels of the specified graph X position
@@ -1234,8 +1234,8 @@ public class JXGraph extends JXPanel {
      * <p>Converts a pixel coordinate from the X axis into a graph position, in
      * graph units. For instance, if you defined the origin so it appears at the
      * exact center of the view, calling
-     * <code>xPixelToPosition(getWidth() / 2.0)</code> will return a value
-     * approximately equal to <code>getOriginX()</code>.</p>
+     * {@code xPixelToPosition(getWidth() / 2.0)} will return a value
+     * approximately equal to {@code getOriginX()}.</p>
      *
      * @param pixel the X pixel coordinate to be converted into a graph position
      * @return the graph X position of the specified pixel coordinate
@@ -1252,8 +1252,8 @@ public class JXGraph extends JXPanel {
      * <p>Converts a pixel coordinate from the Y axis into a graph position, in
      * graph units. For instance, if you defined the origin so it appears at the
      * exact center of the view, calling
-     * <code>yPixelToPosition(getHeight() / 2.0)</code> will return a value
-     * approximately equal to <code>getOriginY()</code>.</p>
+     * {@code yPixelToPosition(getHeight() / 2.0)} will return a value
+     * approximately equal to {@code getOriginY()}.</p>
      *
      * @param pixel the Y pixel coordinate to be converted into a graph position
      * @return the graph Y position of the specified pixel coordinate
@@ -1289,7 +1289,7 @@ public class JXGraph extends JXPanel {
     
     /**
      * <p>This painting method is meant to be overridden by subclasses of
-     * <code>JXGraph</code>. This method is called after all the painting
+     * {@code JXGraph}. This method is called after all the painting
      * is done. By overriding this method, a subclass can display extra
      * information on top of the graph.</p>
      * <p>The graphics surface passed as parameter is configured by
@@ -1599,7 +1599,7 @@ public class JXGraph extends JXPanel {
      * </pre>
      *
      * <p>When a plot is added to an instance of
-     * <code>JXGraph</code>, the <code>JXGraph</code> automatically becomes
+     * {@code JXGraph}, the <code>JXGraph</code> automatically becomes
      * a new property change listener of the plot. If property change events are
      * fired, the graph will be updated accordingly.</p>
      * 

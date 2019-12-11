@@ -37,14 +37,13 @@ import org.jdesktop.swingx.util.Contract;
  * A default SortController implementation used as parent class for concrete 
  * SortControllers in SwingX.<p>
  * 
- * Additionally, this implementation contains a fix for core 
- * <a href=http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6894632>Issue 6894632</a>.
+ * Additionally, this implementation contains a fix for core
  * It guarantees to only touch the underlying model during sort/filter and during 
  * processing the notification methods. This implies that the conversion and size query
  * methods are valid at all times outside the internal updates, including the critical 
  * period (in core with undefined behaviour) after the underlying model has changed and 
  * before this sorter has been notified.
- * 
+ * @see <a href=http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=6894632>Issue 6894632</a>
  * @author Jeanette Winzenburg
  */
 public abstract class DefaultSortController<M> extends DefaultRowSorter<M, Integer> implements
@@ -301,7 +300,7 @@ public abstract class DefaultSortController<M> extends DefaultRowSorter<M, Integ
     /**
      * {@inheritDoc} <p>
      * 
-     * Overridden to use check against <code>getViewRowCount</code> for validity.
+     * Overridden to use check against {@code getViewRowCount} for validity.
      * 
      * @see #getViewRowCount()
      */
@@ -325,7 +324,7 @@ public abstract class DefaultSortController<M> extends DefaultRowSorter<M, Integ
     /**
      * {@inheritDoc} <p>
      * 
-     * Overridden to use check against <code>getModelRowCount</code> for validity.
+     * Overridden to use check against {@code getModelRowCount} for validity.
      * 
      * @see #getModelRowCount()
      */

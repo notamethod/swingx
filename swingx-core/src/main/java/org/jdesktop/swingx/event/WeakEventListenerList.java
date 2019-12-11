@@ -89,7 +89,7 @@ import java.util.List;
  * appropriate for short term storage or RMI between applications running
  * the same version of Swing.  As of 1.4, support for long term storage
  * of all JavaBeans<sup><font size="-2">TM</font></sup>
- * has been added to the <code>java.beans</code> package.
+ * has been added to the {@code java.beans} package.
  * Please see {@link java.beans.XMLEncoder}.
  *
  * @version 1.37 11/17/05

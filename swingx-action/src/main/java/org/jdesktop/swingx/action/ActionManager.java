@@ -30,11 +30,11 @@ import javax.swing.Action;
 import javax.swing.ActionMap;
 
 /**
- * The ActionManager manages sets of <code>javax.swing.Action</code>s for an
+ * The ActionManager manages sets of {@code javax.swing.Action}s for an
  * application. There are convenience methods for getting and setting the state
  * of the action.
  * All of these elements have a unique id tag which is used by the ActionManager
- * to reference the action. This id maps to the <code>Action.ACTION_COMMAND_KEY</code>
+ * to reference the action. This id maps to the {@code Action.ACTION_COMMAND_KEY}
  * on the Action.
  * <p>
  * The ActionManager may be used to conveniently register callback methods
@@ -70,9 +70,9 @@ import javax.swing.ActionMap;
  *<p>
  * The stateChanged method would be invoked as the selected state of
  * the widget changed. Additionally if you need to change the selected
- * state of the Action use the ActionManager method <code>setSelected</code>.
+ * state of the Action use the ActionManager method {@code setSelected}.
  * <p>
- * The <code>ActionContainerFactory</code> uses the managed Actions in a
+ * The {@code ActionContainerFactory} uses the managed Actions in a
  * ActionManager to create user interface components. It uses the shared
  * instance of ActionManager by default. For example, to create a JMenu based on an
  * action-list id:
@@ -259,12 +259,12 @@ public class ActionManager extends ActionMap {
 
 
     /**
-     * Returns the enabled state of the <code>Action</code>. When enabled,
+     * Returns the enabled state of the {@code Action}. When enabled,
      * any component associated with this object is active and
-     * able to fire this object's <code>actionPerformed</code> method.
+     * able to fire this object's {@code actionPerformed} method.
      *
      * @param id value of the action id
-     * @return true if this <code>Action</code> is enabled; false if the
+     * @return true if this {@code Action} is enabled; false if the
      *         action doesn't exist or disabled.
      */
     public boolean isEnabled(Object id) {
@@ -323,7 +323,7 @@ public class ActionManager extends ActionMap {
     }
 
     /**
-     * Convenience method to register a callback method on a <code>BoundAction</code>
+     * Convenience method to register a callback method on a {@code BoundAction}
      *
      * @see BoundAction#registerCallback
      * @param id value of the action id - which is the value of the ACTION_COMMAND_KEY
@@ -357,28 +357,28 @@ public class ActionManager extends ActionMap {
     }
 
     /**
-     * Test to determine if the action is a <code>TargetableAction</code>
+     * Test to determine if the action is a {@code TargetableAction}
      */
     public boolean isTargetableAction(Object id) {
         return (getTargetableAction(id) != null);
     }
 
     /**
-     * Test to determine if the action is a <code>BoundAction</code>
+     * Test to determine if the action is a {@code BoundAction}
      */
     public boolean isBoundAction(Object id) {
         return (getBoundAction(id) != null);
     }
 
     /**
-     * Test to determine if the action is a <code>BoundAction</code>
+     * Test to determine if the action is a {@code BoundAction}
      */
     public boolean isCompositeAction(Object id) {
         return (getCompositeAction(id) != null);
     }
 
     /**
-     * Test to determine if the action is a <code>ServerAction</code>
+     * Test to determine if the action is a {@code ServerAction}
      */
     public boolean isServerAction(Object id) {
         return (getServerAction(id) != null);

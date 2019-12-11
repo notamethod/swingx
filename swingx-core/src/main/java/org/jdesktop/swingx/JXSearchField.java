@@ -228,10 +228,10 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Returns <code>true</code> if the current {@link SearchMode} is
+	 * Returns {@code true} if the current {@link SearchMode} is
 	 * {@link SearchMode#INSTANT}.
 	 * 
-	 * @return <code>true</code> if the current {@link SearchMode} is
+	 * @return {@code true} if the current {@link SearchMode} is
 	 *         {@link SearchMode#INSTANT}
 	 */
 	public boolean isInstantSearchMode() {
@@ -239,10 +239,10 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Returns <code>true</code> if the current {@link SearchMode} is
+	 * Returns {@code true} if the current {@link SearchMode} is
 	 * {@link SearchMode#REGULAR}.
 	 * 
-	 * @return <code>true</code> if the current {@link SearchMode} is
+	 * @return {@code true} if the current {@link SearchMode} is
 	 *         {@link SearchMode#REGULAR}
 	 */
 	public boolean isRegularSearchMode() {
@@ -303,7 +303,7 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Returns <code>true</code> if the current {@link LayoutStyle} is
+	 * Returns {@code true} if the current {@link LayoutStyle} is
 	 * {@link LayoutStyle#VISTA}.
 	 * 
 	 * @return
@@ -313,7 +313,7 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Returns <code>true</code> if the current {@link LayoutStyle} is
+	 * Returns {@code true} if the current {@link LayoutStyle} is
 	 * {@link LayoutStyle#MAC}.
 	 * 
 	 * @return
@@ -472,7 +472,7 @@ public class JXSearchField extends JXTextField {
 	 * displayed when this button is clicked.
 	 * 
 	 * This button will only be visible, if {@link #isUseSeperatePopupButton()}
-	 * returns <code>true</code>. Otherwise the popup menu will be displayed
+	 * returns {@code true}. Otherwise the popup menu will be displayed
 	 * when the find button is clicked.
 	 * 
 	 * @return the popup button
@@ -496,11 +496,11 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Returns <code>true</code> if the popup button should be visible and
+	 * Returns {@code true} if the popup button should be visible and
 	 * used for displaying the find popup menu. Otherwise, the find popup menu
 	 * will be displayed when the find button is clicked.
 	 * 
-	 * @return <code>true</code> if the popup button should be used
+	 * @return {@code true} if the popup button should be used
 	 */
 	public boolean isUseSeperatePopupButton() {
 		return useSeperatePopupButton;
@@ -569,7 +569,7 @@ public class JXSearchField extends JXTextField {
 	/**
 	 * Sets the popup menu that will be displayed when the popup button is
 	 * clicked. If a find popup menu is set and
-	 * {@link #isUseSeperatePopupButton()} returns <code>false</code>, the
+	 * {@link #isUseSeperatePopupButton()} returns {@code false}, the
 	 * popup button will be displayed instead of the find button. Otherwise the
 	 * popup button will be displayed in addition to the find button.
 	 * 
@@ -580,7 +580,7 @@ public class JXSearchField extends JXTextField {
 	 * If a recent searches save key has been set and therefore a recent
 	 * searches popup menu is installed, this method does nothing. You must
 	 * first remove the recent searches save key, by calling
-	 * {@link #setRecentSearchesSaveKey(String)} with a <code>null</code>
+	 * {@link #setRecentSearchesSaveKey(String)} with a {@code null}
 	 * parameter.
 	 * 
 	 * @see #setRecentSearchesSaveKey(String)
@@ -632,7 +632,7 @@ public class JXSearchField extends JXTextField {
 
 	/**
 	 * Installs and manages a recent searches popup menu as the find popup menu,
-	 * if <code>recentSearchesSaveKey</code> is not null. Otherwise, removes
+	 * if {@code recentSearchesSaveKey} is not null. Otherwise, removes
 	 * the popup menu and stops managing recent searches.
 	 * 
 	 * @see #setFindAction(ActionListener)
@@ -693,13 +693,13 @@ public class JXSearchField extends JXTextField {
 	}
 
 	/**
-	 * Returns <code>true</code> if this search field is the focus owner or
+	 * Returns {@code true} if this search field is the focus owner or
 	 * the find popup menu is visible.
 	 * 
 	 * This is a hack to make the search field paint the focus indicator in Mac
 	 * OS X Aqua when the find popup menu is visible.
 	 * 
-	 * @return <code>true</code> if this search field is the focus owner or
+	 * @return {@code true} if this search field is the focus owner or
 	 *         the find popup menu is visible
 	 */
 	@Override
@@ -795,7 +795,7 @@ public class JXSearchField extends JXTextField {
 
 	/**
 	 * Invoked when the the cancel button or the 'Esc' key is pressed. Sets the
-	 * text in the search field to <code>null</code>.
+	 * text in the search field to {@code null}.
 	 * 
 	 */
 	class ClearAction extends AbstractAction {
@@ -812,7 +812,7 @@ public class JXSearchField extends JXTextField {
 		}
 
 		/**
-		 * Sets the search field's text to <code>null</code> and requests the
+		 * Sets the search field's text to {@code null} and requests the
 		 * focus for the search field.
 		 */
 		public void clear() {

@@ -104,7 +104,7 @@ public class SynthUtils {
     /**
      * Returns true if the Style should be updated in response to the
      * specified PropertyChangeEvent. This forwards to
-     * <code>shouldUpdateStyleOnAncestorChanged</code> as necessary.
+     * {@code shouldUpdateStyleOnAncestorChanged} as necessary.
      */
     public static boolean shouldUpdateStyle(PropertyChangeEvent event) {
         String eName = event.getPropertyName();

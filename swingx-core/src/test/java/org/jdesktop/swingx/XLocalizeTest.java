@@ -44,7 +44,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Test to expose known issues around <code>Locale</code> setting.
+ * Test to expose known issues around {@code Locale} setting.
  * 
  * Ideally, there would be at least one failing test method per open
  * Issue in the issue tracker. Plus additional failing test methods for

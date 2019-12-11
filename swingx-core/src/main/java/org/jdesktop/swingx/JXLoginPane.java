@@ -108,14 +108,14 @@ import org.jdesktop.swingx.util.WindowUtils;
  *  login information.</p>
  *
  *  <p> In order to perform the authentication, <strong>JXLoginPane</strong>
- *  calls the <code>authenticate</code> method of the <strong>LoginService
+ *  calls the {@code authenticate} method of the <strong>LoginService
  *  </strong>. In order to perform the persistence of the password,
  *  <strong>JXLoginPane</strong> calls the put method of the
  *  <strong>PasswordStore</strong> object that is supplied. If
- *  the <strong>PasswordStore</strong> is <code>null</code>, then the password
+ *  the <strong>PasswordStore</strong> is {@code null}, then the password
  *  is not saved. Similarly, if a <strong>PasswordStore</strong> is
  *  supplied and the password is null, then the <strong>PasswordStore</strong>
- *  will be queried for the password using the <code>get</code> method.
+ *  will be queried for the password using the {@code get} method.
  *
  *  Example:
  *  <code><pre>
@@ -143,7 +143,7 @@ public class JXLoginPane extends JXPanel {
      */
     private static final Logger LOG = Logger.getLogger(JXLoginPane.class.getName());
     /**
-     * Comment for <code>serialVersionUID</code>
+     * Comment for {@code serialVersionUID}
      */
     private static final long serialVersionUID = 3544949969896288564L;
     /**
@@ -466,7 +466,7 @@ public class JXLoginPane extends JXPanel {
      * its text fields are not focused.
      *
      * @return True when caps lock is on, false otherwise. Returns always false when
-     * <code>isCapsLockDetectionSupported()</code> returns false.
+     * {@code isCapsLockDetectionSupported()} returns false.
      */
     public boolean isCapsLockOn() {
         return CapsLockSupport.getInstance().isCapsLockEnabled();
@@ -501,9 +501,9 @@ public class JXLoginPane extends JXPanel {
     }
 
     /**
-     * Notification from the <code>UIManager</code> that the L&F has changed.
+     * Notification from the {@code UIManager} that the L&F has changed.
      * Replaces the current UI object with the latest version from the
-     * <code>UIManager</code>.
+     * {@code UIManager}.
      *
      * @see javax.swing.JComponent#updateUI
      */
@@ -1139,7 +1139,7 @@ public class JXLoginPane extends JXPanel {
      * the LoginAction. This method handles cursor management, and actually
      * calling the LoginService's startAuthentication method. Method will return
      * immediately if asynchronous login is enabled or will block until
-     * authentication finishes if <code>getSynchronous()</code> returns true.
+     * authentication finishes if {@code getSynchronous()} returns true.
      */
     protected void startLogin() {
         oldCursor = getCursor();
@@ -1164,8 +1164,8 @@ public class JXLoginPane extends JXPanel {
      * Cancels the login procedure. Handles cursor management and interfacing
      * with the LoginService's cancelAuthentication method. Calling this method
      * has an effect only when authentication is still in progress (i.e. after
-     * previous call to <code>startAuthentications()</code> and only when
-     * authentication is performed asynchronously (<code>getSynchronous()</code>
+     * previous call to {@code startAuthentications()} and only when
+     * authentication is performed asynchronously ({@code getSynchronous()}
      * returns false).
      */
     protected void cancelLogin() {

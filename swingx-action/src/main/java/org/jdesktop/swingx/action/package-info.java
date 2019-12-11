@@ -35,7 +35,7 @@
  * have a lot of properties but very little semantics by default 
  * (unless explicity bound). Behavior actions have no properties but have
  * semantics. These two types of actions are linked by the action id 
- * which is the value of the <code>Action.ACTION_COMMAND_KEY</code>
+ * which is the value of the {@code Action.ACTION_COMMAND_KEY}
  * <p>
  * The {@link org.jdesktop.swingx.action.AbstractActionExt} class extends the Swing
  * concept of the Action by adding support for toggle or two state actions.

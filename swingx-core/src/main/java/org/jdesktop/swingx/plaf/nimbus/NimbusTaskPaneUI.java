@@ -37,7 +37,7 @@ import org.jdesktop.swingx.JXTaskPane;
 import org.jdesktop.swingx.plaf.basic.BasicTaskPaneUI;
 
 /**
- * Nimbus implementation of the <code>JXTaskPane</code> UI. <br>
+ * Nimbus implementation of the {@code JXTaskPane} UI. <br>
  * 
  * @author <a href="mailto:Radu.Dumitrescu@pss.ro">Radu Dumitrescu</a>
  */

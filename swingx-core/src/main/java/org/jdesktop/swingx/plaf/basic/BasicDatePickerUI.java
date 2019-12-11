@@ -82,7 +82,7 @@ import org.jdesktop.swingx.event.DateSelectionEvent.EventType;
 import org.jdesktop.swingx.plaf.DatePickerUI;
 
 /**
- * The basic implementation of a <code>DatePickerUI</code>.
+ * The basic implementation of a {@code DatePickerUI}.
  * <p>
  * 
  * 
@@ -1355,9 +1355,7 @@ public class BasicDatePickerUI extends DatePickerUI {
         
         /**
          * Handles property changes from datepicker's editor.
-         * 
-         * @param e the PropertyChangeEvent object describing the event source
-         *        and the property that has changed
+         *
          */
         private void editorPropertyChange(PropertyChangeEvent evt) {
             if ("value".equals(evt.getPropertyName())) {
@@ -1572,7 +1570,6 @@ public class BasicDatePickerUI extends DatePickerUI {
         }
         
         /**
-         * @param b
          */
         private void unload(boolean nullManager) {
             if (manager != null) {

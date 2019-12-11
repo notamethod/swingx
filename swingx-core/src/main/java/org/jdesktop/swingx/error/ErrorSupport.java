@@ -38,8 +38,8 @@ public class ErrorSupport {
     private Object source;
     
     /**
-     * Creates a new instance of <CODE>ErrorSupport</CODE>
-     * @param source The object which will fire the <CODE>ErrorEvent</CODE>s
+     * Creates a new instance of {@code ErrorSupport}
+     * @param source The object which will fire the {@code ErrorEvent}s
      */
     public ErrorSupport(Object source) {
         this.source = source;
@@ -64,9 +64,9 @@ public class ErrorSupport {
         
     /**
      * Returns an array of all the listeners which were added to the 
-     * <CODE>ErrorSupport</CODE> object with <CODE>addErrorListener()</CODE>.
+     * {@code ErrorSupport} object with <CODE>addErrorListener()</CODE>.
      * Updated for JDK11
-     * @return all of the <CODE>ErrorListener</CODE>s added or an empty array if no listeners have been 
+     * @return all of the {@code ErrorListener}s added or an empty array if no listeners have been
      * added.
      */
     public ErrorListener[] getErrorListeners() {

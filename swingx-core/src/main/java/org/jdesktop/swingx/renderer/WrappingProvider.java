@@ -31,19 +31,19 @@ import org.jdesktop.swingx.treetable.TreeTableNode;
 /**
  * Wrapping ComponentProvider for usage in tree rendering. Handles the icon
  * itself, delegates the node content to the wrappee. Value-based icon and
- * content mapping can be configured by custom <code>IconValue</code>s and
+ * content mapping can be configured by custom {@code IconValue}s and
  * <b>StringValue</b>, respectively.
  * <p>
  * 
  * An example of how to configure a file tree by using the system icons and
  * display names
  * 
- * <pre><code>
+ * <pre>{@code
  * TreeCellRenderer r = new DefaultTreeRenderer(
  *         IconValues.FILE_ICON, StringValues.FILE_NAME);
  * tree.setCellRenderer(r);
  * treeTable.setTreeCellRenderer(r);
- * </code></pre>
+ * }</pre>
  * 
  * PENDING: ui specific focus rect variation (draw rect around icon) missing
  * <p>

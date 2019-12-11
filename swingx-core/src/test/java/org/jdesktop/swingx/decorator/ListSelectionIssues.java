@@ -31,7 +31,7 @@ import org.jdesktop.test.ListSelectionReport;
 
 /**
  * Test to understand behaviour/expose known issues of 
- * <code>ListSelectionModel</code>.
+ * {@code ListSelectionModel}.
  * 
  * 
  * @author Jeanette Winzenburg

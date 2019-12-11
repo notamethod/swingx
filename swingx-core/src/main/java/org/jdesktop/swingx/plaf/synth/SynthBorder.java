@@ -75,12 +75,12 @@ class SynthBorder extends AbstractBorder implements UIResource {
     }
 
     /**
-     * This default implementation returns a new <code>Insets</code>
-     * instance where the <code>top</code>, <code>left</code>,
-     * <code>bottom</code>, and 
-     * <code>right</code> fields are set to <code>0</code>.
+     * This default implementation returns a new {@code Insets}
+     * instance where the {@code top}, <code>left</code>,
+     * {@code bottom}, and
+     * {@code right} fields are set to <code>0</code>.
      * @param c the component for which this border insets value applies
-     * @return the new <code>Insets</code> object initialized to 0
+     * @return the new {@code Insets} object initialized to 0
      */
     @Override
     public Insets getBorderInsets(Component c) { 
@@ -91,7 +91,7 @@ class SynthBorder extends AbstractBorder implements UIResource {
      * Reinitializes the insets parameter with this Border's current Insets. 
      * @param c the component for which this border insets value applies
      * @param insets the object to be reinitialized
-     * @return the <code>insets</code> object
+     * @return the {@code insets} object
      */
     @Override
     public Insets getBorderInsets(Component c, Insets insets) {

@@ -79,32 +79,32 @@ import org.jdesktop.swingx.painter.Painter;
  * </p>
  *
  * <p>
- * Painter support consists of the <code>foregroundPainter</code> and <code>backgroundPainter</code> properties. The
- * <code>backgroundPainter</code> refers to a painter responsible for painting <i>beneath</i> the text and icon. This
- * painter, if set, will paint regardless of the <code>opaque</code> property. If the background painter does not
- * fully paint each pixel, then you should make sure the <code>opaque</code> property is set to false.
+ * Painter support consists of the {@code foregroundPainter} and <code>backgroundPainter</code> properties. The
+ * {@code backgroundPainter} refers to a painter responsible for painting <i>beneath</i> the text and icon. This
+ * painter, if set, will paint regardless of the {@code opaque} property. If the background painter does not
+ * fully paint each pixel, then you should make sure the {@code opaque} property is set to false.
  * </p>
  *
  * <p>
- * The <code>foregroundPainter</code> is responsible for painting the icon and the text label. If no foregroundPainter
+ * The {@code foregroundPainter} is responsible for painting the icon and the text label. If no foregroundPainter
  * is specified, then the look and feel will paint the label. Note that if opaque is set to true and the look and feel
  * is rendering the foreground, then the foreground <i>may</i> paint over the background. Most look and feels will
- * paint a background when <code>opaque</code> is true. To avoid this behavior, set <code>opaque</code> to false.
+ * paint a background when {@code opaque} is true. To avoid this behavior, set <code>opaque</code> to false.
  * </p>
  *
  * <p>
- * Since JXLabel is not opaque by default (<code>isOpaque()</code> returns false), neither of these problems
+ * Since JXLabel is not opaque by default ({@code isOpaque()} returns false), neither of these problems
  * typically present themselves.
  * </p>
  *
  * <p>
- * Multi-line text is enabled via the <code>lineWrap</code> property. Simply set it to true. By default, line wrapping
+ * Multi-line text is enabled via the {@code lineWrap} property. Simply set it to true. By default, line wrapping
  * occurs on word boundaries.
  * </p>
  *
  * <p>
  * The text (actually, the entire foreground and background) of the JXLabel may be rotated. Set the
- * <code>rotation</code> property to specify what the rotation should be. Specify rotation angle in radian units.
+ * {@code rotation} property to specify what the rotation should be. Specify rotation angle in radian units.
  * </p>
  *
  * @author joshua.marinacci@sun.com
@@ -205,10 +205,10 @@ public class JXLabel extends JLabel implements BackgroundPaintable {
     /**
      * Create a new JXLabel with the given text as the text for the label. This is shorthand for:
      *
-     * <pre><code>
+     * <pre>{@code
      * JXLabel label = new JXLabel();
-     * label.setText(&quot;Some Text&quot;);
-     * </code></pre>
+     * label.setText("Some Text");
+     * }</pre>
      *
      * @param text the text to set.
      */
@@ -347,7 +347,7 @@ public class JXLabel extends JLabel implements BackgroundPaintable {
     /**
      * Sets a Painter to use to paint the background of this component By default there is already a single painter
      * installed which draws the normal background for this component according to the current Look and Feel. Calling
-     * <CODE>setBackgroundPainter</CODE> will replace that existing painter.
+     * {@code setBackgroundPainter} will replace that existing painter.
      *
      * @param p the new painter
      * @see #getBackgroundPainter()

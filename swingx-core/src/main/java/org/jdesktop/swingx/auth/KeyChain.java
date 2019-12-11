@@ -97,7 +97,7 @@ public class KeyChain {
      * Fetches the password for a given account/user and server.
      * @param user
      * @param server
-     * @return <code>null</code> if no password could be obtained, the password 
+     * @return {@code null} if no password could be obtained, the password
      *         otherwise
      */
     public String getPassword(String user, String server) {

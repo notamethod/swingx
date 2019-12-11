@@ -146,7 +146,7 @@ public class JXSearchPanel extends AbstractPatternPanel {
     /**
      * returns the current compiled Pattern.
      * 
-     * @return the current compiled <code>Pattern</code>
+     * @return the current compiled {@code Pattern}
      */
     public Pattern getPattern() {
         return patternModel.getPattern();

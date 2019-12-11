@@ -41,19 +41,19 @@ import org.jdesktop.swingx.renderer.FormatStringValue;
  * <li>control the position of the nextMonth button: the default is at the
  * trailing edge of the header. Option is to insert it directly after the month
  * text, to enable set a Boolean.TRUE as value for key
- * <code>ARROWS_SURROUNDS_MONTH</code>.
+ * {@code ARROWS_SURROUNDS_MONTH}.
  * <li>control the focusability of the spinner's text field: the default is
  * false. To enable set a Boolean.TRUE as value for key
- * <code>FOCUSABLE_SPINNER_TEXT</code>.
+ * {@code FOCUSABLE_SPINNER_TEXT}.
  * </ul>
  * 
  * <b>Note</b>: this header is <b>not</b> used by default. To make it the
  * per-application default register it with the UIManager, like
  * 
- * <pre><code>
- * UIManager.put(CalendarHeaderHandler.uiControllerID, 
+ * <pre>{@code
+ * UIManager.put(CalendarHeaderHandler.uiControllerID,
  *      "org.jdesktop.swingx.plaf.basic.SpinningCalendarHeaderHandler");
- * </code>
+ * }
  * </pre>
  * 
  * PENDING JW: implement and bind actions for keyboard navigation. These are

@@ -61,7 +61,7 @@ public class WindowsStatusBarUI extends BasicStatusBarUI {
     
     /**
      * Returns an instance of the UI delegate for the specified component.
-     * Each subclass must provide its own static <code>createUI</code>
+     * Each subclass must provide its own static {@code createUI}
      * method that returns an instance of that UI delegate subclass.
      * If the UI delegate subclass is stateless, it may return an instance
      * that is shared by multiple components.  If the UI delegate is

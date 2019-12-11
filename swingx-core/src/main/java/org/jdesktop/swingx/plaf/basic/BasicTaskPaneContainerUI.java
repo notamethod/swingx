@@ -33,7 +33,7 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.plaf.TaskPaneContainerUI;
 
 /**
- * Base implementation of the <code>JXTaskPaneContainer</code> UI.
+ * Base implementation of the {@code JXTaskPaneContainer} UI.
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  * @author Karl Schaefer

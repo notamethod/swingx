@@ -6,7 +6,7 @@
  * Copyright 2005 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -48,12 +48,12 @@ import java.awt.image.WritableRaster;
  * <p>A blend composite defines the rule according to which a drawing primitive
  * (known as the source) is mixed with existing graphics (know as the
  * destination.)</p>
- * <p><code>BlendComposite</code> is an implementation of the
+ * <p>{@code BlendComposite} is an implementation of the
  * {@link java.awt.Composite} interface and must therefore be set as a state on
  * a {@link java.awt.Graphics2D} surface.</p>
  * <p>Please refer to {@link java.awt.Graphics2D#setComposite(java.awt.Composite)}
  * for more information on how to use this class with a graphics surface.</p>
- * <h2>Blending Modes</h2>
+ * <h1>Blending Modes</h1>
  * <p>This class offers a certain number of blending modes, or compositing
  * rules. These rules are inspired from graphics editing software packages,
  * like <em>Adobe Photoshop</em> or <em>The GIMP</em>.</p>
@@ -74,11 +74,11 @@ import java.awt.image.WritableRaster;
  * <p>Blend composites can be created in various manners:</p>
  * <ul>
  *   <li>Use one of the pre-defined instance. Example:
- *     <code>BlendComposite.Average</code>.</li>
+ *     {@code BlendComposite.Average}.</li>
  *   <li>Derive one of the pre-defined instances by calling
  *     {@link #derive(float)} or {@link #derive(BlendingMode)}. Deriving allows
  *     you to change either the opacity or the blending mode. Example:
- *     <code>BlendComposite.Average.derive(0.5f)</code>.</li>
+ *     {@code BlendComposite.Average.derive(0.5f)}.</li>
  *   <li>Use a factory method: {@link #getInstance(BlendingMode)} or
  *     {@link #getInstance(BlendingMode, float)}.</li>
  * </ul>
@@ -94,7 +94,7 @@ import java.awt.image.WritableRaster;
  * @see java.awt.Graphics2D
  * @see java.awt.Composite
  * @see java.awt.AlphaComposite
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  * @author Karl Schaefer (support and additional modes)
  */
 public final class BlendComposite implements Composite {
@@ -102,7 +102,7 @@ public final class BlendComposite implements Composite {
      * A blending mode defines the compositing rule of a
      * {@link org.jdesktop.swingx.graphics.BlendComposite}.
      * 
-     * @author Romain Guy <romain.guy@mac.com>
+     * @author Romain Guy &lt;romain.guy@mac.com&gt;
      * @author Karl Schaefer (support and additional modes)
      */
     public enum BlendingMode {
@@ -733,7 +733,7 @@ public final class BlendComposite implements Composite {
      * as a parameter. A default opacity of 1.0 is applied.</p>
      *
      * @param mode the blending mode defining the compositing rule
-     * @return a new <code>BlendComposite</code> based on the selected blending
+     * @return a new {@code BlendComposite} based on the selected blending
      *   mode, with an opacity of 1.0
      */
     public static BlendComposite getInstance(BlendingMode mode) {
@@ -746,10 +746,10 @@ public final class BlendComposite implements Composite {
      *
      * @param mode the blending mode defining the compositing rule
      * @param alpha the constant alpha to be multiplied with the alpha of the
-     *   source. <code>alpha</code> must be a floating point between 0.0 and 1.0.
+     *   source. {@code alpha} must be a floating point between 0.0 and 1.0.
      * @throws IllegalArgumentException if the opacity is less than 0.0 or
      *   greater than 1.0
-     * @return a new <code>BlendComposite</code> based on the selected blending
+     * @return a new {@code BlendComposite} based on the selected blending
      *   mode and opacity
      */
     public static BlendComposite getInstance(BlendingMode mode, float alpha) {
@@ -757,12 +757,12 @@ public final class BlendComposite implements Composite {
     }
 
     /**
-     * <p>Returns a <code>BlendComposite</code> object that uses the specified
+     * <p>Returns a {@code BlendComposite} object that uses the specified
      * blending mode and this object's alpha value. If the newly specified
      * blending mode is the same as this object's, this object is returned.</p>
      *
      * @param mode the blending mode defining the compositing rule
-     * @return a <code>BlendComposite</code> object derived from this object,
+     * @return a {@code BlendComposite} object derived from this object,
      *   that uses the specified blending mode
      */
     public BlendComposite derive(BlendingMode mode) {
@@ -770,15 +770,15 @@ public final class BlendComposite implements Composite {
     }
 
     /**
-     * <p>Returns a <code>BlendComposite</code> object that uses the specified
+     * <p>Returns a {@code BlendComposite} object that uses the specified
      * opacity, or alpha, and this object's blending mode. If the newly specified
      * opacity is the same as this object's, this object is returned.</p>
      *
      * @param alpha the constant alpha to be multiplied with the alpha of the
-     *   source. <code>alpha</code> must be a floating point between 0.0 and 1.0.
+     *   source. {@code alpha} must be a floating point between 0.0 and 1.0.
      * @throws IllegalArgumentException if the opacity is less than 0.0 or
      *   greater than 1.0
-     * @return a <code>BlendComposite</code> object derived from this object,
+     * @return a {@code BlendComposite} object derived from this object,
      *   that uses the specified blending mode
      */
     public BlendComposite derive(float alpha) {

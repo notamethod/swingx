@@ -30,19 +30,19 @@ import java.lang.ref.WeakReference;
 import org.jdesktop.beans.JavaBean;
 
 /**
- * <p>A {@link Painter} implementation composed of an array of <code>Painter</code>s.
- * <code>CompoundPainter</code> provides a means for combining several individual
- * <code>Painter</code>s, or groups of them, into one logical unit. Each of the
- * <code>Painter</code>s are executed in order. BufferedImageOp filter effects can
+ * <p>A {@link Painter} implementation composed of an array of {@code Painter}s.
+ * {@code CompoundPainter} provides a means for combining several individual
+ * {@code Painter}s, or groups of them, into one logical unit. Each of the
+ * {@code Painter}s are executed in order. BufferedImageOp filter effects can
  * be applied to them together as a whole. The entire set of painting operations
  * may be cached together.</p>
  *
- * <p></p>
+ * <br><br>
  *
  * <p>For example, if I want to create a CompoundPainter that started with a blue
  * background, had pinstripes on it running at a 45 degree angle, and those
- * pinstripes appeared to "fade in" from left to right, I would write the following:
- * <pre><code>
+ * pinstripes appeared to "fade in" from left to right, I would write the following:</p>
+ * <pre>{@code
  *  Color blue = new Color(0x417DDD);
  *  Color translucent = new Color(blue.getRed(), blue.getGreen(), blue.getBlue(), 0);
  *  panel.setBackground(blue);
@@ -58,7 +58,7 @@ import org.jdesktop.beans.JavaBean;
  *  Painter backgroundPainter = new RectanglePainter(this.getBackground(), null);
  *  Painter p = new CompoundPainter(backgroundPainter, pinstripes, veil);
  *  panel.setBackgroundPainter(p);
- * </code></pre></p>
+ * }</pre>
  *
  * @author rbair
  */
@@ -210,9 +210,9 @@ public class CompoundPainter<T> extends AbstractPainter<T> {
     }
     
     /**
-     * <p>Iterates over all child <code>Painter</code>s and gives them a chance
+     * <p>Iterates over all child {@code Painter}s and gives them a chance
      * to validate themselves. If any of the child painters are dirty, then
-     * this <code>CompoundPainter</code> marks itself as dirty.</p>
+     * this {@code CompoundPainter} marks itself as dirty.</p>
      *
      * {@inheritDoc}
      */
@@ -240,16 +240,16 @@ public class CompoundPainter<T> extends AbstractPainter<T> {
     private boolean clearLocalCacheOnly = false;
 
     /**
-     * Used by {@link #isDirty()} to check if the child <code>Painter</code>s
-     * should be checked for their <code>dirty</code> flag as part of
+     * Used by {@link #isDirty()} to check if the child {@code Painter}s
+     * should be checked for their {@code dirty} flag as part of
      * processing.<br>
-     * Default value is: <code>true</code><br>
-     * This should be set to </code>false</code> if the cacheable state
-     * of the child <code>Painter</code>s are different from each other.  This
-     * will allow the cacheable == <code>true</code> <code>Painter</code>s to
+     * Default value is: {@code true}<br>
+     * This should be set to <code>false</code> if the cacheable state
+     * of the child {@code Painter}s are different from each other.  This
+     * will allow the cacheable == {@code true} <code>Painter</code>s to
      * keep their cached image during regular repaints.  In this case,
      * client code should call {@link #clearCache()} manually when the cacheable
-     * <code>Painter</code>s should be updated.
+     * {@code Painter}s should be updated.
      *
      *
      * @see #isDirty()
@@ -259,8 +259,8 @@ public class CompoundPainter<T> extends AbstractPainter<T> {
     }
     /**
      * Set the flag used by {@link #isDirty()} to check if the 
-     * child <code>Painter</code>s should be checked for their 
-     * <code>dirty</code> flag as part of processing.
+     * child {@code Painter}s should be checked for their
+     * {@code dirty} flag as part of processing.
      *
      * @see #isCheckingDirtyChildPainters()
      * @see #isDirty()
@@ -274,12 +274,12 @@ public class CompoundPainter<T> extends AbstractPainter<T> {
     /**
      * {@inheritDoc}
      * 
-     * @impl This <code>CompoundPainter</code> is dirty if it, or (optionally) any of its children,
-     *       are dirty. If the super implementation returns <code>true</code>, we return
-     *       <code>true</code>. Otherwise, if {@link #isCheckingDirtyChildPainters()} is
-     *       <code>true</code>, we iterate over all child <code>Painter</code>s and query them to
-     *       see if they are dirty. If so, then <code>true</code> is returned. Otherwise, we return
-     *       <code>false</code>.
+     * @impl This {@code CompoundPainter} is dirty if it, or (optionally) any of its children,
+     *       are dirty. If the super implementation returns {@code true}, we return
+     *       {@code true}. Otherwise, if {@link #isCheckingDirtyChildPainters()} is
+     *       {@code true}, we iterate over all child <code>Painter</code>s and query them to
+     *       see if they are dirty. If so, then {@code true} is returned. Otherwise, we return
+     *       {@code false}.
      * @see #isCheckingDirtyChildPainters()
      */
     @Override
@@ -318,13 +318,13 @@ public class CompoundPainter<T> extends AbstractPainter<T> {
     }
 
     /**
-     * <p>Clears the cache of this <code>Painter</code>, and all child
-     * <code>Painters</code>. This is done to ensure that resources
+     * <p>Clears the cache of this {@code Painter}, and all child
+     * {@code Painters}. This is done to ensure that resources
      * are collected, even if clearCache is called by some framework
      * or other code that doesn't realize this is a CompoundPainter.</p>
      *
      * <p>Call #clearLocalCache if you only want to clear the cache of this
-     * <code>CompoundPainter</code>
+     * {@code CompoundPainter}
      *
      * {@inheritDoc}
      */

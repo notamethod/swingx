@@ -42,7 +42,7 @@ public abstract class PasswordStore {
      * Fetches the password for a given server and username.
      *  @param username username
      *  @param server server
-     *  @return <code>null</code> if not found, a character array representing the password 
+     *  @return {@code null} if not found, a character array representing the password
      *  otherwise. Returned array can be empty if the password is empty.
      */
     public abstract char[] get(String username, String server);

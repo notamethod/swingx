@@ -29,8 +29,8 @@ import org.kohsuke.MetaInfServices;
 
 /**
  * Adds new pluggable UI following the Windows Classic look and feel. Currently
- * it extends the XP look and feel and overrides the <code>JTaskPane</code>
- * and <code>JTaskPaneGroup</code> UIs.
+ * it extends the XP look and feel and overrides the {@code JTaskPane}
+ * and {@code JTaskPaneGroup} UIs.
  */
 @MetaInfServices(LookAndFeelAddons.class)
 public class WindowsClassicLookAndFeelAddons extends WindowsLookAndFeelAddons {

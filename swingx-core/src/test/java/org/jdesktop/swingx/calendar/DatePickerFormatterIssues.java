@@ -32,7 +32,7 @@ import org.junit.After;
 import org.junit.Before;
 
 /**
- * Unit tests for <code>DatePickerFormatter</code>.
+ * Unit tests for {@code DatePickerFormatter}.
  * 
  * @author Jeanette Winzenburg
  */

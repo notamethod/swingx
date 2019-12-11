@@ -28,7 +28,7 @@ import javax.swing.Icon;
 
 /**
  * A class that represents a dynamically targetable action. The invocation of this
- * action will be dispatched to the <code>TargetManager</code> instance.
+ * action will be dispatched to the {@code TargetManager} instance.
  * <p>
  * You would create instances of this class to let the TargetManager handle the
  * action invocations from the ui components constructed with this action.

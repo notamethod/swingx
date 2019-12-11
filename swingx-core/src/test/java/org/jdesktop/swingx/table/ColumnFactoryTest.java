@@ -24,7 +24,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Contains unit tests for <code>ColumnFactory</code>.
+ * Contains unit tests for {@code ColumnFactory}.
  * 
  * @author Jeanette Winzenburg
  */

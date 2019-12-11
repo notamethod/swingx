@@ -27,7 +27,7 @@
  * be incorporated into the Swing toolkit, although API compatibility will
  * not be guaranteed.
  * <p>
- * 
+ * <h1></h1>
  * <h2>New or Enhanced Functionality</h2>
  * 
  * <h3>Auto-completion for TextFields and ComboBoxes</h3>

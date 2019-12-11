@@ -335,7 +335,7 @@ public class SnippetHighlighter extends LayeredHighlighter {
 
     /**
      * If true, highlights are drawn as the Views draw the text. That is
-     * the Views will call into <code>paintLayeredHighlight</code> which
+     * the Views will call into {@code paintLayeredHighlight} which
      * will result in a rectangle being drawn before the text is drawn
      * (if the offsets are in a highlighted region that is). For this to
      * work the painter supplied must be an instance of
@@ -375,7 +375,7 @@ public class SnippetHighlighter extends LayeredHighlighter {
     public static class SnippetHighlightPainter extends LayeredHighlighter.LayerPainter {
 
         /**
-         * Constructs a new highlight painter. If <code>c</code> is null,
+         * Constructs a new highlight painter. If {@code c} is null,
 	 * the JTextComponent will be queried for its selection color.
          *
          * @param c the color for the highlight
@@ -588,11 +588,11 @@ public class SnippetHighlighter extends LayeredHighlighter {
     }
 
     /**
-     * This class invokes <code>mapper.damageRange</code> in
+     * This class invokes {@code mapper.damageRange} in
      * EventDispatchThread. The only one instance per Highlighter
      * is cretaed. When a number of ranges should be damaged
      * it collects them into queue and damages
-     * them in consecutive order in <code>run</code>
+     * them in consecutive order in {@code run}
      * call.
      */
     class SafeDamager implements Runnable {

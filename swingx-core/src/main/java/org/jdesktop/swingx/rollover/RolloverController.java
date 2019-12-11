@@ -135,7 +135,7 @@ public abstract class RolloverController<T extends JComponent> implements
      * 
      * @param location a valid location in cell coordinates, p.x == column, p.y == row.
      * @param prepare 
-     * @return <code>RolloverRenderer</code> at the given location
+     * @return {@code RolloverRenderer} at the given location
      */
     protected abstract RolloverRenderer getRolloverRenderer(Point location,
             boolean prepare);

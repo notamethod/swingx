@@ -37,7 +37,7 @@ import com.sun.swingset3.DemoProperties;
  * <li>Create the demo components.</li>
  * <li>Inject properties and resources.</li>
  * <li>Bind components together.</li>
- * 
+ * </ol>
  * @author Karl George Schaefer
  */
 public abstract class DefaultDemoPanel extends JXPanel {

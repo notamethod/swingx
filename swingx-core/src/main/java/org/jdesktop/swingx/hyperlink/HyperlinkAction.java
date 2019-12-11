@@ -31,7 +31,7 @@ import java.net.URI;
 import java.util.logging.Logger;
 
 /**
- * A implementation wrapping <code>Desktop</code> actions BROWSE and MAIL, that is
+ * A implementation wrapping {@code Desktop} actions BROWSE and MAIL, that is
  * URI-related. 
  * 
  * @author Jeanette Winzenburg
@@ -214,7 +214,7 @@ public class HyperlinkAction extends AbstractHyperlinkAction<URI> {
         /**
          * Returns a boolean indicating whether the action is supported on the
          * given URI. This implementation returns true if both the Desktop is 
-         * generally supported and <code>isActionSupported()</code>.
+         * generally supported and {@code isActionSupported()}.
          * 
          * PENDING JW: hmm ... which class exactly has to check for valid combination
          * of Action and URI?

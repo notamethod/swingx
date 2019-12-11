@@ -29,7 +29,7 @@ import javax.swing.SwingUtilities;
 
 /**
  * <p>An implementation of {@link RepaintManager} which adds support for transparency
- * in {@link JXPanel}s. <code>JXPanel</code> (which supports translucency) will 
+ * in {@link JXPanel}s. {@code JXPanel} (which supports translucency) will
  * replace the current RepaintManager with an instance of RepaintManagerX 
  * <em>unless</em> the current RepaintManager is tagged by the {@link TranslucentRepaintManager}
  * annotation.</p>

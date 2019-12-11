@@ -45,7 +45,7 @@ public class JXApplet extends JApplet {
      * Creates a the applet instance.
      * <p>
      * This constructor sets the component's locale property to the value returned by
-     * <code>JComponent.getDefaultLocale</code>.
+     * {@code JComponent.getDefaultLocale}.
      * 
      * @throws HeadlessException
      *             if GraphicsEnvironment.isHeadless() returns true.

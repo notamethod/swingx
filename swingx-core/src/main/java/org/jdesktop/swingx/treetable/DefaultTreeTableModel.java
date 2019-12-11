@@ -48,7 +48,7 @@ import javax.swing.tree.TreePath;
  * @author Karl Schaefer
  */
 public class DefaultTreeTableModel extends AbstractTreeTableModel {
-    /** The <code>List</code> of column identifiers. */
+    /** The {@code List} of column identifiers. */
     protected List<?> columnIdentifiers;
 
     private boolean useAutoCalculatedIdentifiers;
@@ -105,15 +105,15 @@ public class DefaultTreeTableModel extends AbstractTreeTableModel {
 
     /**
      * Replaces the column identifiers in the model. If the number of
-     * <code>newIdentifier</code>s is greater than the current number of
+     * {@code newIdentifier}s is greater than the current number of
      * columns, new columns are added to the end of each row in the model. If
-     * the number of <code>newIdentifier</code>s is less than the current
+     * the number of {@code newIdentifier}s is less than the current
      * number of columns, all the extra columns at the end of a row are
      * discarded.
      * <p>
      * 
      * @param columnIdentifiers
-     *            vector of column identifiers. If <code>null</code>, set the
+     *            vector of column identifiers. If {@code null}, set the
      *            model to zero columns
      */
     // from DefaultTableModel

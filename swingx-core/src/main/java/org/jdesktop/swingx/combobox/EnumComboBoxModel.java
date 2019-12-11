@@ -33,24 +33,24 @@ import java.util.Map;
  * extra work, though the display can can be further customized.
  * </p>
  * 
- * <h4>Simple Usage</h4>
+ * <h1>Simple Usage</h1>
  * 
  * <p>
- * The simplest usage is to wrap an <code>enum</code> inside the
- * <code>EnumComboBoxModel</code> and then set it as the model on the combo
+ * The simplest usage is to wrap an {@code enum} inside the
+ * {@code EnumComboBoxModel} and then set it as the model on the combo
  * box. The combo box will then appear on screen with each value in the
- * <code>enum</code> as a value in the combobox.
+ * {@code enum} as a value in the combobox.
  * </p>
  * <p>
  * ex:
  * </p>
  * 
- * <pre><code>
+ * <pre>{@code
  *  enum MyEnum { GoodStuff, BadStuff };
  *  ...
  *  JComboBox combo = new JComboBox();
  *  combo.setModel(new EnumComboBoxModel(MyEnum.class));
- * </code></pre>
+ * }</pre>
  * 
  * <h4>Type safe access</h4>
  * <p>
@@ -58,34 +58,34 @@ import java.util.Map;
  * the model be completely typesafe. ex:
  * </p>
  * 
- * <pre><code>
- * EnumComboBoxModel&lt;MyEnum&gt; enumModel = new EnumComboBoxModel&lt;MyEnum1&gt;(
+ * <pre>{@code
+ * EnumComboBoxModel<MyEnum> enumModel = new EnumComboBoxModel<MyEnum1>(
  *         MyEnum1.class);
- * 
+ *
  * MyEnum first = enumModel.getElement(0);
- * 
+ *
  * MyEnum selected = enumModel.getSelectedItem();
- * </code></pre>
+ * }</pre>
  * 
  * <h4>Advanced Usage</h4>
  * <p>
- * Since the exact <code>toString()</code> value of each enum constant may not
+ * Since the exact {@code toString()} value of each enum constant may not
  * be exactly what you want on screen (the values won't have spaces, for
  * example) you can override to toString() method on the values when you declare
  * your enum. Thus the display value is localized to the enum and not in your
  * GUI code. ex:
  * 
- * <pre><code>
+ * <pre>{@code
  *    private enum MyEnum {GoodStuff, BadStuff;
  *        public String toString() {
  *           switch(this) {
- *               case GoodStuff: return &quot;Some Good Stuff&quot;;
- *               case BadStuff: return &quot;Some Bad Stuff&quot;;
+ *               case GoodStuff: return "Some Good Stuff";
+ *               case BadStuff: return "Some Bad Stuff";
  *           }
- *           return &quot;ERROR&quot;;
+ *           return "ERROR";
  *        }
  *    };
- * </code></pre>
+ * }</pre>
  * 
  * Note: if more than one enum constant returns the same {@code String} via
  * {@code toString()}, this model will throw an exception on creation.

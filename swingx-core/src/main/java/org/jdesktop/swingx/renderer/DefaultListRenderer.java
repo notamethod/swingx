@@ -41,21 +41,21 @@ import javax.swing.ListCellRenderer;
  * it's up to the client code to supply the appropriate converter, if needed:
  * 
  * 
- * <pre><code>
+ * <pre>{@code
  * StringValue sv = new StringValue() {
- * 
+ *
  *     public String getString(Object value) {
  *         if (value instanceof Icon) {
- *             return &quot;&quot;;
+ *             return "";
  *         }
  *         return StringValue.TO_STRING.getString(value);
  *     }
- * 
+ *
  * };
  * StringValue lv = new MappedValue(sv, IconValue.ICON);
  * listRenderer = new DefaultListRenderer(lv, alignment);
- * 
- * </code></pre>
+ *
+ * }</pre>
  * 
  * <p>
  * 
@@ -86,7 +86,7 @@ public class DefaultListRenderer extends AbstractRenderer
     /**
      * Instantiates a ListCellRenderer with the given ComponentProvider.
      * If the provider is null, creates and uses a default. The default
-     * provider is of type <code>LabelProvider</code><p>
+     * provider is of type {@code LabelProvider}<p>
      * 
      * Note: the default provider is configured with a custom StringValue
      * which behaves exactly as core DefaultListCellRenderer: depending on 
@@ -167,7 +167,7 @@ public class DefaultListRenderer extends AbstractRenderer
      * Note: The component's name is set to "List.cellRenderer" for the sake
      * of Synth-based LAFs.
      * 
-     * @param list the <code>JList</code> to render on
+     * @param list the {@code JList} to render on
      * @param value the value to assign to the cell 
      * @param isSelected true if cell is selected
      * @param cellHasFocus true if cell has focus

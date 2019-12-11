@@ -55,18 +55,18 @@ import org.jdesktop.swingx.util.Contract;
 
 /**
  * Component that displays a month calendar which can be used to select a day
- * or range of days.  By default the <code>JXMonthView</code> will display a
+ * or range of days.  By default the {@code JXMonthView} will display a
  * single calendar using the current month and year, using
- * <code>Calendar.SUNDAY</code> as the first day of the week.
+ * {@code Calendar.SUNDAY} as the first day of the week.
  * <p>
- * The <code>JXMonthView</code> can be configured to display more than one
+ * The {@code JXMonthView} can be configured to display more than one
  * calendar at a time by calling
- * <code>setPreferredCalCols</code>/<code>setPreferredCalRows</code>.  These
+ * {@code setPreferredCalCols}/<code>setPreferredCalRows</code>.  These
  * methods will set the preferred number of calendars to use in each
- * column/row.  As these values change, the <code>Dimension</code> returned
- * from <code>getMinimumSize</code> and <code>getPreferredSize</code> will
+ * column/row.  As these values change, the {@code Dimension} returned
+ * from {@code getMinimumSize} and <code>getPreferredSize</code> will
  * be updated.  The following example shows how to create a 2x2 view which is
- * contained within a <code>JFrame</code>:
+ * contained within a {@code JFrame}:
  * <pre>
  *     JXMonthView monthView = new JXMonthView();
  *     monthView.setPreferredCols(2);
@@ -78,7 +78,7 @@ import org.jdesktop.swingx.util.Contract;
  *     frame.setVisible(true);
  * </pre>
  * <p>
- * <code>JXMonthView</code> can be further configured to allow any day of the
+ * {@code JXMonthView} can be further configured to allow any day of the
  * week to be considered the first day of the week.  Character
  * representation of those days may also be set by providing an array of
  * strings.
@@ -91,7 +91,7 @@ import org.jdesktop.swingx.util.Contract;
  * This component supports flagging days.  These flagged days are displayed
  * in a bold font.  This can be used to inform the user of such things as
  * scheduled appointment.
- * <pre><code>
+ * <pre>{@code
  *    // Create some dates that we want to flag as being important.
  *    Calendar cal1 = Calendar.getInstance();
  *    cal1.set(2004, 1, 1);
@@ -99,7 +99,7 @@ import org.jdesktop.swingx.util.Contract;
  *    cal2.set(2004, 1, 5);
  *
  *    monthView.setFlaggedDates(cal1.getTime(), cal2.getTime(), new Date());
- * </code></pre>
+ * }</pre>
  * Applications may have the need to allow users to select different ranges of
  * dates.  There are three modes of selection that are supported, single, single interval
  * and multiple interval selection.  Once a selection is made a DateSelectionEvent is
@@ -249,7 +249,7 @@ public class JXMonthView extends JComponent {
     private boolean zoomable;
 
     /**
-     * Create a new instance of the <code>JXMonthView</code> class using the
+     * Create a new instance of the {@code JXMonthView} class using the
      * default Locale and the current system time as the first date to 
      * display.
      */
@@ -258,7 +258,7 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Create a new instance of the <code>JXMonthView</code> class using the 
+     * Create a new instance of the {@code JXMonthView} class using the
      * default Locale and the current system time as the first date to 
      * display.
      * 
@@ -269,7 +269,7 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Create a new instance of the <code>JXMonthView</code> class using the
+     * Create a new instance of the {@code JXMonthView} class using the
      * default Locale and the given time as the first date to 
      * display.
      *
@@ -281,13 +281,13 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Create a new instance of the <code>JXMonthView</code> class using the
+     * Create a new instance of the {@code JXMonthView} class using the
      * default Locale, the given time as the first date to 
      * display and the given selection model. 
      * 
      * @param firstDisplayedDay a day of the first month to display; if null, the current
      *   System time is used.
-     * @param model the selection model to use, if null a <code>DefaultSelectionModel</code> is
+     * @param model the selection model to use, if null a {@code DefaultSelectionModel} is
      *   created.
      */
     public JXMonthView(Date firstDisplayedDay, final DateSelectionModel model) {
@@ -296,13 +296,13 @@ public class JXMonthView extends JComponent {
 
 
     /**
-     * Create a new instance of the <code>JXMonthView</code> class using the
+     * Create a new instance of the {@code JXMonthView} class using the
      * given Locale, the given time as the first date to 
      * display and the given selection model. 
      * 
      * @param firstDisplayedDay a day of the first month to display; if null, the current
      *   System time is used.
-     * @param model the selection model to use, if null a <code>DefaultSelectionModel</code> is
+     * @param model the selection model to use, if null a {@code DefaultSelectionModel} is
      *   created.
      * @param locale desired locale, if null the system default locale is used
      */
@@ -336,7 +336,7 @@ public class JXMonthView extends JComponent {
      * 
      * <p>
      * <b>Warning:</b> Since this resets any string labels that are cached in UI
-     * (month and day names) and firstDayofWeek, use <code>setDaysOfTheWeek</code> and/or
+     * (month and day names) and firstDayofWeek, use {@code setDaysOfTheWeek} and/or
      * setFirstDayOfWeek after (re)setting locale.
      * </p>
      * 
@@ -385,7 +385,7 @@ public class JXMonthView extends JComponent {
     /**
      * Gets the time zone.
      *
-     * @return The <code>TimeZone</code> used by the <code>JXMonthView</code>.
+     * @return The {@code TimeZone} used by the <code>JXMonthView</code>.
      */
     public TimeZone getTimeZone() {
         // PENDING JW: looks fishy (left-over?) .. why not ask the model?
@@ -397,7 +397,7 @@ public class JXMonthView extends JComponent {
      * 
      * This is a bound property. 
      * 
-     * @param tz The <code>TimeZone</code>.
+     * @param tz The {@code TimeZone}.
      */
     public void setTimeZone(TimeZone tz) {
         model.setTimeZone(tz);
@@ -405,7 +405,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Gets what the first day of the week is; e.g.,
-     * <code>Calendar.SUNDAY</code> in the U.S., <code>Calendar.MONDAY</code>
+     * {@code Calendar.SUNDAY} in the U.S., <code>Calendar.MONDAY</code>
      * in France.
      *
      * @return int The first day of the week.
@@ -416,7 +416,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Sets what the first day of the week is; e.g.,
-     * <code>Calendar.SUNDAY</code> in US, <code>Calendar.MONDAY</code>
+     * {@code Calendar.SUNDAY} in US, <code>Calendar.MONDAY</code>
      * in France.
      *
      * @param firstDayOfWeek The first day of the week.
@@ -612,7 +612,7 @@ public class JXMonthView extends JComponent {
     
     /**
      * Set the first displayed date.  We only use the month and year of
-     * this date.  The <code>Calendar.DAY_OF_MONTH</code> field is reset to
+     * this date.  The {@code Calendar.DAY_OF_MONTH} field is reset to
      * 1 and all other fields, with exception of the year and month,
      * are reset to 0.
      *
@@ -629,7 +629,7 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Moves the <code>date</code> into the visible region of the calendar. If
+     * Moves the {@code date} into the visible region of the calendar. If
      * the date is greater than the last visible date it will become the last
      * visible date. While if it is less than the first visible date it will
      * become the first visible date. <p>
@@ -689,7 +689,7 @@ public class JXMonthView extends JComponent {
      * Returns the current Date (whateverthatmeans). Internally always invoked when
      * the current default is needed. Introduced mainly for testing, don't override!
      * 
-     * This implementation returns a Date instantiated with <code>System.currentTimeInMillis</code>.
+     * This implementation returns a Date instantiated with {@code System.currentTimeInMillis}.
      * 
      * @return the date deemed as current. 
      */
@@ -1193,7 +1193,7 @@ public class JXMonthView extends JComponent {
      * If zoomable is enabled, traversable is enabled as well. Otherwise
      * returns the traversable property as set by client code.
      * 
-     * @return <code>true</code> if month traversing is enabled.
+     * @return {@code true} if month traversing is enabled.
      * @see #setZoomable(boolean)
      */
     public boolean isTraversable() {
@@ -1249,17 +1249,17 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Returns whether or not this <code>JXMonthView</code> should display
+     * Returns whether or not this {@code JXMonthView} should display
      * week number.
      *
-     * @return <code>true</code> if week numbers should be displayed
+     * @return {@code true} if week numbers should be displayed
      */
     public boolean isShowingWeekNumber() {
         return showWeekNumber;
     }
 
     /**
-     * Set whether or not this <code>JXMonthView</code> will display week
+     * Set whether or not this {@code JXMonthView} will display week
      * numbers or not.
      *
      * @param showWeekNumber true if week numbers should be displayed,
@@ -1275,14 +1275,14 @@ public class JXMonthView extends JComponent {
      * Sets the String representation for each day of the week as used
      * in the header of the day's grid. For
      * this method the first days of the week days[0] is assumed to be
-     * <code>Calendar.SUNDAY</code>. If null, the representation provided
+     * {@code Calendar.SUNDAY}. If null, the representation provided
      * by the MonthViewUI is used.
      * 
      * The default value is the representation as 
      * returned from the MonthViewUI.
      * 
      * @param days Array of characters that represents each day
-     * @throws IllegalArgumentException if not null and <code>days.length</code> !=
+     * @throws IllegalArgumentException if not null and {@code days.length} !=
      *         DAYS_IN_WEEK
      */
     public void setDaysOfTheWeek(String[] days) {
@@ -1383,7 +1383,7 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Sets the selected background color to <code>c</code>.  The default color
+     * Sets the selected background color to {@code c}.  The default color
      * is installed by the ui.
      *
      * @param c Selected background.
@@ -1404,7 +1404,7 @@ public class JXMonthView extends JComponent {
     }
 
     /**
-     * Sets the selected foreground color to <code>c</code>.  The default color
+     * Sets the selected foreground color to {@code c}.  The default color
      * is installed by the ui.
      *
      * @param c Selected foreground.
@@ -1427,7 +1427,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Sets the color used to draw the bounding box around today.  The default
-     * is the background of the <code>JXMonthView</code> component.
+     * is the background of the {@code JXMonthView} component.
      *
      * @param c color to set
      */
@@ -1450,7 +1450,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Sets the color used to draw the background of the month string.  The
-     * default is <code>138, 173, 209 (Blue-ish)</code>.
+     * default is {@code 138, 173, 209 (Blue-ish)}.
      *
      * @param c color to set
      */
@@ -1473,7 +1473,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Sets the color used to draw the foreground of the month string.  The
-     * default is <code>Color.WHITE</code>.
+     * default is {@code Color.WHITE}.
      *
      * @param c color to set
      */
@@ -1780,7 +1780,7 @@ public class JXMonthView extends JComponent {
 
     /**
      * Adds an ActionListener.
-     * <p/>
+     * <p></p>
      * The ActionListener will receive an ActionEvent with its actionCommand
      * set to COMMIT_KEY or CANCEL_KEY after the selection has been committed
      * or canceled, respectively.

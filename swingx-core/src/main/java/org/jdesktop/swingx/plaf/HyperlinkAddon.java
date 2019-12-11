@@ -29,7 +29,7 @@ import org.jdesktop.swingx.ext.DefaultsList;
 import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
- * Addon for <code>JXHyperlink</code>.<br>
+ * Addon for {@code JXHyperlink}.<br>
  */
 public class HyperlinkAddon extends AbstractComponentAddon {
     public HyperlinkAddon() {

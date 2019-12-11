@@ -41,22 +41,22 @@ import org.jdesktop.swingx.tips.TipOfTheDayModel.Tip;
  * Tips are retrieved from the {@link org.jdesktop.swingx.tips.TipOfTheDayModel}.
  * In the most common usage, a tip (as returned by
  * {@link org.jdesktop.swingx.tips.TipOfTheDayModel.Tip#getTip()}) is just a
- * <code>String</code>. However, the return type of this method is actually
- * <code>Object</code>. Its interpretation depends on its type:
+ * {@code String}. However, the return type of this method is actually
+ * {@code Object}. Its interpretation depends on its type:
  * <dl compact>
  * <dt>Component
- * <dd>The <code>Component</code> is displayed in the dialog.
+ * <dd>The {@code Component} is displayed in the dialog.
  * <dt>Icon
- * <dd>The <code>Icon</code> is wrapped in a <code>JLabel</code> and
+ * <dd>The {@code Icon} is wrapped in a <code>JLabel</code> and
  * displayed in the dialog.
  * <dt>others
- * <dd>The object is converted to a <code>String</code> by calling its
- * <code>toString</code> method. The result is wrapped in a
- * <code>JEditorPane</code> or <code>JTextArea</code> and displayed.
+ * <dd>The object is converted to a {@code String} by calling its
+ * {@code toString} method. The result is wrapped in a
+ * {@code JEditorPane} or <code>JTextArea</code> and displayed.
  * </dl>
  * 
  * <p>
- * <code>JXTipOfTheDay</code> finds its tips in its {@link org.jdesktop.swingx.tips.TipOfTheDayModel}.
+ * {@code JXTipOfTheDay} finds its tips in its {@link org.jdesktop.swingx.tips.TipOfTheDayModel}.
  * Such model can be programmatically built using {@link org.jdesktop.swingx.tips.DefaultTipOfTheDayModel}
  * and {@link org.jdesktop.swingx.tips.DefaultTip} but
  * the {@link org.jdesktop.swingx.tips.TipLoader} provides a convenient method to
@@ -67,38 +67,38 @@ import org.jdesktop.swingx.tips.TipOfTheDayModel.Tip;
  * <p>
  * Let's consider a file <i>tips.properties</i> with the following content:
  * <pre>
- * <code>
+ * {@code
  * tip.1.description=This is the first time! Plain text.
- * tip.2.description=&lt;html&gt;This is &lt;b&gt;another tip&lt;/b&gt;, it uses HTML!
+ * tip.2.description=<html>This is <b>another tip</b>, it uses HTML!
  * tip.3.description=A third one
- * </code>
+ * }
  * </pre>
  *
  * To load and display the tips:
  * 
  * <pre>
- * <code>
+ * {@code
  * Properties tips = new Properties();
  * tips.load(new FileInputStream("tips.properties"));
- * 
+ *
  * TipOfTheDayModel model = TipLoader.load(tips);
  * JXTipOfTheDay totd = new JXTipOfTheDay(model);
- * 
+ *
  * totd.showDialog(someParentComponent);
- * </code>
+ * }
  * </pre>
  * 
  * <p>
- * Additionally, <code>JXTipOfTheDay</code> features an option enabling the end-user
+ * Additionally, {@code JXTipOfTheDay} features an option enabling the end-user
  * to choose to not display the "Tip Of The Day" dialog. This user choice can be stored
- * in the user {@link java.util.prefs.Preferences} but <code>JXTipOfTheDay</code> also
+ * in the user {@link java.util.prefs.Preferences} but {@code JXTipOfTheDay} also
  * supports custom storage through the {@link org.jdesktop.swingx.JXTipOfTheDay.ShowOnStartupChoice} interface.
  * 
  * <pre>
- * <code>
+ * {@code
  * Preferences userPreferences = Preferences.userRoot().node("myApp");
  * totd.showDialog(someParentComponent, userPreferences);
- * </code>
+ * }
  * </pre>
  * In this code, the first time showDialog is called, the dialog will be made 
  * visible and the user will have the choice to not display it again in the future
@@ -141,7 +141,7 @@ public class JXTipOfTheDay extends JXPanel {
   private int currentTip = 0;
 
   /**
-   * Constructs a new <code>JXTipOfTheDay</code> with an empty
+   * Constructs a new {@code JXTipOfTheDay} with an empty
    * TipOfTheDayModel
    */
   public JXTipOfTheDay() {
@@ -149,7 +149,7 @@ public class JXTipOfTheDay extends JXPanel {
   }
   
   /**
-   * Constructs a new <code>JXTipOfTheDay</code> showing tips from the given
+   * Constructs a new {@code JXTipOfTheDay} showing tips from the given
    * TipOfTheDayModel.
    * 
    * @param model
@@ -160,9 +160,9 @@ public class JXTipOfTheDay extends JXPanel {
   }
 
   /**
-   * Notification from the <code>UIManager</code> that the L&F has changed.
+   * Notification from the {@code UIManager} that the L&F has changed.
    * Replaces the current UI object with the latest version from the
-   * <code>UIManager</code>.
+   * {@code UIManager}.
    * 
    * @see javax.swing.JComponent#updateUI
    */
@@ -175,7 +175,7 @@ public void updateUI() {
    * Sets the L&F object that renders this component.
    * 
    * @param ui
-   *          the <code>TipOfTheDayUI</code> L&F object
+   *          the {@code TipOfTheDayUI} L&F object
    * @see javax.swing.UIDefaults#getUI
    * 
    * @beaninfo bound: true hidden: true description: The UI object that
@@ -348,7 +348,7 @@ public void updateUI() {
   /**
    * Pops up a "Tip of the day" dialog.
    * 
-   * If <code>choice</code> is not null, the method first checks if
+   * If {@code choice} is not null, the method first checks if
    * {@link ShowOnStartupChoice#isShowingOnStartup()} is true before showing the
    * dialog.
    * 
@@ -370,8 +370,8 @@ public void updateUI() {
   /**
    * Pops up a "Tip of the day" dialog.
    * 
-   * If <code>choice</code> is not null, the method first checks if
-   * <code>force</code> is true or if
+   * If {@code choice} is not null, the method first checks if
+   * {@code force} is true or if
    * {@link ShowOnStartupChoice#isShowingOnStartup()} is true before showing the
    * dialog.
    * 

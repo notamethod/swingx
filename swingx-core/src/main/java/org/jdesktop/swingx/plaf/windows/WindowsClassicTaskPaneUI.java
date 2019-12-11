@@ -35,7 +35,7 @@ import org.jdesktop.swingx.plaf.basic.BasicTaskPaneUI;
 
 /**
  * Windows Classic (NT/2000) implementation of the
- * <code>JXTaskPane</code> UI.
+ * {@code JXTaskPane} UI.
  * 
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  */

@@ -84,13 +84,13 @@ import org.jdesktop.swingx.table.TableColumnExt;
  * sort. Sort sequence can be configured by setting a custom comparator.
  * 
  * <pre>
- * <code>
+ * {@code
  * list.setAutoCreateRowSorter(true);
  * list.setComparator(myComparator);
  * list.setSortOrder(SortOrder.DESCENDING);
  * list.toggleSortOder();
  * list.resetSortOrder();
- * </code>
+ * }
  * </pre>
  * 
  * <p>
@@ -111,32 +111,32 @@ import org.jdesktop.swingx.table.TableColumnExt;
  * <p>
  * 
  * <pre>
- * <code>
- * 
+ * {@code
+ *
  * JXList list = new JXList(new Contributors());
  * // implement a custom string representation, concated from first-, lastName
  * StringValue sv = new StringValue() {
  *     public String getString(Object value) {
  *        if (value instanceof Contributor) {
  *           Contributor contributor = (Contributor) value;
- *           return contributor.lastName() + ", " + contributor.firstName(); 
+ *           return contributor.lastName() + ", " + contributor.firstName();
  *        }
  *        return StringValues.TO_STRING(value);
  *     }
  * };
- * list.setCellRenderer(new DefaultListRenderer(sv); 
+ * list.setCellRenderer(new DefaultListRenderer(sv);
  * // highlight condition: gold merits
  * HighlightPredicate predicate = new HighlightPredicate() {
  *    public boolean isHighlighted(Component renderer,
  *                     ComponentAdapter adapter) {
- *       if (!(value instanceof Contributor)) return false;              
+ *       if (!(value instanceof Contributor)) return false;
  *       return ((Contributor) value).hasGold();
  *    }
  * };
- * // highlight with foreground color 
- * list.addHighlighter(new PainterHighlighter(predicate, goldStarPainter);      
- * 
- * </code>
+ * // highlight with foreground color
+ * list.addHighlighter(new PainterHighlighter(predicate, goldStarPainter);
+ *
+ * }
  * </pre>
  * 
  * <i>Note:</i> to support the highlighting this implementation wraps the
@@ -155,15 +155,15 @@ import org.jdesktop.swingx.table.TableColumnExt;
  * as well, f.i. to decorate the rollover row using a Highlighter.
  * 
  * <pre>
- * <code>
- * 
+ * {@code
+ *
  * JXList list = new JXList();
  * list.setRolloverEnabled(true);
  * list.setCellRenderer(new DefaultListRenderer());
- * list.addHighlighter(new ColorHighlighter(HighlightPredicate.ROLLOVER_ROW, 
- *      null, Color.RED);      
- * 
- * </code>
+ * list.addHighlighter(new ColorHighlighter(HighlightPredicate.ROLLOVER_ROW,
+ *      null, Color.RED);
+ *
+ * }
  * </pre>
  * 
  * <h2>Location of Trigger for ComponentPopupMenu</h2>
@@ -174,19 +174,19 @@ import org.jdesktop.swingx.table.TableColumnExt;
  * <p>
  * 
  * The example below selects the cell that was clicked, event being the
- * <code>PopupMenuEvent</code> received in a 
- * <code>PopupMenuListener</code>.
+ * {@code PopupMenuEvent} received in a
+ * {@code PopupMenuListener}.
  * <p>
  * 
  * <pre>
- * <code>
+ * {@code
  * JXList list = (JXList) ((JPopupMenu) e.getSource()).getInvoker();
  * Point trigger = list.getPopupTriggerLocation();
  * if (trigger != null) {
  *     int row = list.locationToIndex(trigger);
  *     list.setSelectedIndex(row);
  * }
- * </code>
+ * }
  * </pre>
  * 
  * 
@@ -274,7 +274,7 @@ public class JXList extends JList {
     private Point popupTriggerLocation;
 
     /**
-    * Constructs a <code>JXList</code> with an empty model and filters disabled.
+    * Constructs a {@code JXList} with an empty model and filters disabled.
     *
     */                                           
     public JXList() {
@@ -282,37 +282,37 @@ public class JXList extends JList {
     }
 
     /**
-     * Constructs a <code>JXList</code> that displays the elements in the
-     * specified, non-<code>null</code> model and automatic creation of a RowSorter disabled.
+     * Constructs a {@code JXList} that displays the elements in the
+     * specified, non-{@code null} model and automatic creation of a RowSorter disabled.
      *
      * @param dataModel   the data model for this list
-     * @exception IllegalArgumentException   if <code>dataModel</code>
-     *                                           is <code>null</code>
+     * @exception IllegalArgumentException   if {@code dataModel}
+     *                                           is {@code null}
      */                                           
     public JXList(ListModel dataModel) {
         this(dataModel, false);
     }
 
     /**
-     * Constructs a <code>JXList</code> that displays the elements in
+     * Constructs a {@code JXList} that displays the elements in
      * the specified array and automatic creation of a RowSorter disabled.
      *
      * @param  listData  the array of Objects to be loaded into the data model
-     * @throws IllegalArgumentException   if <code>listData</code>
-     *                                          is <code>null</code>
+     * @throws IllegalArgumentException   if {@code listData}
+     *                                          is {@code null}
      */
     public JXList(Object[] listData) {
         this(listData, false);
     }
 
     /**
-     * Constructs a <code>JXList</code> that displays the elements in
-     * the specified <code>Vector</code> and automatic creation of a RowSorter disabled.
+     * Constructs a {@code JXList} that displays the elements in
+     * the specified {@code Vector} and automatic creation of a RowSorter disabled.
      *
-     * @param  listData  the <code>Vector</code> to be loaded into the
+     * @param  listData  the {@code Vector} to be loaded into the
      *          data model
-     * @throws IllegalArgumentException   if <code>listData</code>
-     *                                          is <code>null</code>
+     * @throws IllegalArgumentException   if {@code listData}
+     *                                          is {@code null}
      */
     public JXList(Vector<?> listData) {
         this(listData, false);
@@ -320,10 +320,10 @@ public class JXList extends JList {
 
 
     /**
-     * Constructs a <code>JXList</code> with an empty model and
+     * Constructs a {@code JXList} with an empty model and
      * automatic creation of a RowSorter as given.
      * 
-     * @param autoCreateRowSorter <code>boolean</code> to determine if 
+     * @param autoCreateRowSorter {@code boolean} to determine if
      *  a RowSorter should be created automatically.
      */
     public JXList(boolean autoCreateRowSorter) {
@@ -331,14 +331,14 @@ public class JXList extends JList {
     }
 
     /**
-     * Constructs a <code>JXList</code> with the specified model and
+     * Constructs a {@code JXList} with the specified model and
      * automatic creation of a RowSorter as given.
      * 
      * @param dataModel   the data model for this list
-     * @param autoCreateRowSorter <code>boolean</code> to determine if 
+     * @param autoCreateRowSorter {@code boolean} to determine if
      *  a RowSorter should be created automatically.
-     * @throws IllegalArgumentException   if <code>dataModel</code>
-     *                                          is <code>null</code>
+     * @throws IllegalArgumentException   if {@code dataModel}
+     *                                          is {@code null}
      */
     public JXList(ListModel dataModel, boolean autoCreateRowSorter) {
         super(dataModel);
@@ -346,14 +346,14 @@ public class JXList extends JList {
     }
 
     /**
-     * Constructs a <code>JXList</code> that displays the elements in
+     * Constructs a {@code JXList} that displays the elements in
      * the specified array and automatic creation of a RowSorter as given.
      *
      * @param  listData  the array of Objects to be loaded into the data model
-     * @param autoCreateRowSorter <code>boolean</code> to determine if 
+     * @param autoCreateRowSorter {@code boolean} to determine if
      *  a RowSorter should be created automatically.
-     * @throws IllegalArgumentException   if <code>listData</code>
-     *                                          is <code>null</code>
+     * @throws IllegalArgumentException   if {@code listData}
+     *                                          is {@code null}
      */
     public JXList(Object[] listData, boolean autoCreateRowSorter) {
         super(listData);
@@ -363,14 +363,14 @@ public class JXList extends JList {
     }
 
     /**
-     * Constructs a <code>JXList</code> that displays the elements in
-     * the specified <code>Vector</code> and filtersEnabled property.
+     * Constructs a {@code JXList} that displays the elements in
+     * the specified {@code Vector} and filtersEnabled property.
      *
-     * @param  listData  the <code>Vector</code> to be loaded into the
+     * @param  listData  the {@code Vector} to be loaded into the
      *          data model
-     * @param autoCreateRowSorter <code>boolean</code> to determine if 
+     * @param autoCreateRowSorter {@code boolean} to determine if
      *  a RowSorter should be created automatically.
-     * @throws IllegalArgumentException if <code>listData</code> is <code>null</code>
+     * @throws IllegalArgumentException if {@code listData} is <code>null</code>
      */
     public JXList(Vector<?> listData, boolean autoCreateRowSorter) {
         super(listData);
@@ -533,7 +533,7 @@ public class JXList extends JList {
      * Creates and returns the RolloverProducer to use with this tree.
      * <p>
      * 
-     * @return <code>RolloverProducer</code> to use with this tree
+     * @return {@code RolloverProducer} to use with this tree
      * 
      * @see #setRolloverEnabled(boolean)
      */
@@ -655,15 +655,15 @@ public class JXList extends JList {
     }
 
     /**
-     * Sets the <code>RowSorter</code>.  <code>RowSorter</code> is used
-     * to provide sorting and filtering to a <code>JXList</code>.
+     * Sets the {@code RowSorter}.  <code>RowSorter</code> is used
+     * to provide sorting and filtering to a {@code JXList}.
      * <p>
      * This method clears the selection and resets any variable row heights.
      * <p>
-     * If the underlying model of the <code>RowSorter</code> differs from
-     * that of this <code>JXList</code> undefined behavior will result.
+     * If the underlying model of the {@code RowSorter} differs from
+     * that of this {@code JXList} undefined behavior will result.
      *
-     * @param sorter the <code>RowSorter</code>; <code>null</code> turns
+     * @param sorter the {@code RowSorter}; <code>null</code> turns
      *        sorting off
      */
     public void setRowSorter(RowSorter<? extends ListModel> sorter) {
@@ -721,7 +721,7 @@ public class JXList extends JList {
 
     /**
      * If true, specifies that a sort should happen when the underlying
-     * model is updated (<code>rowsUpdated</code> is invoked).  For
+     * model is updated ({@code rowsUpdated} is invoked).  For
      * example, if this is true and the user edits an entry the
      * location of that item in the view may change.  The default is
      * true.
@@ -909,7 +909,7 @@ public class JXList extends JList {
      * make the view not configure a RowSorter of type SortController is to 
      * let this return null. 
      * 
-     * @return the currently active <code>SortController</code> may be null
+     * @return the currently active {@code SortController} may be null
      */
     @SuppressWarnings("unchecked")
     protected SortController<? extends ListModel> getSortController() {
@@ -1129,7 +1129,7 @@ public class JXList extends JList {
         private final JXList list;
 
         /**
-         * Constructs a <code>ListAdapter</code> for the specified target
+         * Constructs a {@code ListAdapter} for the specified target
          * JXList.
          * 
          * @param component  the target list.
@@ -1239,7 +1239,7 @@ public class JXList extends JList {
 
     
     /**
-     * Sets the <code>Highlighter</code>s to the table, replacing any old settings.
+     * Sets the {@code Highlighter}s to the table, replacing any old settings.
      * None of the given Highlighters must be null.<p>
      * 
      * This is a bound property. <p> 
@@ -1262,7 +1262,7 @@ public class JXList extends JList {
     }
 
     /**
-     * Returns the <code>Highlighter</code>s used by this table.
+     * Returns the {@code Highlighter}s used by this table.
      * Maybe empty, but guarantees to be never null.
      * 
      * @return the Highlighters used by this table, guaranteed to never null.
@@ -1272,12 +1272,12 @@ public class JXList extends JList {
         return getCompoundHighlighter().getHighlighters();
     }
     /**
-     * Appends a <code>Highlighter</code> to the end of the list of used
-     * <code>Highlighter</code>s. The argument must not be null. 
+     * Appends a {@code Highlighter} to the end of the list of used
+     * {@code Highlighter}s. The argument must not be null.
      * <p>
      * 
-     * @param highlighter the <code>Highlighter</code> to add, must not be null.
-     * @throws NullPointerException if <code>Highlighter</code> is null.
+     * @param highlighter the {@code Highlighter} to add, must not be null.
+     * @throws NullPointerException if {@code Highlighter} is null.
      * 
      * @see #removeHighlighter(Highlighter)
      * @see #setHighlighters(Highlighter[])
@@ -1318,11 +1318,11 @@ public class JXList extends JList {
     }
 
     /**
-     * Returns the <code>ChangeListener</code> to use with highlighters. Lazily 
+     * Returns the {@code ChangeListener} to use with highlighters. Lazily
      * creates the listener.
      * 
      * @return the ChangeListener for observing changes of highlighters, 
-     *   guaranteed to be <code>not-null</code>
+     *   guaranteed to be {@code not-null}
      */
     protected ChangeListener getHighlighterChangeListener() {
         if (highlighterChangeListener == null) {
@@ -1399,7 +1399,7 @@ public class JXList extends JList {
 
     /**
      * Creates and returns the default cell renderer to use. Subclasses
-     * may override to use a different type. Here: returns a <code>DefaultListRenderer</code>.
+     * may override to use a different type. Here: returns a {@code DefaultListRenderer}.
      * 
      * @return the default cell renderer to use with this list.
      */
@@ -1441,7 +1441,7 @@ public class JXList extends JList {
      * 
      * Note: the wrapping implies that the renderer returned from the getCellRenderer
      * is <b>not</b> the renderer as given here, but the wrapper. To access the original,
-     * use <code>getWrappedCellRenderer</code>.
+     * use {@code getWrappedCellRenderer}.
      * 
      * @see #getWrappedCellRenderer()
      * @see #getCellRenderer()
@@ -1648,7 +1648,7 @@ public class JXList extends JList {
     }
 
     /**
-     * Updates highlighter after <code>updateUI</code> changes.
+     * Updates highlighter after {@code updateUI} changes.
      * 
      * @see UIDependent
      */

@@ -30,7 +30,7 @@ import org.jdesktop.swingx.JXBusyLabel;
 import org.jdesktop.swingx.ext.*;
 
 /**
- * Addon for <code>JXBusyLabel</code>.<br>
+ * Addon for {@code JXBusyLabel}.<br>
  *
  * @author rah003
  */

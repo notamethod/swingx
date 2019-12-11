@@ -32,7 +32,7 @@ import org.jdesktop.swingx.JXFrame;
 import org.jdesktop.swingx.JXTable;
 
 /**
- * Test to exposed known issues of <code>Highlighter</code> client
+ * Test to exposed known issues of {@code Highlighter} client
  * api in collection components.
  * 
  * Ideally, there would be at least one failing test method per open

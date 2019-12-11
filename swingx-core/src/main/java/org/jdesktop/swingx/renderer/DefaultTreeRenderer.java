@@ -54,7 +54,7 @@ public class DefaultTreeRenderer extends AbstractRenderer
     /**
      * Instantiates a default tree renderer with the given component provider.
      * If the controller is null, creates and uses a default. The default
-     * controller is of type <code>WrappingProvider</code>.
+     * controller is of type {@code WrappingProvider}.
      * 
      * @param componentProvider the provider of the configured component to
      *        use for cell rendering
@@ -130,7 +130,7 @@ public class DefaultTreeRenderer extends AbstractRenderer
      * Returns a configured component, appropriate to render the given tree
      * cell. <p>
      * 
-     * @param tree the <code>JTree</code>
+     * @param tree the {@code JTree}
      * @param value the value to assign to the cell
      * @param selected true if cell is selected
      * @param expanded true if the cell is expanded

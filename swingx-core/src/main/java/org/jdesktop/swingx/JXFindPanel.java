@@ -63,10 +63,10 @@ public class JXFindPanel extends AbstractPatternPanel {
     }
     
     /**
-     * Construct search panel targeted to specific <code>Searchable</code> component.
+     * Construct search panel targeted to specific {@code Searchable} component.
      *
      * @param searchable Component where search widget will try to locate and select
-     *                   information using methods of the <code>Searchable</code> interface.
+     *                   information using methods of the {@code Searchable} interface.
      */
     public JXFindPanel(Searchable searchable) {
         setName(getUIString(SEARCH_TITLE));
@@ -96,7 +96,7 @@ public class JXFindPanel extends AbstractPatternPanel {
     /**
      * Notifies this component that it now has a parent component.
      * When this method is invoked, the chain of parent components is
-     * set up with <code>KeyboardAction</code> event listeners.
+     * set up with {@code KeyboardAction} event listeners.
      */
     @Override
     public void addNotify() {

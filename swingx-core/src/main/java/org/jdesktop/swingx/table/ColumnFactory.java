@@ -29,22 +29,22 @@ import javax.swing.table.TableModel;
 import org.jdesktop.swingx.JXTable;
 
 /**
- * Creates and configures <code>TableColumnExt</code>s.
+ * Creates and configures {@code TableColumnExt}s.
  * <p>
  * TODO JW: explain types of configuration - initial from tableModel, initial
  * from table context, user triggered at runtime.
  * <p>
  * 
- * <code>JXTable</code> delegates all <code>TableColumn</code> creation and
- * configuration to a <code>ColumnFactory</code>. Enhanced column
+ * {@code JXTable} delegates all <code>TableColumn</code> creation and
+ * configuration to a {@code ColumnFactory}. Enhanced column
  * configuration should be implemented in a custom factory subclass. The example
  * beautifies the column titles to always start with a capital letter:
  * 
  * <pre>
- * <code>
+ * {@code
  *    MyColumnFactory extends ColumnFactory {
  *        //@Override
- *        public void configureTableColumn(TableModel model, 
+ *        public void configureTableColumn(TableModel model,
  *            TableColumnExt columnExt) {
  *            super.configureTableColumn(model, columnExt);
  *            String title = columnExt.getTitle();
@@ -52,26 +52,26 @@ import org.jdesktop.swingx.JXTable;
  *            columnExt.setTitle(title);
  *        }
  *    };
- * </code>
+ * }
  * </pre>
  * 
  * By default a single instance is shared across all tables of an application.
  * This instance can be replaced by a custom implementation, preferably "early"
  * in the application's lifetime.
  * 
- * <pre><code>
+ * <pre>{@code
  * ColumnFactory.setInstance(new MyColumnFactory());
- * </code></pre> 
+ * }</pre>
  * 
- * Alternatively, any instance of <code>JXTable</code> can be configured
- * individually with its own <code>ColumnFactory</code>.
+ * Alternatively, any instance of {@code JXTable} can be configured
+ * individually with its own {@code ColumnFactory}.
  * 
  * <pre>
- *  <code>
+ *  {@code
  * JXTable table = new JXTable();
  * table.setColumnFactory(new MyColumnFactory());
  * table.setModel(myTableModel);
- * </code>
+ * }
  *  </pre>
  * 
  * <p>
@@ -91,7 +91,7 @@ public class ColumnFactory {
     /**
      * Returns the shared default factory. 
      * 
-     * @return the shared instance of <code>ColumnFactory</code>
+     * @return the shared instance of {@code ColumnFactory}
      * @see #setInstance(ColumnFactory)
      */
     public static synchronized ColumnFactory getInstance() {
@@ -103,7 +103,7 @@ public class ColumnFactory {
 
     /**
      * Sets the shared default factory. The shared instance is used
-     * by <code>JXTable</code> if none has been set individually.
+     * by {@code JXTable} if none has been set individually.
      * 
      * @param factory the default column factory.
      * @see #getInstance()
@@ -114,13 +114,13 @@ public class ColumnFactory {
     }
 
     /**
-     * Creates and configures a TableColumnExt. <code>JXTable</code> calls
-     * this method for each column in the <code>TableModel</code>.
+     * Creates and configures a TableColumnExt. {@code JXTable} calls
+     * this method for each column in the {@code TableModel}.
      * 
      * @param model the TableModel to read configuration properties from
      * @param modelIndex column index in model coordinates
      * @return a TableColumnExt to use for the modelIndex
-     * @throws NPE if model == null
+     * @throws NullPointerException if model == null
      * @throws IllegalStateException if the modelIndex is invalid
      *   (in coordinate space of the tablemodel)
      *  
@@ -143,7 +143,7 @@ public class ColumnFactory {
      * subclasses can override to return custom column types.
      * 
      * @param modelIndex column index in model coordinates
-     * @return a TableColumnExt with <code>modelIndex</code>
+     * @return a TableColumnExt with {@code modelIndex}
      * 
      * @see #createAndConfigureTableColumn(TableModel, int)
      * 
@@ -154,8 +154,8 @@ public class ColumnFactory {
     
     /**
      * Configure column properties from TableModel. This implementation
-     * sets the column's <code>headerValue</code> property from the 
-     * model's <code>columnName</code>.
+     * sets the column's {@code headerValue} property from the
+     * model's {@code columnName}.
      * <p>
      * 
      * The factory's initial column configuration is passed through this method, so 
@@ -179,16 +179,16 @@ public class ColumnFactory {
     
 
     /**
-     * Configures column initial widths properties from <code>JXTable</code>.
+     * Configures column initial widths properties from {@code JXTable}.
      * This implementation sets the column's
-     * <code>preferredWidth</code> with the strategy:
-     * <ol> if the column has a prototype, measure the rendering
+     * {@code preferredWidth} with the strategy:
+     * <ol> <li>if the column has a prototype, measure the rendering
      *    component with the prototype as value and use that as
-     *    pref width
-     * <ol> if the column has no prototype, use the standard magic
-     *   pref width (= 75) 
-     * <ol> try to measure the column's header and use it's preferred
-     *   width if it exceeds the former.    
+     *    pref width</li>
+     * <li> if the column has no prototype, use the standard magic
+     *   pref width (= 75) </li>
+     * <li> try to measure the column's header and use it's preferred
+     *   width if it exceeds the former.  </li>
      * </ol>
      * 
      * TODO JW - rename method to better convey what's happening, maybe
@@ -344,7 +344,7 @@ public class ColumnFactory {
 
 
     /**
-     * Configures the column's <code>preferredWidth</code> to fit the content.
+     * Configures the column's {@code preferredWidth} to fit the content.
      * It respects the table context, a margin to add and a maximum width. This
      * is typically called in response to a user gesture to adjust the column's
      * width to the "widest" cell content of a column.
@@ -423,7 +423,7 @@ public class ColumnFactory {
      * 
      * Subclasses can override to reduce the number (for performance) or support
      * restrictions due to lazy loading, f.i. Implementors must guarantee that
-     * view row access with <code>0 <= row < getRowCount(JXTable)</code>
+     * view row access with {@code 0 <= row < getRowCount(JXTable)}
      * succeeds.
      * 
      * @param table the table to access

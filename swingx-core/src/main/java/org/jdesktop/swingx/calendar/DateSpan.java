@@ -25,9 +25,9 @@ import java.util.Date;
 /**
  * An immutable representation of a time range.  The time range is
  * internally represented as two longs. The methods that take and return
- * <code>Date</code>s create the <code>Date</code>s as needed, so that
- * if you modify returned <code>Date</code>s you will <b>not</b> effect
- * the <code>DateSpan</code>.  The end points are inclusive.
+ * {@code Date}s create the <code>Date</code>s as needed, so that
+ * if you modify returned {@code Date}s you will <b>not</b> effect
+ * the {@code DateSpan}.  The end points are inclusive.
  *
  * @version  $Revision$
  */
@@ -36,12 +36,12 @@ public class DateSpan {
     private long _end;
 
     /**
-     * Creates a <code>DateSpan</code> between the two end points.
+     * Creates a {@code DateSpan} between the two end points.
      *
      * @param start Beginning date
      * @param end Ending date
-     * @throws IllegalArgumentException if <code>start</code> is after
-     *         <code>end</code>
+     * @throws IllegalArgumentException if {@code start} is after
+     *         {@code end}
      */
     public DateSpan(long start, long end) {
         _start = start;
@@ -53,9 +53,9 @@ public class DateSpan {
     }
 
     /**
-     * Creates a <code>DateSpan</code> between the two end points.  This
+     * Creates a {@code DateSpan} between the two end points.  This
      * is a conveniance constructor that is equivalent to
-     * <code>new Date(start.getTime(), end.getTime());</code>.
+     * {@code new Date(start.getTime(), end.getTime());}.
      *
      * @param start Beginning date
      * @param end Ending date
@@ -83,7 +83,7 @@ public class DateSpan {
     }
 
     /**
-     * Returns the start of the date span as a <code>Date</code>.
+     * Returns the start of the date span as a {@code Date}.
      *
      * @return start of the  span.
      */
@@ -92,7 +92,7 @@ public class DateSpan {
     }
 
     /**
-     * Returns the end of the date span as a <code>Date</code>.
+     * Returns the end of the date span as a {@code Date}.
      *
      * @return end of the span.
      */
@@ -101,34 +101,34 @@ public class DateSpan {
     }
 
     /**
-     * Returns true if this <code>DateSpan</code> contains the specified
-     * <code>DateSpan</code>.
+     * Returns true if this {@code DateSpan} contains the specified
+     * {@code DateSpan}.
      *
      * @param span Date to check
-     * @return true if this DateSpan contains <code>span</code>.
+     * @return true if this DateSpan contains {@code span}.
      */
     public boolean contains(DateSpan span) {
         return (contains(span.getStart()) && contains(span.getEnd()));
     }
 
     /**
-     * Returns whether or not this <code>DateSpan</code> contains the specified
+     * Returns whether or not this {@code DateSpan} contains the specified
      * time.
      *
      * @param time time check
-     * @return true if this DateSpan contains <code>time</code>.
+     * @return true if this DateSpan contains {@code time}.
      */
     public boolean contains(long time) {
         return (time >= getStart() && time <= getEnd());
     }
 
     /**
-     * Returns whether or not this <code>DateSpan</code> contains the
+     * Returns whether or not this {@code DateSpan} contains the
      * specified date span.
      *
      * @param start Start of time span
      * @param end End of time
-     * @return true if this <code>DateSpan</code> contains the specified
+     * @return true if this {@code DateSpan} contains the specified
      *         date span.
      */
     public boolean contains(long start, long end) {
@@ -136,12 +136,12 @@ public class DateSpan {
     }
 
     /**
-     * Returns true if the this <code>DateSpan</code> intersects with the
+     * Returns true if the this {@code DateSpan} intersects with the
      * specified time.
      *
      * @param start Start time
      * @param end End time
-     * @return true if this <code>DateSpan</code> intersects with the specified
+     * @return true if this {@code DateSpan} intersects with the specified
      * time.
      */
     public boolean intersects(long start, long end) {
@@ -149,11 +149,11 @@ public class DateSpan {
     }
 
     /**
-     * Returns true if the this <code>DateSpan</code> intersects with the
-     * specified <code>DateSpan</code>.
+     * Returns true if the this {@code DateSpan} intersects with the
+     * specified {@code DateSpan}.
      *
      * @param span DateSpan to compare to
-     * @return true if this <code>DateSpan</code> intersects with the specified
+     * @return true if this {@code DateSpan} intersects with the specified
      * time.
      */
     public boolean intersects(DateSpan span) {
@@ -161,23 +161,23 @@ public class DateSpan {
     }
 
     /**
-     * Returns a new <code>DateSpan</code> that is the union of this
-     * <code>DateSpan</code> and <code>span</code>.
+     * Returns a new {@code DateSpan} that is the union of this
+     * {@code DateSpan} and <code>span</code>.
      *
      * @param span DateSpan to add
-     * @return union of this DateSpan and <code>span</code>
+     * @return union of this DateSpan and {@code span}
      */
     public DateSpan add(DateSpan span) {
         return add(span.getStart(), span.getEnd());
     }
 
     /**
-     * Returns a new <code>DateSpan</code> that is the union of this
-     * <code>DateSpan</code> and the passed in span.
+     * Returns a new {@code DateSpan} that is the union of this
+     * {@code DateSpan} and the passed in span.
      *
      * @param start Start of region to add
      * @param end End of region to end
-     * @return union of this DateSpan and <code>start</code>, <code>end</code>
+     * @return union of this DateSpan and {@code start}, <code>end</code>
      */
     public DateSpan add(long start, long end) {
         return new DateSpan(Math.min(start, getStart()),

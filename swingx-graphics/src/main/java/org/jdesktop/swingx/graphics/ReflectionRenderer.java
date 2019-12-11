@@ -6,7 +6,7 @@
  * Copyright 2006 Sun Microsystems, Inc., 4150 Network Circle,
  * Santa Clara, California 95054, U.S.A. All rights reserved.
  *
- * Copyright (c) 2006 Romain Guy <romain.guy@mac.com>
+ * Copyright (c) 2006 Romain Guy &lt;romain.guy@mac.com&gt;
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -48,6 +48,7 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  * <p>A reflection renderer generates the reflection of a given picture. The
  * result can be either the reflection itself, or an image containing both the
  * source image and its reflection.</p>
+ * <h1></h1>
  * <h2>Reflection Properties</h2>
  * <p>A reflection is defined by three properties:
  * <ul>
@@ -74,26 +75,26 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  *   <li><i>opacity</i>: 35%</li>
  *   <li><i>length</i>: 40%</li>
  *   <li><i>blur enabled</i>: false</li>
- * </ul></p>
+ * </ul>
  * <h2>Generating Reflections</h2>
- * <p>A reflection is generated as a <code>BufferedImage</code> from another
- * <code>BufferedImage</code>. Once the renderer is set up, you must call
+ * <p>A reflection is generated as a {@code BufferedImage} from another
+ * {@code BufferedImage}. Once the renderer is set up, you must call
  * {@link #createReflection(java.awt.image.BufferedImage)} to actually generate
- * the reflection:
+ * the reflection:</p>
  * <pre>
  * ReflectionRenderer renderer = new ReflectionRenderer();
  * // renderer setup
  * BufferedImage reflection = renderer.createReflection(bufferedImage);
- * </pre></p>
+ * </pre>
  * <p>The returned image contains only the reflection. You will have to append
  * it to the source image at painting time to get a realistic results. You can
  * also asks the rendered to return a picture composed of both the source image
- * and its reflection:
+ * and its reflection:</p>
  * <pre>
  * ReflectionRenderer renderer = new ReflectionRenderer();
  * // renderer setup
  * BufferedImage reflection = renderer.appendReflection(bufferedImage);
- * </pre></p>
+ * </pre>
  * <h2>Properties Changes</h2>
  * <p>This renderer allows to register property change listeners with
  * {@link #addPropertyChangeListener}. Listening to properties changes is very
@@ -101,9 +102,9 @@ import org.jdesktop.swingx.util.GraphicsUtilities;
  * user the ability to access the renderer. By listening to properties changes,
  * you can easily repaint the component when needed.</p>
  * <h2>Threading Issues</h2>
- * <p><code>ReflectionRenderer</code> is not guaranteed to be thread-safe.</p>
+ * <p>{@code ReflectionRenderer} is not guaranteed to be thread-safe.</p>
  *
- * @author Romain Guy <romain.guy@mac.com>
+ * @author Romain Guy &lt;romain.guy@mac.com&gt;
  */
 public class ReflectionRenderer {
     /**
@@ -141,7 +142,7 @@ public class ReflectionRenderer {
      *   <li><i>opacity</i>: 35%</li>
      *   <li><i>length</i>: 40%</li>
      *   <li><i>blurring</i>: disabled with a radius of 1 pixel</li>
-     * </ul></p>
+     * </ul>
      * <p>These properties provide a regular, good looking reflection.</p>
      *
      * @see #getOpacity()
@@ -164,7 +165,7 @@ public class ReflectionRenderer {
      * <ul>
      *   <li><i>length</i>: 40%</li>
      *   <li><i>blurring</i>: disabled with a radius of 1 pixel</li>
-     * </ul></p>
+     * </ul>
      *
      * @param opacity the opacity of the reflection, between 0.0 and 1.0
      * @see #getOpacity()
@@ -213,7 +214,7 @@ public class ReflectionRenderer {
      * <p>Add a PropertyChangeListener to the listener list. The listener is
      * registered for all properties. The same listener object may be added
      * more than once, and will be called as many times as it is added. If
-     * <code>listener</code> is null, no exception is thrown and no action
+     * {@code listener} is null, no exception is thrown and no action
      * is taken.</p>
      *
      * @param listener the PropertyChangeListener to be added
@@ -225,9 +226,9 @@ public class ReflectionRenderer {
     /**
      * <p>Remove a PropertyChangeListener from the listener list. This removes
      * a PropertyChangeListener that was registered for all properties. If
-     * <code>listener</code> was added more than once to the same event source,
+     * {@code listener} was added more than once to the same event source,
      * it will be notified one less time after being removed. If
-     * <code>listener</code> is null, or was never added, no exception is thrown
+     * {@code listener} is null, or was never added, no exception is thrown
      * and no action is taken.</p>
      *
      * @param listener the PropertyChangeListener to be removed
@@ -371,7 +372,7 @@ public class ReflectionRenderer {
      * renderer when {@link #isBlurEnabled()} is true.</p>
      *
      * @return the effective radius of the blur used when
-     *   <code>isBlurEnabled</code> is true
+     *   {@code isBlurEnabled} is true
      * @see #isBlurEnabled()
      * @see #setBlurEnabled(boolean)
      * @see #setBlurRadius(int)
@@ -385,7 +386,7 @@ public class ReflectionRenderer {
      * <p>Returns the radius, in pixels, of the blur used by this renderer when
      * {@link #isBlurEnabled()} is true.</p>
      *
-     * @return the radius of the blur used when <code>isBlurEnabled</code>
+     * @return the radius of the blur used when {@code isBlurEnabled}
      *         is true
      * @see #isBlurEnabled()
      * @see #setBlurEnabled(boolean)

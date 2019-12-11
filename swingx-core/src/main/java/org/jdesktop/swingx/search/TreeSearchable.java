@@ -76,7 +76,7 @@ public class TreeSearchable extends AbstractSearchable {
      * @param pattern
      * @param row a valid row index in view coordinates a valid column index in
      *        view coordinates
-     * @return an appropriate <code>SearchResult</code> if matching or null if
+     * @return an appropriate {@code SearchResult} if matching or null if
      *         no matching
      */
     protected SearchResult findMatchAt(Pattern pattern, int row) {

@@ -52,11 +52,11 @@ import org.jdesktop.beans.JavaBean;
  * on the right in right-to-left languages). To change the position of the
  * title with respect to the icon, call {@link #setHorizontalTextPosition}.</p>
  *
- * <p>The default font and color of the title comes from the <code>LookAndFeel</code>, mimicking
+ * <p>The default font and color of the title comes from the {@code LookAndFeel}, mimicking
  * the font and color of the {@link javax.swing.border.TitledBorder}</p>
  *
  * <p>Here are a few example code snippets:
- * <pre><code>
+ * <pre>{@code
  *  //create a plain separator
  *  JXTitledSeparator sep = new JXTitledSeparator();
  *  sep.setTitle("Customer Info");
@@ -73,7 +73,7 @@ import org.jdesktop.beans.JavaBean;
  *  sep.setIcon(new ImageIcon("myimage.png"));
  *  sep.setHorizontalAlignment(SwingConstants.CENTER);
  *  sep.setHorizontalTextPosition(SwingConstants.TRAILING);
- * </code></pre>
+ * }</pre>
  *
  * @status REVIEWED
  * @author rbair
@@ -96,36 +96,36 @@ public class JXTitledSeparator extends JXPanel {
     private JSeparator rightSeparator;
     
     /** 
-     * Creates a new instance of <code>JXTitledSeparator</code>. The default title is simply
-     * an empty string. Default justification is <code>LEADING</code>, and the default
-     * horizontal text position is <code>TRAILING</code> (title follows icon)
+     * Creates a new instance of {@code JXTitledSeparator}. The default title is simply
+     * an empty string. Default justification is {@code LEADING}, and the default
+     * horizontal text position is {@code TRAILING} (title follows icon)
      */
     public JXTitledSeparator() {
         this("Untitled");
     }
     
     /** 
-     * Creates a new instance of <code>JXTitledSeparator</code> with the specified
-     * title. Default horizontal alignment is <code>LEADING</code>, and the default
-     * horizontal text position is <code>TRAILING</code> (title follows icon)
+     * Creates a new instance of {@code JXTitledSeparator} with the specified
+     * title. Default horizontal alignment is {@code LEADING}, and the default
+     * horizontal text position is {@code TRAILING} (title follows icon)
      */
     public JXTitledSeparator(String title) {
         this(title, SwingConstants.LEADING, null);
     }
     
     /** 
-     * Creates a new instance of <code>JXTitledSeparator</code> with the specified
+     * Creates a new instance of {@code JXTitledSeparator} with the specified
      * title and horizontal alignment. The default
-     * horizontal text position is <code>TRAILING</code> (title follows icon)
+     * horizontal text position is {@code TRAILING} (title follows icon)
      */
     public JXTitledSeparator(String title, int horizontalAlignment) {
         this(title, horizontalAlignment, null);
     }
     
     /** 
-     * Creates a new instance of <code>JXTitledSeparator</code> with the specified
+     * Creates a new instance of {@code JXTitledSeparator} with the specified
      * title, icon, and horizontal alignment. The default
-     * horizontal text position is <code>TRAILING</code> (title follows icon)
+     * horizontal text position is {@code TRAILING} (title follows icon)
      */
     public JXTitledSeparator(String title, int horizontalAlignment, Icon icon) {
         setLayout(new GridBagLayout());
@@ -169,7 +169,7 @@ public class JXTitledSeparator extends JXPanel {
     /**
      * Implementation detail. lays out this component, showing/hiding components
      * as necessary. Actually changes the containment (removes and adds components).
-     * <code>JXTitledSeparator</code> is treated as a single component rather than 
+     * {@code JXTitledSeparator} is treated as a single component rather than
      * a container.
      */
     private void layoutSeparator() {
@@ -239,7 +239,7 @@ public class JXTitledSeparator extends JXPanel {
     /**
      * Gets the title.
      * 
-     * @return the title being used for this <code>JXTitledSeparator</code>. 
+     * @return the title being used for this {@code JXTitledSeparator}.
      *         This will be the raw title text, and so may include html tags etc 
      *         if they were so specified in #setTitle.
      */
@@ -259,12 +259,12 @@ public class JXTitledSeparator extends JXPanel {
      * respectively, regardless of the language orientation.</p>
      *
      * @param alignment  One of the following constants
-     *           defined in <code>SwingConstants</code>:
-     *           <code>LEFT</code>,
-     *           <code>CENTER</code>,
-     *           <code>RIGHT</code>,
-     *           <code>LEADING</code> (the default) or
-     *           <code>TRAILING</code>.
+     *           defined in {@code SwingConstants}:
+     *           {@code LEFT},
+     *           {@code CENTER},
+     *           {@code RIGHT},
+     *           {@code LEADING} (the default) or
+     *           {@code TRAILING}.
      *
      * @throws IllegalArgumentException if the alignment does not match one of
      *         the accepted inputs.
@@ -284,12 +284,12 @@ public class JXTitledSeparator extends JXPanel {
      * Returns the alignment of the title contents along the X axis.
      *
      * @return   The value of the horizontalAlignment property, one of the 
-     *           following constants defined in <code>SwingConstants</code>:
-     *           <code>LEFT</code>,
-     *           <code>CENTER</code>, 
-     *           <code>RIGHT</code>,
-     *           <code>LEADING</code> or
-     *           <code>TRAILING</code>.
+     *           following constants defined in {@code SwingConstants}:
+     *           {@code LEFT},
+     *           {@code CENTER},
+     *           {@code RIGHT},
+     *           {@code LEADING} or
+     *           {@code TRAILING}.
      *
      * @see #setHorizontalAlignment
      * @see SwingConstants
@@ -303,12 +303,12 @@ public class JXTitledSeparator extends JXPanel {
      * relative to the icon.
      *
      * @param position  One of the following constants
-     *           defined in <code>SwingConstants</code>:
-     *           <code>LEFT</code>,
-     *           <code>CENTER</code>,
-     *           <code>RIGHT</code>,
-     *           <code>LEADING</code>, or
-     *           <code>TRAILING</code> (the default).
+     *           defined in {@code SwingConstants}:
+     *           {@code LEFT},
+     *           {@code CENTER},
+     *           {@code RIGHT},
+     *           {@code LEADING}, or
+     *           {@code TRAILING} (the default).
      * @throws IllegalArgumentException if the position does not match one of
      *         the accepted inputs.
      */
@@ -323,12 +323,12 @@ public class JXTitledSeparator extends JXPanel {
      * relative to the icon.
      *
      * @return   One of the following constants
-     *           defined in <code>SwingConstants</code>:
-     *           <code>LEFT</code>,
-     *           <code>CENTER</code>, 
-     *           <code>RIGHT</code>,
-     *           <code>LEADING</code> or
-     *           <code>TRAILING</code>.
+     *           defined in {@code SwingConstants}:
+     *           {@code LEFT},
+     *           {@code CENTER},
+     *           {@code RIGHT},
+     *           {@code LEADING} or
+     *           {@code TRAILING}.
      *
      * @see SwingConstants
      */
@@ -371,7 +371,7 @@ public class JXTitledSeparator extends JXPanel {
     
     /**
      * Returns the graphic image (glyph, icon) that the 
-     * <code>JXTitledSeparator</code> displays.
+     * {@code JXTitledSeparator} displays.
      *
      * @return an Icon
      * @see #setIcon

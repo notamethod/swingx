@@ -39,11 +39,11 @@ import org.jdesktop.swingx.plaf.TaskPaneAddon;
 import org.jdesktop.swingx.plaf.TaskPaneUI;
 
 /**
- * <code>JXTaskPane</code> is a container for tasks and other
+ * {@code JXTaskPane} is a container for tasks and other
  * arbitrary components.
  * 
  * <p>
- * Several <code>JXTaskPane</code>s are usually grouped together within a
+ * Several {@code JXTaskPane}s are usually grouped together within a
  * {@link org.jdesktop.swingx.JXTaskPaneContainer}. However it is not mandatory
  * to use a JXTaskPaneContainer as the parent for JXTaskPane. The JXTaskPane can
  * be added to any other container. See
@@ -51,11 +51,11 @@ import org.jdesktop.swingx.plaf.TaskPaneUI;
  * using it as the parent container.
  * 
  * <p>
- * <code>JXTaskPane</code> provides control to expand and
+ * {@code JXTaskPane} provides control to expand and
  * collapse the content area in order to show or hide the task list. It can have an
- * <code>icon</code>, a <code>title</code> and can be marked as
- * <code>special</code>. Marking a <code>JXTaskPane</code> as
- * <code>special</code> ({@link #setSpecial(boolean)} is only a hint for
+ * {@code icon}, a <code>title</code> and can be marked as
+ * {@code special}. Marking a <code>JXTaskPane</code> as
+ * {@code special} ({@link #setSpecial(boolean)} is only a hint for
  * the pluggable UI which will usually paint it differently (by example by
  * using another color for the border of the pane).
  * 
@@ -64,53 +64,53 @@ import org.jdesktop.swingx.plaf.TaskPaneUI;
  * animated with a fade effect. The animated can be disabled on a per
  * component basis through {@link #setAnimated(boolean)}.
  * 
- * To disable the animation for all newly created <code>JXTaskPane</code>,
+ * To disable the animation for all newly created {@code JXTaskPane},
  * use the UIManager property:
- * <code>UIManager.put("TaskPane.animate", Boolean.FALSE);</code>.
+ * {@code UIManager.put("TaskPane.animate", Boolean.FALSE);}.
  * 
  * <p>
  * Example:
  * <pre>
- * <code>
+ * {@code
  * JXFrame frame = new JXFrame();
- * 
+ *
  * // a container to put all JXTaskPane together
  * JXTaskPaneContainer taskPaneContainer = new JXTaskPaneContainer();
- * 
+ *
  * // create a first taskPane with common actions
  * JXTaskPane actionPane = new JXTaskPane();
  * actionPane.setTitle("Files and Folders");
  * actionPane.setSpecial(true);
- * 
+ *
  * // actions can be added, a hyperlink will be created
  * Action renameSelectedFile = createRenameFileAction();
  * actionPane.add(renameSelectedFile);
  * actionPane.add(createDeleteFileAction());
- * 
+ *
  * // add this taskPane to the taskPaneContainer
  * taskPaneContainer.add(actionPane);
- * 
+ *
  * // create another taskPane, it will show details of the selected file
  * JXTaskPane details = new JXTaskPane();
  * details.setTitle("Details");
- *  
+ *
  * // add standard components to the details taskPane
  * JLabel searchLabel = new JLabel("Search:");
  * JTextField searchField = new JTextField("");
  * details.add(searchLabel);
  * details.add(searchField);
- * 
+ *
  * taskPaneContainer.add(details);
- * 
- * // put the action list on the left 
+ *
+ * // put the action list on the left
  * frame.add(taskPaneContainer, BorderLayout.EAST);
- * 
+ *
  * // and a file browser in the middle
  * frame.add(fileBrowser, BorderLayout.CENTER);
- * 
+ *
  * frame.pack();
  * frame.setVisible(true);
- * </code>
+ * }
  * </pre>
  * 
  * @see org.jdesktop.swingx.JXTaskPaneContainer
@@ -189,7 +189,7 @@ public class JXTaskPane extends JPanel implements
   private JXCollapsiblePane collapsePane;
   
   /**
-   * Creates a new empty <code>JXTaskPane</code>.
+   * Creates a new empty {@code JXTaskPane}.
    */
   public JXTaskPane() {
       this((String) null);
@@ -257,8 +257,8 @@ public class JXTaskPane extends JPanel implements
   }
   
   /**
-   * Notification from the <code>UIManager</code> that the L&F has changed.
-   * Replaces the current UI object with the latest version from the <code>UIManager</code>.
+   * Notification from the {@code UIManager} that the L&F has changed.
+   * Replaces the current UI object with the latest version from the {@code UIManager}.
    * 
    * @see javax.swing.JComponent#updateUI
    */
@@ -275,7 +275,7 @@ public class JXTaskPane extends JPanel implements
   /**
    * Sets the L&F object that renders this component.
    * 
-   * @param ui the <code>TaskPaneUI</code> L&F object
+   * @param ui the {@code TaskPaneUI} L&F object
    * @see javax.swing.UIDefaults#getUI
    * 
    * @beaninfo bound: true hidden: true description: The UI object that
@@ -356,8 +356,8 @@ public class JXTaskPane extends JPanel implements
   }
 
   /**
-   * Sets this pane to be "special" or not. Marking a <code>JXTaskPane</code>
-   * as <code>special</code> is only a hint for the pluggable UI which will
+   * Sets this pane to be "special" or not. Marking a {@code JXTaskPane}
+   * as {@code special} is only a hint for the pluggable UI which will
    * usually paint it differently (by example by using another color for the
    * border of the pane).
    * 
@@ -546,9 +546,9 @@ public class JXTaskPane extends JPanel implements
     }
   
   /**
-   * Adds an action to this <code>JXTaskPane</code>. Returns a
+   * Adds an action to this {@code JXTaskPane}. Returns a
    * component built from the action. The returned component has been
-   * added to the <code>JXTaskPane</code>.
+   * added to the {@code JXTaskPane}.
    * 
    * @param action
    * @return a component built from the action

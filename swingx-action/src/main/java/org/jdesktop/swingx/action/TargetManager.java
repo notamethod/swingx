@@ -46,11 +46,11 @@ import javax.swing.JComponent;
  * <p>
  * The target manager maintains a reference to a current
  * target and a target list.
- * The target list is managed using the <code>addTarget</code> and
- * <code>removeTarget</code> methods. The current target is managed using the
- * <code>setTarget</code> and <code>getTarget</code> methods.
+ * The target list is managed using the {@code addTarget} and
+ * {@code removeTarget} methods. The current target is managed using the
+ * {@code setTarget} and <code>getTarget</code> methods.
  * <p>
- * Commands are dispatched to the Targetable objects in the <code>doCommand</code>
+ * Commands are dispatched to the Targetable objects in the {@code doCommand}
  * method in a well defined order. The doCommand method on the Targetable object
  * is called and if it returns true then the command has been handled and
  * command dispatching will stop. If the Targetable doCommand method returns
@@ -59,8 +59,8 @@ import javax.swing.JComponent;
  * If none of the Targetable objects can handle the command then the default
  * behaviour is to retrieve an Action from the {@link javax.swing.ActionMap} of
  * the permanent focus owner with a key that matches the command key. If an
- * Action can be found then the <code>actionPerformed</code>
- * method is invoked using an <code>ActionEvent</code> that was constructed
+ * Action can be found then the {@code actionPerformed}
+ * method is invoked using an {@code ActionEvent} that was constructed
  * using the command string.
  * <p>
  * If the Action is not found on the focus order then the ActionMaps of the ancestor
@@ -150,9 +150,9 @@ public class TargetManager {
 
     /**
      * Returns an array of managed targets that were added with the
-     * <code>addTarget</code> methods.
+     * {@code addTarget} methods.
      *
-     * @return all the <code>Targetable</code> added or an empty array if no
+     * @return all the {@code Targetable} added or an empty array if no
      *         targets have been added
      */
     public Targetable[] getTargets() {

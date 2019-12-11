@@ -40,8 +40,8 @@ import javax.swing.JOptionPane;
 import javax.swing.SwingUtilities;
 
 /**
- * Encapsulates various utilities for windows (ie: <code>Frame</code> and
- * <code>Dialog</code> objects and descendants, in particular).
+ * Encapsulates various utilities for windows (ie: {@code Frame} and
+ * {@code Dialog} objects and descendants, in particular).
  *
  * @author Richard Bair
  */
@@ -74,7 +74,7 @@ public final class WindowUtils {
     
     /**
      * <p>
-     * Returns the <code>Point</code> at which a window should be placed to
+     * Returns the {@code Point} at which a window should be placed to
      * center that window on the screen.
      * </p>
      * <p>
@@ -86,7 +86,7 @@ public final class WindowUtils {
      * @param window The window to calculate the center point for.  This object
      *               can not be null.
      *
-     * @return the <code>Point</code> at which the window should be placed to
+     * @return the {@code Point} at which the window should be placed to
      *         center that window on the screen.
      */
     public static Point getPointForCentering(Window window) {
@@ -104,11 +104,11 @@ public final class WindowUtils {
     }
     
     /**
-     * <p/>
-     * Returns the <code>Point</code> at which a window should be placed to
+     * <p>
+     * Returns the {@code Point} at which a window should be placed to
      * center that window on the given desktop.
      * </p>
-     * <p/>
+     * <p>
      * Some thought was taken as to whether to implement a method such as this,
      * or to simply make a method that, given a window, will center it.  It was
      * decided that it is better to not alter an object within a method.
@@ -117,7 +117,7 @@ public final class WindowUtils {
      * @param window  The window (JInternalFrame) to calculate the center point
      *                for.  This object can not be null.
      *
-     * @return the <code>Point</code> at which the window should be placed to
+     * @return the {@code Point} at which the window should be placed to
      *         center that window on the given desktop
      */
     public static Point getPointForCentering(JInternalFrame window) {
@@ -136,8 +136,8 @@ public final class WindowUtils {
     }
 
     /**
-     * <p/>
-     * Returns the <code>Point</code> at which a window should be placed in
+     * <p>
+     * Returns the {@code Point} at which a window should be placed in
      * order to be staggered slightly from another &quot;origin&quot; window to
      * ensure that the title areas of both windows remain visible to the user.
      * </p>

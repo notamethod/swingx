@@ -94,11 +94,11 @@ public final class PromptSupport {
 
 	/**
 	 * <p>
-	 * Convenience method to set the <code>promptText</code> and
-	 * <code>promptTextColor</code> on a {@link JTextComponent}.
+	 * Convenience method to set the {@code promptText} and
+	 * {@code promptTextColor} on a {@link JTextComponent}.
 	 * </p>
 	 * <p>
-	 * If <code>stayOnUIChange</code> is true, The prompt support will stay
+	 * If {@code stayOnUIChange} is true, The prompt support will stay
 	 * installed, even when the text components UI changes. See
 	 * {@link #install(JTextComponent, boolean)}.
 	 * </p>
@@ -122,7 +122,7 @@ public final class PromptSupport {
 	}
 
 	/**
-	 * Get the {@link FocusBehavior} of <code>textComponent</code>.
+	 * Get the {@link FocusBehavior} of {@code textComponent}.
 	 * 
 	 * @param textComponent
 	 * @return the {@link FocusBehavior} or {@link FocusBehavior#HIDE_PROMPT} if
@@ -137,7 +137,7 @@ public final class PromptSupport {
 	}
 
 	/**
-	 * Sets the {@link FocusBehavior} on <code>textComponent</code> and
+	 * Sets the {@link FocusBehavior} on {@code textComponent} and
 	 * repaints the component to reflect the changes, if it is the focus owner.
 	 * 
 	 * @param focusBehavior
@@ -151,7 +151,7 @@ public final class PromptSupport {
 	}
 
 	/**
-	 * Get the prompt text of <code>textComponent</code>.
+	 * Get the prompt text of {@code textComponent}.
 	 * 
 	 * @param textComponent
 	 * @return the prompt text
@@ -162,14 +162,14 @@ public final class PromptSupport {
 
 	/**
 	 * <p>
-	 * Sets the prompt text on <code>textComponent</code>. Also sets the
-	 * tooltip text to the prompt text if <code>textComponent</code> has no
+	 * Sets the prompt text on {@code textComponent}. Also sets the
+	 * tooltip text to the prompt text if {@code textComponent} has no
 	 * tooltip text or the current tooltip text is the same as the current
 	 * prompt text.
 	 * </p>
 	 * <p>
 	 * Calls {@link #install(JTextComponent)} to ensure that the
-	 * <code>textComponent</code>s UI is wrapped by the appropriate
+	 * {@code textComponent}s UI is wrapped by the appropriate
 	 * {@link PromptTextUI}.
 	 * </p>
 	 * 
@@ -190,7 +190,7 @@ public final class PromptSupport {
 
 	/**
 	 * Get the foreground color of the prompt text. If no color has been set,
-	 * the <code>textComponent</code>s disabled text color will be returned.
+	 * the {@code textComponent}s disabled text color will be returned.
 	 * 
 	 * @param textComponent
 	 * @return the color of the prompt text or
@@ -204,7 +204,7 @@ public final class PromptSupport {
 	}
 
 	/**
-	 * Sets the foreground color of the prompt on <code>textComponent</code>
+	 * Sets the foreground color of the prompt on {@code textComponent}
 	 * and repaints the component to reflect the changes. This color will be
 	 * used when no text is present.
 	 * 
@@ -217,8 +217,8 @@ public final class PromptSupport {
 	}
 
 	/**
-	 * Get the background color of the <code>textComponent</code>, when no
-	 * text is present. If no color has been set, the <code>textComponent</code>s
+	 * Get the background color of the {@code textComponent}, when no
+	 * text is present. If no color has been set, the {@code textComponent}s
 	 * background color color will be returned.
 	 * 
 	 * @param textComponent
@@ -234,13 +234,13 @@ public final class PromptSupport {
 
 	/**
 	 * <p>
-	 * Sets the prompts background color on <code>textComponent</code> and
+	 * Sets the prompts background color on {@code textComponent} and
 	 * repaints the component to reflect the changes. This background color will
 	 * only be used when no text is present.
 	 * </p>
 	 * <p>
 	 * Calls {@link #install(JTextComponent)} to ensure that the
-	 * <code>textComponent</code>s UI is wrapped by the appropriate
+	 * {@code textComponent}s UI is wrapped by the appropriate
 	 * {@link PromptTextUI}.
 	 * </p>
 	 * 
@@ -255,7 +255,7 @@ public final class PromptSupport {
 	}
 	
 	/**
-	 * Get the background painter of the <code>textComponent</code>, when no
+	 * Get the background painter of the {@code textComponent}, when no
 	 * text is present. If no painter has been set, then {@code null} will be returned.
 	 * 
 	 * @param textComponent
@@ -274,13 +274,13 @@ public final class PromptSupport {
 	
 	/**
 	 * <p>
-	 * Sets the prompts background painter on <code>textComponent</code> and
+	 * Sets the prompts background painter on {@code textComponent} and
 	 * repaints the component to reflect the changes. This background painter will
 	 * only be used when no text is present.
 	 * </p>
 	 * <p>
 	 * Calls {@link #install(JTextComponent)} to ensure that the
-	 * <code>textComponent</code>s UI is wrapped by the appropriate
+	 * {@code textComponent}s UI is wrapped by the appropriate
 	 * {@link PromptTextUI}.
 	 * </p>
 	 * 
@@ -297,13 +297,13 @@ public final class PromptSupport {
 	/**
 	 * <p>
 	 * Set the style of the prompt font, if different from the
-	 * <code>textComponent</code>s font.
+	 * {@code textComponent}s font.
 	 * </p>
 	 * <p>
 	 * Allowed values are {@link Font#PLAIN}, {@link Font#ITALIC},
 	 * {@link Font#BOLD}, a combination of {@link Font#BOLD} and
-	 * {@link Font#ITALIC} or <code>null</code> if the prompt font should be
-	 * the same as the <code>textComponent</code>s font.
+	 * {@link Font#ITALIC} or {@code null} if the prompt font should be
+	 * the same as the {@code textComponent}s font.
 	 * </p>
 	 * 
 	 * @param fontStyle
@@ -316,8 +316,8 @@ public final class PromptSupport {
 	}
 
 	/**
-	 * Returns the font style of the prompt text, or <code>null</code> if the
-	 * prompt's font style should not differ from the <code>textComponent</code>s
+	 * Returns the font style of the prompt text, or {@code null} if the
+	 * prompt's font style should not differ from the {@code textComponent}s
 	 * font.
 	 * 
 	 * @param textComponent

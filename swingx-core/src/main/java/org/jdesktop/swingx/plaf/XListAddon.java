@@ -31,7 +31,7 @@ import org.jdesktop.swingx.ext.DefaultsList;
 import org.jdesktop.swingx.ext.LookAndFeelAddons;
 
 /**
- * Addon for <code>JXList</code>.
+ * Addon for {@code JXList}.
  * <p>
  * 
  * Install a custom ui to support sorting/filtering in JXList.

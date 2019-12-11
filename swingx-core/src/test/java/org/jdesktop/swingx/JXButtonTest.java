@@ -39,7 +39,7 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 
 /**
- * Unit test for <code>JXButton</code>.
+ * Unit test for {@code JXButton}.
  * <p>
  * 
  * All test methods in this class are expected to pass. 

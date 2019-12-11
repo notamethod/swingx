@@ -28,7 +28,7 @@ import org.jdesktop.swingx.JXHyperlink;
 import org.jdesktop.swingx.painter.Painter;
 
 /**
- * A <code>JXHyperlink</code> optimized for usage in renderers and
+ * A {@code JXHyperlink} optimized for usage in renderers and
  * with a minimal background painter support. <p>
  * 
  * <i>Note</i>: the painter support will be switched to painter_work as 

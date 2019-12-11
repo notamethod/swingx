@@ -117,11 +117,11 @@ public class FindVisualCheck extends InteractiveTestCase {
             }
         }
         /**
-         * @param pattern <code>Pattern</code> that we will try to locate
+         * @param pattern {@code Pattern} that we will try to locate
          * @param startRow position in the document in the appropriate
          *        coordinates from which we will start search or -1 to start
          *        from the beginning
-         * @param backwards <code>true</code> if we should perform search
+         * @param backwards {@code true} if we should perform search
          *        towards the beginning
          */
         private SearchResult findMatchInSearchColumn(Pattern pattern,
@@ -299,7 +299,7 @@ public class FindVisualCheck extends InteractiveTestCase {
      * Issue #718-swingx: finddialog not updated on LF switch.
      * 
      * Hmm .. shouldn't a lf-switcher update all windows? Like the
-     * setPlafAction in InteractiveTestCase does (since today <g>).
+     * setPlafAction in InteractiveTestCase does (since today).
      * 
      * Yeah, but the dialog had been disposed and the findPanel unparented 
      * if focus is moved somewhere "outside" of the target. Needed to add something

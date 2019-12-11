@@ -76,9 +76,9 @@ import javax.swing.SwingUtilities;
  * </p>
  * <p>
  * This component also supports allowing the user to set the image. If the
- * <code>JXImagePanel</code> is editable, then when the user clicks on the
- * <code>JXImagePanel</code> a FileChooser is shown allowing the user to pick
- * some other image to use within the <code>JXImagePanel</code>.
+ * {@code JXImagePanel} is editable, then when the user clicks on the
+ * {@code JXImagePanel} a FileChooser is shown allowing the user to pick
+ * some other image to use within the {@code JXImagePanel}.
  * </p>
  * <p>
  * TODO In the future, the JXImagePanel will also support tiling of images,
@@ -208,7 +208,7 @@ class JXImagePanel extends JXPanel {
 
     /**
      * @return whether the image for this panel can be changed or not via the
-     *         UI. setImage may still be called, even if <code>isEditable</code>
+     *         UI. setImage may still be called, even if {@code isEditable}
      *         returns false.
      */
     public boolean isEditable() {

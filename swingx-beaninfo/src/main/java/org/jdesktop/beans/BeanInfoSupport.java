@@ -41,7 +41,7 @@ import javax.swing.ImageIcon;
 /**
  * Useful baseclass for BeanInfos. With this class, normal introspection occurs
  * and then you are given the opportunity to reconfigure portions of the
- * bean info in the <code>initialize</code> method.
+ * bean info in the {@code initialize} method.
  *
  * @author rbair, Jan Stola
  */
@@ -215,7 +215,7 @@ public abstract class BeanInfoSupport extends SimpleBeanInfo {
      * Override this method if you want to return a custom customizer class
      * for the bean
      * 
-     * @return <code>null</code>.
+     * @return {@code null}.
      */
     protected Class<?> getCustomizerClass() {
         return null;
@@ -411,7 +411,7 @@ public abstract class BeanInfoSupport extends SimpleBeanInfo {
     
     //----------------------------------------------------- BeanInfo methods
     /**
-     * Gets the bean's <code>BeanDescriptor</code>s.
+     * Gets the bean's {@code BeanDescriptor}s.
      *
      * @return BeanDescriptor describing the editable
      * properties of this bean.  May return null if the
@@ -423,7 +423,7 @@ public abstract class BeanInfoSupport extends SimpleBeanInfo {
     }
     
     /**
-     * Gets the bean's <code>PropertyDescriptor</code>s.
+     * Gets the bean's {@code PropertyDescriptor}s.
      *
      * @return An array of PropertyDescriptors describing the editable
      * properties supported by this bean.  May return null if the
@@ -442,7 +442,7 @@ public abstract class BeanInfoSupport extends SimpleBeanInfo {
     }
     
     /**
-     * Gets the bean's <code>EventSetDescriptor</code>s.
+     * Gets the bean's {@code EventSetDescriptor}s.
      *
      * @return  An array of EventSetDescriptors describing the kinds of
      * events fired by this bean.  May return null if the information
@@ -456,7 +456,7 @@ public abstract class BeanInfoSupport extends SimpleBeanInfo {
     }
     
     /**
-     * Gets the bean's <code>MethodDescriptor</code>s.
+     * Gets the bean's {@code MethodDescriptor}s.
      *
      * @return  An array of MethodDescriptors describing the methods
      * implemented by this bean.  May return null if the information

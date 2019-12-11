@@ -137,7 +137,7 @@ public class Utilities {
     private static Reference<Object> namesAndValues;
 
     /** Get the operating system on which NetBeans is running.
-    * @return one of the <code>OS_*</code> constants (such as {@link #OS_WINNT})
+    * @return one of the {@code OS_*} constants (such as {@link #OS_WINNT})
     */
     public static int getOperatingSystem() {
         if (operatingSystem == -1) {
@@ -189,7 +189,7 @@ public class Utilities {
     }
     
     /** Test whether NetBeans is running on some variant of Windows.
-    * @return <code>true</code> if Windows, <code>false</code> if some other manner of operating system
+    * @return {@code true} if Windows, <code>false</code> if some other manner of operating system
     */
     public static boolean isWindows() {
         return (getOperatingSystem() & OS_WINDOWS_MASK) != 0;
@@ -197,14 +197,14 @@ public class Utilities {
 
     /** Test whether NetBeans is running on some variant of Unix.
     * Linux is included as well as the commercial vendors, and Mac OS X.
-    * @return <code>true</code> some sort of Unix, <code>false</code> if some other manner of operating system
+    * @return {@code true} some sort of Unix, <code>false</code> if some other manner of operating system
     */
     public static boolean isUnix() {
         return (getOperatingSystem() & OS_UNIX_MASK) != 0;
     }
     
     /** Test whether the operating system supports icons on frames (windows).
-    * @return <code>true</code> if it does <em>not</em>
+    * @return {@code true} if it does <em>not</em>
     *
     */
     public static boolean isLargeFrameIcons() {
@@ -377,7 +377,7 @@ public class Utilities {
 
     /** Converts a Swing key stroke descriptor to a familiar Emacs-like name.
     * @param stroke key description
-    * @return name of the key (e.g. <code>CS-F1</code> for control-shift-function key one)
+    * @return name of the key (e.g. {@code CS-F1} for control-shift-function key one)
     * @see #stringToKey
     */
     public static String keyToString(KeyStroke stroke) {
@@ -404,41 +404,41 @@ public class Utilities {
     /** Construct a new key description from a given universal string
     * description.
     * Provides mapping between Emacs-like textual key descriptions and the
-    * <code>KeyStroke</code> object used in Swing.
+    * {@code KeyStroke} object used in Swing.
     * <P>
     * This format has following form:
     * <P><code>[C][A][S][M]-<em>identifier</em></code>
     * <p>Where:
     * <UL>
-    * <LI> <code>C</code> stands for the Control key
-    * <LI> <code>A</code> stands for the Alt key
-    * <LI> <code>S</code> stands for the Shift key
-    * <LI> <code>M</code> stands for the Meta key
+    * <LI> {@code C} stands for the Control key
+    * <LI> {@code A} stands for the Alt key
+    * <LI> {@code S} stands for the Shift key
+    * <LI> {@code M} stands for the Meta key
     * </UL>
     * The format also supports two wildcard codes, to support differences in
     * platforms.  These are the preferred choices for registering keystrokes,
     * since platform conflicts will automatically be handled:
     * <UL>
-    * <LI> <code>D</code> stands for the default menu accelerator - the Control
+    * <LI> {@code D} stands for the default menu accelerator - the Control
     *  key on most platforms, the Command (meta) key on Macintosh</LI>
-    * <LI> <code>O</code> stands for the alternate accelerator - the Alt key on
+    * <LI> {@code O} stands for the alternate accelerator - the Alt key on
     *  most platforms, the Ctrl key on Macintosh (Macintosh uses Alt as a
     *  secondary shift key for composing international characters - if you bind
     *  Alt-8 to an action, a mac user with a French keyboard will not be able
-    *  to type the <code>[</code> character, which is a significant handicap</LI>
+    *  to type the {@code [} character, which is a significant handicap</LI>
     * </UL>
     * If you use the wildcard characters, and specify a key which will conflict
     * with keys the operating system consumes, it will be mapped to whichever
     * choice can work - for example, on Macintosh, Command-Q is always consumed
-    * by the operating system, so <code>D-Q</code> will always map to Control-Q.
+    * by the operating system, so {@code D-Q} will always map to Control-Q.
     * <p>
     * Every modifier before the hyphen must be pressed.
     * <em>identifier</EM> can be any text constant from {@link KeyEvent} but
-    * without the leading <code>VK_</code> characters. So {@link KeyEvent#VK_ENTER} is described as
-    * <code>ENTER</code>.
+    * without the leading {@code VK_} characters. So {@link KeyEvent#VK_ENTER} is described as
+    * {@code ENTER}.
     *
     * @param s the string with the description of the key
-    * @return key description object, or <code>null</code> if the string does not represent any valid key
+    * @return key description object, or {@code null} if the string does not represent any valid key
     */
     public static KeyStroke stringToKey(String s) {
         StringTokenizer st = new StringTokenizer(s.toUpperCase(Locale.ENGLISH), "-", true); // NOI18N
@@ -545,7 +545,7 @@ public class Utilities {
 
     /** Convert a space-separated list of Emacs-like key binding names to a list of Swing key strokes.
     * @param s the string with keys
-    * @return array of key strokes, or <code>null</code> if the string description is not valid
+    * @return array of key strokes, or {@code null} if the string description is not valid
     * @see #stringToKey
     */
     public static KeyStroke[] stringToKeys(String s) {
@@ -652,7 +652,7 @@ public class Utilities {
     
     /**
     * Convert an array of objects to an array of primitive types.
-    * E.g. an <code>Integer[]</code> would be changed to an <code>int[]</code>.
+    * E.g. an {@code Integer[]} would be changed to an <code>int[]</code>.
     * @param array the wrapper array
     * @return a primitive array
     * @throws IllegalArgumentException if the array element type is not a primitive wrapper
@@ -751,7 +751,7 @@ public class Utilities {
     
     /**
     * Convert an array of primitive types to an array of objects.
-    * E.g. an <code>int[]</code> would be turned into an <code>Integer[]</code>.
+    * E.g. an {@code int[]} would be turned into an <code>Integer[]</code>.
     * @param array the primitive array
     * @return a wrapper array
     * @throws IllegalArgumentException if the array element type is not primitive
@@ -856,7 +856,7 @@ public class Utilities {
     * @param original  the original string to wrap
     * @param width     the maximum width of lines
     * @param breakIterator breaks original to chars, words, sentences, depending on what instance you provide.
-    * @param removeNewLines if <code>true</code>, any newlines in the original string are ignored
+    * @param removeNewLines if {@code true}, any newlines in the original string are ignored
     * @return the lines after wrapping
     */
     public static String[] wrapStringToArray(

@@ -45,13 +45,13 @@ import org.jdesktop.swingx.action.AbstractActionExt;
  * <p>
  * 
  * To install a custom implementation, register the class name of the custom
- * header handler with the key <code>CalendarHeaderHandler.uiControllerID</code>
+ * header handler with the key {@code CalendarHeaderHandler.uiControllerID}
  * , example:
  * 
  * <pre>
- * <code>
- *  UIManager.put(CalendarHeaderHandler.uiControllerID, &quot;com.foo.bar.MagicHeaderHandler&quot;)
- * </code>
+ * {@code
+ *  UIManager.put(CalendarHeaderHandler.uiControllerID, "com.foo.bar.MagicHeaderHandler")
+ * }
  * </pre>
  * 
  * Basic navigation action should (will) be defined by the ui delegate itself (PENDING

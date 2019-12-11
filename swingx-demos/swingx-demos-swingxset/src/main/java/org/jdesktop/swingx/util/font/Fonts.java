@@ -301,7 +301,7 @@ public final class Fonts {
 
 	/**
 	 * Checks and answers whether the given font can display text that is
-	 * localized for the specified locale. Returns <code>null</code> if we
+	 * localized for the specified locale. Returns {@code null} if we
 	 * can't test it.
 	 * <p>
 	 * 
@@ -312,15 +312,15 @@ public final class Fonts {
 	 * 
 	 * Otherwise we check some known combinations of fonts and locales and
 	 * return the associated results. For all other combinations,
-	 * <code>null</code> is returned to indicate that we don't know whether
+	 * {@code null} is returned to indicate that we don't know whether
 	 * the font can display text in the given locale.
 	 * 
 	 * @param font
 	 *            the font to be tested
 	 * @param locale
 	 *            the locale to be used
-	 * @return <code>Boolean.TRUE</code> if the font can display the locale's
-	 *         text, <code>Boolean.FALSE</code> if not, <code>null</code> if
+	 * @return {@code Boolean.TRUE} if the font can display the locale's
+	 *         text, {@code Boolean.FALSE} if not, <code>null</code> if
 	 *         we don't know
 	 * 
 	 * @since 2.0.4
@@ -356,7 +356,7 @@ public final class Fonts {
 	/**
 	 * Checks and answers if the given font can display the locale's localized
 	 * display language, for example "English" for English, "Deutsch" for
-	 * German, etc. The test invokes <code>Font#canDisplayUpTo</code> on the
+	 * German, etc. The test invokes {@code Font#canDisplayUpTo} on the
 	 * localized display language. In a Chinese locale this test will check if
 	 * the font can display Chinese glyphs.
 	 * 

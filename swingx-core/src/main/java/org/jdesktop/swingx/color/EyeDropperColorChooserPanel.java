@@ -52,7 +52,7 @@ import org.jdesktop.swingx.util.PaintUtils;
  * color from the screen using a magnifying glass.</p>
  *
  * <p>Example usage:</p>
- * <pre><code>
+ * <pre>{@code
  *    public static void main(String ... args) {
         SwingUtilities.invokeLater(new Runnable() {
             public void run() {
@@ -65,7 +65,7 @@ import org.jdesktop.swingx.util.PaintUtils;
             }
         });
     }
- * </code></pre>
+ * }</pre>
  *
  * @author joshua@marinacci.org
  */

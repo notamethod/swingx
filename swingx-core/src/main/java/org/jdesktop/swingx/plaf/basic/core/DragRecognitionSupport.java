@@ -39,8 +39,8 @@ import org.jdesktop.swingx.SwingXUtilities;
 
 /**
  * Drag gesture recognition support for classes that have a
- * <code>TransferHandler</code>. The gesture for a drag in this class is a mouse
- * press followed by movement by <code>DragSource.getDragThreshold()</code>
+ * {@code TransferHandler}. The gesture for a drag in this class is a mouse
+ * press followed by movement by {@code DragSource.getDragThreshold()}
  * pixels. An instance of this class is maintained per AppContext, and the
  * public static methods call into the appropriate instance. <p>
  * 

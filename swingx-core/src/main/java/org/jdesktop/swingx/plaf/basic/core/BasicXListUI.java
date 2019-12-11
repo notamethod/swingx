@@ -806,7 +806,7 @@ public class BasicXListUI  extends BasicListUI
      *       <p>If the visible row
      *       count is <= 0, the preferred height is dictated by the 
      *       number of columns, which will be as many as can fit in the width
-     *       of the <code>JList</code> (width / max cell width), with at
+     *       of the {@code JList} (width / max cell width), with at
      *       least one column.  The preferred height then becomes the
      *       model size / number of columns * maximum cell height.
      *       Max cell height is either the fixed
@@ -816,8 +816,8 @@ public class BasicXListUI  extends BasicListUI
      * The above specifies the raw preferred width and height. The resulting
      * preferred width is the above width + insets.left + insets.right and
      * the resulting preferred height is the above height + insets.top +
-     * insets.bottom. Where the <code>Insets</code> are determined from
-     * <code>list.getInsets()</code>.
+     * insets.bottom. Where the {@code Insets} are determined from
+     * {@code list.getInsets()}.
      *
      * @param c The JList component.
      * @return The total size of the list.
@@ -883,8 +883,8 @@ public class BasicXListUI  extends BasicListUI
 
 
     /**
-     * Registers the keyboard bindings on the <code>JList</code> that the
-     * <code>BasicXListUI</code> is associated with. This method is called at
+     * Registers the keyboard bindings on the {@code JList} that the
+     * {@code BasicXListUI} is associated with. This method is called at
      * installUI() time.
      *
      * @see #installUI
@@ -923,7 +923,7 @@ public class BasicXListUI  extends BasicListUI
 
     /**
      * Unregisters keyboard actions installed from
-     * <code>installKeyboardActions</code>.
+     * {@code installKeyboardActions}.
      * This method is called at uninstallUI() time - subclassess should
      * ensure that all of the keyboard actions registered at installUI
      * time are removed here.
@@ -1108,8 +1108,8 @@ public class BasicXListUI  extends BasicListUI
 
 
     /**
-     * Initializes <code>this.list</code> by calling <code>installDefaults()</code>,
-     * <code>installListeners()</code>, and <code>installKeyboardActions()</code>
+     * Initializes {@code this.list} by calling <code>installDefaults()</code>,
+     * {@code installListeners()}, and <code>installKeyboardActions()</code>
      * in order.
      *
      * @see #installDefaults
@@ -1138,8 +1138,8 @@ public class BasicXListUI  extends BasicListUI
 
 
     /**
-     * Uninitializes <code>this.list</code> by calling <code>uninstallListeners()</code>,
-     * <code>uninstallKeyboardActions()</code>, and <code>uninstallDefaults()</code>
+     * Uninitializes {@code this.list} by calling <code>uninstallListeners()</code>,
+     * {@code uninstallKeyboardActions()}, and <code>uninstallDefaults()</code>
      * in order.  Sets this.list to null.
      *
      * @see #uninstallListeners
@@ -1244,7 +1244,7 @@ public class BasicXListUI  extends BasicListUI
 
     /**
      * Gets the bounds of the specified model index, returning the resulting
-     * bounds, or null if <code>index</code> is not valid.
+     * bounds, or null if {@code index} is not valid.
      */
     private Rectangle getCellBounds(JList list, int index) {
         maybeUpdateLayoutState();
@@ -1467,7 +1467,7 @@ public class BasicXListUI  extends BasicListUI
 
     /**
      * Returns the model index for the specified display location.
-     * If <code>column</code>x<code>row</code> is beyond the length of the
+     * If {@code column}x<code>row</code> is beyond the length of the
      * model, this will return the model size - 1.
      */
     private int getModelIndex(int column, int row) {
@@ -1510,7 +1510,7 @@ public class BasicXListUI  extends BasicListUI
     }
 
     /**
-     * Returns the row that the model index <code>index</code> will be
+     * Returns the row that the model index {@code index} will be
      * displayed in..
      */
     private int convertModelToRow(int index) {
@@ -1531,7 +1531,7 @@ public class BasicXListUI  extends BasicListUI
     }
 
     /**
-     * Returns the column that the model index <code>index</code> will be
+     * Returns the column that the model index {@code index} will be
      * displayed in.
      */
     private int convertModelToColumn(int index) {
@@ -1646,8 +1646,8 @@ public class BasicXListUI  extends BasicListUI
      * Invoked when the list is layed out horizontally to determine how
      * many columns to create.
      * <p>
-     * This updates the <code>rowsPerColumn, </code><code>columnCount</code>,
-     * <code>preferredHeight</code> and potentially <code>cellHeight</code>
+     * This updates the {@code rowsPerColumn, }<code>columnCount</code>,
+     * {@code preferredHeight} and potentially <code>cellHeight</code>
      * instance variables.
      */
     private void updateHorizontalLayoutState(int fixedCellWidth,
@@ -1743,7 +1743,7 @@ public class BasicXListUI  extends BasicListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans<sup><font size="-2">TM</font></sup>
-     * has been added to the <code>java.beans</code> package.
+     * has been added to the {@code java.beans} package.
      * Please see {@link java.beans.XMLEncoder}.
      *
      * @see #createMouseInputListener
@@ -1848,7 +1848,7 @@ public class BasicXListUI  extends BasicListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans<sup><font size="-2">TM</font></sup>
-     * has been added to the <code>java.beans</code> package.
+     * has been added to the {@code java.beans} package.
      * Please see {@link java.beans.XMLEncoder}.
      *
      * @see #createListSelectionListener
@@ -1907,7 +1907,7 @@ public class BasicXListUI  extends BasicListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans<sup><font size="-2">TM</font></sup>
-     * has been added to the <code>java.beans</code> package.
+     * has been added to the {@code java.beans} package.
      * Please see {@link java.beans.XMLEncoder}.
      *
      * @see JList#getModel
@@ -1979,7 +1979,7 @@ public class BasicXListUI  extends BasicListUI
      * appropriate for short term storage or RMI between applications running
      * the same version of Swing.  As of 1.4, support for long term storage
      * of all JavaBeans<sup><font size="-2">TM</font></sup>
-     * has been added to the <code>java.beans</code> package.
+     * has been added to the {@code java.beans} package.
      * Please see {@link java.beans.XMLEncoder}.
      *
      * @see #maybeUpdateLayoutState
@@ -2629,7 +2629,7 @@ public class BasicXListUI  extends BasicListUI
          * 
          * Moves the keyboard focus to the first element whose prefix matches the
          * sequence of alphanumeric keys pressed by the user with delay less
-         * than value of <code>timeFactor</code> property (or 1000 milliseconds
+         * than value of {@code timeFactor} property (or 1000 milliseconds
          * if it is not defined). Subsequent same key presses move the keyboard
          * focus to the next object that starts with the same letter until another
          * key is pressed, then it is treated as the prefix with appropriate number

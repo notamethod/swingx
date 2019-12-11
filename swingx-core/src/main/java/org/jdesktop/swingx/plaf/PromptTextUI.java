@@ -163,7 +163,7 @@ public abstract class PromptTextUI extends TextUI {
 
     /**
      * Calls TextUI#installUI(JComponent) on the delegate and installs a focus
-     * listener on <code>c</code> which repaints the component when it gains or
+     * listener on {@code c} which repaints the component when it gains or
      * loses the focus.
      */
     @Override
@@ -295,10 +295,10 @@ public abstract class PromptTextUI extends TextUI {
 
     /**
      * Returns if the prompt or the text field should be painted, depending on
-     * the state of <code>txt</code>.
+     * the state of {@code txt}.
      * 
      * @param txt
-     * @return true when <code>txt</code> contains not text, otherwise false
+     * @return true when {@code txt} contains not text, otherwise false
      */
     public boolean shouldPaintPrompt(JTextComponent txt) {
         return txt.getText() == null || txt.getText().length() == 0;
@@ -438,7 +438,7 @@ public abstract class PromptTextUI extends TextUI {
      * but that's impossible since the {@link BaselineResizeBehavior} class,
      * which does not exist in Java 5, is involved.
      * 
-     * @return the baseline, or -2 if <code>getBaseline</code> could not be
+     * @return the baseline, or -2 if {@code getBaseline} could not be
      *         invoked on the delegate.
      */
     @Override

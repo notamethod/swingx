@@ -46,7 +46,7 @@ public class XRegion extends Region {
      * @param name Name of the region
      * @param subregion Whether or not this is a subregion.
      * @param realUI String that will be returned from
-     *           <code>component.getUIClassID</code>. 
+     *           {@code component.getUIClassID}.
      * @param parent the parent region which this is extending.          
      */
     public XRegion(String name, String dummyUI, boolean subregion, String realUI, Region parent) {

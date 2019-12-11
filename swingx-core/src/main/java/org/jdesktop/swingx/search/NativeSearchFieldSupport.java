@@ -23,7 +23,7 @@ public class NativeSearchFieldSupport {
 	public static final String CANCEL_ACTION_PROPERTY = "JTextField.Search.CancelAction";
 
 	/**
-	 * @return <code>true</code> if we run Leopard and the Mac Look And Feel.
+	 * @return {@code true} if we run Leopard and the Mac Look And Feel.
 	 */
 	public static boolean isNativeSearchFieldSupported() {
 		try {

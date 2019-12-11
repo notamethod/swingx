@@ -31,7 +31,7 @@ import org.junit.runners.JUnit4;
 
 
 /**
- * Unit test of enhanced <code>TableColumnExt</code>.
+ * Unit test of enhanced {@code TableColumnExt}.
  * 
  * @author Jeanette Winzenburg
  */

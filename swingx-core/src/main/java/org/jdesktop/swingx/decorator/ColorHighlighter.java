@@ -63,7 +63,7 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Constructs a <code>ColorHighlighter</code> with the specified
+     * Constructs a {@code ColorHighlighter} with the specified
      * background and foreground colors and null section colors. Uses
      * the default predicate.
      *
@@ -75,7 +75,7 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Constructs a <code>ColorHighlighter</code> with the specified
+     * Constructs a {@code ColorHighlighter} with the specified
      * unselected colors and HighlightPredicate. 
      * Initializes selected colors to null.
      * 
@@ -89,7 +89,7 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
     
     /**
-     * Constructs a <code>ColorHighlighter</code> with the specified
+     * Constructs a {@code ColorHighlighter} with the specified
      * background and foreground colors for unselected and selected cells.
      * Uses the default HighlightPredicate.
      *
@@ -105,7 +105,7 @@ public class ColorHighlighter extends AbstractHighlighter {
 
 
     /**
-     * Constructs a <code>ColorHighlighter</code> with the specified colors
+     * Constructs a {@code ColorHighlighter} with the specified colors
      * and HighlightPredicate.
      * 
      * @param predicate the HighlightPredicate to use.
@@ -175,9 +175,9 @@ public class ColorHighlighter extends AbstractHighlighter {
 //---------------------- state
     
     /**
-     * Returns the background color of this <code>ColorHighlighter</code>.
+     * Returns the background color of this {@code ColorHighlighter}.
      *
-     * @return the background color of this <code>ColorHighlighter</code>,
+     * @return the background color of this {@code ColorHighlighter},
      *          or null, if no background color has been set
      */
     public Color getBackground() {
@@ -185,10 +185,10 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Sets the background color of this <code>ColorHighlighter</code> and 
+     * Sets the background color of this {@code ColorHighlighter} and
      * notifies registered ChangeListeners.
      *  
-     * @param color the background color of this <code>Highlighter</code>,
+     * @param color the background color of this {@code Highlighter},
      *          or null, to clear any existing background color
      */
     public void setBackground(Color color) {
@@ -198,9 +198,9 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Returns the foreground color of this <code>ColorHighlighter</code>.
+     * Returns the foreground color of this {@code ColorHighlighter}.
      *
-     * @return the foreground color of this <code>ColorHighlighter</code>,
+     * @return the foreground color of this {@code ColorHighlighter},
      *          or null, if no foreground color has been set
      */
     public Color getForeground() {
@@ -208,10 +208,10 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Sets the foreground color of this <code>ColorHighlighter</code> and notifies
+     * Sets the foreground color of this {@code ColorHighlighter} and notifies
      * registered ChangeListeners.
      *
-     * @param color the foreground color of this <code>ColorHighlighter</code>,
+     * @param color the foreground color of this {@code ColorHighlighter},
      *          or null, to clear any existing foreground color
      */
     public void setForeground(Color color) {
@@ -221,9 +221,9 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Returns the selected background color of this <code>ColorHighlighter</code>.
+     * Returns the selected background color of this {@code ColorHighlighter}.
      *
-     * @return the selected background color of this <code>ColorHighlighter</code>,
+     * @return the selected background color of this {@code ColorHighlighter},
      *          or null, if no selected background color has been set
      */
     public Color getSelectedBackground() {
@@ -231,10 +231,10 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Sets the selected background color of this <code>ColorHighlighter</code>
+     * Sets the selected background color of this {@code ColorHighlighter}
      * and notifies registered ChangeListeners.
      *
-     * @param color the selected background color of this <code>ColorHighlighter</code>,
+     * @param color the selected background color of this {@code ColorHighlighter},
      *          or null, to clear any existing selected background color
      */
     public void setSelectedBackground(Color color) {
@@ -244,9 +244,9 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Returns the selected foreground color of this <code>ColorHighlighter</code>.
+     * Returns the selected foreground color of this {@code ColorHighlighter}.
      *
-     * @return the selected foreground color of this <code>ColorHighlighter</code>,
+     * @return the selected foreground color of this {@code ColorHighlighter},
      *          or null, if no selected foreground color has been set
      */
     public Color getSelectedForeground() {
@@ -254,10 +254,10 @@ public class ColorHighlighter extends AbstractHighlighter {
     }
 
     /**
-     * Sets the selected foreground color of this <code>ColorHighlighter</code> and
+     * Sets the selected foreground color of this {@code ColorHighlighter} and
      * notifies registered ChangeListeners.
      *
-     * @param color the selected foreground color of this <code>ColorHighlighter</code>,
+     * @param color the selected foreground color of this {@code ColorHighlighter},
      *          or null, to clear any existing selected foreground color
      */
     public void setSelectedForeground(Color color) {

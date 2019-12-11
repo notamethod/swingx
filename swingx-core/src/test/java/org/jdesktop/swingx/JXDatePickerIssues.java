@@ -66,7 +66,7 @@ import org.jdesktop.swingx.table.DatePickerCellEditor;
 import org.junit.Test;
 
 /**
- * Known issues of <code>JXDatePicker</code> and picker related 
+ * Known issues of {@code JXDatePicker} and picker related
  * formats.
  * 
  * @author Jeanette Winzenburg

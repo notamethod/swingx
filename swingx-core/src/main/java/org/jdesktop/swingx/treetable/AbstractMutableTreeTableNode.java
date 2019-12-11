@@ -267,7 +267,7 @@ public abstract class AbstractMutableTreeTableNode implements
     }
 
     /**
-     * Returns the result of sending <code>toString()</code> to this node's
+     * Returns the result of sending {@code toString()} to this node's
      * user object, or null if this node has no user object.
      * 
      * @see #getUserObject

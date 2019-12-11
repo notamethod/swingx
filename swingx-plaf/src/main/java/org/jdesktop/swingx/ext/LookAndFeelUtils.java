@@ -35,7 +35,7 @@ import javax.swing.plaf.UIResource;
 public class LookAndFeelUtils {
 
     /**
-     * Returns the ui that is of type <code>klass</code>, or null if
+     * Returns the ui that is of type {@code klass}, or null if
      * one can not be found.
      */
     public static Object getUIOfType(ComponentUI ui, Class<?> klass) {

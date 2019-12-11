@@ -35,7 +35,7 @@ import org.jdesktop.swingx.ext.LookAndFeelAddons;
 import org.jdesktop.swingx.ext.UIManagerExt;
 
 /**
- * Addon for <code>JXHeader</code>.<br>
+ * Addon for {@code JXHeader}.<br>
  *
  */
 public class HeaderAddon extends AbstractComponentAddon {

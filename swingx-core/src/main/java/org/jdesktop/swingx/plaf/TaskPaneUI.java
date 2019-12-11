@@ -27,7 +27,7 @@ import javax.swing.JButton;
 import javax.swing.plaf.PanelUI;
 
 /**
- * Pluggable UI for <code>JXTaskPane</code>.
+ * Pluggable UI for {@code JXTaskPane}.
  *  
  * @author <a href="mailto:fred@L2FProd.com">Frederic Lavigne</a>
  */

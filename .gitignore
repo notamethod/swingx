@@ -14,7 +14,7 @@ dependency-reduced-pom.xml
 .classpath
 
 # Skip the build directories
-/target/
+**/target/
 /core/target/
 /tika/target/
 /tools/target/
@@ -31,3 +31,5 @@ dependency-reduced-pom.xml
 *.iml
 *.iws
 /swingx-all/target/
+
+/migration-tools/perso_infos.txt

@@ -60,7 +60,7 @@ import org.jdesktop.swingx.binding.DisplayInfoConverter;
 import org.jdesktop.swingx.binding.LabelHandler;
 import org.jdesktop.swingx.painter.CheckerboardPainter;
 import org.jdesktop.swingx.painter.Painter;
-import org.jdesktop.swingx.plaf.PainterUIResource;
+import org.jdesktop.swingx.ext.PainterUIResource;
 import org.jdesktop.swingx.renderer.DefaultListRenderer;
 import org.jdesktop.swingxset.util.DemoUtils;
 import org.jdesktop.swingxset.util.DisplayValues;

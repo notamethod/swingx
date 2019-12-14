@@ -7,7 +7,7 @@ package org.jdesktop.swingx.demos.decorator;
 import java.beans.PropertyChangeListener;
 
 import org.jdesktop.swingx.decorator.Highlighter;
-import org.jdesktop.swingx.plaf.UIDependent;
+import org.jdesktop.swingx.ext.UIDependent;
 
 /**
  * This interface defines the common contract of clients which provide
